@@ -1,6 +1,5 @@
-diff -Nur system-config-printer-0.7.75+svn1628/cupshelpers.py system-config-printer-0.7.75+svn1628.new/cupshelpers.py
---- system-config-printer-0.7.75+svn1628/cupshelpers.py	2007-10-01 10:10:37.000000000 +0100
-+++ system-config-printer-0.7.75+svn1628.new/cupshelpers.py	2007-10-01 11:42:15.000000000 +0100
+--- cupshelpers.py.orig	2008-02-17 12:32:49.076205687 +0100
++++ cupshelpers.py	2008-02-17 12:33:29.636203188 +0100
 @@ -19,7 +19,7 @@
  ## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  
@@ -9,4 +8,4 @@ diff -Nur system-config-printer-0.7.75+svn1628/cupshelpers.py system-config-prin
 +from gettext import gettext as _
  import locale
  
- class Printer:
+ def debugprint(x):

@@ -1,3 +1,27 @@
+system-config-printer (0.7.81-1) unstable; urgency=low
+
+  * Put the package under co-maintenance by the GNOME team, on
+    maintainer’s request.
+  * rules: use uploaders.mk and gnome-get-source.mk.
+  * Build-depend on gnome-pkg-tools.
+  * Require python-cups 1.9.27. Closes: #457702.
+  * 10_menu_entries.patch: revert to the correct menu category.
+    Closes: #460865.
+  * New upstream release.
+    + Removes .png extension in the desktop file. Closes: #461023.
+  * 01_no_rhpl.patch: updated for new version.
+  * Rework the package description.
+  * Rename 10_menu_entries.patch into 10_show_manage_jobs.patch.
+  * 11_use_gksu.patch: launch system-config-printer using gksu.
+    Closes: #460864, #460215.
+  * Depend on gksu.
+  * 02_fr_po.patch: fix French translation. Closes: #460861.
+  * Depend on python-elementtree.
+  * 03_elementtree.patch: support elementtree.ElementTree for pre-2.5 
+    python versions.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 17 Feb 2008 10:51:09 +0100
+
 system-config-printer (0.7.78-1) unstable; urgency=low
 
   * Imported upstream version 0.7.78. Closes: #451808, #445245
