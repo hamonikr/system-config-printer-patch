@@ -1,0 +1,50 @@
+system-config-printer (0.7.78-1) unstable; urgency=low
+
+  * Imported upstream version 0.7.78. Closes: #451808, #445245
+  * Bump standards-version to 3.7.3 (no changes needed)
+  * Use gettext instead of rhpl (taken from Ubuntu package)
+  * Change menu entries (taken from Ubuntu package)
+  * Remove makefile patch since it not needed anymore
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Sun, 16 Dec 2007 00:15:42 -0200
+
+system-config-printer (0.7.71-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Fri, 03 Aug 2007 21:54:29 -0300
+
+system-config-printer (0.7.70-2) unstable; urgency=low
+
+  * Add xmlto to Build-Depends. Closes: #433746
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Sun, 29 Jul 2007 21:30:37 -0300
+
+system-config-printer (0.7.70-1) unstable; urgency=low
+
+  * New Upstream Version
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Sun, 15 Jul 2007 20:47:12 -0300
+
+system-config-printer (0.7.69-1) unstable; urgency=low
+
+  * New Upstream Version
+  * debian/watch: Use git-import-orig instead of uupdate so it integrates
+    better with our git repository.
+  * debian/rules: Drop the code to fix the executable permissions on
+    /usr/share since it's being done properly on upstream tarball.
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Wed, 04 Jul 2007 12:42:36 -0300
+
+system-config-printer (0.7.66-1) unstable; urgency=low
+
+  [ This package has been done using 0.7.62-0ubuntu1 sources as
+    base. Thanks to Jani Monoses <jani@ubuntu.com> by his work on it ]
+
+  * debian/copyright: Update download URI.
+  * debian/watch: Add to allow easier upgrade of package version.
+  * debian/control: Remove versioned dependency of python-cups.
+  * debian/rules, debian/control: Move from python-central to python-support.
+  * debian/rules: Fix, by hard, wrong executable permissions on /usr/share.
+
+ -- Otavio Salvador <otavio@ossystems.com.br>  Wed, 04 Jul 2007 12:33:01 -0300

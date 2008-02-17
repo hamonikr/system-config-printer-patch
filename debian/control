@@ -1,0 +1,25 @@
+Source: system-config-printer
+Section: python
+Priority: optional
+Maintainer: Otavio Salvador <otavio@debian.org>
+Build-Depends: cdbs (>= 0.4.43),
+			   debhelper (>= 5.0.37.2),
+			   python-support,
+			   python-all-dev (>= 2.3.5-11),
+			   libxml-parser-perl,
+			   desktop-file-utils,
+			   xmlto
+Standards-Version: 3.7.3
+
+Package: system-config-printer
+Architecture: all
+Depends: ${shlibs:Depends},
+		 ${python:Depends},
+		 python-cups,
+		 python-gtk2,
+		 python-glade2,
+		 python-xml
+Description: printer configuration GUI
+ This is a CUPS configuration Gtk+2.0 GUI written in Python
+ as part of the Fedora Core 6 system configuration tools.
+ It uses IPP to talk to CUPS

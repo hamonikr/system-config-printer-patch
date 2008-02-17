@@ -1,0 +1,33 @@
+diff -Nur system-config-printer-0.7.75+svn1653/Makefile.am system-config-printer-0.7.75+svn1653.new/Makefile.am
+--- system-config-printer-0.7.75+svn1653/Makefile.am	2007-10-03 13:25:20.000000000 +0100
++++ system-config-printer-0.7.75+svn1653.new/Makefile.am	2007-10-05 22:06:47.000000000 +0100
+@@ -57,7 +57,7 @@
+ 	desktop-file-install --vendor redhat	\
+ 	  --dir $(DESTDIR)$(desktopdir)		\
+ 	  --add-category X-Red-Hat-Base		\
+-	  --add-category System			\
++	  --add-category Utility		\
+ 	  --add-category Monitor		\
+ 	  --add-category GTK			\
+ 	  manage-print-jobs.desktop
+diff -Nur system-config-printer-0.7.75+svn1653/Makefile.in system-config-printer-0.7.75+svn1653.new/Makefile.in
+--- system-config-printer-0.7.75+svn1653/Makefile.in	2007-10-03 13:25:53.000000000 +0100
++++ system-config-printer-0.7.75+svn1653.new/Makefile.in	2007-10-05 22:07:56.000000000 +0100
+@@ -892,7 +892,7 @@
+ 	desktop-file-install --vendor redhat	\
+ 	  --dir $(DESTDIR)$(desktopdir)		\
+ 	  --add-category X-Red-Hat-Base		\
+-	  --add-category System			\
++	  --add-category Utility		\
+ 	  --add-category Monitor		\
+ 	  --add-category GTK			\
+ 	  manage-print-jobs.desktop
+diff -Nur system-config-printer-0.7.75+svn1653/manage-print-jobs.desktop.in system-config-printer-0.7.75+svn1653.new/manage-print-jobs.desktop.in
+--- system-config-printer-0.7.75+svn1653/manage-print-jobs.desktop.in	2007-10-03 13:25:20.000000000 +0100
++++ system-config-printer-0.7.75+svn1653.new/manage-print-jobs.desktop.in	2007-10-05 22:05:21.000000000 +0100
+@@ -6,4 +6,4 @@
+ Terminal=false
+ Type=Application
+ Icon=printer
+-NoDisplay=true
++NoDisplay=false
