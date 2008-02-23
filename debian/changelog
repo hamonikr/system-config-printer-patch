@@ -1,11 +1,12 @@
-system-config-printer (0.7.81-2) UNRELEASED; urgency=low
+system-config-printer (0.7.81-2) unstable; urgency=low
 
   * 04_de_po.patch: updated German translation by Helge Kreutzmann.
     Closes: #466305.
-  * 05_vi_po.patch: updated Vietnamese translation by Clytie Siddall. 
+  * 05_vi_po.patch: updated Vietnamese translation by Clytie Siddall.
     Closes: #466377.
+  * Depend on python-gnome2. Closes: #467094.
 
- -- Josselin Mouette <joss@debian.org>  Sun, 17 Feb 2008 22:53:20 +0100
+ -- Josselin Mouette <joss@debian.org>  Sat, 23 Feb 2008 09:26:24 +0100
 
 system-config-printer (0.7.81-1) unstable; urgency=low
 

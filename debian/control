@@ -21,6 +21,7 @@ Depends: ${shlibs:Depends},
          python-elementtree,
          python-gtk2,
          python-glade2,
+         python-gnome2,
          python-xml,
          gksu
 Description: graphical interface to configure the printing system
