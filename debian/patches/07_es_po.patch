@@ -1,5 +1,5 @@
 --- po/es.po.orig	2008-02-13 19:13:12.000000000 +0100
-+++ po/es.po	2008-04-21 18:48:29.780569547 +0200
++++ po/es.po	2008-04-21 18:53:35.528539960 +0200
 @@ -1,33 +1,41 @@
 -# translation of es.po to 
 -# translation of es.po to
@@ -1274,11 +1274,10 @@
 -"Arriba a abajo, iquierda a derecha\n"
 -"Arriba a abajo, derecha a iquierda\n"
 -"Abajo a arriba, iquierda a derecha\n"
--"Abajo a arriba, derecha a izquierda"
 +"Arriba a abajo, izquierda a derecha\n"
 +"Arriba a abajo, derecha a izquierda\n"
 +"Abajo a arriba, izquierda a derecha\n"
-+"Abajo a arriba, derecha a izquierda\n"
+ "Abajo a arriba, derecha a izquierda"
  
  #: ../system-config-printer.glade.h:140
  msgid "License:"
@@ -1359,15 +1358,6 @@
  "Abrochar (abajo izquierda)\n"
  "Abrochar (arriba derecha)\n"
  "Abrochar (abajo derecha)\n"
-@@ -1570,7 +1235,7 @@
- "Costura (izquierda)\n"
- "Costura (arriba)\n"
- "Costura (derecha)\n"
--"Costura (abajo)"
-+"Costura (abajo)\n"
- 
- #: ../system-config-printer.glade.h:187
- msgid ""
 @@ -1578,13 +1243,13 @@
  "Two-sided (long edge)\n"
  "Two-sided (short edge)"
@@ -1733,7 +1723,7 @@
 +"Yelitza Louze <ylouze@redhat.com>, 2002-2004.\n"
 +"Eduardo Villagrán Morales <evillagr@fedoraproject.org>, 2007.\n"
 +"Domingo Becker <domingobecker@gmail.com>, 2006, 2007, 2008\n"
-+"Javier Fernández-Sanguino <jfs@debian.org>, 2008\n"
++"Javier Fernández-Sanguino <jfs@debian.org>, 2008"
  
  #: ../system-config-printer.desktop.in.h:1
  msgid "Configure printers"
