@@ -1,0 +1,20 @@
+--- system-config-printer.glade.orig	2008-02-13 19:12:40.000000000 +0100
++++ system-config-printer.glade	2008-04-22 00:14:07.193060063 +0200
+@@ -118,7 +118,7 @@
+ 		      <child internal-child="image">
+ 			<widget class="GtkImage" id="image35">
+ 			  <property name="visible">True</property>
+-			  <property name="stock">gtk-add</property>
++			  <property name="stock">gtk-new</property>
+ 			  <property name="icon_size">1</property>
+ 			  <property name="xalign">0.5</property>
+ 			  <property name="yalign">0.5</property>
+@@ -215,7 +215,7 @@
+ 	      <property name="tooltip" translatable="yes">Create a new printer queue</property>
+ 	      <property name="label" translatable="yes">New Printer</property>
+ 	      <property name="use_underline">True</property>
+-	      <property name="stock_id">gtk-new</property>
++	      <property name="stock_id">gtk-add</property>
+ 	      <property name="visible_horizontal">True</property>
+ 	      <property name="visible_vertical">True</property>
+ 	      <property name="is_important">True</property>

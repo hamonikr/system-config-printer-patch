@@ -9,6 +9,8 @@ system-config-printer (0.7.81-3) unstable; urgency=low
   * Depend on python-notify. Closes: #471943.
   * Depend on python-dbus.
   * Don't require python-elementtree when python version is >= 2.5.
+  * 08_stock_icons.patch: use the "add" icon to add a printer, and the 
+    "new" icon to create a group, in both the toolbar and the menu.
 
  -- Josselin Mouette <joss@debian.org>  Mon, 21 Apr 2008 18:50:08 +0200
 
