@@ -1,0 +1,1733 @@
+--- po/ru.po.orig	2008-02-13 19:13:17.000000000 +0100
++++ po/ru.po	2008-04-21 18:30:39.913539846 +0200
+@@ -1,23 +1,25 @@
+-# translation of ru.po to 
+-# translation of ru.po to Russian
++# translation of ru.po to
+ # Leonid Kanter <leon@geon.donetsk.ua>, 2003.
+ # Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006.
+ # Gregory Sapunkov <sapunidze@yandex.ru>, 2006.
+ # Yulia Poyarkova <ypoyarko@redhat.com>, 2006.
+ # Nikolay Sivov <bunglehead@gmail.com>, 2007.
++# Yuri Kozlov <kozlov.y@gmail.com>, 2008.
++# translation of ru.po to Russian
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: ru\n"
++"Project-Id-Version: 0.7.81-2\n"
+ "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
+ "POT-Creation-Date: 2008-02-13 18:13+0000\n"
+-"PO-Revision-Date: 2007-04-12 00:21+0300\n"
+-"Last-Translator: \n"
+-"Language-Team: \n"
++"PO-Revision-Date: 2008-02-17 22:31+0300\n"
++"Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
++"Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"X-Generator: KBabel 1.9.1\n"
++"X-Generator: KBabel 1.11.4\n"
+ "X-Poedit-Language: Russian\n"
++"Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+ 
+ #: ../cupshelpers.py:33
+ msgid "Idle"
+@@ -43,19 +45,16 @@
+ msgstr "Неизвестно"
+ 
+ #: ../my-default-printer.py:136 ../my-default-printer.desktop.in.h:1
+-#, fuzzy
+ msgid "Default Printer"
+-msgstr "Сделать принтером по умолчанию"
++msgstr "Принтер по умолчанию"
+ 
+ #: ../my-default-printer.py:140 ../my-default-printer.py:171
+-#, fuzzy
+ msgid "_Use System Default"
+-msgstr "Установить по умолчанию"
++msgstr "Использовать системный по умолчанию"
+ 
+ #: ../my-default-printer.py:141 ../my-default-printer.py:173
+-#, fuzzy
+ msgid "_Set Default"
+-msgstr "по умолчанию"
++msgstr "По умолчанию"
+ 
+ #: ../my-default-printer.py:151 ../troubleshoot.py:904 ../applet.py:186
+ #: ../applet.py:226
+@@ -64,9 +63,8 @@
+ 
+ #: ../my-default-printer.py:155 ../system-config-printer.py:2373
+ #: ../troubleshoot.py:592 ../troubleshoot.py:1368
+-#, fuzzy
+ msgid "Location"
+-msgstr "Размещение:"
++msgstr "Размещение"
+ 
+ #: ../optionwidgets.py:116
+ msgid "Conflicts with:"
+@@ -98,11 +96,11 @@
+ 
+ #: ../system-config-printer.py:373
+ msgid "Drivers"
+-msgstr "Драйвера"
++msgstr "Драйверы"
+ 
+ #: ../system-config-printer.py:374 ../system-config-printer.glade.h:107
+ msgid "Downloadable Drivers"
+-msgstr ""
++msgstr "Загружаемые драйверы"
+ 
+ #: ../system-config-printer.py:375
+ msgid "Users"
+@@ -110,7 +108,7 @@
+ 
+ #: ../system-config-printer.py:402
+ msgid "Automatic rotation"
+-msgstr ""
++msgstr "Автоматический поворот"
+ 
+ #: ../system-config-printer.py:556
+ #, python-format
+@@ -120,11 +118,11 @@
+ #: ../system-config-printer.py:559
+ #, python-format
+ msgid "Connected to %s"
+-msgstr "Подключен к %s"
++msgstr "Подключён к %s"
+ 
+ #: ../system-config-printer.py:561 ../system-config-printer.py:1273
+ msgid "Not connected"
+-msgstr "Не подключен"
++msgstr "Не подключён"
+ 
+ #: ../system-config-printer.py:672
+ msgid "Local Printers"
+@@ -136,11 +134,11 @@
+ 
+ #: ../system-config-printer.py:674
+ msgid "Remote Printers"
+-msgstr "Удаленные принтеры"
++msgstr "Удалённые принтеры"
+ 
+ #: ../system-config-printer.py:675
+ msgid "Remote Classes"
+-msgstr "Удаленные классы"
++msgstr "Удалённые классы"
+ 
+ #: ../system-config-printer.py:783
+ #, python-format
+@@ -153,7 +151,7 @@
+ 
+ #: ../system-config-printer.py:1202
+ msgid "Installable Options"
+-msgstr "Устанавливаемые возможности"
++msgstr "Устанавливаемые параметры"
+ 
+ #: ../system-config-printer.py:1203 ../system-config-printer.glade.h:209
+ msgid "Printer Options"
+@@ -228,7 +226,7 @@
+ 
+ #: ../system-config-printer.py:1303
+ msgid "This will delete this class!"
+-msgstr "Это приведет к удалению класса!"
++msgstr "Это приведёт к удалению класса!"
+ 
+ #: ../system-config-printer.py:1304
+ msgid "Proceed anyway?"
+@@ -253,13 +251,13 @@
+ "The remote server did not accept the print job, most likely because the "
+ "printer is not shared."
+ msgstr ""
+-"Удаленный сервер не принял задание печати, скорее всего потому, что принтер "
++"Удалённый сервер не принял задание печати, скорее всего потому, что принтер "
+ "не настроен для общего доступа."
+ 
+ #: ../system-config-printer.py:1553
+-#, fuzzy, python-format
++#, python-format
+ msgid "Maintenance command submitted as job %d"
+-msgstr "Тестовая страница поставлена в очередь как задание %d"
++msgstr "Команда обслуживания поставлена в очередь как задание %d"
+ 
+ #: ../system-config-printer.py:1649 ../system-config-printer.py:1791
+ msgid "Error"
+@@ -267,11 +265,11 @@
+ 
+ #: ../system-config-printer.py:1650
+ msgid "There was a problem connecting to the CUPS server."
+-msgstr "Ошибка подключения к ксерверу CUPS."
++msgstr "Ошибка подключения к серверу CUPS."
+ 
+ #: ../system-config-printer.py:1703
+ msgid "This is the default printer"
+-msgstr "Это принтера по умолчанию"
++msgstr "Это принтер по умолчанию"
+ 
+ #: ../system-config-printer.py:1707
+ msgid "No default printer set."
+@@ -280,7 +278,7 @@
+ #: ../system-config-printer.py:1792
+ #, python-format
+ msgid "Option '%s' has value '%s' and cannot be edited."
+-msgstr ""
++msgstr "Значение параметра '%s' равно '%s' и не может быть изменено."
+ 
+ #: ../system-config-printer.py:1832
+ msgid "Cancel Tests"
+@@ -314,24 +312,22 @@
+ #. IPP list columns
+ #: ../system-config-printer.py:2367
+ msgid "Queue"
+-msgstr ""
++msgstr "Очередь"
+ 
+ #: ../system-config-printer.py:2381
+-#, fuzzy
+ msgid ""
+ "PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
+ "PPD.GZ)"
+-msgstr "Описание PostScript принтера (*.ppd[.gz])"
++msgstr "Файлы описания PostScript принтеров (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *.PPD.GZ)"
+ 
+ #: ../system-config-printer.py:2390
+ msgid "All files (*)"
+-msgstr ""
++msgstr "Все файлы (*)"
+ 
+ #: ../system-config-printer.py:2425 ../system-config-printer.py:3741
+ #: ../system-config-printer.py:3775
+-#, fuzzy
+ msgid "Search"
+-msgstr "Новое имя принтера"
++msgstr "Поиск"
+ 
+ #: ../system-config-printer.py:2428 ../system-config-printer.glade.h:155
+ msgid "New Printer"
+@@ -352,16 +348,15 @@
+ #: ../system-config-printer.py:2551 ../system-config-printer.py:2775
+ #: ../system-config-printer.py:2941 ../system-config-printer.py:3764
+ msgid "Searching"
+-msgstr ""
++msgstr "Выполняется поиск"
+ 
+ #: ../system-config-printer.py:2552 ../system-config-printer.py:2776
+ msgid "Searching for drivers"
+-msgstr ""
++msgstr "Выполняется поиск драйверов"
+ 
+ #: ../system-config-printer.py:2942
+-#, fuzzy
+ msgid "Searching for printers"
+-msgstr "Новое имя принтера"
++msgstr "Выполняется поиск принтеров"
+ 
+ #: ../system-config-printer.py:3160
+ msgid "Other"
+@@ -372,9 +367,8 @@
+ msgstr " (текущий)"
+ 
+ #: ../system-config-printer.py:3188 ../system-config-printer.py:3449
+-#, fuzzy
+ msgid "Scanning..."
+-msgstr "Масштаб:"
++msgstr "Сканирование..."
+ 
+ #: ../system-config-printer.py:3360 ../system-config-printer.py:3427
+ msgid "Verified"
+@@ -390,56 +384,55 @@
+ 
+ #: ../system-config-printer.py:3369 ../system-config-printer.py:3435
+ msgid "This print share is not accessible."
+-msgstr "Этот принтер (общий ресурс) не доступен."
++msgstr "Этот принтер (общий ресурс) недоступен."
+ 
+ #: ../system-config-printer.py:3483
+ msgid "It is not possible to obtain a list of queues from this host."
+-msgstr ""
++msgstr "Невозможно получить список очередей с этой машины."
+ 
+ #: ../system-config-printer.py:3487
+ msgid "No queues"
+-msgstr ""
++msgstr "Нет очередей"
+ 
+ #: ../system-config-printer.py:3488
+ msgid "There are no queues available."
+-msgstr ""
++msgstr "Очереди недоступны."
+ 
+ #: ../system-config-printer.py:3545
+ msgid "A printer connected to the parallel port."
+-msgstr "Принтер подключен к параллельному порту."
++msgstr "Принтер подключён к параллельному порту."
+ 
+ #: ../system-config-printer.py:3547
+ msgid "A printer connected to a USB port."
+-msgstr "Принтер подключен к порту USB."
++msgstr "Принтер подключён к порту USB."
+ 
+ #: ../system-config-printer.py:3549
+ msgid ""
+ "HPLIP software driving a printer, or the printer function of a multi-"
+ "function device."
+ msgstr ""
+-"Работу принтера обеспечивает HPLIP или функция принтера многофункционального "
+-"устройства."
++"ПО HPLIP позволяет печатать на принтере или многофункциональном"
++"устройстве."
+ 
+ #: ../system-config-printer.py:3552
+ msgid ""
+ "HPLIP software driving a fax machine, or the fax function of a multi-"
+ "function device."
+ msgstr ""
+-"Работу принтера обеспечивает HPLIP или функция факса многофункционального "
+-"устройства."
++"ПО HPLIP позволяет работать с факсом или многофункциональным"
++"устройством."
+ 
+ #: ../system-config-printer.py:3555
+ msgid "Local printer detected by the Hardware Abstraction Layer (HAL)."
+ msgstr "HAL (Hardware Abstraction Layer) обнаружил локальный принтер."
+ 
+ #: ../system-config-printer.py:3787
+-#, fuzzy
+ msgid "-- Select printer model --"
+-msgstr "Выберите принтер из базы данных"
++msgstr "-- Выберите модель принтера --"
+ 
+ #: ../system-config-printer.py:3789
+ msgid "-- No matches found --"
+-msgstr ""
++msgstr "-- ничего подходящего не найдено --"
+ 
+ #: ../system-config-printer.py:3954
+ msgid " (recommended)"
+@@ -450,22 +443,20 @@
+ msgstr "Данный PPD сформирован foomatic."
+ 
+ #: ../system-config-printer.py:3994
+-#, fuzzy
+ msgid "OpenPrinting"
+-msgstr "Печать"
++msgstr "OpenPrinting"
+ 
+ #: ../system-config-printer.py:3996
+ msgid "Distributable"
+-msgstr ""
++msgstr "Распространяем"
+ 
+ #: ../system-config-printer.py:3998
+-#, fuzzy
+ msgid "None"
+-msgstr "нет"
++msgstr "Нет"
+ 
+ #: ../system-config-printer.py:4006
+ msgid "Not specified."
+-msgstr ""
++msgstr "Не указано."
+ 
+ #. Foomatic database problem of some sort.
+ #: ../system-config-printer.py:4033
+@@ -483,8 +474,7 @@
+ #: ../system-config-printer.py:4044
+ #, python-format
+ msgid "You will need to install the '%s' package in order to use this driver."
+-msgstr ""
+-"Чтобы воспользоваться этим драйвером Вам необходимо установить пакет '%s'."
++msgstr "Чтобы воспользоваться этим драйвером необходимо установить пакет '%s'."
+ 
+ #. This error came from trying to open the PPD file.
+ #: ../system-config-printer.py:4051
+@@ -498,38 +488,32 @@
+ #. Failed to get PPD downloaded from OpenPrinting XXX
+ #: ../system-config-printer.py:4064
+ msgid "Downloadable drivers"
+-msgstr ""
++msgstr "Загружаемые драйверы"
+ 
+ #: ../system-config-printer.py:4065
+ msgid "Support for downloadable drivers is not yet completed."
+-msgstr ""
++msgstr "Поддержка загрузки драйверов пока недоделана."
+ 
+ #: ../system-config-printer.py:4115 ../system-config-printer.py:4152
+-#, fuzzy
+ msgid "No Installable Options"
+-msgstr "Устанавливаемые возможности"
++msgstr "Нет устанавливаемых параметров"
+ 
+ #: ../system-config-printer.py:4199
+-#, fuzzy
+ msgid "Adding"
+-msgstr "Запланировано"
++msgstr "Добавление"
+ 
+ #: ../system-config-printer.py:4200
+-#, fuzzy
+ msgid "Adding printer"
+-msgstr "Настройка принтеров"
++msgstr "Добавление принтера"
+ 
+ #: ../system-config-printer.py:4352
+-#, fuzzy
+ msgid "Install driver"
+-msgstr "Отсутствует драйвер"
++msgstr "Установка драйвера"
+ 
+ #: ../system-config-printer.py:4353
+-#, fuzzy, python-format
++#, python-format
+ msgid "Printer '%s' requires the %s package but it is not currently installed."
+-msgstr ""
+-"Принтеру '%s' необходим пакет %s, но он не установлен. Пожалуйста, "
+-"установите его перед использованием принтера."
++msgstr "Принтеру '%s' необходим пакет %s, но он не установлен."
+ 
+ #: ../system-config-printer.py:4360
+ msgid "Missing driver"
+@@ -541,24 +525,24 @@
+ "Printer '%s' requires the '%s' program but it is not currently installed.  "
+ "Please install it before using this printer."
+ msgstr ""
+-"Принтеру '%s' необходима програма '%s', но она не установлена. Пожалуйста, "
+-"установите ее до использования принтера."
++"Принтеру '%s' необходима программа '%s', но она не установлена. Установите "
++"её перед тем как использовать принтер."
+ 
+ #: ../troubleshoot.py:46
+ msgid ""
+ "To start this tool, select System->Administration->Printing from the main "
+ "menu."
+ msgstr ""
++"Для запуска этого инструмента, выберите Система->Администрирование->Печать "
++"из основного меню."
+ 
+ #: ../troubleshoot.py:56
+-#, fuzzy
+ msgid "Authentication"
+-msgstr "<b>Проверка подлинности</b>"
++msgstr "Проверка подлинности"
+ 
+ #: ../troubleshoot.py:71
+-#, fuzzy
+ msgid "Password required"
+-msgstr "Требуется обновление"
++msgstr "Требуется пароль"
+ 
+ #: ../troubleshoot.py:79 ../system-config-printer.glade.h:195
+ #: ../applet.glade.h:5
+@@ -567,136 +551,131 @@
+ 
+ #: ../troubleshoot.py:104
+ msgid "Printing troubleshooter"
+-msgstr ""
++msgstr "Анализ проблем с печатью"
+ 
+ #: ../troubleshoot.py:401
+ msgid "Trouble-shooting Printing"
+-msgstr ""
++msgstr "Выявление проблем с печатью"
+ 
+ #: ../troubleshoot.py:403
+ msgid ""
+ "In the next few screens I will ask you some questions about your problem "
+ "with printing. Based on your answers I will try to suggest a solution."
+ msgstr ""
++"Далее будет задано несколько вопросов о ваших проблемах с "
++"печатью. Основываясь на ваших ответах, будет предложен способ решения."
+ 
+ #: ../troubleshoot.py:407
+ msgid "Click 'Forward' to begin."
+-msgstr ""
++msgstr "Чтобы начать, нажмите 'Вперёд'."
+ 
+ #: ../troubleshoot.py:418
+ msgid "Sorry!"
+-msgstr ""
++msgstr "Извините!"
+ 
+ #: ../troubleshoot.py:419
+ msgid ""
+ "I have not been able to work out what the problem is, but I have collected "
+ "some useful information to put in a bug report."
+ msgstr ""
++"К сожалению, невозможно предложить решение вашей проблемы, но была "
++"собрана некоторая полезная информация для отправки сообщения об "
++"ошибке."
+ 
+ #: ../troubleshoot.py:488
+-#, fuzzy
+ msgid "Queue Not Accepting Jobs"
+-msgstr "Принимает задания"
++msgstr "Очередь не принимает задания"
+ 
+ #: ../troubleshoot.py:489
+-#, fuzzy
+ msgid "The CUPS printer on the server is not accepting jobs."
+-msgstr "Этот принтер (общий ресурс) не доступен."
++msgstr "Серверный принтер CUPS не принимает задания."
+ 
+ #: ../troubleshoot.py:513 ../troubleshoot.py:1259
+ msgid "Queue Not Enabled"
+-msgstr ""
++msgstr "Очередь не активирована"
+ 
+ #: ../troubleshoot.py:514
+-#, fuzzy
+ msgid "The CUPS printer on the server is not enabled."
+-msgstr "Этот принтер (общий ресурс) не доступен."
++msgstr "Серверный принтер CUPS не активирован."
+ 
+ #: ../troubleshoot.py:531 ../troubleshoot.py:1253
+ #, python-format
+ msgid "The reason given is: `%s'."
+-msgstr ""
++msgstr "Причина: `%s'."
+ 
+ #: ../troubleshoot.py:533 ../troubleshoot.py:1255
+ msgid "This may be due to the printer being disconnected or switched off."
+-msgstr ""
++msgstr "Это может быть из-за того, что принтер был отключён или выключен."
+ 
+ #: ../troubleshoot.py:549
+ msgid "Queue Not Shared"
+-msgstr ""
++msgstr "Очередь не является общим ресурсом"
+ 
+ #: ../troubleshoot.py:550
+ msgid "The CUPS printer on the server is not shared."
+-msgstr ""
++msgstr "Серверный принтер CUPS не был сделан общим ресурсом."
+ 
+ #: ../troubleshoot.py:584
+-#, fuzzy
+ msgid "Choose Network Printer"
+-msgstr "Новый принтер"
++msgstr "Выбор сетевого принтера"
+ 
+ #: ../troubleshoot.py:585
+ msgid ""
+ "Please select the network printer you are trying to use from the list below. "
+ "If it does not appear in the list, select 'Not listed'."
+ msgstr ""
++"Из списка ниже выберите сетевой принтер, который вы пытаетесь использовать. "
++"Если его нет в списке, выберите 'Нет в списке'."
+ 
+ #: ../troubleshoot.py:590 ../troubleshoot.py:1366
+ msgid "Name"
+ msgstr "Имя"
+ 
+ #: ../troubleshoot.py:594 ../troubleshoot.py:1370
+-#, fuzzy
+ msgid "Information"
+-msgstr "Размещение:"
++msgstr "Информация"
+ 
+ #: ../troubleshoot.py:627 ../troubleshoot.py:1394
+-#, fuzzy
+ msgid "Not listed"
+-msgstr "Не подключен"
++msgstr "Нет в списке"
+ 
+ #: ../troubleshoot.py:788
+-#, fuzzy
+ msgid "Remote Address"
+-msgstr "Удаленные принтеры"
++msgstr "Удалённый адрес"
+ 
+ #: ../troubleshoot.py:789
+ msgid ""
+ "Please enter as many details as you can about the network address of this "
+ "printer."
+-msgstr ""
++msgstr "Введите как можно больше подробностей о сетевом адресе этого принтера."
+ 
+ #: ../troubleshoot.py:797
+-#, fuzzy
+ msgid "Server name:"
+-msgstr "Имя пользователя:"
++msgstr "Имя сервера:"
+ 
+ #: ../troubleshoot.py:803
+ msgid "Server IP address:"
+-msgstr ""
++msgstr "IP-адрес сервера:"
+ 
+ #: ../troubleshoot.py:824
+-#, fuzzy
+ msgid "Printer Location"
+-msgstr "Параметры принтера"
++msgstr "Размещение принтера"
+ 
+ #: ../troubleshoot.py:825
+-#, fuzzy
+ msgid "Is the printer connected to this computer or available on the network?"
+-msgstr "Принтер подключен к параллельному порту."
++msgstr "Принтер подключён к этому компьютеру или доступен через сеть?"
+ 
+ #: ../troubleshoot.py:827
+-#, fuzzy
+ msgid "Locally connected printer"
+-msgstr "Действительно удалить принтер %s?"
++msgstr "Локально подключённый принтер"
+ 
+ #: ../troubleshoot.py:828
+-#, fuzzy
+ msgid "Network printer"
+-msgstr "Новый принтер"
++msgstr "Сетевой принтер"
+ 
+ #: ../troubleshoot.py:840
+ msgid "CUPS Service Stopped"
+-msgstr ""
++msgstr "Остановлен сервис CUPS"
+ 
+ #: ../troubleshoot.py:841
+ msgid ""
+@@ -704,6 +683,9 @@
+ "choose System->Administration->Services from the main menu and look for the "
+ "`cups' service."
+ msgstr ""
++"Вероятно не работает спулер печати CUPS. Чтобы исправить это, "
++"выберите в основном меню Система->Администрирование->Сервисы и "
++"найдите сервис 'cups'."
+ 
+ #: ../troubleshoot.py:870 ../applet.py:729
+ msgid "Pending"
+@@ -726,13 +708,12 @@
+ msgstr "Выполнено"
+ 
+ #: ../troubleshoot.py:885
+-#, fuzzy
+ msgid "Test Page"
+-msgstr "Напечатать пробную страницу"
++msgstr "Пробная страница"
+ 
+ #: ../troubleshoot.py:897
+ msgid "Cancel All Jobs"
+-msgstr ""
++msgstr "Отменить все задания"
+ 
+ #: ../troubleshoot.py:902 ../applet.py:184
+ msgid "Job"
+@@ -744,78 +725,78 @@
+ 
+ #: ../troubleshoot.py:907 ../applet.py:189
+ msgid "Status"
+-msgstr "Статус"
++msgstr "Состояние"
+ 
+ #: ../troubleshoot.py:928
+ msgid "Did the test page print correctly?"
+-msgstr ""
++msgstr "Правильно ли напечатана пробная страница?"
+ 
+ #: ../troubleshoot.py:935
+ msgid "Yes"
+-msgstr ""
++msgstr "Да"
+ 
+ #: ../troubleshoot.py:936
+ msgid "No"
+-msgstr ""
++msgstr "Нет"
+ 
+ #: ../troubleshoot.py:1118
+-#, fuzzy
+ msgid "Status Messages"
+-msgstr "Сообщение"
++msgstr "Сообщения о состоянии"
+ 
+ #: ../troubleshoot.py:1119
+ msgid "There are status messages associated with this queue."
+-msgstr ""
++msgstr "Есть сообщения о состоянии, касающиеся этой очереди."
+ 
+ #: ../troubleshoot.py:1125
+-#, fuzzy
+ msgid "Printer's state message:"
+-msgstr "Состояние принтера:"
++msgstr "Сообщения о состоянии принтера:"
+ 
+ #: ../troubleshoot.py:1133
+-#, fuzzy
+ msgid "Printer's state reasons:"
+-msgstr "Состояние принтера:"
++msgstr "Причины состояния принтера:"
+ 
+ #: ../troubleshoot.py:1186
+ msgid "Queue Rejecting Jobs"
+-msgstr ""
++msgstr "Очередь отклоняет задания"
+ 
+ #: ../troubleshoot.py:1211
+ #, python-format
+ msgid "The queue `%s' is rejecting jobs."
+-msgstr ""
++msgstr "Очередь '%s' отклоняет задания."
+ 
+ #: ../troubleshoot.py:1215
+ #, python-format
+ msgid " The reason given is: `%s'."
+-msgstr ""
++msgstr " Причина: '%s'."
+ 
+ #: ../troubleshoot.py:1218
+ msgid ""
+ "To make the queue accept jobs, select the `Accepting Jobs' checkbox in the "
+ "`Policies' tab for the printer in the printer administration tool."
+ msgstr ""
++"Для того, чтобы задания принимались в очередь, установите галочку `Принимать задания' в "
++"закладке `Политики' для этого принтера в утилите администрирования принтеров."
+ 
+ #: ../troubleshoot.py:1260
+ #, python-format
+ msgid "The queue `%s' is not enabled."
+-msgstr ""
++msgstr "Очередь `%s' не активирована."
+ 
+ #: ../troubleshoot.py:1263
+ msgid ""
+ "To enable it, select the `Enabled' checkbox in the `Policies' tab for the "
+ "printer in the printer administration tool."
+ msgstr ""
++"Для активирования очереди,  установите галочку `Включён' в "
++"закладке `Политики' для этого принтера в утилите администрирования принтеров."
+ 
+ #: ../troubleshoot.py:1278
+ msgid "Check Server Firewall"
+-msgstr ""
++msgstr "Проверьте межсетевой экран сервера"
+ 
+ #: ../troubleshoot.py:1279
+-#, fuzzy
+ msgid "It is not possible to connect to the server."
+-msgstr "Ошибка подключения к ксерверу CUPS."
++msgstr "Не удаётся подключиться к серверу."
+ 
+ #: ../troubleshoot.py:1292
+ #, python-format
+@@ -823,17 +804,20 @@
+ "Please check to see if a firewall or router configuration is blocking TCP "
+ "port %d on server `%s'."
+ msgstr ""
++"Убедитесь, что настройки межсетевого экрана или маршрутизатора не блокируют "
++"TCP-порт %d на сервере `%s'."
+ 
+ #: ../troubleshoot.py:1360
+-#, fuzzy
+ msgid "Choose Printer"
+-msgstr "Копирование принтера"
++msgstr "Выбор принтера"
+ 
+ #: ../troubleshoot.py:1361
+ msgid ""
+ "Please select the printer you are trying to use from the list below. If it "
+ "does not appear in the list, select 'Not listed'."
+ msgstr ""
++"Из списка ниже выберите принтер, который вы пытаетесь использовать. "
++"Если его нет в списке, выберите 'Нет в списке'."
+ 
+ #: ../system-config-printer.glade.h:1
+ msgid " "
+@@ -876,33 +860,28 @@
+ msgstr "<b>Описание</b> (не обязательно)"
+ 
+ #: ../system-config-printer.glade.h:13
+-#, fuzzy
+ msgid "<b>Download Printer Driver</b>"
+-msgstr "<b>Комментарий к драйверу</b>"
++msgstr "<b>Загрузить драйвер принтера</b>"
+ 
+ #: ../system-config-printer.glade.h:14
+-#, fuzzy
+ msgid "<b>Enter device URI</b>"
+-msgstr "Укажите URI адрес устройства"
++msgstr "<b>Укажите URI адрес устройства</b>"
+ 
+ #: ../system-config-printer.glade.h:15
+-#, fuzzy
+ msgid "<b>IPP Printer</b>"
+-msgstr "<b>Название принтера</b>"
++msgstr "<b>IPP принтер</b>"
+ 
+ #: ../system-config-printer.glade.h:16
+ msgid "<b>Image Options</b>"
+-msgstr "<b>Параметры изображений</b>"
++msgstr "<b>Параметры изображения</b>"
+ 
+ #: ../system-config-printer.glade.h:17
+-#, fuzzy
+ msgid "<b>Installed Options</b>"
+-msgstr "<b>Параметры изображений</b>"
++msgstr "<b>Установленные параметры</b>"
+ 
+ #: ../system-config-printer.glade.h:18
+-#, fuzzy
+ msgid "<b>License Terms</b>"
+-msgstr "<b>Название принтера</b>"
++msgstr "<b>Условия лицензии</b>"
+ 
+ #: ../system-config-printer.glade.h:19
+ msgid "<b>Location of the LPD network printer</b>"
+@@ -917,13 +896,12 @@
+ msgstr "<b>Размещение</b> (не обязательно)"
+ 
+ #: ../system-config-printer.glade.h:22
+-#, fuzzy
+ msgid "<b>Note</b>"
+-msgstr "<b>Состояние</b>"
++msgstr "<b>Замечание</b>"
+ 
+ #: ../system-config-printer.glade.h:23
+ msgid "<b>Other Options (Advanced)</b>"
+-msgstr "<b>Другие параметры (Расширенные)</b>"
++msgstr "<b>Другие параметры (расширенные)</b>"
+ 
+ #: ../system-config-printer.glade.h:24
+ msgid "<b>Policies</b>"
+@@ -938,18 +916,16 @@
+ msgstr "<b>Принтеры - члены этого класса</b>"
+ 
+ #: ../system-config-printer.glade.h:27
+-#, fuzzy
+ msgid "<b>SMB Printer</b>"
+-msgstr "<b>Название принтера</b>"
++msgstr "<b>SMB принтер</b>"
+ 
+ #: ../system-config-printer.glade.h:28
+ msgid "<b>Select Connection</b>"
+ msgstr "<b>Укажите подключение</b>"
+ 
+ #: ../system-config-printer.glade.h:29
+-#, fuzzy
+ msgid "<b>Select Driver</b>"
+-msgstr "<b>Принтер по умолчанию</b>"
++msgstr "<b>Выбор драйвера</b>"
+ 
+ #: ../system-config-printer.glade.h:30
+ msgid "<b>Settings of the serial port</b>"
+@@ -965,7 +941,7 @@
+ 
+ #: ../system-config-printer.glade.h:33
+ msgid "<b>Tests and Maintenance</b>"
+-msgstr ""
++msgstr "<b>Тестирование и обслуживание</b>"
+ 
+ #: ../system-config-printer.glade.h:34
+ msgid "<b>Text Options</b>"
+@@ -976,7 +952,7 @@
+ "<i>Not published\n"
+ "See server settings</i>"
+ msgstr ""
+-"<i>Не доступен\n"
++"<i>Недоступен\n"
+ "Проверьте параметры сервера</i>"
+ 
+ #: ../system-config-printer.glade.h:37
+@@ -991,7 +967,7 @@
+ msgstr ""
+ "<span weight=\"bold\" size=\"larger\">Применить изменения?</span>\n"
+ "\n"
+-"Все сделанными вами изменения будут потеряны если вы их не примените."
++"Все сделанными вами изменения будут потеряны, если вы их не примените."
+ 
+ #: ../system-config-printer.glade.h:41 ../applet.glade.h:1
+ msgid ""
+@@ -1002,16 +978,14 @@
+ "\n"
+ 
+ #: ../system-config-printer.glade.h:44
+-#, fuzzy
+ msgid "A CUPS configuration tool."
+-msgstr "Настройка принтера - %s"
++msgstr "Инструмент настройки CUPS."
+ 
+ #: ../system-config-printer.glade.h:45
+ msgid "Accepting jobs"
+ msgstr "Принимает задания"
+ 
+ #: ../system-config-printer.glade.h:46
+-#, fuzzy
+ msgid "Access Control"
+ msgstr "Управление доступом"
+ 
+@@ -1021,26 +995,23 @@
+ 
+ #: ../system-config-printer.glade.h:48
+ msgid "Allow printing for everyone except these users:"
+-msgstr "Разрешить печать всем кроме указанных пользователей:"
++msgstr "Разрешить печать всем, кроме указанных пользователей:"
+ 
+ #: ../system-config-printer.glade.h:49
+-#, fuzzy
+ msgid "Allow printing from the Internet"
+-msgstr "Разрешить печать всем кроме указанных пользователей:"
++msgstr "Разрешить печать из Интернет"
+ 
+ #: ../system-config-printer.glade.h:50
+ msgid "Allow remote administration"
+-msgstr "Разрешить удаленное управление"
++msgstr "Разрешить удалённое управление"
+ 
+ #: ../system-config-printer.glade.h:51
+ msgid "Allow users to cancel any job (not just their own)"
+-msgstr ""
+-"Разрешить пользователям снимать любые задания (не только свои собственные)"
++msgstr "Разрешить пользователям снимать любые задания (не только свои собственные)"
+ 
+ #: ../system-config-printer.glade.h:52
+-#, fuzzy
+ msgid "Authentication required"
+-msgstr "<b>Проверка подлинности</b>"
++msgstr "Требуется проверка подлинности"
+ 
+ #: ../system-config-printer.glade.h:53
+ msgid "Baud Rate"
+@@ -1056,7 +1027,7 @@
+ 
+ #: ../system-config-printer.glade.h:56
+ msgid "Browse..."
+-msgstr ""
++msgstr "Обзор..."
+ 
+ #: ../system-config-printer.glade.h:57
+ msgid "CUPS server:"
+@@ -1073,25 +1044,23 @@
+ #. Not more than 25 characters
+ #: ../system-config-printer.glade.h:61
+ msgid "Clean Print Heads"
+-msgstr ""
++msgstr "Очистка печатающих головок"
+ 
+ #: ../system-config-printer.glade.h:62
+ msgid "Columns:"
+-msgstr "Столбцы: "
++msgstr "Столбцы:"
+ 
+ #: ../system-config-printer.glade.h:63
+-#, fuzzy
+ msgid "Comments..."
+-msgstr "Комментарий"
++msgstr "Комментарии..."
+ 
+ #: ../system-config-printer.glade.h:64
+ msgid "Connect to CUPS server"
+ msgstr "Подключение к CUPS серверу"
+ 
+ #: ../system-config-printer.glade.h:65
+-#, fuzzy
+ msgid "Connect to a different print server"
+-msgstr "Подключение к CUPS серверу"
++msgstr "Подключение к другому серверу печати"
+ 
+ #: ../system-config-printer.glade.h:66
+ msgid "Connecting"
+@@ -1115,28 +1084,20 @@
+ msgstr "Копирование принтера"
+ 
+ #: ../system-config-printer.glade.h:73
+-#, fuzzy
+ msgid "Copy this printer queue"
+-msgstr "Копирование принтера"
++msgstr "Копирование этой очереди принтера"
+ 
+ #: ../system-config-printer.glade.h:74
+-#, fuzzy
+ msgid "Copyright © 2006-2007 Red Hat, Inc."
+-msgstr "Copyright 2006, 2007 Red Hat, Inc."
++msgstr "Copyright © 2006-2007 Red Hat, Inc."
+ 
+ #: ../system-config-printer.glade.h:75
+-#, fuzzy
+ msgid "Create a new printer group"
+-msgstr ""
+-"Будет создан новый принтер %s с подключением\n"
+-"%s.\n"
++msgstr "Создание новой группы принтера"
+ 
+ #: ../system-config-printer.glade.h:76
+-#, fuzzy
+ msgid "Create a new printer queue"
+-msgstr ""
+-"Будет создан новый принтер %s с подключением\n"
+-"%s.\n"
++msgstr "Создание новой очереди принтера"
+ 
+ #: ../system-config-printer.glade.h:77
+ msgid "Data Bits"
+@@ -1183,8 +1144,8 @@
+ msgstr ""
+ "По умолчанию\n"
+ "Нет\n"
+-"Нечетный\n"
+-"Четный"
++"Нечётный\n"
++"Чётный"
+ 
+ #: ../system-config-printer.glade.h:94
+ msgid ""
+@@ -1201,17 +1162,16 @@
+ "DTR/DSR (аппаратное)"
+ 
+ #: ../system-config-printer.glade.h:99
+-#, fuzzy
+ msgid "Default Printer:"
+-msgstr "Сделать принтером по умолчанию"
++msgstr "Принтер по умолчанию:"
+ 
+ #: ../system-config-printer.glade.h:100
+ msgid "Delete this printer queue"
+-msgstr ""
++msgstr "Удалить эту очередь принтера"
+ 
+ #: ../system-config-printer.glade.h:101
+ msgid "Deny printing for everyone except these users:"
+-msgstr "Запретить печать всем кроме указанных пользователей:"
++msgstr "Запретить печать всем, кроме указанных пользователей:"
+ 
+ #: ../system-config-printer.glade.h:102
+ msgid "Description:"
+@@ -1219,7 +1179,7 @@
+ 
+ #: ../system-config-printer.glade.h:103
+ msgid "Device URI"
+-msgstr "URI адрес устройства"
++msgstr "URI устройства"
+ 
+ #: ../system-config-printer.glade.h:104
+ msgid "Device URI:"
+@@ -1234,9 +1194,8 @@
+ msgstr "DirectJet"
+ 
+ #: ../system-config-printer.glade.h:108
+-#, fuzzy
+ msgid "Driver details"
+-msgstr "Драйвера"
++msgstr "О драйвере"
+ 
+ #: ../system-config-printer.glade.h:109
+ msgid "Empty"
+@@ -1244,7 +1203,7 @@
+ 
+ #: ../system-config-printer.glade.h:110
+ msgid "Enabled"
+-msgstr "Разрешен"
++msgstr "Включён"
+ 
+ #: ../system-config-printer.glade.h:111
+ msgid "Ending Banner:"
+@@ -1252,15 +1211,15 @@
+ 
+ #: ../system-config-printer.glade.h:112
+ msgid "Enter some search terms for the model of your printer."
+-msgstr ""
++msgstr "Введите несколько слов для поиска, описывающих модель вашего принтера."
+ 
+ #: ../system-config-printer.glade.h:113
+ msgid "Error Policy: \t"
+-msgstr "Политика ошибок: \t"
++msgstr "При ошибке: \t"
+ 
+ #: ../system-config-printer.glade.h:114
+ msgid "Find _Queue..."
+-msgstr ""
++msgstr "Поиск очереди..."
+ 
+ #: ../system-config-printer.glade.h:115
+ msgid "Finishings:"
+@@ -1271,13 +1230,12 @@
+ msgstr "Управление потоком"
+ 
+ #: ../system-config-printer.glade.h:117
+-msgid ""
+-"For the printer you have selected there are drivers available for download."
+-msgstr ""
++msgid "For the printer you have selected there are drivers available for download."
++msgstr "Для выбранного вами принтера есть драйверы, которые можно загрузить."
+ 
+ #: ../system-config-printer.glade.h:118
+ msgid "Gamma:"
+-msgstr "Констраст:"
++msgstr "Гамма:"
+ 
+ #: ../system-config-printer.glade.h:119
+ msgid "Goto Server"
+@@ -1285,12 +1243,11 @@
+ 
+ #: ../system-config-printer.glade.h:120
+ msgid "Hold until:"
+-msgstr ""
++msgstr "Держать до:"
+ 
+ #: ../system-config-printer.glade.h:121
+-#, fuzzy
+ msgid "Host:"
+-msgstr "Имя узла"
++msgstr "Имя узла:"
+ 
+ #: ../system-config-printer.glade.h:122
+ msgid "Hue adjustment:"
+@@ -1310,12 +1267,11 @@
+ 
+ #: ../system-config-printer.glade.h:126
+ msgid "IPP Browser"
+-msgstr ""
++msgstr "IPP браузер"
+ 
+ #: ../system-config-printer.glade.h:127
+-#, fuzzy
+ msgid "Installed Options"
+-msgstr "Устанавливаемые возможности"
++msgstr "Установленные параметры"
+ 
+ #: ../system-config-printer.glade.h:128
+ msgid "Job Options"
+@@ -1355,16 +1311,15 @@
+ 
+ #: ../system-config-printer.glade.h:140
+ msgid "License:"
+-msgstr ""
++msgstr "Лицензия:"
+ 
+ #: ../system-config-printer.glade.h:141
+ msgid "Lines per inch:"
+ msgstr "Линий на дюйм:"
+ 
+ #: ../system-config-printer.glade.h:142
+-#, fuzzy
+ msgid "Local Driver"
+-msgstr "Локальные принтеры"
++msgstr "Локальный драйвер"
+ 
+ #: ../system-config-printer.glade.h:143
+ msgid "Location:"
+@@ -1372,25 +1327,24 @@
+ 
+ #. Not more than 25 characters
+ #: ../system-config-printer.glade.h:145
+-#, fuzzy
+ msgid "Make Default"
+-msgstr "по умолчанию"
++msgstr "Выбрать по умолчанию"
+ 
+ #: ../system-config-printer.glade.h:146
+ msgid "Make and Model:"
+ msgstr "Производитель и модель:"
+ 
+ #: ../system-config-printer.glade.h:147
+-#, fuzzy
+ msgid ""
+ "May contain any printable characters except \"/\", \"#\", and space.\n"
+ "Name must be unique on the local machine!"
+ msgstr ""
+-"Может включать любые печатные символы, за исключением \"/\", \"#\" и пробела"
++"Может включать любые печатные символы, за исключением \"/\", \"#\" и пробела.\n"
++"Имя должно быть уникальным в пределах локальной машины!"
+ 
+ #: ../system-config-printer.glade.h:149
+ msgid "Media:"
+-msgstr "Носитель:"
++msgstr "Бумага:"
+ 
+ #: ../system-config-printer.glade.h:150
+ msgid "Members"
+@@ -1402,7 +1356,7 @@
+ 
+ #: ../system-config-printer.glade.h:152
+ msgid "More"
+-msgstr "Еще"
++msgstr "Ещё"
+ 
+ #: ../system-config-printer.glade.h:153
+ msgid "New Clas_s"
+@@ -1418,7 +1372,7 @@
+ 
+ #: ../system-config-printer.glade.h:158
+ msgid "No, I do not accept this license"
+-msgstr ""
++msgstr "Нет, я не согласен с лицензией"
+ 
+ #: ../system-config-printer.glade.h:159
+ msgid ""
+@@ -1456,8 +1410,8 @@
+ "Скоросшиватель\n"
+ "Обложка\n"
+ "Сшивка\n"
+-"Шитье внакидку\n"
+-"Обработка краев\n"
++"Шитьё внакидку\n"
++"Обработка краёв\n"
+ "Фальцевать\n"
+ "Обрезка\n"
+ "Собрать\n"
+@@ -1467,10 +1421,10 @@
+ "Степлер (внизу слева)\n"
+ "Степлер (вверху справа)\n"
+ "Степлер (внизу справа)\n"
+-"Обработка краев (слева)\n"
+-"Обработка краев (сверху)\n"
+-"Обработка краев (справа)\n"
+-"Обработка краев (внизу)\n"
++"Обработка краёв (слева)\n"
++"Обработка краёв (сверху)\n"
++"Обработка краёв (справа)\n"
++"Обработка краёв (внизу)\n"
+ "Двойная сшивка (слева)\n"
+ "Двойная сшивка (сверху)\n"
+ "Двойная сшивка (справа)\n"
+@@ -1492,11 +1446,11 @@
+ 
+ #: ../system-config-printer.glade.h:190
+ msgid "Operation Policy:"
+-msgstr "Политика работы:"
++msgstr "Функционирование:"
+ 
+ #: ../system-config-printer.glade.h:191
+ msgid "Orientation:"
+-msgstr "Расположение:"
++msgstr "Ориентация:"
+ 
+ #: ../system-config-printer.glade.h:192
+ msgid "Pages per side layout:"
+@@ -1504,24 +1458,23 @@
+ 
+ #: ../system-config-printer.glade.h:193
+ msgid "Pages per side:"
+-msgstr "Страниц на листе:"
++msgstr "Страниц на стороне:"
+ 
+ #: ../system-config-printer.glade.h:194
+ msgid "Parity"
+-msgstr "Четность"
++msgstr "Чётность"
+ 
+ #: ../system-config-printer.glade.h:196
+ msgid "Please Wait"
+-msgstr ""
++msgstr "Подождите"
+ 
+ #: ../system-config-printer.glade.h:197
+ msgid "Policies"
+ msgstr "Политики"
+ 
+ #: ../system-config-printer.glade.h:198
+-#, fuzzy
+ msgid "Port number:"
+-msgstr "Номер порта"
++msgstr "Номер порта:"
+ 
+ #: ../system-config-printer.glade.h:199
+ msgid ""
+@@ -1532,18 +1485,17 @@
+ msgstr ""
+ "Книжная (без поворота)\n"
+ "Альбомная (90°)\n"
+-"Альбомная перевернутая (270°)\n"
+-"Книжная перевернутая (180°)"
++"Альбомная перевёрнутая (270°)\n"
++"Книжная перевёрнутая (180°)"
+ 
+ #: ../system-config-printer.glade.h:203
+-#, fuzzy
+ msgid ""
+ "PostScript Printer Description (PPD) files can often be found on the driver "
+ "disk that comes with the printer. For PostScript printers they are often "
+ "part of the Windows<sup>®</sup> driver."
+ msgstr ""
+ "Файлы описаний PostScript принтеров (PostScript Printer Description, PPD) "
+-"могут быть найдены на диске с драйверами из поставки принтера. Для "
++"можно найти на диске с драйверами из поставки принтера. Для "
+ "PostScript принтеров они часто входят в состав Windows<sup>®</sup> драйвера."
+ 
+ #: ../system-config-printer.glade.h:204
+@@ -1552,35 +1504,32 @@
+ 
+ #. Not more than 25 characters
+ #: ../system-config-printer.glade.h:206
+-#, fuzzy
+ msgid "Print Self-Test Page"
+-msgstr "Напечатать пробную страницу"
++msgstr "Напечатать страницу самотестирования"
+ 
+ #: ../system-config-printer.glade.h:210
+ msgid "Printer State:"
+ msgstr "Состояние принтера:"
+ 
+ #: ../system-config-printer.glade.h:211
+-#, fuzzy
+ msgid "Printer model:"
+-msgstr "Имя принтера"
++msgstr "Модель принтера:"
+ 
+ #: ../system-config-printer.glade.h:212
+ msgid "Probe"
+ msgstr "Попробовать"
+ 
+ #: ../system-config-printer.glade.h:213
+-#, fuzzy
+ msgid "Provide PPD file"
+ msgstr "Укажите PPD файл"
+ 
+ #: ../system-config-printer.glade.h:214
+ msgid "Queue:"
+-msgstr ""
++msgstr "Очередь:"
+ 
+ #: ../system-config-printer.glade.h:215
+ msgid "Refresh the list of printer queues"
+-msgstr ""
++msgstr "Обновить список принтерных очередей"
+ 
+ #: ../system-config-printer.glade.h:216
+ msgid "Require encryption"
+@@ -1592,7 +1541,7 @@
+ 
+ #: ../system-config-printer.glade.h:218
+ msgid "Reset to system default"
+-msgstr "Установить по умолчанию"
++msgstr "Установить в системное значение по умолчанию"
+ 
+ #: ../system-config-printer.glade.h:219
+ msgid "Right margin:"
+@@ -1608,7 +1557,7 @@
+ 
+ #: ../system-config-printer.glade.h:222
+ msgid "SMB Browser"
+-msgstr ""
++msgstr "SMB браузер"
+ 
+ #: ../system-config-printer.glade.h:223
+ msgid "Saturation:"
+@@ -1628,19 +1577,17 @@
+ 
+ #: ../system-config-printer.glade.h:227
+ msgid "Search for a printer driver to download"
+-msgstr ""
++msgstr "Поиск загружаемого драйвера принтера"
+ 
+ #: ../system-config-printer.glade.h:228
+-#, fuzzy
+ msgid "Search terms:"
+-msgstr "Новое имя принтера"
++msgstr "Слова для поиска:"
+ 
+ #: ../system-config-printer.glade.h:229
+ msgid "Select A File"
+ msgstr "Укажите файл"
+ 
+ #: ../system-config-printer.glade.h:230
+-#, fuzzy
+ msgid "Select printer from database"
+ msgstr "Выберите принтер из базы данных"
+ 
+@@ -1654,8 +1601,7 @@
+ 
+ #: ../system-config-printer.glade.h:233
+ msgid "Share published printers connected to this system"
+-msgstr ""
+-"Открывать доступ к опубликованным принтерам, подключенным к этой системе"
++msgstr "Открывать доступ к опубликованным принтерам, подключённым к этой системе"
+ 
+ #: ../system-config-printer.glade.h:234
+ msgid "Shared"
+@@ -1663,7 +1609,7 @@
+ 
+ #: ../system-config-printer.glade.h:235
+ msgid "Show printers shared by other systems"
+-msgstr "Показывать принтеры, открытые в совместный доступ другими системами"
++msgstr "Показывать принтеры, доступные с других машин"
+ 
+ #: ../system-config-printer.glade.h:236
+ msgid "Sides:"
+@@ -1676,15 +1622,15 @@
+ "the application."
+ msgstr ""
+ "Укажите параметры задач принтера по умолчанию. Задачи, приходящие на "
+-"принтсервер будут иметь эти параметры, если они не заданы приложением."
++"сервер печати будут иметь эти параметры, если они не заданы приложением."
+ 
+ #: ../system-config-printer.glade.h:238
+ msgid "Starting Banner:"
+-msgstr "Стартовый разделитель:"
++msgstr "Начальный разделитель:"
+ 
+ #: ../system-config-printer.glade.h:239
+ msgid "Supplier:"
+-msgstr ""
++msgstr "Поставщик:"
+ 
+ #: ../system-config-printer.glade.h:240
+ msgid "System-Config-Printer"
+@@ -1699,9 +1645,9 @@
+ "printer."
+ msgstr ""
+ "База принтеров foomatic содержит различные PPD файлы описаний PostScript "
+-"принтеров (PostScript Printer Description), а также может формировать PPD "
++"принтеров (PostScript Printer Description), а также может ссформировать PPD "
+ "файлы для большого числа (не PostScript) принтеров. Обычно PPD файлы от "
+-"производителя предоставляет лучший доступ к специфическим возможностям "
++"производителя обеспечивают улучшенный доступ к специфическим возможностям "
+ "принтера."
+ 
+ #: ../system-config-printer.glade.h:242
+@@ -1710,12 +1656,17 @@
+ "be covered by their commercial support.  See the support and license terms "
+ "of the driver's supplier."
+ msgstr ""
++"Эти драйверы не являются частью вашей операционной системы, и для "
++"них нет коммерческой поддержки от поставщика ОС. О поддержке и "
++"лицензионном соглашении спрашивайте у поставщика драйвера."
+ 
+ #: ../system-config-printer.glade.h:243
+ msgid ""
+ "This driver supports additional hardware that may be installed in the "
+ "printer."
+ msgstr ""
++"Этот драйвер поддерживает настройки дополнительных "
++"возможностей принтера."
+ 
+ #: ../system-config-printer.glade.h:244
+ msgid ""
+@@ -1744,13 +1695,26 @@
+ "this program; if not, write to the Free Software Foundation, Inc., 675 Mass "
+ "Ave, Cambridge, MA 02139, USA."
+ msgstr ""
++"This program is free software; you can redistribute it and/or modify it "
++"under the terms of the GNU General Public License as published by the Free "
++"Software Foundation; either version 2 of the License, or (at your option) "
++"any later version.\n"
++"\n"
++"This program is distributed in the hope that it will be useful, but WITHOUT "
++"ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or "
++"FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for "
++"more details.\n"
++"\n"
++"You should have received a copy of the GNU General Public License along with "
++"this program; if not, write to the Free Software Foundation, Inc., 675 Mass "
++"Ave, Cambridge, MA 02139, USA."
+ 
+ #: ../system-config-printer.glade.h:250
+ msgid ""
+ "This way all current option settings will be lost. The default settings of "
+ "the new PPD will be used. "
+ msgstr ""
+-"Таким образом все текущие настройки параметров будут потеряны. Будут "
++"Таким образом, все текущие настройки параметров будут потеряны. Будут "
+ "использованы стандартные настройки нового описания PPD. "
+ 
+ #: ../system-config-printer.glade.h:251
+@@ -1769,11 +1733,11 @@
+ 
+ #: ../system-config-printer.glade.h:254
+ msgid "URI:"
+-msgstr ""
++msgstr "URI:"
+ 
+ #: ../system-config-printer.glade.h:255
+ msgid "Use the new PPD (Postscript Printer Description) as is."
+-msgstr "Использовать новый PPD (Описание PostScript принтера) как есть."
++msgstr "Использовать новый PPD (описание PostScript принтера) как есть."
+ 
+ #: ../system-config-printer.glade.h:256
+ msgid "User name:"
+@@ -1788,15 +1752,16 @@
+ "With this choice no driver download will be performed. In the next steps a "
+ "locally installed driver will be selected."
+ msgstr ""
++"Согласно выбору, загрузка драйвера выполняться не будет. На следующих "
++"этапах будет предложено выбрать драйвер из имеющихся в пакете."
+ 
+ #: ../system-config-printer.glade.h:259
+ msgid "Word wrap"
+ msgstr "Перенос слов"
+ 
+ #: ../system-config-printer.glade.h:260
+-#, fuzzy
+ msgid "Yes, I accept this license"
+-msgstr "Принимает задания"
++msgstr "Да, я согласен с лицензией"
+ 
+ #: ../system-config-printer.glade.h:261
+ msgid "_Do not apply"
+@@ -1812,7 +1777,7 @@
+ 
+ #: ../system-config-printer.glade.h:264
+ msgid "_Goto Server"
+-msgstr "_Перейти к серверу"
++msgstr "Перейти к серверу"
+ 
+ #: ../system-config-printer.glade.h:265
+ msgid "_Help"
+@@ -1820,19 +1785,19 @@
+ 
+ #: ../system-config-printer.glade.h:266
+ msgid "_Install"
+-msgstr ""
++msgstr "_Установка"
+ 
+ #: ../system-config-printer.glade.h:267
+ msgid "_Search"
+-msgstr ""
++msgstr "По_иск"
+ 
+ #: ../system-config-printer.glade.h:268
+ msgid "_Troubleshoot"
+-msgstr ""
++msgstr "Решение проблем"
+ 
+ #: ../system-config-printer.glade.h:269
+ msgid "_Verify..."
+-msgstr "_Проверить..."
++msgstr "Проверить..."
+ 
+ #: ../system-config-printer.glade.h:270
+ msgid "default"
+@@ -1847,21 +1812,27 @@
+ msgstr "точек"
+ 
+ #: ../system-config-printer.glade.h:273
+-#, fuzzy
+ msgid ""
+ "points\n"
+ "(72 points per inch)"
+-msgstr "точек (72 точки на дюйм)"
++msgstr ""
++"точек\n"
++"(72 точки на дюйм)"
+ 
+ #: ../system-config-printer.glade.h:275
+-#, fuzzy
+ msgid "system-config-printer"
+-msgstr "System-Config-Printer"
++msgstr "system-config-printer"
+ 
+ #. TRANSLATORS: Replace this string with your names, one name per line.  Thank you very much for your effort on translating system-config-printer and all our other tools!
+ #: ../system-config-printer.glade.h:277
+ msgid "translator-credits"
+ msgstr ""
++"Leonid Kanter <leon@geon.donetsk.ua>, 2003.\n"
++"Andrew Martynov <andrewm@inventa.ru>, 2004, 2005, 2006.\n"
++"Gregory Sapunkov <sapunidze@yandex.ru>, 2006.\n"
++"Yulia Poyarkova <ypoyarko@redhat.com>, 2006.\n"
++"Nikolay Sivov <bunglehead@gmail.com>, 2007.\n"
++"Yuri Kozlov <kozlov.y@gmail.com>, 2008."
+ 
+ #: ../system-config-printer.desktop.in.h:1
+ msgid "Configure printers"
+@@ -1882,7 +1853,7 @@
+ 
+ #: ../applet.py:82
+ msgid "Toner empty"
+-msgstr "Тонер закончился"
++msgstr "Закончился тонер"
+ 
+ #: ../applet.py:83
+ #, python-format
+@@ -1936,7 +1907,7 @@
+ 
+ #: ../applet.py:94
+ msgid "Ink empty"
+-msgstr "Чернила закончились."
++msgstr "Чернила закончились"
+ 
+ #: ../applet.py:95
+ #, python-format
+@@ -1945,16 +1916,16 @@
+ 
+ #: ../applet.py:96
+ msgid "Not connected?"
+-msgstr "Не подключен?"
++msgstr "Не подключён?"
+ 
+ #: ../applet.py:97
+ #, python-format
+ msgid "Printer '%s' may not be connected."
+-msgstr "Возможно принтер '%s' не подключен."
++msgstr "Возможно принтер '%s' не подключён."
+ 
+ #: ../applet.py:104
+ msgid "Printer report"
+-msgstr "Отчет принтера"
++msgstr "Отчёт принтера"
+ 
+ #: ../applet.py:106
+ msgid "Printer warning"
+@@ -2032,50 +2003,44 @@
+ msgstr "%d докум. в очереди"
+ 
+ #: ../applet.py:1026
+-#, fuzzy
+ msgid "Printer added"
+-msgstr "Имя принтера"
++msgstr "Принтер добавлен"
+ 
+ #: ../applet.py:1028
+-#, fuzzy
+ msgid "Missing printer driver"
+-msgstr "Отсутствует драйвер"
++msgstr "Отсутствует драйвер принтера"
+ 
+ #: ../applet.py:1032
+-#, fuzzy
+ msgid "Install printer driver"
+-msgstr "Отсутствует драйвер"
++msgstr "Установка драйвера принтера"
+ 
+ #: ../applet.py:1033
+ #, python-format
+ msgid "`%s' requires driver installation: %s."
+-msgstr ""
++msgstr "`%s' требует установки драйвера: %s."
+ 
+ #: ../applet.py:1036
+-#, fuzzy
+ msgid "Install"
+-msgstr "Отсутствует драйвер"
++msgstr "Установка"
+ 
+ #: ../applet.py:1039
+ #, python-format
+ msgid "`%s' is ready for printing."
+-msgstr ""
++msgstr "`%s' готов для печати."
+ 
+ #: ../applet.py:1042
+-#, fuzzy
+ msgid "Configure"
+-msgstr "Настройка принтеров"
++msgstr "Настройка"
+ 
+ #. Model mismatch
+ #: ../applet.py:1045
+ #, python-format
+ msgid "`%s' has been added, using the `%s' driver."
+-msgstr ""
++msgstr "Был добавлен `%s', используется драйвер `%s'."
+ 
+ #: ../applet.py:1049
+-#, fuzzy
+ msgid "Find driver"
+-msgstr "Отсутствует драйвер"
++msgstr "Поиск драйвера"
+ 
+ #: ../applet.glade.h:4
+ msgid "Document print status"
+@@ -2106,9 +2071,8 @@
+ msgstr "_Приостановить"
+ 
+ #: ../applet.glade.h:13
+-#, fuzzy
+ msgid "_Refresh"
+-msgstr "_Сбросить"
++msgstr "Обновить"
+ 
+ #: ../applet.glade.h:14
+ msgid "_Release"
+@@ -2119,9 +2083,8 @@
+ msgstr "_Вид"
+ 
+ #: ../print-applet.desktop.in.h:1
+-#, fuzzy
+ msgid "Print Queue Applet"
+-msgstr "Апплет очереди печати "
++msgstr "Апплет очереди печати"
+ 
+ #: ../print-applet.desktop.in.h:2
+ msgid "System tray icon for managing print jobs"
+@@ -2132,90 +2095,10 @@
+ msgstr "Отменить, приостановить, возобновить или повторить задания"
+ 
+ #: ../manage-print-jobs.desktop.in.h:2
+-#, fuzzy
+ msgid "Manage Print Jobs"
+ msgstr "Управление заданиями печати"
+ 
+ #: ../my-default-printer.desktop.in.h:2
+-#, fuzzy
+ msgid "Select default printer"
+-msgstr "Сделать принтером по умолчанию"
+-
+-#, fuzzy
+-#~ msgid ""
+-#~ "THe remote server did not accept the print job, most likely because the "
+-#~ "printer is not shared."
+-#~ msgstr ""
+-#~ "Удаленный сервер не принял задание печати, скорее всего потому, что "
+-#~ "принтер не настроен для общего доступа."
+-
+-#~ msgid "Hostname"
+-#~ msgstr "Имя узла"
+-
+-#~ msgid "Printername"
+-#~ msgstr "Имя принтера"
+-
+-#~ msgid "Default printer is %s"
+-#~ msgstr "Принтер по умолчанию - %s"
+-
+-#~ msgid "Going to create a new class %s."
+-#~ msgstr "Будет создан новый класс %s."
+-
+-#~ msgid " PPD "
+-#~ msgstr " PPD "
+-
+-#~ msgid "<b>Comment about the Printer</b>"
+-#~ msgstr "<b>Комментарий к принтеру</b>"
+-
+-#~ msgid "<b>Information about the PPD</b>"
+-#~ msgstr "<b>Информация о PPD</b>"
+-
+-#~ msgid "About"
+-#~ msgstr "О программе"
+-
+-#~ msgid "About System-Config-Printer"
+-#~ msgstr "О System-Config-Printer"
+-
+-#~ msgid "Apply"
+-#~ msgstr "Применить"
+-
+-#~ msgid "Authors"
+-#~ msgstr "Авторы"
+-
+-#~ msgid "Change PPD"
+-#~ msgstr "Изменить PPD"
+-
+-#~ msgid "Class Members"
+-#~ msgstr "Члены класса"
+-
+-#~ msgid "Comments: "
+-#~ msgstr "Комментарии: "
+-
+-#~ msgid "Copyright"
+-#~ msgstr "Copyright"
+-
+-#~ msgid "Device"
+-#~ msgstr "Устройство"
+-
+-#~ msgid "Driver"
+-#~ msgstr "Драйвер"
+-
+-#~ msgid "Make Default Printer"
+-#~ msgstr "Сделать принтером по умолчанию"
+-
+-#~ msgid "PPD"
+-#~ msgstr "PPD"
+-
+-#~ msgid "System-Config-Printer %s"
+-#~ msgstr "System-Config-Printer %s"
+-
+-#~ msgid ""
+-#~ "This PPD is provided by the manufacturer and is included with the "
+-#~ "foomatic package."
+-#~ msgstr "Данный PPD предоставлен производителем и включен в пакет foomatic."
+-
+-#~ msgid "This PPD is provided by CUPS."
+-#~ msgstr "Данный PPD предоставлен CUPS."
++msgstr "Выбор принтера по умолчанию"
+ 
+-#~ msgid "Specify default job options."
+-#~ msgstr "Укажите стандартные параметры задания."

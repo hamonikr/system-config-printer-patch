@@ -1,3 +1,10 @@
+system-config-printer (0.7.81-3) UNRELEASED; urgency=low
+
+  * 06_ru_po.patch: updated Russian translation by Yuri Kozlov.
+    Closes: #467176.
+
+ -- Josselin Mouette <joss@debian.org>  Mon, 21 Apr 2008 18:31:26 +0200
+
 system-config-printer (0.7.81-2) unstable; urgency=low
 
   * 04_de_po.patch: updated German translation by Helge Kreutzmann.
