@@ -1,9 +1,16 @@
-system-config-printer (0.7.81-3) UNRELEASED; urgency=low
+system-config-printer (0.7.81-3) unstable; urgency=low
 
   * 06_ru_po.patch: updated Russian translation by Yuri Kozlov.
     Closes: #467176.
+  * 07_es_po.patch: updated Spanish translation by Javier 
+    Fernández-Sanguino Peña. Closes: #468580.
+  * Drop dependency on python-xml. Closes: #468617.
+  * pyversions: require python 2.4.
+  * Depend on python-notify. Closes: #471943.
+  * Depend on python-dbus.
+  * Don't require python-elementtree when python version is >= 2.5.
 
- -- Josselin Mouette <joss@debian.org>  Mon, 21 Apr 2008 18:31:26 +0200
+ -- Josselin Mouette <joss@debian.org>  Mon, 21 Apr 2008 18:50:08 +0200
 
 system-config-printer (0.7.81-2) unstable; urgency=low
 
