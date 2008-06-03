@@ -1,6 +1,6 @@
 --- po/es.po.orig	2008-02-13 19:13:12.000000000 +0100
-+++ po/es.po	2008-04-21 18:53:35.528539960 +0200
-@@ -1,33 +1,41 @@
++++ po/es.po	2008-06-04 01:08:15.829686943 +0200
+@@ -1,33 +1,33 @@
 -# translation of es.po to 
 -# translation of es.po to
 -# translation of es.po to
@@ -38,14 +38,6 @@
  "Content-Transfer-Encoding: 8bit\n"
  "X-Poedit-Language: Spanish\n"
 +"X-Generator: KBabel 1.11.4\n"
-+"X-POFile-SpellExtra: Copyright ppd HPLIP grupotrabajo gz Villagr醤\n"
-+"X-POFile-SpellExtra: PostScript Distribuible TCP DTR CUPS Hat SMB Ruiz\n"
-+"X-POFile-SpellExtra: OpenPrinting h醙alo Printer XON LaserJet PPD CTS\n"
-+"X-POFile-SpellExtra: encaminador system Lab descargables DirectJet\n"
-+"X-POFile-SpellExtra: Foomatic Louze config smb Refilado printer HAL RTS\n"
-+"X-POFile-SpellExtra: DSR GZ URI foomatic Mass Duplexer Yelitza Becker LPD\n"
-+"X-POFile-SpellExtra: cups Description MA HP inst醠elo Resetear\n"
-+"X-POFile-SpellExtra: IPP Guti閞rez XOFF Inc\n"
  
  #: ../cupshelpers.py:33
  msgid "Idle"
@@ -56,7 +48,7 @@
  msgid "Processing"
  msgstr "Procesando"
  
-@@ -35,52 +43,56 @@
+@@ -35,52 +35,56 @@
  msgid "Busy"
  msgstr "Ocupado"
  
@@ -126,7 +118,7 @@
  
  #: ../system-config-printer.py:366 ../system-config-printer.py:368
  msgid "Members of this class"
-@@ -117,7 +129,7 @@
+@@ -117,7 +121,7 @@
  
  #: ../system-config-printer.py:374 ../system-config-printer.glade.h:107
  msgid "Downloadable Drivers"
@@ -135,7 +127,7 @@
  
  # ../util/printconf_tui.py:508 ../util/printconf_tui.py:566
  # ../util/printconf_tui.py:1147 ../util/printconf_tui.py:1206
-@@ -131,12 +143,12 @@
+@@ -131,12 +135,12 @@
  
  #: ../system-config-printer.py:402
  msgid "Automatic rotation"
@@ -150,7 +142,7 @@
  
  #: ../system-config-printer.py:559
  #, python-format
-@@ -156,18 +168,18 @@
+@@ -156,18 +160,18 @@
  
  #: ../system-config-printer.py:673
  msgid "Local Classes"
@@ -172,7 +164,7 @@
  
  #: ../system-config-printer.py:783
  #, python-format
-@@ -180,7 +192,7 @@
+@@ -180,7 +184,7 @@
  
  #: ../system-config-printer.py:1202
  msgid "Installable Options"
@@ -181,7 +173,7 @@
  
  #: ../system-config-printer.py:1203 ../system-config-printer.glade.h:209
  msgid "Printer Options"
-@@ -192,21 +204,22 @@
+@@ -192,21 +196,22 @@
  "Changes can only be applied after\n"
  "these conflicts are resolved."
  msgstr ""
@@ -210,7 +202,7 @@
  msgid "CUPS server error"
  msgstr "Error del servidor CUPS"
  
-@@ -215,7 +228,7 @@
+@@ -215,7 +220,7 @@
  # ../util/printconf_gui.py:1812 ../util/printconf_gui.py:1829
  # ../util/printconf_gui.py:1863 ../util/printconf_tui.py:1805
  # ../util/printconf_gui.py:1942 ../util/printconf_tui.py:1834
@@ -219,7 +211,7 @@
  #, python-format
  msgid "There was an error during the CUPS operation: '%s'."
  msgstr "Se ha producido un error en CUPS durante la operaci贸n: '%s'."
-@@ -224,13 +237,11 @@
+@@ -224,13 +229,11 @@
  msgid ""
  "The password may be incorrect, or the server may be configured to deny "
  "remote administration."
@@ -235,7 +227,7 @@
  
  #: ../system-config-printer.py:1265
  msgid "Not found"
-@@ -238,11 +249,11 @@
+@@ -238,11 +241,11 @@
  
  #: ../system-config-printer.py:1267
  msgid "Request timeout"
@@ -249,7 +241,7 @@
  
  #: ../system-config-printer.py:1271
  msgid "Server error"
-@@ -256,15 +267,15 @@
+@@ -256,15 +259,15 @@
  #: ../system-config-printer.py:1279
  #, python-format
  msgid "There was an HTTP error: %s."
@@ -268,7 +260,7 @@
  
  #: ../system-config-printer.py:1518 ../system-config-printer.py:1552
  msgid "Submitted"
-@@ -284,14 +295,12 @@
+@@ -284,14 +287,12 @@
  msgid ""
  "The remote server did not accept the print job, most likely because the "
  "printer is not shared."
@@ -286,7 +278,7 @@
  
  #: ../system-config-printer.py:1649 ../system-config-printer.py:1791
  msgid "Error"
-@@ -308,26 +317,26 @@
+@@ -308,26 +309,26 @@
  
  #: ../system-config-printer.py:1703
  msgid "This is the default printer"
@@ -320,7 +312,7 @@
  
  # ../util/printconf_tui.py:1740
  # ../util/printconf_tui.py:1830
-@@ -335,7 +344,7 @@
+@@ -335,7 +336,7 @@
  #: ../system-config-printer.py:2066
  #, python-format
  msgid "Really delete printer %s?"
@@ -329,7 +321,7 @@
  
  # ../util/printconf_tui.py:1740
  # ../util/printconf_tui.py:1830
-@@ -343,7 +352,7 @@
+@@ -343,7 +344,7 @@
  #: ../system-config-printer.py:2068
  #, python-format
  msgid "Really delete class %s?"
@@ -338,7 +330,7 @@
  
  #. SMB list columns
  #: ../system-config-printer.py:2345
-@@ -357,46 +366,46 @@
+@@ -357,46 +358,46 @@
  #. IPP list columns
  #: ../system-config-printer.py:2367
  msgid "Queue"
@@ -395,7 +387,7 @@
  
  #: ../system-config-printer.py:2551 ../system-config-printer.py:2775
  #: ../system-config-printer.py:2941 ../system-config-printer.py:3764
-@@ -420,12 +429,11 @@
+@@ -420,12 +421,11 @@
  
  #: ../system-config-printer.py:3162
  msgid " (Current)"
@@ -410,7 +402,7 @@
  
  #: ../system-config-printer.py:3360 ../system-config-printer.py:3427
  msgid "Verified"
-@@ -445,15 +453,15 @@
+@@ -445,15 +445,15 @@
  
  #: ../system-config-printer.py:3483
  msgid "It is not possible to obtain a list of queues from this host."
@@ -429,7 +421,7 @@
  
  #: ../system-config-printer.py:3545
  msgid "A printer connected to the parallel port."
-@@ -484,42 +492,39 @@
+@@ -484,42 +484,39 @@
  "Impresora local detectada por la Capa de Abstracci贸n de Hardware (HAL)."
  
  #: ../system-config-printer.py:3787
@@ -480,7 +472,7 @@
  
  #. Foomatic database problem of some sort.
  #: ../system-config-printer.py:4033
-@@ -529,7 +534,7 @@
+@@ -529,7 +526,7 @@
  #: ../system-config-printer.py:4034
  #, python-format
  msgid "The '%s' driver cannot be used with printer '%s %s'."
@@ -489,7 +481,7 @@
  
  #. This printer references some XML that is not
  #. installed by default.  Point the user at the
-@@ -542,7 +547,7 @@
+@@ -542,7 +539,7 @@
  #. This error came from trying to open the PPD file.
  #: ../system-config-printer.py:4051
  msgid "PPD error"
@@ -498,7 +490,7 @@
  
  #: ../system-config-printer.py:4053
  msgid "Failed to read PPD file.  Possible reason follows:"
-@@ -551,27 +556,26 @@
+@@ -551,27 +548,26 @@
  #. Failed to get PPD downloaded from OpenPrinting XXX
  #: ../system-config-printer.py:4064
  msgid "Downloadable drivers"
@@ -531,7 +523,7 @@
  
  #: ../system-config-printer.py:4352
  msgid "Install driver"
-@@ -580,7 +584,7 @@
+@@ -580,7 +576,7 @@
  #: ../system-config-printer.py:4353
  #, python-format
  msgid "Printer '%s' requires the %s package but it is not currently installed."
@@ -540,7 +532,7 @@
  
  #: ../system-config-printer.py:4360
  msgid "Missing driver"
-@@ -595,320 +599,6 @@
+@@ -595,320 +591,6 @@
  "La impresora '%s' necesita el paquete '%s' que no est谩 instalado. Por favor, "
  "inst谩lelo antes de usar esta impresora."
  
@@ -861,7 +853,7 @@
  #: ../system-config-printer.glade.h:1
  msgid " "
  msgstr " "
-@@ -938,11 +628,11 @@
+@@ -938,11 +620,11 @@
  # ../gui/printconf-gui.glade.str:88
  #: ../system-config-printer.glade.h:9
  msgid "<b>Basic Server Settings</b>"
@@ -875,7 +867,7 @@
  
  #: ../system-config-printer.glade.h:11
  msgid "<b>Description</b>"
-@@ -953,32 +643,28 @@
+@@ -953,32 +635,28 @@
  msgstr "<b>Descripci贸n</b> (opcional)"
  
  #: ../system-config-printer.glade.h:13
@@ -913,7 +905,7 @@
  
  #: ../system-config-printer.glade.h:19
  msgid "<b>Location of the LPD network printer</b>"
-@@ -993,13 +679,12 @@
+@@ -993,13 +671,12 @@
  msgstr "<b>Ubicaci贸n</b> (opcional)"
  
  #: ../system-config-printer.glade.h:22
@@ -929,7 +921,7 @@
  
  #: ../system-config-printer.glade.h:24
  msgid "<b>Policies</b>"
-@@ -1019,12 +704,11 @@
+@@ -1019,12 +696,11 @@
  
  #: ../system-config-printer.glade.h:28
  msgid "<b>Select Connection</b>"
@@ -944,7 +936,7 @@
  
  #: ../system-config-printer.glade.h:30
  msgid "<b>Settings of the serial port</b>"
-@@ -1040,11 +724,11 @@
+@@ -1040,11 +716,11 @@
  
  #: ../system-config-printer.glade.h:33
  msgid "<b>Tests and Maintenance</b>"
@@ -958,7 +950,7 @@
  
  #: ../system-config-printer.glade.h:35
  msgid ""
-@@ -1064,7 +748,7 @@
+@@ -1064,7 +740,7 @@
  "\n"
  "Any changes you have made will be lost unless you apply them."
  msgstr ""
@@ -967,7 +959,7 @@
  "\n"
  "Cualquier cambio que haya hecho se perder谩 a menos que los aplique."
  
-@@ -1077,26 +761,24 @@
+@@ -1077,26 +753,24 @@
  "\n"
  
  #: ../system-config-printer.glade.h:44
@@ -997,7 +989,7 @@
  
  #: ../system-config-printer.glade.h:49
  msgid "Allow printing from the Internet"
-@@ -1112,9 +794,8 @@
+@@ -1112,9 +786,8 @@
  "Permitir que los usuarios cancelen cualquier trabajo (no solamente el suyo)"
  
  #: ../system-config-printer.glade.h:52
@@ -1008,7 +1000,7 @@
  
  #: ../system-config-printer.glade.h:53
  msgid "Baud Rate"
-@@ -1130,7 +811,7 @@
+@@ -1130,7 +803,7 @@
  
  #: ../system-config-printer.glade.h:56
  msgid "Browse..."
@@ -1017,7 +1009,7 @@
  
  #: ../system-config-printer.glade.h:57
  msgid "CUPS server:"
-@@ -1147,25 +828,23 @@
+@@ -1147,25 +820,23 @@
  #. Not more than 25 characters
  #: ../system-config-printer.glade.h:61
  msgid "Clean Print Heads"
@@ -1046,7 +1038,7 @@
  
  #: ../system-config-printer.glade.h:66
  msgid "Connecting"
-@@ -1177,7 +856,7 @@
+@@ -1177,7 +848,7 @@
  "Connecting to Server:\n"
  "%s\n"
  msgstr ""
@@ -1055,7 +1047,7 @@
  "%s\n"
  
  #: ../system-config-printer.glade.h:71
-@@ -1189,34 +868,26 @@
+@@ -1189,34 +860,26 @@
  # ../gui/printconf-gui.glade.str:153
  #: ../system-config-printer.glade.h:72
  msgid "Copy Printer"
@@ -1095,7 +1087,7 @@
  
  #: ../system-config-printer.glade.h:77
  msgid "Data Bits"
-@@ -1234,7 +905,7 @@
+@@ -1234,7 +897,7 @@
  "57600\n"
  "115200"
  msgstr ""
@@ -1104,7 +1096,7 @@
  "1200\n"
  "2400\n"
  "4800\n"
-@@ -1250,7 +921,7 @@
+@@ -1250,7 +913,7 @@
  "8\n"
  "7"
  msgstr ""
@@ -1113,7 +1105,7 @@
  "8\n"
  "7"
  
-@@ -1261,7 +932,7 @@
+@@ -1261,7 +924,7 @@
  "Odd\n"
  "Even"
  msgstr ""
@@ -1122,7 +1114,7 @@
  "Ninguna\n"
  "Impar\n"
  "Par"
-@@ -1274,24 +945,23 @@
+@@ -1274,24 +937,23 @@
  "RTS/CTS (Hardware)\n"
  "DTR/DSR (Hardware)"
  msgstr ""
@@ -1151,7 +1143,7 @@
  
  #: ../system-config-printer.glade.h:102
  msgid "Description:"
-@@ -1299,11 +969,11 @@
+@@ -1299,11 +961,11 @@
  
  #: ../system-config-printer.glade.h:103
  msgid "Device URI"
@@ -1165,7 +1157,7 @@
  
  #: ../system-config-printer.glade.h:105
  msgid "Device description."
-@@ -1317,9 +987,8 @@
+@@ -1317,9 +979,8 @@
  # ../gui/printconf-gui.glade.str:85 ../util/printconf_tui.py:812
  # ../gui/printconf-gui.glade.str:85 ../util/printconf_tui.py:805
  #: ../system-config-printer.glade.h:108
@@ -1176,7 +1168,7 @@
  
  #: ../system-config-printer.glade.h:109
  msgid "Empty"
-@@ -1331,11 +1000,11 @@
+@@ -1331,11 +992,11 @@
  
  #: ../system-config-printer.glade.h:111
  msgid "Ending Banner:"
@@ -1190,7 +1182,7 @@
  
  #: ../system-config-printer.glade.h:113
  msgid "Error Policy: \t"
-@@ -1343,7 +1012,7 @@
+@@ -1343,7 +1004,7 @@
  
  #: ../system-config-printer.glade.h:114
  msgid "Find _Queue..."
@@ -1199,7 +1191,7 @@
  
  #: ../system-config-printer.glade.h:115
  msgid "Finishings:"
-@@ -1351,12 +1020,12 @@
+@@ -1351,12 +1012,12 @@
  
  #: ../system-config-printer.glade.h:116
  msgid "Flow Control"
@@ -1214,7 +1206,7 @@
  
  #: ../system-config-printer.glade.h:118
  msgid "Gamma:"
-@@ -1364,16 +1033,15 @@
+@@ -1364,16 +1025,15 @@
  
  #: ../system-config-printer.glade.h:119
  msgid "Goto Server"
@@ -1233,7 +1225,7 @@
  
  #: ../system-config-printer.glade.h:122
  msgid "Hue adjustment:"
-@@ -1381,11 +1049,11 @@
+@@ -1381,11 +1041,11 @@
  
  #: ../system-config-printer.glade.h:123
  msgid "Human-readable description such as \"HP LaserJet with Duplexer\""
@@ -1247,7 +1239,7 @@
  
  #: ../system-config-printer.glade.h:125
  msgid "IPP"
-@@ -1393,16 +1061,15 @@
+@@ -1393,16 +1053,15 @@
  
  #: ../system-config-printer.glade.h:126
  msgid "IPP Browser"
@@ -1267,7 +1259,7 @@
  
  #: ../system-config-printer.glade.h:129
  msgid "Job priority:"
-@@ -1431,14 +1098,14 @@
+@@ -1431,14 +1090,14 @@
  "Izquierda a derecha, abajo a arriba\n"
  "Derecha a izquierda, arriba a abajo\n"
  "Derecha a izquierda, abajo a arriba\n"
@@ -1286,7 +1278,7 @@
  
  #: ../system-config-printer.glade.h:141
  msgid "Lines per inch:"
-@@ -1448,9 +1115,8 @@
+@@ -1448,9 +1107,8 @@
  # ../gui/printconf-gui.glade.str:138
  # ../gui/printconf-gui.glade.str:138
  #: ../system-config-printer.glade.h:142
@@ -1297,7 +1289,7 @@
  
  #: ../system-config-printer.glade.h:143
  msgid "Location:"
-@@ -1458,21 +1124,20 @@
+@@ -1458,21 +1116,20 @@
  
  #. Not more than 25 characters
  #: ../system-config-printer.glade.h:145
@@ -1323,7 +1315,7 @@
  
  #: ../system-config-printer.glade.h:149
  msgid "Media:"
-@@ -1492,14 +1157,14 @@
+@@ -1492,14 +1149,14 @@
  
  #: ../system-config-printer.glade.h:153
  msgid "New Clas_s"
@@ -1340,7 +1332,7 @@
  
  # ../gui/printconf-gui.glade.str:141
  # ../gui/printconf-gui.glade.str:153
-@@ -1510,7 +1175,7 @@
+@@ -1510,7 +1167,7 @@
  
  #: ../system-config-printer.glade.h:158
  msgid "No, I do not accept this license"
@@ -1349,7 +1341,7 @@
  
  #: ../system-config-printer.glade.h:159
  msgid ""
-@@ -1555,7 +1220,7 @@
+@@ -1555,7 +1212,7 @@
  "Bale\n"
  "Creador de folletos\n"
  "Desplazamiento del trabajo\n"
@@ -1358,7 +1350,7 @@
  "Abrochar (abajo izquierda)\n"
  "Abrochar (arriba derecha)\n"
  "Abrochar (abajo derecha)\n"
-@@ -1578,13 +1243,13 @@
+@@ -1578,13 +1235,13 @@
  "Two-sided (long edge)\n"
  "Two-sided (short edge)"
  msgstr ""
@@ -1376,7 +1368,7 @@
  
  #: ../system-config-printer.glade.h:191
  msgid "Orientation:"
-@@ -1602,18 +1267,22 @@
+@@ -1602,18 +1259,22 @@
  msgid "Parity"
  msgstr "Paridad"
  
@@ -1402,7 +1394,7 @@
  
  #: ../system-config-printer.glade.h:199
  msgid ""
-@@ -1623,21 +1292,16 @@
+@@ -1623,21 +1284,16 @@
  "Reverse portrait (180掳)"
  msgstr ""
  "Vertical (sin rotaci贸n)\n"
@@ -1427,7 +1419,7 @@
  
  #: ../system-config-printer.glade.h:204
  msgid "Pretty print"
-@@ -1645,42 +1309,39 @@
+@@ -1645,42 +1301,39 @@
  
  #. Not more than 25 characters
  #: ../system-config-printer.glade.h:206
@@ -1476,7 +1468,7 @@
  
  #: ../system-config-printer.glade.h:217
  msgid "Reset"
-@@ -1688,11 +1349,11 @@
+@@ -1688,11 +1341,11 @@
  
  #: ../system-config-printer.glade.h:218
  msgid "Reset to system default"
@@ -1490,7 +1482,7 @@
  
  #: ../system-config-printer.glade.h:220
  msgid "SCSI"
-@@ -1704,11 +1365,11 @@
+@@ -1704,11 +1357,11 @@
  
  #: ../system-config-printer.glade.h:222
  msgid "SMB Browser"
@@ -1504,7 +1496,7 @@
  
  #: ../system-config-printer.glade.h:224
  msgid "Save debugging information for troubleshooting"
-@@ -1724,24 +1385,22 @@
+@@ -1724,24 +1377,22 @@
  
  #: ../system-config-printer.glade.h:227
  msgid "Search for a printer driver to download"
@@ -1533,7 +1525,7 @@
  
  #: ../system-config-printer.glade.h:231
  msgid "Serial"
-@@ -1764,7 +1423,7 @@
+@@ -1764,7 +1415,7 @@
  
  #: ../system-config-printer.glade.h:235
  msgid "Show printers shared by other systems"
@@ -1542,7 +1534,7 @@
  
  #: ../system-config-printer.glade.h:236
  msgid "Sides:"
-@@ -1775,10 +1434,7 @@
+@@ -1775,10 +1426,7 @@
  "Specify the default job options for this printer.  Jobs arriving at this "
  "print server will have these options added if they are not already set by "
  "the application."
@@ -1554,7 +1546,7 @@
  
  #: ../system-config-printer.glade.h:238
  msgid "Starting Banner:"
-@@ -1786,8 +1442,9 @@
+@@ -1786,8 +1434,9 @@
  
  #: ../system-config-printer.glade.h:239
  msgid "Supplier:"
@@ -1565,7 +1557,7 @@
  #: ../system-config-printer.glade.h:240
  msgid "System-Config-Printer"
  msgstr "Sistema-Configurar-Impresora"
-@@ -1799,26 +1456,22 @@
+@@ -1799,26 +1448,22 @@
  "for a large number of (non PostScript) printers. But in general manufacturer "
  "provided PPD files provide better access to the specific features of the "
  "printer."
@@ -1596,7 +1588,7 @@
  
  #: ../system-config-printer.glade.h:244
  msgid ""
-@@ -1848,6 +1501,19 @@
+@@ -1848,6 +1493,19 @@
  "this program; if not, write to the Free Software Foundation, Inc., 675 Mass "
  "Ave, Cambridge, MA 02139, USA."
  msgstr ""
@@ -1616,7 +1608,7 @@
  
  #: ../system-config-printer.glade.h:250
  msgid ""
-@@ -1865,7 +1531,7 @@
+@@ -1865,7 +1523,7 @@
  
  #: ../system-config-printer.glade.h:252
  msgid "Top margin:"
@@ -1625,7 +1617,7 @@
  
  #: ../system-config-printer.glade.h:253
  msgid "Try to copy the option settings over from the old PPD. "
-@@ -1874,7 +1540,7 @@
+@@ -1874,7 +1532,7 @@
  
  #: ../system-config-printer.glade.h:254
  msgid "URI:"
@@ -1634,7 +1626,7 @@
  
  #: ../system-config-printer.glade.h:255
  msgid "Use the new PPD (Postscript Printer Description) as is."
-@@ -1887,22 +1553,23 @@
+@@ -1887,22 +1545,23 @@
  
  #: ../system-config-printer.glade.h:257
  msgid "Username:"
@@ -1661,7 +1653,7 @@
  
  #: ../system-config-printer.glade.h:261
  msgid "_Do not apply"
-@@ -1918,7 +1585,7 @@
+@@ -1918,7 +1577,7 @@
  
  #: ../system-config-printer.glade.h:264
  msgid "_Goto Server"
@@ -1670,7 +1662,7 @@
  
  #: ../system-config-printer.glade.h:265
  msgid "_Help"
-@@ -1929,13 +1596,12 @@
+@@ -1929,13 +1588,12 @@
  msgstr "_Instalar"
  
  #: ../system-config-printer.glade.h:267
@@ -1686,7 +1678,7 @@
  
  #: ../system-config-printer.glade.h:269
  msgid "_Verify..."
-@@ -1943,7 +1609,7 @@
+@@ -1943,7 +1601,7 @@
  
  #: ../system-config-printer.glade.h:270
  msgid "default"
@@ -1695,7 +1687,7 @@
  
  #: ../system-config-printer.glade.h:271
  msgid "none"
-@@ -1954,21 +1620,27 @@
+@@ -1954,21 +1612,27 @@
  msgstr "puntos"
  
  #: ../system-config-printer.glade.h:273
@@ -1727,7 +1719,7 @@
  
  #: ../system-config-printer.desktop.in.h:1
  msgid "Configure printers"
-@@ -1981,165 +1653,512 @@
+@@ -1981,165 +1645,512 @@
  msgid "Printing"
  msgstr "Imprimiendo"
  
@@ -2297,7 +2289,7 @@
  #, python-format
  msgid "%d documents queued"
  msgstr "%d documentos en la cola"
-@@ -2147,45 +2166,43 @@
+@@ -2147,45 +2158,43 @@
  # ../gui/printconf-gui.glade.str:141
  # ../gui/printconf-gui.glade.str:153
  # ../gui/printconf-gui.glade.str:153
@@ -2358,7 +2350,7 @@
  msgid "Find driver"
  msgstr "Buscar controlador"
  
-@@ -2195,7 +2212,7 @@
+@@ -2195,7 +2204,7 @@
  
  #: ../applet.glade.h:6
  msgid "Printer status"
@@ -2367,7 +2359,7 @@
  
  #: ../applet.glade.h:7
  msgid "Re_print"
-@@ -2218,9 +2235,8 @@
+@@ -2218,9 +2227,8 @@
  msgstr "_Mantener"
  
  #: ../applet.glade.h:13
@@ -2378,7 +2370,7 @@
  
  #: ../applet.glade.h:14
  msgid "_Release"
-@@ -2232,11 +2248,11 @@
+@@ -2232,11 +2240,11 @@
  
  #: ../print-applet.desktop.in.h:1
  msgid "Print Queue Applet"
@@ -2392,7 +2384,7 @@
  
  #: ../manage-print-jobs.desktop.in.h:1
  msgid "Cancel, pause, resume or reprint jobs"
-@@ -2250,95 +2266,17 @@
+@@ -2250,95 +2258,17 @@
  msgid "Select default printer"
  msgstr "Elegir impresora predeterminada"
  

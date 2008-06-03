@@ -1,3 +1,10 @@
+system-config-printer (0.7.81-4) unstable; urgency=low
+
+  * 07_es_po.patch: remove ISO8859 encoded text, leading to a crash when 
+    using a Spanish local. Closes: #484136.
+
+ -- Josselin Mouette <joss@debian.org>  Wed, 04 Jun 2008 01:11:21 +0200
+
 system-config-printer (0.7.81-3) unstable; urgency=low
 
   * 06_ru_po.patch: updated Russian translation by Yuri Kozlov.
