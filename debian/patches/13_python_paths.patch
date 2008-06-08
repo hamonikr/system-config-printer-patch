@@ -1,0 +1,152 @@
+diff -pruN system-config-printer-1.0.0.orig/applet.py system-config-printer-1.0.0/applet.py
+--- system-config-printer-1.0.0.orig/applet.py	2008-05-27 15:13:13.000000000 +0200
++++ system-config-printer-1.0.0/applet.py	2008-06-08 14:19:04.598244819 +0200
+@@ -19,9 +19,10 @@
+ 
+ import cups
+ import sys
++sys.path.append("/usr/share/system-config-printer")
+ import statereason
+ from statereason import StateReason
+-from debug import *
++from cupsutils.debug import *
+ import pprint
+ 
+ import dbus
+@@ -124,11 +125,11 @@ class NewPrinterNotification(dbus.servic
+         os.unlink (filename)
+         import sys
+         sys.path.append (APPDIR)
+-        import cupshelpers
++        from cupsutils import cupshelpers
+         (missing_pkgs,
+          missing_exes) = cupshelpers.missingPackagesAndExecutables (ppd)
+ 
+-        from ppds import ppdMakeModelSplit
++        from cupsutils.ppds import ppdMakeModelSplit
+         (make, model) = ppdMakeModelSplit (printer['printer-make-and-model'])
+         driver = make + " " + model
+         if status < self.STATUS_GENERIC_DRIVER:
+diff -pruN system-config-printer-1.0.0.orig/authconn.py system-config-printer-1.0.0/authconn.py
+--- system-config-printer-1.0.0.orig/authconn.py	2008-05-27 11:42:33.000000000 +0200
++++ system-config-printer-1.0.0/authconn.py	2008-06-08 14:20:20.021282175 +0200
+@@ -19,7 +19,7 @@
+ 
+ import cups
+ import gtk
+-from debug import *
++from cupsutils.debug import *
+ 
+ _ = lambda x: x
+ def set_gettext_function (fn):
+diff -pruN system-config-printer-1.0.0.orig/contextmenu.py system-config-printer-1.0.0/contextmenu.py
+--- system-config-printer-1.0.0.orig/contextmenu.py	2008-05-27 17:05:41.000000000 +0200
++++ system-config-printer-1.0.0/contextmenu.py	2008-06-08 14:20:28.470253692 +0200
+@@ -23,7 +23,7 @@
+ import cups
+ import errordialogs
+ import jobviewer
+-from debug import *
++from cupsutils.debug import *
+ 
+ _ = lambda x: x
+ def set_gettext_function (x):
+diff -pruN system-config-printer-1.0.0.orig/jobviewer.py system-config-printer-1.0.0/jobviewer.py
+--- system-config-printer-1.0.0.orig/jobviewer.py	2008-05-27 17:42:10.000000000 +0200
++++ system-config-printer-1.0.0/jobviewer.py	2008-06-08 14:20:57.317282644 +0200
+@@ -33,7 +33,7 @@ import pango
+ import sys
+ import time
+ 
+-from debug import *
++from cupsutils.debug import *
+ import config
+ import statereason
+ import errordialogs
+diff -pruN system-config-printer-1.0.0.orig/monitor.py system-config-printer-1.0.0/monitor.py
+--- system-config-printer-1.0.0.orig/monitor.py	2008-05-27 19:09:01.000000000 +0200
++++ system-config-printer-1.0.0/monitor.py	2008-06-08 14:21:05.934257916 +0200
+@@ -22,7 +22,7 @@ import dbus
+ import dbus.glib
+ import gobject
+ import time
+-from debug import *
++from cupsutils.debug import *
+ import pprint
+ 
+ global _
+diff -pruN system-config-printer-1.0.0.orig/pysmb.py system-config-printer-1.0.0/pysmb.py
+--- system-config-printer-1.0.0.orig/pysmb.py	2008-05-27 11:42:33.000000000 +0200
++++ system-config-printer-1.0.0/pysmb.py	2008-06-08 14:21:16.213282065 +0200
+@@ -30,7 +30,7 @@ import gobject
+ import gtk
+ import os
+ import pwd
+-from debug import *
++from cupsutils.debug import *
+ 
+ class AuthContext:
+     def __init__ (self, parent=None, workgroup='', user='', passwd=''):
+diff -pruN system-config-printer-1.0.0.orig/system-config-printer.py system-config-printer-1.0.0/system-config-printer.py
+--- system-config-printer-1.0.0.orig/system-config-printer.py	2008-05-27 17:24:28.000000000 +0200
++++ system-config-printer-1.0.0/system-config-printer.py	2008-06-08 14:39:49.353285194 +0200
+@@ -20,9 +20,6 @@
+ ## along with this program; if not, write to the Free Software
+ ## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ 
+-# config is generated from config.py.in by configure
+-import config
+-
+ import errno
+ import sys, os, tempfile, time, traceback, re, httplib
+ import signal, thread
+@@ -54,16 +51,21 @@ if len(sys.argv)>1 and sys.argv[1] == '-
+ import cups
+ cups.require ("1.9.27")
+ 
++sys.path.append("/usr/share/system-config-printer")
++# config is generated from config.py.in by configure
++import config
++
+ import pysmb
+-import cupshelpers, options
++from cupsutils import cupshelpers
++import options
+ import gobject # for TYPE_STRING and TYPE_PYOBJECT
+ from optionwidgets import OptionWidget
+-from debug import *
+-import ppds
++from cupsutils.debug import *
++from cupsutils import ppds
+ import probe_printer
+ import gtk_label_autowrap
+ from gtk_treeviewtooltips import TreeViewTooltips
+-import openprinting
++from cupsutils import openprinting
+ import urllib
+ import troubleshoot
+ import contextmenu
+diff -pruN system-config-printer-1.0.0.orig/troubleshoot/base.py system-config-printer-1.0.0/troubleshoot/base.py
+--- system-config-printer-1.0.0.orig/troubleshoot/base.py	2008-05-27 11:42:33.000000000 +0200
++++ system-config-printer-1.0.0/troubleshoot/base.py	2008-06-08 14:42:41.638421783 +0200
+@@ -21,7 +21,7 @@
+ 
+ import gtk
+ from gettext import gettext as _
+-from debug import *
++from cupsutils.debug import *
+ 
+ TEXT_start_print_admin_tool = _("To start this tool, select "
+                                 "System->Administration->Printing "
+diff -pruN system-config-printer-1.0.0.orig/troubleshoot/CheckPPDSanity.py system-config-printer-1.0.0/troubleshoot/CheckPPDSanity.py
+--- system-config-printer-1.0.0.orig/troubleshoot/CheckPPDSanity.py	2008-05-23 13:07:16.000000000 +0200
++++ system-config-printer-1.0.0/troubleshoot/CheckPPDSanity.py	2008-06-08 14:42:16.869281082 +0200
+@@ -20,7 +20,7 @@
+ ## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ 
+ import cups
+-import cupshelpers
++from cupsutils import cupshelpers
+ import os
+ import subprocess
+ from base import *
