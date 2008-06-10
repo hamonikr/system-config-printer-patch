@@ -3,6 +3,8 @@ system-config-printer (1.0.0-2) UNRELEASED; urgency=low
   * 07_es_po.patch: updated Spanish translation from Javier 
     Fernández-Sanguino Peña.
   * 05_vi_po.patch: updated Vietnamese translation from Clytie Siddall.
+  * 06_ru_po.patch: updated Russian translation from Yuri Kozlov. 
+    Closes: #485654.
 
  -- Josselin Mouette <joss@debian.org>  Sun, 08 Jun 2008 18:03:13 +0200
 
