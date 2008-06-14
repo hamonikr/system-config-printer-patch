@@ -24,6 +24,7 @@ Depends: ${python:Depends},
          python-gnome2,
          python-notify,
          gksu
+Recommends: hal-cups-utils
 Description: graphical interface to configure the printing system
  System-config-printer is a GUI written in Python using GTK+ to 
  configure a CUPS server. Its primary use is to configure the printing 
