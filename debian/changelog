@@ -1,3 +1,63 @@
+system-config-printer (1.0.0-2) unstable; urgency=low
+
+  * Switch to quilt for patch management; build-depend on quilt.
+  * Merge all translation updates in 02_translations.patch.
+  * New translations:
+    + Spanish (Javier Fernández-Sanguino Peña)
+    + Vietnamese (Clytie Siddall)
+    + Russian (Yuri Kozlov), closes: #485654
+    + German (Helge Kreutzmann), closes: #485982
+    + Basque (Piarres Beobide)
+    + simplified Chinese (Deng Xiyue), closes: #486198
+    + Turkish (Mert Dirik).
+    + Czech (Martin Šín), closes: #486379.
+  * Recommend hal-cups-utils.
+  * 15_close_shortcut.patch: use gtk-close instead of gtk-quit, so that 
+    the default shortcuts to close a window are used.
+  * 16_dont_monitor_session.patch: don’t blindly listen to any signal 
+    that goes through the session bus. Gnome-session will know when to 
+    kill the applet. Closes: #486674, thanks Michal Čihař.
+  * 17_new_printer_notification.patch: allow anyone to listen to the new 
+    printer notification dbus signal. Closes: #486613.
+  * 18_debian_packages.patch:
+    + List the correct Debian packages that provide the given programs.
+    + Use gksu+synaptic to install the packages.
+    + Launch gksu+s-c-p to configure the printers from the applet.
+  * Install the new debutils.py file.
+  * Recommend synaptic.
+  * 13_python_paths.patch: also fix the shebangs.
+  * 30_install_traceback.patch, 31_browse_hang.patch, 
+    32_pycups_traceback.patch, 33_dont_strip_Printer.patch: stolen from 
+    upstream’s git tree. Fix a few crashers.
+  * Upload to unstable; drop check-dist include.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 22 Jun 2008 19:13:39 +0200
+
+system-config-printer (1.0.0-1) experimental; urgency=low
+
+  * New upstream release.
+  * Update watch file and get-orig-source URL.
+  * Target at experimental; include check-dist.mk.
+  * 02_fr_po.patch: updated translations for the new version.
+  * 04_de_po.patch: dropped, included upstream.
+  * 05_vi_po.patch, 06_ru_po.patch, 07_es_po.patch: updated to apply 
+    cleanly.
+  * 08_stock_icons.patch: update for the new version.
+  * 12_remove_redhat.patch: added; remove redhat- from the .desktop 
+    names and X-RedHat-Base from the categories.
+  * postinst: remove the old redhat-print-applet.desktop file.
+  * Remove useless README.Debian.
+  * Split utility modules in a python-cupsutils package, making them 
+    public. They will be used by hal-cups-utils.
+  * Remove the wrapper scripts in /usr/bin, put the python scripts 
+    directly.
+  * 13_python_paths.patch: new patch, modify python search paths and 
+    imports according to these changes.
+  * 11_use_gksu.patch: disable startup notification, which is broken by 
+    gksu.
+
+ -- Josselin Mouette <joss@debian.org>  Sun, 08 Jun 2008 13:18:20 +0200
+
 system-config-printer (0.7.81-4) unstable; urgency=low
 
   * 07_es_po.patch: remove ISO8859 encoded text, leading to a crash when 

@@ -5,7 +5,8 @@ Maintainer: Otavio Salvador <otavio@debian.org>
 Uploaders: @GNOME_TEAM@
 Build-Depends: cdbs (>= 0.4.43),
                debhelper (>= 5.0.37.2),
-               python-support,
+               quilt,
+               python-support (>= 0.7.1),
                python-all-dev (>= 2.3.5-11),
                libxml-parser-perl,
                desktop-file-utils,
@@ -15,16 +16,17 @@ Standards-Version: 3.7.3
 
 Package: system-config-printer
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${python:Depends},
+Depends: ${python:Depends},
          python-cups (>= 1.9.27),
+         python-cupsutils (= ${binary:Version}),
          python-dbus,
-         python-elementtree | python (>= 2.5),
          python-gtk2,
          python-glade2,
          python-gnome2,
          python-notify,
          gksu
+Recommends: hal-cups-utils,
+            synaptic
 Description: graphical interface to configure the printing system
  System-config-printer is a GUI written in Python using GTK+ to 
  configure a CUPS server. Its primary use is to configure the printing 
@@ -33,3 +35,13 @@ Description: graphical interface to configure the printing system
  .
  In terms of features, it aims to be as complete as the CUPS web 
  administration tool, while being integrated to the desktop.
+
+Package: python-cupsutils
+Architecture: all
+Depends: ${python:Depends},
+         python-cups (>= 1.9.27),
+         python-elementtree | python (>= 2.5)
+Description: Python utility modules around the CUPS printing system
+ These Python modules, that come from the system-config-printer 
+ distribution, help building applications and utilities around the CUPS 
+ Python bindings.
