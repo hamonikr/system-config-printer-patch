@@ -1,5 +1,5 @@
---- Makefile.am.orig	2008-06-08 13:19:54.097285829 +0200
-+++ Makefile.am	2008-06-08 13:22:17.021810733 +0200
+--- a/Makefile.am	2008-06-08 13:19:54.097285829 +0200
++++ b/Makefile.am	2008-06-08 13:22:17.021810733 +0200
 @@ -74,42 +74,38 @@
  install-desktopDATA: $(desktop_DATA)
  	mkdir -p $(DESTDIR)$(desktopdir)
@@ -51,8 +51,8 @@
  
  EXTRA_DIST=\
  	$(nobase_pkgdata_SCRIPTS) \
---- Makefile.in.orig	2008-05-27 19:14:22.000000000 +0200
-+++ Makefile.in	2008-06-08 13:22:40.633281953 +0200
+--- a/Makefile.in	2008-05-27 19:14:22.000000000 +0200
++++ b/Makefile.in	2008-06-08 13:22:40.633281953 +0200
 @@ -889,42 +889,38 @@
  install-desktopDATA: $(desktop_DATA)
  	mkdir -p $(DESTDIR)$(desktopdir)

@@ -7,3 +7,4 @@ debian/tmp/usr/share/system-config-printer/system-config-printer.py /usr/bin
 debian/tmp/usr/share/system-config-printer/my-default-printer.py /usr/bin
 debian/tmp/usr/share/system-config-printer/*.glade
 debian/tmp/usr/share/system-config-printer/*/
+debutils.py /usr/share/system-config-printer

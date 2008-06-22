@@ -1,5 +1,5 @@
---- system-config-printer.glade.orig	2008-06-14 17:00:30.689968417 +0200
-+++ system-config-printer.glade	2008-06-14 17:02:11.657969728 +0200
+--- a/system-config-printer.glade	2008-06-14 17:00:30.689968417 +0200
++++ b/system-config-printer.glade	2008-06-14 17:02:11.657969728 +0200
 @@ -89,7 +89,7 @@
  		  <child>
  		    <widget class="GtkImageMenuItem" id="quit">

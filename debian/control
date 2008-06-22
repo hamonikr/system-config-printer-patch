@@ -5,6 +5,7 @@ Maintainer: Otavio Salvador <otavio@debian.org>
 Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Josselin Mouette <joss@debian.org>
 Build-Depends: cdbs (>= 0.4.43),
                debhelper (>= 5.0.37.2),
+               quilt,
                python-support (>= 0.7.1),
                python-all-dev (>= 2.3.5-11),
                libxml-parser-perl,
@@ -24,7 +25,8 @@ Depends: ${python:Depends},
          python-gnome2,
          python-notify,
          gksu
-Recommends: hal-cups-utils
+Recommends: hal-cups-utils,
+            synaptic
 Description: graphical interface to configure the printing system
  System-config-printer is a GUI written in Python using GTK+ to 
  configure a CUPS server. Its primary use is to configure the printing 

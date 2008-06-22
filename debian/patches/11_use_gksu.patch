@@ -1,5 +1,5 @@
---- system-config-printer.desktop.in.orig	2008-06-08 14:49:16.581284423 +0200
-+++ system-config-printer.desktop.in	2008-06-08 14:50:51.318484053 +0200
+--- a/system-config-printer.desktop.in	2008-06-08 14:49:16.581284423 +0200
++++ b/system-config-printer.desktop.in	2008-06-08 14:50:51.318484053 +0200
 @@ -2,8 +2,8 @@
  Encoding=UTF-8
  _Name=Printing
