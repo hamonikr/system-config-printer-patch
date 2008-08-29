@@ -1,3 +1,10 @@
+system-config-printer (1.0.0-3) UNRELEASED; urgency=low
+
+  * 02_translations.patch:
+    + Updated Catalan translation by David Planella. Closes: #494092.
+
+ -- Josselin Mouette <joss@debian.org>  Sat, 30 Aug 2008 00:06:36 +0200
+
 system-config-printer (1.0.0-2) unstable; urgency=low
 
   * Switch to quilt for patch management; build-depend on quilt.

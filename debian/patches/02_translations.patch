@@ -1,7 +1,7 @@
 Index: system-config-printer-1.0.0/po/fr.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/fr.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/fr.po	2008-06-22 19:11:20.154822401 +0200
++++ system-config-printer-1.0.0/po/fr.po	2008-08-30 00:04:39.388328545 +0200
 @@ -21,7 +21,7 @@ msgstr ""
  "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
  "POT-Creation-Date: 2008-05-27 18:07+0100\n"
@@ -518,7 +518,7 @@ Index: system-config-printer-1.0.0/po/fr.po
 Index: system-config-printer-1.0.0/po/de.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/de.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/de.po	2008-06-22 19:11:20.158820046 +0200
++++ system-config-printer-1.0.0/po/de.po	2008-08-30 00:04:39.388328545 +0200
 @@ -15,9 +15,9 @@ msgid ""
  msgstr ""
  "Project-Id-Version: system-config-printer 0.7.81\n"
@@ -1113,7 +1113,7 @@ Index: system-config-printer-1.0.0/po/de.po
 Index: system-config-printer-1.0.0/po/vi.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/vi.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/vi.po	2008-06-22 19:11:20.166819247 +0200
++++ system-config-printer-1.0.0/po/vi.po	2008-08-30 00:04:39.400332235 +0200
 @@ -1,411 +1,419 @@
 -# SOME DESCRIPTIVE TITLE.
 -# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
@@ -5140,7 +5140,7 @@ Index: system-config-printer-1.0.0/po/vi.po
 Index: system-config-printer-1.0.0/po/ru.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/ru.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/ru.po	2008-06-22 19:11:20.170819336 +0200
++++ system-config-printer-1.0.0/po/ru.po	2008-08-30 00:04:39.412328104 +0200
 @@ -1,23 +1,25 @@
 -# translation of ru.po to 
 -# translation of ru.po to Russian
@@ -7300,7 +7300,7 @@ Index: system-config-printer-1.0.0/po/ru.po
 Index: system-config-printer-1.0.0/po/es.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/es.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/es.po	2008-06-22 19:11:20.178819515 +0200
++++ system-config-printer-1.0.0/po/es.po	2008-08-30 00:04:39.416328682 +0200
 @@ -5,21 +5,18 @@
  # Yelitza Louze <ylouze@redhat.com>, 2003, 2004.
  # Eduardo Villagrán Morales <evillagr@fedoraproject.org>, 2007.
@@ -9463,7 +9463,7 @@ Index: system-config-printer-1.0.0/po/es.po
 Index: system-config-printer-1.0.0/po/eu.po
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ system-config-printer-1.0.0/po/eu.po	2008-06-22 19:11:20.178819515 +0200
++++ system-config-printer-1.0.0/po/eu.po	2008-08-30 00:04:39.416328682 +0200
 @@ -0,0 +1,2291 @@
 +# translation of eu.po to Euskara
 +# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -11759,7 +11759,7 @@ Index: system-config-printer-1.0.0/po/eu.po
 Index: system-config-printer-1.0.0/po/zh_CN.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/zh_CN.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/zh_CN.po	2008-06-22 19:11:20.182821071 +0200
++++ system-config-printer-1.0.0/po/zh_CN.po	2008-08-30 00:04:39.416328682 +0200
 @@ -15,14 +15,15 @@
  # Xi Huang <xhuang@redhat.com>, 2006.
  # Liu Tao <liutao_free@sohu.com>, 2008.
@@ -12340,7 +12340,7 @@ Index: system-config-printer-1.0.0/po/zh_CN.po
 Index: system-config-printer-1.0.0/po/tr.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/tr.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/tr.po	2008-06-22 19:11:20.190819294 +0200
++++ system-config-printer-1.0.0/po/tr.po	2008-08-30 00:04:39.424327883 +0200
 @@ -1,270 +1,285 @@
 -# translation of tr.po to Turkish
 +# translation of system-config-printer.po to Turkish
@@ -16708,7 +16708,7 @@ Index: system-config-printer-1.0.0/po/tr.po
 Index: system-config-printer-1.0.0/po/cs.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/cs.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/cs.po	2008-06-22 19:11:20.194819383 +0200
++++ system-config-printer-1.0.0/po/cs.po	2008-08-30 00:04:39.424327883 +0200
 @@ -1,17 +1,18 @@
 -# $Id: cs.po,v 1.72 2007/06/28 14:26:01 twaugh Exp $
  #
@@ -17553,3 +17553,252 @@ Index: system-config-printer-1.0.0/po/cs.po
  
  #: ../troubleshoot/Welcome.py:38
  msgid ""
+Index: system-config-printer-1.0.0/po/ca.po
+===================================================================
+--- system-config-printer-1.0.0.orig/po/ca.po	2008-08-30 00:05:02.399830844 +0200
++++ system-config-printer-1.0.0/po/ca.po	2008-08-30 00:04:09.871830218 +0200
+@@ -9,7 +9,7 @@ msgstr ""
+ "Project-Id-Version: printconf\n"
+ "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
+ "POT-Creation-Date: 2008-05-27 18:07+0100\n"
+-"PO-Revision-Date: 2008-04-16 20:21+0200\n"
++"PO-Revision-Date: 2008-08-06 10:20+0200\n"
+ "Last-Translator: David Planella Molas <david.planella@gmail.com>\n"
+ "Language-Team: Catalan <fedora@softcatala.net>\n"
+ "MIME-Version: 1.0\n"
+@@ -127,9 +127,8 @@ msgid "Job"
+ msgstr "Tasca"
+ 
+ #: ../jobviewer.py:90
+-#, fuzzy
+ msgid "User"
+-msgstr "Usuaris"
++msgstr "Usuari"
+ 
+ #: ../jobviewer.py:91 ../troubleshoot/PrintTestPage.py:82
+ msgid "Document"
+@@ -156,21 +155,20 @@ msgstr "Estat"
+ #: ../jobviewer.py:125
+ #, python-format
+ msgid "my jobs on %s"
+-msgstr ""
++msgstr "les meves tasques a %s"
+ 
+ #: ../jobviewer.py:127
+ msgid "my jobs"
+-msgstr ""
++msgstr "les meves tasques"
+ 
+ #: ../jobviewer.py:132
+-#, fuzzy
+ msgid "all jobs"
+-msgstr "Cancel·la totes les tasques"
++msgstr "totes les tasques"
+ 
+ #: ../jobviewer.py:133
+-#, fuzzy, python-format
++#, python-format
+ msgid "Document Print Status (%s)"
+-msgstr "Estat d'impressió dels documents"
++msgstr "Estat d'impressió dels documents (%s)"
+ 
+ #: ../jobviewer.py:166
+ msgid "Message"
+@@ -306,9 +304,8 @@ msgid "Conflicts with:"
+ msgstr "Té un conflicte amb:"
+ 
+ #: ../system-config-printer.py:275
+-#, fuzzy
+ msgid "Class"
+-msgstr "Classe nova"
++msgstr "Classe"
+ 
+ #. Set up "Problems?" link button
+ #: ../system-config-printer.py:305
+@@ -352,9 +349,9 @@ msgid "Automatic rotation"
+ msgstr "Rotació automàtica"
+ 
+ #: ../system-config-printer.py:554
+-#, fuzzy, python-format
++#, python-format
+ msgid "Printer Properties - `%s' on %s"
+-msgstr "Propietats de la impressora"
++msgstr "Propietats de la impressora - «%s» a %s"
+ 
+ #: ../system-config-printer.py:657
+ #, python-format
+@@ -535,12 +532,11 @@ msgid "Fax"
+ msgstr "Fax"
+ 
+ #: ../system-config-printer.py:2722
+-#, fuzzy
+ msgid ""
+ "This printer supports both printing and sending faxes.  Which functionality "
+ "should be used for this queue?"
+ msgstr ""
+-"Aquesta impressora pot imprimir i enviar faxos.\n"
++"Aquesta impressora pot imprimir i enviar faxos. "
+ "Per a quina funcionalitat s'hauria d'utilitzar aquesta cua d'impressió?"
+ 
+ #: ../system-config-printer.py:3059
+@@ -594,7 +590,7 @@ msgstr "Una impressora connectada al por
+ 
+ #: ../system-config-printer.py:3863
+ msgid "A printer connected to a USB port."
+-msgstr "Una impressora connectada un port USB."
++msgstr "Una impressora connectada a un port USB."
+ 
+ #: ../system-config-printer.py:3865
+ msgid ""
+@@ -644,7 +640,7 @@ msgstr "Distribuïble"
+ 
+ #: ../system-config-printer.py:4334
+ msgid "None"
+-msgstr "cap"
++msgstr "Cap"
+ 
+ #: ../system-config-printer.py:4342
+ msgid "Not specified."
+@@ -685,7 +681,7 @@ msgstr "Controladors que es poden baixar
+ 
+ #: ../system-config-printer.py:4414
+ msgid "Failed to download PPD."
+-msgstr ""
++msgstr "No s'ha pogut baixar el fitxer PPD."
+ 
+ #: ../system-config-printer.py:4450 ../system-config-printer.py:4488
+ msgid "No Installable Options"
+@@ -718,7 +714,7 @@ msgid ""
+ "Printer '%s' requires the '%s' program but it is not currently installed.  "
+ "Please install it before using this printer."
+ msgstr ""
+-"La impressora «»%s«» necessita el programa %s però encara no està "
++"La impressora «%s» necessita el programa «%s» però encara no està "
+ "instal·lat. L'haureu d'instal·lar abans de poder fer servir aquesta "
+ "impressora."
+ 
+@@ -743,16 +739,12 @@ msgstr ""
+ "16"
+ 
+ #: ../system-config-printer.glade.h:8
+-#, fuzzy
+ msgid "72 points per inch"
+-msgstr ""
+-"punts\n"
+-"(72 punts per polzada)"
++msgstr "72 punts per polzada"
+ 
+ #: ../system-config-printer.glade.h:9
+-#, fuzzy
+ msgid "<b>Authentication</b>"
+-msgstr "Autenticació"
++msgstr "<b>Autenticació</b>"
+ 
+ #: ../system-config-printer.glade.h:10
+ msgid "<b>Banner</b>"
+@@ -988,14 +980,14 @@ msgid "Copy Printer"
+ msgstr "Copia la impressora"
+ 
+ #: ../system-config-printer.glade.h:71
+-#, fuzzy
+ msgid "Copyright © 2006-2008 Red Hat, Inc."
+-msgstr "Copyright © 2006-2007 Red Hat, Inc."
++msgstr "Copyright © 2006-2008 Red Hat, Inc."
+ 
+ #: ../system-config-printer.glade.h:72
+ msgid ""
+ "Create a class from the selected printers (for failover or load-balancing)"
+ msgstr ""
++"Crea una classe a partir de les impressores seleccionades (per a redundància o balanceig de càrrega)"
+ 
+ #: ../system-config-printer.glade.h:73
+ msgid "Data Bits"
+@@ -1220,7 +1212,6 @@ msgid "Make and Model:"
+ msgstr "Fabricant i model:"
+ 
+ #: ../system-config-printer.glade.h:138
+-#, fuzzy
+ msgid "Make and model:"
+ msgstr "Fabricant i model:"
+ 
+@@ -1413,9 +1404,8 @@ msgid "Probe"
+ msgstr "Sondeja"
+ 
+ #: ../system-config-printer.glade.h:203
+-#, fuzzy
+ msgid "Prompt user if authentication is required"
+-msgstr "Es requereix autenticació"
++msgstr "Sol·licita l'autenticació a l'usuari, si cal"
+ 
+ #: ../system-config-printer.glade.h:204
+ msgid "Provide PPD file"
+@@ -1486,18 +1476,16 @@ msgid "Serial"
+ msgstr "Sèrie"
+ 
+ #: ../system-config-printer.glade.h:221
+-#, fuzzy
+ msgid "Set As De_fault"
+-msgstr "Fes-la la predeterminada"
++msgstr "Fes-la la _predeterminada"
+ 
+ #: ../system-config-printer.glade.h:222
+ msgid "Set As Default"
+ msgstr "Fes-la la predeterminada"
+ 
+ #: ../system-config-printer.glade.h:223
+-#, fuzzy
+ msgid "Set authentication details now"
+-msgstr "Es requereix autenticació"
++msgstr "Estableix els detalls de l'autenticació ara"
+ 
+ #: ../system-config-printer.glade.h:224
+ msgid "Settings"
+@@ -1513,7 +1501,7 @@ msgstr "Compartida"
+ 
+ #: ../system-config-printer.glade.h:227
+ msgid "Short name for this printer such as \"laserjet\""
+-msgstr ""
++msgstr "Sobrenom d'aquesta impressora, com ara «laserjet»"
+ 
+ #: ../system-config-printer.glade.h:228
+ msgid "Show printers shared by other systems"
+@@ -1673,9 +1661,8 @@ msgid "_Connect..."
+ msgstr "_Connecta..."
+ 
+ #: ../system-config-printer.glade.h:255
+-#, fuzzy
+ msgid "_Create Class"
+-msgstr "Classe remota"
++msgstr "_Crea la classe"
+ 
+ #: ../system-config-printer.glade.h:256
+ msgid "_Disable"
+@@ -1702,9 +1689,8 @@ msgid "_Install"
+ msgstr "_Instal·la"
+ 
+ #: ../system-config-printer.glade.h:262
+-#, fuzzy
+ msgid "_Rename"
+-msgstr "Allibe_ra"
++msgstr "_Torna a anomenar"
+ 
+ #: ../system-config-printer.glade.h:263
+ msgid "_Search"
+@@ -1887,7 +1873,7 @@ msgid ""
+ "is not exporting shared printers to the network."
+ msgstr ""
+ "Tot i que una o més impressores estan marcades com a compartides, aquest "
+-"sservidor d'impressió no les exporta a la xarxa."
++"servidor d'impressió no les exporta a la xarxa."
+ 
+ #: ../troubleshoot/CheckLocalServerPublishing.py:33
+ msgid ""
+@@ -2123,7 +2109,7 @@ msgstr "No"
+ 
+ #: ../troubleshoot/PrintTestPage.py:322
+ msgid "Error submitting test page"
+-msgstr ""
++msgstr "S'ha produït un error en enviar la pàgina de prova"
+ 
+ #: ../troubleshoot/QueueNotEnabled.py:57
+ #: ../troubleshoot/QueueRejectingJobs.py:67
