@@ -2,6 +2,7 @@ system-config-printer (1.0.0-3) UNRELEASED; urgency=low
 
   * 02_translations.patch:
     + Updated Catalan translation by David Planella. Closes: #494092.
+    + Updated Finnish translation by Esko Arajärvi. Closes: #498106.
 
  -- Josselin Mouette <joss@debian.org>  Sat, 30 Aug 2008 00:06:36 +0200
 
