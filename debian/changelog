@@ -5,6 +5,7 @@ system-config-printer (1.0.0-3) unstable; urgency=low
     + Updated Finnish translation by Esko Arajärvi. Closes: #498106.
   * 04_jobsheets_traceback.patch: new patch. Don't send None to 
     setPrinterJobSheets, send "none" instead. Closes: #486941, #486580.
+  * Standards version is 3.8.0, no changes.
 
  -- Josselin Mouette <joss@debian.org>  Fri, 12 Sep 2008 17:50:55 +0200
 
