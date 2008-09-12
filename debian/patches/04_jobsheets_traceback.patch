@@ -1,0 +1,13 @@
+Index: system-config-printer-1.0.0/cupshelpers.py
+===================================================================
+--- system-config-printer-1.0.0.orig/cupshelpers.py	2008-09-12 17:44:48.747750901 +0200
++++ system-config-printer-1.0.0/cupshelpers.py	2008-09-12 17:45:13.190750223 +0200
+@@ -208,6 +208,8 @@
+         self.connection.setPrinterOpPolicy(self.name, policy)    
+ 
+     def setJobSheets(self, start, end):
++        if start == None: start = ""
++        if end == None: end = ""
+         self.connection.setPrinterJobSheets(self.name, start, end)
+ 
+     def setAccess(self, allow, except_users):

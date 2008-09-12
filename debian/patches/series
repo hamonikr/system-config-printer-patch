@@ -1,6 +1,7 @@
 01_no_rhpl.patch
 02_translations.patch
 03_elementtree.patch
+04_jobsheets_traceback.patch
 08_stock_icons.patch
 10_show_manage_jobs.patch
 11_use_gksu.patch
