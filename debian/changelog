@@ -1,3 +1,9 @@
+system-config-printer (1.0.0-4) UNRELEASED; urgency=low
+
+  * Require desktop-file-utils 0.13. Closes: #499382, thanks Tom Parker.
+
+ -- Josselin Mouette <joss@debian.org>  Thu, 18 Sep 2008 11:10:45 +0200
+
 system-config-printer (1.0.0-3) unstable; urgency=low
 
   * 02_translations.patch:
