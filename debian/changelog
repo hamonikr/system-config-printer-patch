@@ -1,8 +1,9 @@
-system-config-printer (1.0.0-4) UNRELEASED; urgency=low
+system-config-printer (1.0.0-4) unstable; urgency=low
 
   * Require desktop-file-utils 0.13. Closes: #499382, thanks Tom Parker.
+  * Depend on gnome-icon-theme. Closes: #506282.
 
- -- Josselin Mouette <joss@debian.org>  Thu, 18 Sep 2008 11:10:45 +0200
+ -- Josselin Mouette <joss@debian.org>  Thu, 20 Nov 2008 09:49:02 +0100
 
 system-config-printer (1.0.0-3) unstable; urgency=low
 

@@ -24,6 +24,7 @@ Depends: ${python:Depends},
          python-glade2,
          python-gnome2,
          python-notify,
+         gnome-icon-theme,
          gksu
 Recommends: hal-cups-utils,
             synaptic
