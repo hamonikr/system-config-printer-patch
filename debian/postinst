@@ -1,11 +1,11 @@
-#! /bin/sh
+#!/bin/sh
+
 set -e
 
 #DEBHELPER#
 
 # Remove old configuration file
-if dpkg --compare-versions "$2" lt "1.0.0-1"; then
-	rm -f /etc/xdg/autostart/redhat-print-applet.desktop
+if [ "$1" = upgrade ] && dpkg --compare-versions "$2" lt-nl "1.0.0-1"; then
+    rm -f /etc/xdg/autostart/redhat-print-applet.desktop
 fi
 
-exit 0
