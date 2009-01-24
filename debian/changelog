@@ -1,7 +1,12 @@
 system-config-printer (1.0.0-5) UNRELEASED; urgency=low
 
+  [ Loic Minier ]
   * Don't purge /etc/xdg/autostart/redhat-print-applet.desktop during first
     installation.
+
+  [ Josselin Mouette ]
+  * 19_dbus_interfaces.patch: remove redundant send_interface lines in 
+    the dbus configuration file. Closes: #510756.
 
  -- Loic Minier <lool@dooz.org>  Fri, 28 Nov 2008 20:50:43 +0100
 
