@@ -2,7 +2,7 @@ Source: system-config-printer
 Section: python
 Priority: optional
 Maintainer: Otavio Salvador <otavio@debian.org>
-Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Josselin Mouette <joss@debian.org>, Loic Minier <lool@dooz.org>
+Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Josselin Mouette <joss@debian.org>
 Build-Depends: cdbs (>= 0.4.43),
                debhelper (>= 5.0.37.2),
                quilt,
@@ -12,7 +12,7 @@ Build-Depends: cdbs (>= 0.4.43),
                desktop-file-utils (>= 0.13),
                xmlto,
                gnome-pkg-tools
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 
 Package: system-config-printer
 Architecture: all

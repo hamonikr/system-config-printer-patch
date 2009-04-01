@@ -1,4 +1,4 @@
-system-config-printer (1.0.0-5) UNRELEASED; urgency=low
+system-config-printer (1.0.0-5) unstable; urgency=low
 
   [ Loic Minier ]
   * Don't purge /etc/xdg/autostart/redhat-print-applet.desktop during first
@@ -7,8 +7,11 @@ system-config-printer (1.0.0-5) UNRELEASED; urgency=low
   [ Josselin Mouette ]
   * 19_dbus_interfaces.patch: remove redundant send_interface lines in 
     the dbus configuration file. Closes: #510756.
+  * 02_translations.patch: new Romanian translation from Eddy Petrișor.
+    Closes: #519217.
+  * Standards version is 3.8.1.
 
- -- Loic Minier <lool@dooz.org>  Fri, 28 Nov 2008 20:50:43 +0100
+ -- Josselin Mouette <joss@debian.org>  Wed, 01 Apr 2009 13:20:11 +0200
 
 system-config-printer (1.0.0-4) unstable; urgency=low
 
