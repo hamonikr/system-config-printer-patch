@@ -1,3 +1,10 @@
+system-config-printer (1.0.0-4lenny1) stable; urgency=low
+
+  * 02_translations.patch: new Romanian translation from Eddy Petrișor.
+    Closes: #519217.  
+
+ -- Josselin Mouette <joss@debian.org>  Fri, 03 Apr 2009 20:46:59 +0200
+
 system-config-printer (1.0.0-4) unstable; urgency=low
 
   * Require desktop-file-utils 0.13. Closes: #499382, thanks Tom Parker.
