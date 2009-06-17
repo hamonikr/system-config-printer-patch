@@ -1,3 +1,13 @@
+system-config-printer (1.0.0-6) unstable; urgency=low
+
+  * The “We’ll deal with the rest later” release.
+  * Move smburi.py to python-cupsutils.
+  * This allows system-config-printer-kde to not depend on 
+    system-config-printer. Closes: #525714.
+  * Update 13_python_paths.patch accordingly.
+
+ -- Josselin Mouette <joss@debian.org>  Wed, 17 Jun 2009 10:50:17 +0200
+
 system-config-printer (1.0.0-5) unstable; urgency=low
 
   [ Loic Minier ]

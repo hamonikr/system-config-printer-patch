@@ -1,7 +1,7 @@
 Index: system-config-printer-1.0.0/applet.py
 ===================================================================
---- system-config-printer-1.0.0.orig/applet.py	2008-06-22 16:37:24.966821412 +0200
-+++ system-config-printer-1.0.0/applet.py	2008-06-22 16:45:27.922818962 +0200
+--- system-config-printer-1.0.0.orig/applet.py	2009-06-17 10:42:18.109774056 +0200
++++ system-config-printer-1.0.0/applet.py	2009-06-17 10:42:20.053771046 +0200
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env python
 +#!/usr/bin/python
@@ -36,8 +36,8 @@ Index: system-config-printer-1.0.0/applet.py
          if status < self.STATUS_GENERIC_DRIVER:
 Index: system-config-printer-1.0.0/authconn.py
 ===================================================================
---- system-config-printer-1.0.0.orig/authconn.py	2008-06-22 16:37:24.954820655 +0200
-+++ system-config-printer-1.0.0/authconn.py	2008-06-22 16:44:51.635319642 +0200
+--- system-config-printer-1.0.0.orig/authconn.py	2009-06-17 10:42:18.057774354 +0200
++++ system-config-printer-1.0.0/authconn.py	2009-06-17 10:42:20.053771046 +0200
 @@ -19,7 +19,7 @@
  
  import cups
@@ -49,8 +49,8 @@ Index: system-config-printer-1.0.0/authconn.py
  def set_gettext_function (fn):
 Index: system-config-printer-1.0.0/contextmenu.py
 ===================================================================
---- system-config-printer-1.0.0.orig/contextmenu.py	2008-06-22 16:37:24.942820876 +0200
-+++ system-config-printer-1.0.0/contextmenu.py	2008-06-22 16:44:51.639322665 +0200
+--- system-config-printer-1.0.0.orig/contextmenu.py	2009-06-17 10:42:18.033769906 +0200
++++ system-config-printer-1.0.0/contextmenu.py	2009-06-17 10:42:20.058273225 +0200
 @@ -23,7 +23,7 @@
  import cups
  import errordialogs
@@ -62,8 +62,8 @@ Index: system-config-printer-1.0.0/contextmenu.py
  def set_gettext_function (x):
 Index: system-config-printer-1.0.0/jobviewer.py
 ===================================================================
---- system-config-printer-1.0.0.orig/jobviewer.py	2008-06-22 16:37:24.934819719 +0200
-+++ system-config-printer-1.0.0/jobviewer.py	2008-06-22 16:44:51.639322665 +0200
+--- system-config-printer-1.0.0.orig/jobviewer.py	2009-06-17 10:42:17.985776166 +0200
++++ system-config-printer-1.0.0/jobviewer.py	2009-06-17 10:42:20.058273225 +0200
 @@ -33,7 +33,7 @@ import pango
  import sys
  import time
@@ -75,8 +75,8 @@ Index: system-config-printer-1.0.0/jobviewer.py
  import errordialogs
 Index: system-config-printer-1.0.0/monitor.py
 ===================================================================
---- system-config-printer-1.0.0.orig/monitor.py	2008-06-22 16:37:24.922820429 +0200
-+++ system-config-printer-1.0.0/monitor.py	2008-06-22 16:44:51.639322665 +0200
+--- system-config-printer-1.0.0.orig/monitor.py	2009-06-17 10:42:17.953771049 +0200
++++ system-config-printer-1.0.0/monitor.py	2009-06-17 10:42:20.058273225 +0200
 @@ -22,7 +22,7 @@ import dbus
  import dbus.glib
  import gobject
@@ -88,8 +88,8 @@ Index: system-config-printer-1.0.0/monitor.py
  global _
 Index: system-config-printer-1.0.0/pysmb.py
 ===================================================================
---- system-config-printer-1.0.0.orig/pysmb.py	2008-06-22 16:37:24.914820250 +0200
-+++ system-config-printer-1.0.0/pysmb.py	2008-06-22 16:44:51.639322665 +0200
+--- system-config-printer-1.0.0.orig/pysmb.py	2009-06-17 10:42:17.913775042 +0200
++++ system-config-printer-1.0.0/pysmb.py	2009-06-17 10:42:20.058273225 +0200
 @@ -30,7 +30,7 @@ import gobject
  import gtk
  import os
@@ -101,8 +101,8 @@ Index: system-config-printer-1.0.0/pysmb.py
      def __init__ (self, parent=None, workgroup='', user='', passwd=''):
 Index: system-config-printer-1.0.0/system-config-printer.py
 ===================================================================
---- system-config-printer-1.0.0.orig/system-config-printer.py	2008-06-22 16:37:24.902820959 +0200
-+++ system-config-printer-1.0.0/system-config-printer.py	2008-06-22 16:45:44.063322922 +0200
+--- system-config-printer-1.0.0.orig/system-config-printer.py	2009-06-17 10:42:17.885774415 +0200
++++ system-config-printer-1.0.0/system-config-printer.py	2009-06-17 10:46:51.094274781 +0200
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env python
 +#!/usr/bin/python
@@ -119,7 +119,7 @@ Index: system-config-printer-1.0.0/system-config-printer.py
  import errno
  import sys, os, tempfile, time, traceback, re, httplib
  import signal, thread
-@@ -54,16 +51,21 @@ if len(sys.argv)>1 and sys.argv[1] == '-
+@@ -54,22 +51,27 @@ if len(sys.argv)>1 and sys.argv[1] == '-
  import cups
  cups.require ("1.9.27")
  
@@ -145,10 +145,17 @@ Index: system-config-printer-1.0.0/system-config-printer.py
  import urllib
  import troubleshoot
  import contextmenu
+ import authconn
+ import monitor
+-from smburi import SMBURI
++from cupsutils.smburi import SMBURI
+ import errordialogs
+ from errordialogs import *
+ 
 Index: system-config-printer-1.0.0/troubleshoot/base.py
 ===================================================================
---- system-config-printer-1.0.0.orig/troubleshoot/base.py	2008-06-22 16:37:24.882820024 +0200
-+++ system-config-printer-1.0.0/troubleshoot/base.py	2008-06-22 16:44:51.643323732 +0200
+--- system-config-printer-1.0.0.orig/troubleshoot/base.py	2009-06-17 10:42:17.809776631 +0200
++++ system-config-printer-1.0.0/troubleshoot/base.py	2009-06-17 10:42:20.062276248 +0200
 @@ -21,7 +21,7 @@
  
  import gtk
@@ -160,8 +167,8 @@ Index: system-config-printer-1.0.0/troubleshoot/base.py
                                  "System->Administration->Printing "
 Index: system-config-printer-1.0.0/troubleshoot/CheckPPDSanity.py
 ===================================================================
---- system-config-printer-1.0.0.orig/troubleshoot/CheckPPDSanity.py	2008-06-22 16:37:24.874819845 +0200
-+++ system-config-printer-1.0.0/troubleshoot/CheckPPDSanity.py	2008-06-22 16:44:51.643323732 +0200
+--- system-config-printer-1.0.0.orig/troubleshoot/CheckPPDSanity.py	2009-06-17 10:42:17.781770631 +0200
++++ system-config-printer-1.0.0/troubleshoot/CheckPPDSanity.py	2009-06-17 10:42:20.062276248 +0200
 @@ -20,7 +20,7 @@
  ## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  
@@ -173,8 +180,8 @@ Index: system-config-printer-1.0.0/troubleshoot/CheckPPDSanity.py
  from base import *
 Index: system-config-printer-1.0.0/my-default-printer.py
 ===================================================================
---- system-config-printer-1.0.0.orig/my-default-printer.py	2008-06-22 16:45:52.599322051 +0200
-+++ system-config-printer-1.0.0/my-default-printer.py	2008-06-22 16:45:54.370814587 +0200
+--- system-config-printer-1.0.0.orig/my-default-printer.py	2009-06-17 10:42:17.741774138 +0200
++++ system-config-printer-1.0.0/my-default-printer.py	2009-06-17 10:42:20.066273405 +0200
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env python
 +#!/usr/bin/python
