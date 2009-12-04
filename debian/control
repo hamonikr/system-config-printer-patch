@@ -9,10 +9,10 @@ Build-Depends: cdbs (>= 0.4.43),
                python-support (>= 0.7.1),
                python-all-dev (>= 2.3.5-11),
                libxml-parser-perl,
-               desktop-file-utils,
+               desktop-file-utils (>= 0.13),
                xmlto,
                gnome-pkg-tools
-Standards-Version: 3.7.3
+Standards-Version: 3.8.1
 
 Package: system-config-printer
 Architecture: all
@@ -24,6 +24,7 @@ Depends: ${python:Depends},
          python-glade2,
          python-gnome2,
          python-notify,
+         gnome-icon-theme,
          gksu
 Recommends: hal-cups-utils,
             synaptic

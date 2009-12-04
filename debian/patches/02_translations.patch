@@ -1,7 +1,7 @@
 Index: system-config-printer-1.0.0/po/fr.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/fr.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/fr.po	2008-06-22 19:11:20.154822401 +0200
++++ system-config-printer-1.0.0/po/fr.po	2009-04-01 13:17:18.504400844 +0200
 @@ -21,7 +21,7 @@ msgstr ""
  "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
  "POT-Creation-Date: 2008-05-27 18:07+0100\n"
@@ -518,7 +518,7 @@ Index: system-config-printer-1.0.0/po/fr.po
 Index: system-config-printer-1.0.0/po/de.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/de.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/de.po	2008-06-22 19:11:20.158820046 +0200
++++ system-config-printer-1.0.0/po/de.po	2009-04-01 13:17:18.508400934 +0200
 @@ -15,9 +15,9 @@ msgid ""
  msgstr ""
  "Project-Id-Version: system-config-printer 0.7.81\n"
@@ -1113,7 +1113,7 @@ Index: system-config-printer-1.0.0/po/de.po
 Index: system-config-printer-1.0.0/po/vi.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/vi.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/vi.po	2008-06-22 19:11:20.166819247 +0200
++++ system-config-printer-1.0.0/po/vi.po	2009-04-01 13:17:18.516401113 +0200
 @@ -1,411 +1,419 @@
 -# SOME DESCRIPTIVE TITLE.
 -# Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
@@ -5140,7 +5140,7 @@ Index: system-config-printer-1.0.0/po/vi.po
 Index: system-config-printer-1.0.0/po/ru.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/ru.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/ru.po	2008-06-22 19:11:20.170819336 +0200
++++ system-config-printer-1.0.0/po/ru.po	2009-04-01 13:17:18.520401202 +0200
 @@ -1,23 +1,25 @@
 -# translation of ru.po to 
 -# translation of ru.po to Russian
@@ -7300,7 +7300,7 @@ Index: system-config-printer-1.0.0/po/ru.po
 Index: system-config-printer-1.0.0/po/es.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/es.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/es.po	2008-06-22 19:11:20.178819515 +0200
++++ system-config-printer-1.0.0/po/es.po	2009-04-01 13:17:18.528400892 +0200
 @@ -5,21 +5,18 @@
  # Yelitza Louze <ylouze@redhat.com>, 2003, 2004.
  # Eduardo Villagrán Morales <evillagr@fedoraproject.org>, 2007.
@@ -9463,7 +9463,7 @@ Index: system-config-printer-1.0.0/po/es.po
 Index: system-config-printer-1.0.0/po/eu.po
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ system-config-printer-1.0.0/po/eu.po	2008-06-22 19:11:20.178819515 +0200
++++ system-config-printer-1.0.0/po/eu.po	2009-04-01 13:17:18.532400492 +0200
 @@ -0,0 +1,2291 @@
 +# translation of eu.po to Euskara
 +# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
@@ -11759,7 +11759,7 @@ Index: system-config-printer-1.0.0/po/eu.po
 Index: system-config-printer-1.0.0/po/zh_CN.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/zh_CN.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/zh_CN.po	2008-06-22 19:11:20.182821071 +0200
++++ system-config-printer-1.0.0/po/zh_CN.po	2009-04-01 13:17:18.532400492 +0200
 @@ -15,14 +15,15 @@
  # Xi Huang <xhuang@redhat.com>, 2006.
  # Liu Tao <liutao_free@sohu.com>, 2008.
@@ -12340,7 +12340,7 @@ Index: system-config-printer-1.0.0/po/zh_CN.po
 Index: system-config-printer-1.0.0/po/tr.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/tr.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/tr.po	2008-06-22 19:11:20.190819294 +0200
++++ system-config-printer-1.0.0/po/tr.po	2009-04-01 13:17:18.540401160 +0200
 @@ -1,270 +1,285 @@
 -# translation of tr.po to Turkish
 +# translation of system-config-printer.po to Turkish
@@ -16708,7 +16708,7 @@ Index: system-config-printer-1.0.0/po/tr.po
 Index: system-config-printer-1.0.0/po/cs.po
 ===================================================================
 --- system-config-printer-1.0.0.orig/po/cs.po	2008-05-27 19:09:01.000000000 +0200
-+++ system-config-printer-1.0.0/po/cs.po	2008-06-22 19:11:20.194819383 +0200
++++ system-config-printer-1.0.0/po/cs.po	2009-04-01 13:17:18.544400761 +0200
 @@ -1,17 +1,18 @@
 -# $Id: cs.po,v 1.72 2007/06/28 14:26:01 twaugh Exp $
  #
@@ -17552,4 +17552,2352 @@ Index: system-config-printer-1.0.0/po/cs.po
 +msgstr "Řešení problémů s tiskem"
  
  #: ../troubleshoot/Welcome.py:38
+ msgid ""
+Index: system-config-printer-1.0.0/po/ca.po
+===================================================================
+--- system-config-printer-1.0.0.orig/po/ca.po	2008-05-27 19:09:01.000000000 +0200
++++ system-config-printer-1.0.0/po/ca.po	2009-04-01 13:17:18.548400850 +0200
+@@ -9,7 +9,7 @@ msgstr ""
+ "Project-Id-Version: printconf\n"
+ "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
+ "POT-Creation-Date: 2008-05-27 18:07+0100\n"
+-"PO-Revision-Date: 2008-04-16 20:21+0200\n"
++"PO-Revision-Date: 2008-08-06 10:20+0200\n"
+ "Last-Translator: David Planella Molas <david.planella@gmail.com>\n"
+ "Language-Team: Catalan <fedora@softcatala.net>\n"
+ "MIME-Version: 1.0\n"
+@@ -127,9 +127,8 @@ msgid "Job"
+ msgstr "Tasca"
+ 
+ #: ../jobviewer.py:90
+-#, fuzzy
+ msgid "User"
+-msgstr "Usuaris"
++msgstr "Usuari"
+ 
+ #: ../jobviewer.py:91 ../troubleshoot/PrintTestPage.py:82
+ msgid "Document"
+@@ -156,21 +155,20 @@ msgstr "Estat"
+ #: ../jobviewer.py:125
+ #, python-format
+ msgid "my jobs on %s"
+-msgstr ""
++msgstr "les meves tasques a %s"
+ 
+ #: ../jobviewer.py:127
+ msgid "my jobs"
+-msgstr ""
++msgstr "les meves tasques"
+ 
+ #: ../jobviewer.py:132
+-#, fuzzy
+ msgid "all jobs"
+-msgstr "Cancel·la totes les tasques"
++msgstr "totes les tasques"
+ 
+ #: ../jobviewer.py:133
+-#, fuzzy, python-format
++#, python-format
+ msgid "Document Print Status (%s)"
+-msgstr "Estat d'impressió dels documents"
++msgstr "Estat d'impressió dels documents (%s)"
+ 
+ #: ../jobviewer.py:166
+ msgid "Message"
+@@ -306,9 +304,8 @@ msgid "Conflicts with:"
+ msgstr "Té un conflicte amb:"
+ 
+ #: ../system-config-printer.py:275
+-#, fuzzy
+ msgid "Class"
+-msgstr "Classe nova"
++msgstr "Classe"
+ 
+ #. Set up "Problems?" link button
+ #: ../system-config-printer.py:305
+@@ -352,9 +349,9 @@ msgid "Automatic rotation"
+ msgstr "Rotació automàtica"
+ 
+ #: ../system-config-printer.py:554
+-#, fuzzy, python-format
++#, python-format
+ msgid "Printer Properties - `%s' on %s"
+-msgstr "Propietats de la impressora"
++msgstr "Propietats de la impressora - «%s» a %s"
+ 
+ #: ../system-config-printer.py:657
+ #, python-format
+@@ -535,12 +532,11 @@ msgid "Fax"
+ msgstr "Fax"
+ 
+ #: ../system-config-printer.py:2722
+-#, fuzzy
+ msgid ""
+ "This printer supports both printing and sending faxes.  Which functionality "
+ "should be used for this queue?"
+ msgstr ""
+-"Aquesta impressora pot imprimir i enviar faxos.\n"
++"Aquesta impressora pot imprimir i enviar faxos. "
+ "Per a quina funcionalitat s'hauria d'utilitzar aquesta cua d'impressió?"
+ 
+ #: ../system-config-printer.py:3059
+@@ -594,7 +590,7 @@ msgstr "Una impressora connectada al por
+ 
+ #: ../system-config-printer.py:3863
+ msgid "A printer connected to a USB port."
+-msgstr "Una impressora connectada un port USB."
++msgstr "Una impressora connectada a un port USB."
+ 
+ #: ../system-config-printer.py:3865
+ msgid ""
+@@ -644,7 +640,7 @@ msgstr "Distribuïble"
+ 
+ #: ../system-config-printer.py:4334
+ msgid "None"
+-msgstr "cap"
++msgstr "Cap"
+ 
+ #: ../system-config-printer.py:4342
+ msgid "Not specified."
+@@ -685,7 +681,7 @@ msgstr "Controladors que es poden baixar
+ 
+ #: ../system-config-printer.py:4414
+ msgid "Failed to download PPD."
+-msgstr ""
++msgstr "No s'ha pogut baixar el fitxer PPD."
+ 
+ #: ../system-config-printer.py:4450 ../system-config-printer.py:4488
+ msgid "No Installable Options"
+@@ -718,7 +714,7 @@ msgid ""
+ "Printer '%s' requires the '%s' program but it is not currently installed.  "
+ "Please install it before using this printer."
+ msgstr ""
+-"La impressora «»%s«» necessita el programa %s però encara no està "
++"La impressora «%s» necessita el programa «%s» però encara no està "
+ "instal·lat. L'haureu d'instal·lar abans de poder fer servir aquesta "
+ "impressora."
+ 
+@@ -743,16 +739,12 @@ msgstr ""
+ "16"
+ 
+ #: ../system-config-printer.glade.h:8
+-#, fuzzy
+ msgid "72 points per inch"
+-msgstr ""
+-"punts\n"
+-"(72 punts per polzada)"
++msgstr "72 punts per polzada"
+ 
+ #: ../system-config-printer.glade.h:9
+-#, fuzzy
+ msgid "<b>Authentication</b>"
+-msgstr "Autenticació"
++msgstr "<b>Autenticació</b>"
+ 
+ #: ../system-config-printer.glade.h:10
+ msgid "<b>Banner</b>"
+@@ -988,14 +980,14 @@ msgid "Copy Printer"
+ msgstr "Copia la impressora"
+ 
+ #: ../system-config-printer.glade.h:71
+-#, fuzzy
+ msgid "Copyright © 2006-2008 Red Hat, Inc."
+-msgstr "Copyright © 2006-2007 Red Hat, Inc."
++msgstr "Copyright © 2006-2008 Red Hat, Inc."
+ 
+ #: ../system-config-printer.glade.h:72
+ msgid ""
+ "Create a class from the selected printers (for failover or load-balancing)"
+ msgstr ""
++"Crea una classe a partir de les impressores seleccionades (per a redundància o balanceig de càrrega)"
+ 
+ #: ../system-config-printer.glade.h:73
+ msgid "Data Bits"
+@@ -1220,7 +1212,6 @@ msgid "Make and Model:"
+ msgstr "Fabricant i model:"
+ 
+ #: ../system-config-printer.glade.h:138
+-#, fuzzy
+ msgid "Make and model:"
+ msgstr "Fabricant i model:"
+ 
+@@ -1413,9 +1404,8 @@ msgid "Probe"
+ msgstr "Sondeja"
+ 
+ #: ../system-config-printer.glade.h:203
+-#, fuzzy
+ msgid "Prompt user if authentication is required"
+-msgstr "Es requereix autenticació"
++msgstr "Sol·licita l'autenticació a l'usuari, si cal"
+ 
+ #: ../system-config-printer.glade.h:204
+ msgid "Provide PPD file"
+@@ -1486,18 +1476,16 @@ msgid "Serial"
+ msgstr "Sèrie"
+ 
+ #: ../system-config-printer.glade.h:221
+-#, fuzzy
+ msgid "Set As De_fault"
+-msgstr "Fes-la la predeterminada"
++msgstr "Fes-la la _predeterminada"
+ 
+ #: ../system-config-printer.glade.h:222
+ msgid "Set As Default"
+ msgstr "Fes-la la predeterminada"
+ 
+ #: ../system-config-printer.glade.h:223
+-#, fuzzy
+ msgid "Set authentication details now"
+-msgstr "Es requereix autenticació"
++msgstr "Estableix els detalls de l'autenticació ara"
+ 
+ #: ../system-config-printer.glade.h:224
+ msgid "Settings"
+@@ -1513,7 +1501,7 @@ msgstr "Compartida"
+ 
+ #: ../system-config-printer.glade.h:227
+ msgid "Short name for this printer such as \"laserjet\""
+-msgstr ""
++msgstr "Sobrenom d'aquesta impressora, com ara «laserjet»"
+ 
+ #: ../system-config-printer.glade.h:228
+ msgid "Show printers shared by other systems"
+@@ -1673,9 +1661,8 @@ msgid "_Connect..."
+ msgstr "_Connecta..."
+ 
+ #: ../system-config-printer.glade.h:255
+-#, fuzzy
+ msgid "_Create Class"
+-msgstr "Classe remota"
++msgstr "_Crea la classe"
+ 
+ #: ../system-config-printer.glade.h:256
+ msgid "_Disable"
+@@ -1702,9 +1689,8 @@ msgid "_Install"
+ msgstr "_Instal·la"
+ 
+ #: ../system-config-printer.glade.h:262
+-#, fuzzy
+ msgid "_Rename"
+-msgstr "Allibe_ra"
++msgstr "_Torna a anomenar"
+ 
+ #: ../system-config-printer.glade.h:263
+ msgid "_Search"
+@@ -1887,7 +1873,7 @@ msgid ""
+ "is not exporting shared printers to the network."
+ msgstr ""
+ "Tot i que una o més impressores estan marcades com a compartides, aquest "
+-"sservidor d'impressió no les exporta a la xarxa."
++"servidor d'impressió no les exporta a la xarxa."
+ 
+ #: ../troubleshoot/CheckLocalServerPublishing.py:33
+ msgid ""
+@@ -2123,7 +2109,7 @@ msgstr "No"
+ 
+ #: ../troubleshoot/PrintTestPage.py:322
+ msgid "Error submitting test page"
+-msgstr ""
++msgstr "S'ha produït un error en enviar la pàgina de prova"
+ 
+ #: ../troubleshoot/QueueNotEnabled.py:57
+ #: ../troubleshoot/QueueRejectingJobs.py:67
+Index: system-config-printer-1.0.0/po/fi.po
+===================================================================
+--- system-config-printer-1.0.0.orig/po/fi.po	2008-05-27 19:09:01.000000000 +0200
++++ system-config-printer-1.0.0/po/fi.po	2009-04-01 13:17:18.548400850 +0200
+@@ -5,19 +5,21 @@
+ # Lauri Nurmi <lanurmi@iki.fi>, 2004, 2007.
+ # Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>, 2006-2008.
+ # Ilkka Tuohela, 2007.
++# Esko Arajärvi <edu@iki.fi> 2008.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: system-config-printer\n"
+ "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
+ "POT-Creation-Date: 2008-05-27 18:07+0100\n"
+-"PO-Revision-Date: 2008-02-04 01:54+0200\n"
+-"Last-Translator: Ville-Pekka Vainio <vpivaini@cs.helsinki.fi>\n"
++"PO-Revision-Date: 2008-09-07 09:16+0200\n"
++"Last-Translator: Esko Arajärvi <edu@iki.fi>\n"
+ "Language-Team: Finnish <laatu@lokalisointi.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "X-Generator: KBabel 1.11.4\n"
+ "Plural-Forms: nplurals=2; plural=(n != 1);\n"
++"X-Poedit-Bookmarks: -1,-1,-1,73,-1,-1,-1,-1,-1,-1\n"
+ 
+ #: ../authconn.py:30 ../system-config-printer.glade.h:249
+ msgid "Username:"
+@@ -28,14 +30,12 @@ msgid "Password:"
+ msgstr "Salasana:"
+ 
+ #: ../authconn.py:32
+-#, fuzzy
+ msgid "Domain:"
+-msgstr "Ylämarginaali:"
++msgstr "Verkkoalue:"
+ 
+ #: ../authconn.py:34
+-#, fuzzy
+ msgid "Authentication"
+-msgstr "Todennus vaaditaan"
++msgstr "Tunnistautuminen"
+ 
+ #: ../cupshelpers.py:28
+ msgid "Idle"
+@@ -98,7 +98,7 @@ msgstr "Virheellinen pyyntö"
+ 
+ #: ../errordialogs.py:80
+ msgid "Not found"
+-msgstr "Ei löydy"
++msgstr "Ei löytynyt"
+ 
+ #: ../errordialogs.py:82
+ msgid "Request timeout"
+@@ -106,7 +106,7 @@ msgstr "Pyynnön aikakatkaisu"
+ 
+ #: ../errordialogs.py:84
+ msgid "Upgrade required"
+-msgstr "Tarvitaan pävitys"
++msgstr "Tarvitaan päivitys"
+ 
+ #: ../errordialogs.py:86
+ msgid "Server error"
+@@ -131,13 +131,12 @@ msgid "Job"
+ msgstr "Työ"
+ 
+ #: ../jobviewer.py:90
+-#, fuzzy
+ msgid "User"
+-msgstr "Käyttäjät"
++msgstr "Käyttäjä"
+ 
+ #: ../jobviewer.py:91 ../troubleshoot/PrintTestPage.py:82
+ msgid "Document"
+-msgstr "Tulostustyö"
++msgstr "Asiakirja"
+ 
+ #: ../jobviewer.py:92 ../jobviewer.py:153 ../my-default-printer.py:157
+ #: ../system-config-printer.py:269 ../system-config-printer.py:2720
+@@ -160,20 +159,20 @@ msgstr "Tila"
+ #: ../jobviewer.py:125
+ #, python-format
+ msgid "my jobs on %s"
+-msgstr ""
++msgstr "omat työt tulostimella %s"
+ 
+ #: ../jobviewer.py:127
+ msgid "my jobs"
+-msgstr ""
++msgstr "omat työt"
+ 
+ #: ../jobviewer.py:132
+ msgid "all jobs"
+-msgstr ""
++msgstr "kaikki työt"
+ 
+ #: ../jobviewer.py:133
+-#, fuzzy, python-format
++#, python-format
+ msgid "Document Print Status (%s)"
+-msgstr "Tulostustyön tila"
++msgstr "Tulostustyön tila (%s)"
+ 
+ #: ../jobviewer.py:166
+ msgid "Message"
+@@ -220,7 +219,6 @@ msgstr "%d minuuttia sitten"
+ msgid "Pending"
+ msgstr "Odottaa vuoroa"
+ 
+-# tarkista
+ #: ../jobviewer.py:387 ../troubleshoot/PrintTestPage.py:41
+ msgid "Held"
+ msgstr "Pysäytetty"
+@@ -240,11 +238,11 @@ msgstr "Valmiina"
+ #: ../jobviewer.py:439
+ #, python-format
+ msgid "Authentication required for printing document `%s' (job %d)"
+-msgstr ""
++msgstr "Asiakirjan ”%s” (työ %d) tulostaminen vaatii tunnistautumisen"
+ 
+ #: ../jobviewer.py:639
+ msgid "No documents queued"
+-msgstr "Tulostusjonossa ei ole töitä"
++msgstr "Jonossa ei ole tulostustöitä"
+ 
+ #: ../jobviewer.py:641
+ msgid "1 document queued"
+@@ -256,34 +254,33 @@ msgid "%d documents queued"
+ msgstr "%d tulostustyötä jonossa"
+ 
+ #: ../jobviewer.py:869
+-#, fuzzy, python-format
++#, python-format
+ msgid "There was a problem sending document `%s' (job %d) to the printer."
+-msgstr "CUPS-palvelimeen yhdistämisessä oli ongelma."
++msgstr "Asiakirjan ”%s” (työ %d) lähettämisessä tulostimelle ilmeni ongelma."
+ 
+ #: ../jobviewer.py:872
+ #, python-format
+ msgid "There was a problem processing document `%s' (job %d)."
+-msgstr ""
++msgstr "Asiakirjan ”%s” (työ %d) käsittelyssä ilmeni ongelma."
+ 
+ #. Give up and use the untranslated provided.
+ #: ../jobviewer.py:876
+ #, python-format
+ msgid "There was a problem printing document `%s' (job %d): `%s'."
+-msgstr ""
++msgstr "Asiakirjan ”%s” (työ %d) tulostuksessa ilmeni ongelma: ”%s”."
+ 
+ #: ../jobviewer.py:881 ../jobviewer.py:897
+-#, fuzzy
+ msgid "Print Error"
+-msgstr "Tulostinvirhe"
++msgstr "Tulostusvirhe"
+ 
+ #: ../jobviewer.py:882
+ msgid "_Diagnose"
+-msgstr ""
++msgstr "_Selvitä"
+ 
+ #: ../jobviewer.py:903
+ #, python-format
+ msgid "The printer called `%s' has been disabled."
+-msgstr ""
++msgstr "Tulostin ”%s” on poistettu käytöstä."
+ 
+ #: ../my-default-printer.py:141 ../my-default-printer.desktop.in.h:1
+ msgid "Default Printer"
+@@ -308,15 +305,13 @@ msgid "Conflicts with:"
+ msgstr "Ristiriidassa:"
+ 
+ #: ../system-config-printer.py:275
+-#, fuzzy
+ msgid "Class"
+-msgstr "Uusi luokka"
++msgstr "Luokka"
+ 
+ #. Set up "Problems?" link button
+ #: ../system-config-printer.py:305
+-#, fuzzy
+ msgid "Problems?"
+-msgstr "Tunnista"
++msgstr "Ongelmia?"
+ 
+ #: ../system-config-printer.py:345 ../system-config-printer.py:347
+ msgid "Members of this class"
+@@ -355,14 +350,14 @@ msgid "Automatic rotation"
+ msgstr "Automaattinen kääntö"
+ 
+ #: ../system-config-printer.py:554
+-#, fuzzy, python-format
++#, python-format
+ msgid "Printer Properties - `%s' on %s"
+-msgstr "Tulostinraportti"
++msgstr "Tulostimen ominaisuudet – ”%s” koneella ”%s”"
+ 
+ #: ../system-config-printer.py:657
+ #, python-format
+ msgid "Printer configuration - %s"
+-msgstr "Tulostinasetukset - %s"
++msgstr "Tulostimen asetukset – %s"
+ 
+ #: ../system-config-printer.py:660
+ #, python-format
+@@ -370,24 +365,20 @@ msgid "Connected to %s"
+ msgstr "Yhdistetty kohteeseen %s"
+ 
+ #: ../system-config-printer.py:751
+-#, fuzzy
+ msgid "Remote class"
+-msgstr "Etäluokat"
++msgstr "Etäluokka"
+ 
+ #: ../system-config-printer.py:753
+-#, fuzzy
+ msgid "Remote printer"
+-msgstr "Etätulostimet"
++msgstr "Etätulostin"
+ 
+ #: ../system-config-printer.py:757
+-#, fuzzy
+ msgid "Local class"
+-msgstr "Paikalliset luokat"
++msgstr "Paikallinen luokka"
+ 
+ #: ../system-config-printer.py:759
+-#, fuzzy
+ msgid "Local printer"
+-msgstr "Paikalliset tulostimet"
++msgstr "Paikallinen tulostin"
+ 
+ #: ../system-config-printer.py:829
+ #, python-format
+@@ -460,7 +451,7 @@ msgstr "Virhe"
+ 
+ #: ../system-config-printer.py:1504
+ msgid "There was a problem connecting to the CUPS server."
+-msgstr "CUPS-palvelimeen yhdistämisessä oli ongelma."
++msgstr "CUPS-palvelimeen yhdistämisessä ilmeni ongelma."
+ 
+ #: ../system-config-printer.py:1629
+ #, python-format
+@@ -468,19 +459,18 @@ msgid "Option '%s' has value '%s' and ca
+ msgstr "Asetuksella ”%s” on arvo ”%s” eikä sitä voi muokata."
+ 
+ #: ../system-config-printer.py:2045
+-#, fuzzy, python-format
++#, python-format
+ msgid "Really delete class `%s'?"
+-msgstr "Haluatko varmasti poistaa luokan %s?"
++msgstr "Haluatko varmasti poistaa luokan ”%s”?"
+ 
+ #: ../system-config-printer.py:2047
+-#, fuzzy, python-format
++#, python-format
+ msgid "Really delete printer `%s'?"
+-msgstr "Haluatko varmasti poistaa tulostimen %s?"
++msgstr "Haluatko varmasti poistaa tulostimen ”%s”?"
+ 
+ #: ../system-config-printer.py:2049
+-#, fuzzy
+ msgid "Really delete selected destinations?"
+-msgstr "Haluatko varmasti poistaa tulostimen %s?"
++msgstr "Haluatko varmasti poistaa valitut kohteet?"
+ 
+ #: ../system-config-printer.py:2389 ../system-config-printer.py:2399
+ msgid "Share"
+@@ -539,13 +529,15 @@ msgstr "Etsitään ajureita"
+ 
+ #: ../system-config-printer.py:2721
+ msgid "Fax"
+-msgstr ""
++msgstr "Faksi"
+ 
+ #: ../system-config-printer.py:2722
+ msgid ""
+ "This printer supports both printing and sending faxes.  Which functionality "
+ "should be used for this queue?"
+ msgstr ""
++"Tämä tulostin tukee sekä tulostamista että faksien lähettämistä. Kumpaa "
++"toiminnallisuutta tässä jonossa tulisi käyttää?"
+ 
+ #: ../system-config-printer.py:3059
+ msgid "Searching for printers"
+@@ -647,7 +639,7 @@ msgstr "Ei yhtään"
+ 
+ #: ../system-config-printer.py:4342
+ msgid "Not specified."
+-msgstr "Ei määriteltyi."
++msgstr "Ei määritelty."
+ 
+ #. Foomatic database problem of some sort.
+ #: ../system-config-printer.py:4382
+@@ -657,7 +649,7 @@ msgstr "Tietokantavirhe"
+ #: ../system-config-printer.py:4383
+ #, python-format
+ msgid "The '%s' driver cannot be used with printer '%s %s'."
+-msgstr "Ajuria ”%s” ei voi käyttää tulostimen ”%s %s” kanssa."
++msgstr "Ajuria ”%s” ei voida käyttää tulostimen ”%s %s” kanssa."
+ 
+ #. This printer references some XML that is not
+ #. installed by default.  Point the user at the
+@@ -674,7 +666,7 @@ msgstr "PPD-virhe"
+ 
+ #: ../system-config-printer.py:4402
+ msgid "Failed to read PPD file.  Possible reason follows:"
+-msgstr "PPD-tiedoston lukeminen epäonnistui. Mahdollisia syitä:"
++msgstr "PPD-tiedoston lukeminen epäonnistui. Mahdollinen syy:"
+ 
+ #. Failed to get PPD downloaded from OpenPrinting XXX
+ #: ../system-config-printer.py:4413
+@@ -683,7 +675,7 @@ msgstr "Ladattavissa olevat ajurit"
+ 
+ #: ../system-config-printer.py:4414
+ msgid "Failed to download PPD."
+-msgstr ""
++msgstr "PPD-tiedoston lataaminen epäonnistui."
+ 
+ #: ../system-config-printer.py:4450 ../system-config-printer.py:4488
+ msgid "No Installable Options"
+@@ -704,7 +696,7 @@ msgstr "Asenna ajuri"
+ #: ../system-config-printer.py:4697
+ #, python-format
+ msgid "Printer '%s' requires the %s package but it is not currently installed."
+-msgstr "Tulostin ”%s” vaatii paketin ”%s”, mutta sitä ei ole asennettu."
++msgstr "Tulostin ”%s” vaatii paketin ”%s”, mutta se ei ole asennettuna."
+ 
+ #: ../system-config-printer.py:4722
+ msgid "Missing driver"
+@@ -716,7 +708,7 @@ msgid ""
+ "Printer '%s' requires the '%s' program but it is not currently installed.  "
+ "Please install it before using this printer."
+ msgstr ""
+-"Tulostin ”%s” vaatii ohjelman ”%s”, mutta sitä ei ole asennettu. Asenna "
++"Tulostin ”%s” vaatii ohjelman ”%s”, mutta se ei ole asennettuna. Asenna "
+ "ohjelma ennen tämän tulostimen käyttöä."
+ 
+ #: ../system-config-printer.glade.h:1
+@@ -740,20 +732,16 @@ msgstr ""
+ "16"
+ 
+ #: ../system-config-printer.glade.h:8
+-#, fuzzy
+ msgid "72 points per inch"
+-msgstr ""
+-"pistettä\n"
+-"(72 pistettä tuumaa kohti)"
++msgstr "72 pistettä tuumalla"
+ 
+ #: ../system-config-printer.glade.h:9
+-#, fuzzy
+ msgid "<b>Authentication</b>"
+-msgstr "Todennus vaaditaan"
++msgstr "<b>Tunnistautuminen</b>"
+ 
+ #: ../system-config-printer.glade.h:10
+ msgid "<b>Banner</b>"
+-msgstr "<b>Palkki</b>"
++msgstr "<b>Erotinsivu</b>"
+ 
+ #: ../system-config-printer.glade.h:11
+ msgid "<b>Basic Server Settings</b>"
+@@ -817,7 +805,7 @@ msgstr "<b>Lisäasetukset</b>"
+ 
+ #: ../system-config-printer.glade.h:26
+ msgid "<b>Policies</b>"
+-msgstr "<b>Menettelytavat</b>"
++msgstr "<b>Käytännöt</b>"
+ 
+ #: ../system-config-printer.glade.h:27
+ msgid "<b>Printer Name</b>"
+@@ -915,9 +903,8 @@ msgstr ""
+ "Salli käyttäjien peruuttaa mikä tahansa työ (ei pelkästään heidän omiaan)"
+ 
+ #: ../system-config-printer.glade.h:51
+-#, fuzzy
+ msgid "Basic Server Settings"
+-msgstr "<b>Palvelimen perusasetukset</b>"
++msgstr "Palvelimen perusasetukset"
+ 
+ #: ../system-config-printer.glade.h:52
+ msgid "Baud Rate"
+@@ -925,7 +912,7 @@ msgstr "Nopeus (baud)"
+ 
+ #: ../system-config-printer.glade.h:53
+ msgid "Bottom margin:"
+-msgstr "Alamariginaali:"
++msgstr "Alamarginaali:"
+ 
+ #: ../system-config-printer.glade.h:54
+ msgid "Brightness:"
+@@ -945,7 +932,7 @@ msgstr "Muuta..."
+ 
+ #: ../system-config-printer.glade.h:58
+ msgid "Characters per inch:"
+-msgstr "Merkkejä tuumaa kohti:"
++msgstr "Merkkejä tuumalla:"
+ 
+ #. Not more than 25 characters
+ #: ../system-config-printer.glade.h:60
+@@ -966,7 +953,7 @@ msgstr "Yhdistä CUPS-palvelimelle"
+ 
+ #: ../system-config-printer.glade.h:64
+ msgid "Connecting"
+-msgstr "Yhdistää"
++msgstr "Yhdistetään"
+ 
+ #: ../system-config-printer.glade.h:66
+ #, no-c-format
+@@ -974,7 +961,7 @@ msgid ""
+ "Connecting to Server:\n"
+ "%s\n"
+ msgstr ""
+-"Yhdistää palvelimelle:\n"
++"Yhdistetään palvelimelle:\n"
+ "%s\n"
+ 
+ #: ../system-config-printer.glade.h:69
+@@ -986,14 +973,15 @@ msgid "Copy Printer"
+ msgstr "Kopioi tulostin"
+ 
+ #: ../system-config-printer.glade.h:71
+-#, fuzzy
+ msgid "Copyright © 2006-2008 Red Hat, Inc."
+-msgstr "Tekijänoikeus © 2006-2007 Red Hat, Inc."
++msgstr "Tekijänoikeudet © 2006-2008 Red Hat, Inc."
+ 
+ #: ../system-config-printer.glade.h:72
+ msgid ""
+ "Create a class from the selected printers (for failover or load-balancing)"
+ msgstr ""
++"Luo luokka valituista tulostimista (kuorman jakamiseksi tai virhetilanteiden "
++"varalle)"
+ 
+ #: ../system-config-printer.glade.h:73
+ msgid "Data Bits"
+@@ -1040,8 +1028,8 @@ msgid ""
+ msgstr ""
+ "Oletus\n"
+ "Ei mitään\n"
+-"Pariton\n"
+-"Parillinen"
++"Parittomat\n"
++"Parilliset"
+ 
+ #: ../system-config-printer.glade.h:90
+ msgid ""
+@@ -1086,9 +1074,8 @@ msgid "Driver details"
+ msgstr "Ajurin tiedot"
+ 
+ #: ../system-config-printer.glade.h:103
+-#, fuzzy
+ msgid "E_nable"
+-msgstr "Käytössä"
++msgstr "Ota _käyttöön"
+ 
+ #: ../system-config-printer.glade.h:104
+ msgid "Empty"
+@@ -1100,7 +1087,7 @@ msgstr "Käytössä"
+ 
+ #: ../system-config-printer.glade.h:106
+ msgid "Ending Banner:"
+-msgstr "Lopetusbanneri:"
++msgstr "Loppusivu:"
+ 
+ #: ../system-config-printer.glade.h:107
+ msgid "Error Policy: \t"
+@@ -1196,13 +1183,12 @@ msgstr ""
+ "Alhaalta ylös, oikealta vasemmalle"
+ 
+ #: ../system-config-printer.glade.h:133
+-#, fuzzy
+ msgid "License:"
+ msgstr "Lisenssi:"
+ 
+ #: ../system-config-printer.glade.h:134
+ msgid "Lines per inch:"
+-msgstr "&Rivejä tuumaa kohti:"
++msgstr "Viivaa tuumalla:"
+ 
+ #: ../system-config-printer.glade.h:135
+ msgid "Local Driver"
+@@ -1214,12 +1200,11 @@ msgstr "Sijainti:"
+ 
+ #: ../system-config-printer.glade.h:137
+ msgid "Make and Model:"
+-msgstr "Merkki ja malli"
++msgstr "Merkki ja malli:"
+ 
+ #: ../system-config-printer.glade.h:138
+-#, fuzzy
+ msgid "Make and model:"
+-msgstr "Merkki ja malli"
++msgstr "Merkki ja malli:"
+ 
+ #: ../system-config-printer.glade.h:139
+ msgid "Media:"
+@@ -1253,9 +1238,7 @@ msgstr "Tulostimen uusi nimi"
+ msgid "No, I do not accept this license"
+ msgstr "Ei, en hyväksy tätä lisenssiä"
+ 
+-# Jonkun pitäisi tarkastaa...
+ #: ../system-config-printer.glade.h:148
+-#, fuzzy
+ msgid ""
+ "None\n"
+ "Staple\n"
+@@ -1301,7 +1284,7 @@ msgstr ""
+ "Nidonta (ylävasen)\n"
+ "Nidonta (alavasen)\n"
+ "Nidonta (yläoikea)\n"
+-"Nidonta (alavasen)\n"
++"Nidonta (alaoikea)\n"
+ "Reunaommel (vasen)\n"
+ "Reunaommel (ylä)\n"
+ "Reunaommel (oikea)\n"
+@@ -1395,13 +1378,12 @@ msgid "Print Test Page"
+ msgstr "Tulosta testisivu"
+ 
+ #: ../system-config-printer.glade.h:199
+-#, fuzzy
+ msgid "Printer Properties"
+-msgstr "Tulostinraportti"
++msgstr "Tulostimen ominaisuudet"
+ 
+ #: ../system-config-printer.glade.h:200
+ msgid "Printer State:"
+-msgstr "Tulostimen tilat:"
++msgstr "Tulostimen tila:"
+ 
+ #: ../system-config-printer.glade.h:201
+ msgid "Printer model:"
+@@ -1412,9 +1394,8 @@ msgid "Probe"
+ msgstr "Tunnista"
+ 
+ #: ../system-config-printer.glade.h:203
+-#, fuzzy
+ msgid "Prompt user if authentication is required"
+-msgstr "Todennus vaaditaan"
++msgstr "Kysy käyttäjältä, jos vaaditaan tunnistautumista"
+ 
+ #: ../system-config-printer.glade.h:204
+ msgid "Provide PPD file"
+@@ -1426,7 +1407,7 @@ msgstr "Jono:"
+ 
+ #: ../system-config-printer.glade.h:206
+ msgid "Require encryption"
+-msgstr "Vaadi salausta"
++msgstr "Vaadi salaus"
+ 
+ #: ../system-config-printer.glade.h:207
+ msgid "Reset"
+@@ -1485,19 +1466,16 @@ msgid "Serial"
+ msgstr "Sarja"
+ 
+ #: ../system-config-printer.glade.h:221
+-#, fuzzy
+ msgid "Set As De_fault"
+-msgstr "_Aseta oletustulostimeksi"
++msgstr "_Aseta oletukseksi"
+ 
+ #: ../system-config-printer.glade.h:222
+-#, fuzzy
+ msgid "Set As Default"
+-msgstr "_Aseta oletustulostimeksi"
++msgstr "Aseta oletukseksi"
+ 
+ #: ../system-config-printer.glade.h:223
+-#, fuzzy
+ msgid "Set authentication details now"
+-msgstr "Todennus vaaditaan"
++msgstr "Aseta tunnistautumistiedot nyt"
+ 
+ #: ../system-config-printer.glade.h:224
+ msgid "Settings"
+@@ -1513,7 +1491,7 @@ msgstr "Jaettu"
+ 
+ #: ../system-config-printer.glade.h:227
+ msgid "Short name for this printer such as \"laserjet\""
+-msgstr ""
++msgstr "Tämän tulostimen lyhyt nimi, kuten ”laserjet”"
+ 
+ #: ../system-config-printer.glade.h:228
+ msgid "Show printers shared by other systems"
+@@ -1535,11 +1513,11 @@ msgstr ""
+ 
+ #: ../system-config-printer.glade.h:231
+ msgid "Starting Banner:"
+-msgstr "Aloitusbanneri:"
++msgstr "Alkusivu:"
+ 
+ #: ../system-config-printer.glade.h:232
+ msgid "Supplier:"
+-msgstr "Toimittaja"
++msgstr "Toimittaja:"
+ 
+ #: ../system-config-printer.glade.h:233
+ msgid "System-Config-Printer"
+@@ -1566,8 +1544,7 @@ msgid ""
+ "of the driver's supplier."
+ msgstr ""
+ "Nämä ajurit eivät tule käyttöjärjestelmän toimittajalta eikä toimittajan "
+-"kaupallinen tuki kata niitä.  Katso ajurin toimittajan tuki- ja "
+-"lisenssiehdot."
++"kaupallinen tuki kata niitä. Katso ajurin toimittajan tuki- ja lisenssiehdot."
+ 
+ #: ../system-config-printer.glade.h:236
+ msgid ""
+@@ -1648,9 +1625,8 @@ msgstr ""
+ "Käytä uutta PPD (Postscript Printer Description) -tiedostoa sellaisenaan."
+ 
+ #: ../system-config-printer.glade.h:250
+-#, fuzzy
+ msgid "View Print _Queue"
+-msgstr "Uusi tulostin"
++msgstr "_Näytä tulostusjono"
+ 
+ #: ../system-config-printer.glade.h:251
+ msgid ""
+@@ -1669,19 +1645,16 @@ msgid "Yes, I accept this license"
+ msgstr "Kyllä, hyväksyn tämän lisenssin"
+ 
+ #: ../system-config-printer.glade.h:254
+-#, fuzzy
+ msgid "_Connect..."
+-msgstr "Yhdistää"
++msgstr "_Yhdistä"
+ 
+ #: ../system-config-printer.glade.h:255
+-#, fuzzy
+ msgid "_Create Class"
+-msgstr "Etäluokat"
++msgstr "_Luo luokka"
+ 
+ #: ../system-config-printer.glade.h:256
+-#, fuzzy
+ msgid "_Disable"
+-msgstr "Jaettava"
++msgstr "_Poista käytöstä"
+ 
+ #: ../system-config-printer.glade.h:257
+ msgid "_Do not apply"
+@@ -1703,24 +1676,21 @@ msgstr "_Ohje"
+ msgid "_Install"
+ msgstr "_Asenna"
+ 
+-# tarkista
+ #: ../system-config-printer.glade.h:262
+-#, fuzzy
+ msgid "_Rename"
+-msgstr "_Vapauta"
++msgstr "_Nimeä uudelleen"
+ 
+ #: ../system-config-printer.glade.h:263
+ msgid "_Search"
+ msgstr "_Hae"
+ 
+ #: ../system-config-printer.glade.h:264
+-#, fuzzy
+ msgid "_Server Settings..."
+-msgstr "Palvelinvalinnat"
++msgstr "_Palvelinasetukset..."
+ 
+ #: ../system-config-printer.glade.h:265
+ msgid "_Troubleshoot"
+-msgstr ""
++msgstr "_Vianetsintä"
+ 
+ #: ../system-config-printer.glade.h:266
+ msgid "_Verify..."
+@@ -1749,11 +1719,12 @@ msgstr ""
+ "Mikko Ikola, 2004.\n"
+ "Lauri Nurmi, 2004, 2007.\n"
+ "Ville-Pekka Vainio, 2006-2008.\n"
+-"Ilkka Tuohela, 2007."
++"Ilkka Tuohela, 2007.\n"
++"Esko Arajärvi, 2008."
+ 
+ #: ../system-config-printer.desktop.in.h:1
+ msgid "Configure printers"
+-msgstr "Määrittele tulostimia"
++msgstr "Muokkaa tulostimien asetuksia"
+ 
+ #: ../system-config-printer.desktop.in.h:2
+ msgid "Printing"
+@@ -1761,7 +1732,7 @@ msgstr "Tulostus"
+ 
+ #: ../statereason.py:85
+ msgid "Toner low"
+-msgstr "Väriaine on vähissä"
++msgstr "Väriaine vähissä"
+ 
+ #: ../statereason.py:86
+ #, python-format
+@@ -1770,7 +1741,7 @@ msgstr "Tulostimen ”%s” väriaine on
+ 
+ #: ../statereason.py:87
+ msgid "Toner empty"
+-msgstr "Väriaine on loppu"
++msgstr "Väriaine lopussa"
+ 
+ #: ../statereason.py:88
+ #, python-format
+@@ -1779,7 +1750,7 @@ msgstr "Tulostimen ”%s” väriaine on
+ 
+ #: ../statereason.py:89
+ msgid "Cover open"
+-msgstr "Kansi on auki"
++msgstr "Kansi auki"
+ 
+ #: ../statereason.py:90
+ #, python-format
+@@ -1788,7 +1759,7 @@ msgstr "Tulostimen ”%s” kansi on auk
+ 
+ #: ../statereason.py:91
+ msgid "Door open"
+-msgstr "Luukku on auki"
++msgstr "Luukku auki"
+ 
+ #: ../statereason.py:92
+ #, python-format
+@@ -1797,7 +1768,7 @@ msgstr "Tulostimen ”%s” luukku on au
+ 
+ #: ../statereason.py:93
+ msgid "Paper low"
+-msgstr "Paperi on vähissä"
++msgstr "Paperi vähissä"
+ 
+ #: ../statereason.py:94
+ #, python-format
+@@ -1806,7 +1777,7 @@ msgstr "Paperi on vähissä tulostimessa
+ 
+ #: ../statereason.py:95
+ msgid "Out of paper"
+-msgstr "Paperi on loppu"
++msgstr "Paperi lopussa"
+ 
+ #: ../statereason.py:96
+ #, python-format
+@@ -1815,7 +1786,7 @@ msgstr "Paperi on loppu tulostimesta ”
+ 
+ #: ../statereason.py:97
+ msgid "Ink low"
+-msgstr "Muste on vähissä"
++msgstr "Muste vähissä"
+ 
+ #: ../statereason.py:98
+ #, python-format
+@@ -1824,7 +1795,7 @@ msgstr "Tulostimen ”%s” muste on vä
+ 
+ #: ../statereason.py:99
+ msgid "Ink empty"
+-msgstr "Muste on lopussa"
++msgstr "Muste lopussa"
+ 
+ #: ../statereason.py:100
+ #, python-format
+@@ -1832,14 +1803,13 @@ msgid "Printer '%s' has no ink left."
+ msgstr "Tulostimen ”%s” muste on lopussa."
+ 
+ #: ../statereason.py:101
+-#, fuzzy
+ msgid "Printer off-line"
+-msgstr "Tulostimen asetukset"
++msgstr "Ei yhteyttä tulostimeen"
+ 
+ #: ../statereason.py:102
+-#, fuzzy, python-format
++#, python-format
+ msgid "Printer `%s' is currently off-line."
+-msgstr "Paperi on loppu tulostimesta ”%s”."
++msgstr "Tulostimeen ”%s” saada tällä hetkellä yhteyttä."
+ 
+ #: ../statereason.py:103
+ msgid "Not connected?"
+@@ -1855,9 +1825,9 @@ msgid "Printer error"
+ msgstr "Tulostinvirhe"
+ 
+ #: ../statereason.py:106
+-#, fuzzy, python-format
++#, python-format
+ msgid "There is a problem on printer `%s'."
+-msgstr "Tulostimen ”%s” luukku on auki."
++msgstr "Tulostimessa ”%s” on ongelma."
+ 
+ #: ../statereason.py:117
+ msgid "Printer report"
+@@ -1874,78 +1844,83 @@ msgstr "Tulostin ”%s”: ”%s”."
+ 
+ #: ../troubleshoot/__init__.py:53
+ msgid "Printing troubleshooter"
+-msgstr ""
++msgstr "Tulostusongelmien ratkaisija "
+ 
+ #: ../troubleshoot/base.py:26
+ msgid ""
+ "To start this tool, select System->Administration->Printing from the main "
+ "menu."
+ msgstr ""
++"Tämä työkalu voidaan käynnistää valitsemalla päävalikosta "
++"Järjestelmä→Ylläpito→Tulostus."
+ 
+ #: ../troubleshoot/CheckLocalServerPublishing.py:28
+ msgid "Server Not Exporting Printers"
+-msgstr ""
++msgstr "Palvelin ei tarjoa tulostimia"
+ 
+ #: ../troubleshoot/CheckLocalServerPublishing.py:29
+ msgid ""
+ "Although one or more printers are marked as being shared, this print server "
+ "is not exporting shared printers to the network."
+ msgstr ""
++"Vaikka yksi tai useampia tulostimia on merkitty jaettaviksi, tämä "
++"tulostuspalvelin ei tarjoa jaettuja tulostimia verkkoon."
+ 
+ #: ../troubleshoot/CheckLocalServerPublishing.py:33
+ msgid ""
+ "Enable the 'Share published printers connected to this system' option in the "
+ "server settings using the printing administration tool."
+ msgstr ""
++"Ota valitsin ”Jaa tähän järjestelmään kytketyt julkiset kirjoittimet” "
++"käyttöön palvelimen asetuksista käyttäen tulostuksen ylläpitotyökalua."
+ 
+ #: ../troubleshoot/CheckPPDSanity.py:45 ../applet.py:146
+ msgid "Install"
+ msgstr "Asenna"
+ 
+ #: ../troubleshoot/CheckPPDSanity.py:80
+-#, fuzzy
+ msgid "Invalid PPD File"
+-msgstr "Anna PPD-tiedosto"
++msgstr "Virheellinen PPD-tiedosto"
+ 
+ #: ../troubleshoot/CheckPPDSanity.py:89
+ #, python-format
+ msgid ""
+ "The PPD file for printer `%s' does not conform to the specification.  "
+ "Possible reason follows:"
+-msgstr ""
++msgstr "Tulostimen ”%s” PPD-tiedosto ei vastaa määrittelyä. Mahdollinen syy:"
+ 
+ #. Perhaps cupstestppd is not in the path.
+ #: ../troubleshoot/CheckPPDSanity.py:95
+-#, fuzzy, python-format
++#, python-format
+ msgid "There is a problem with the PPD file for printer `%s'."
+-msgstr "Tulostimen ”%s” luukku on auki."
++msgstr "Tulostimen ”%s” PPD-tiedostossa on ongelma."
+ 
+ #: ../troubleshoot/CheckPPDSanity.py:105
+-#, fuzzy
+ msgid "Missing Printer Driver"
+ msgstr "Tulostinajuri puuttuu"
+ 
+ #: ../troubleshoot/CheckPPDSanity.py:108
+-#, fuzzy, python-format
++#, python-format
+ msgid "Printer `%s' requires the %s package but it is not currently installed."
+-msgstr "Tulostin ”%s” vaatii paketin ”%s”, mutta sitä ei ole asennettu."
++msgstr "Tulostin ”%s” vaatii paketin ”%s”, mutta se ei ole asennettuna."
+ 
+ #: ../troubleshoot/CheckPPDSanity.py:113
+-#, fuzzy, python-format
++#, python-format
+ msgid ""
+ "Printer `%s' requires the `%s' program but it is not currently installed."
+-msgstr "Tulostin ”%s” vaatii paketin ”%s”, mutta sitä ei ole asennettu."
++msgstr "Tulostin ”%s” vaatii ohjelman ”%s”, mutta se ei ole asennettuna."
+ 
+ #: ../troubleshoot/ChooseNetworkPrinter.py:29
+-#, fuzzy
+ msgid "Choose Network Printer"
+-msgstr "Uusi tulostin"
++msgstr "Valitse verkkotulostin"
+ 
+ #: ../troubleshoot/ChooseNetworkPrinter.py:30
+ msgid ""
+ "Please select the network printer you are trying to use from the list below. "
+ "If it does not appear in the list, select 'Not listed'."
+ msgstr ""
++"Valitse alla olevasta luettelosta verkkotulostin, jota yrität käyttää. Jos "
++"sitä ei löydy luettelosta, valitse ”Ei luettelossa”."
+ 
+ #: ../troubleshoot/ChooseNetworkPrinter.py:35
+ #: ../troubleshoot/ChoosePrinter.py:36 ../troubleshoot/DeviceListed.py:36
+@@ -1954,237 +1929,244 @@ msgstr "Nimi"
+ 
+ #: ../troubleshoot/ChooseNetworkPrinter.py:39
+ #: ../troubleshoot/ChoosePrinter.py:40 ../troubleshoot/DeviceListed.py:38
+-#, fuzzy
+ msgid "Information"
+-msgstr "Sijainti"
++msgstr "Tietoja"
+ 
+ #: ../troubleshoot/ChooseNetworkPrinter.py:75
+ #: ../troubleshoot/ChoosePrinter.py:64 ../troubleshoot/DeviceListed.py:70
+-#, fuzzy
+ msgid "Not listed"
+-msgstr "Ei kytketty"
++msgstr "Ei luettelossa"
+ 
+ #: ../troubleshoot/ChoosePrinter.py:30
+-#, fuzzy
+ msgid "Choose Printer"
+-msgstr "Kopioi tulostin"
++msgstr "Valitse tulostin"
+ 
+ #: ../troubleshoot/ChoosePrinter.py:31
+ msgid ""
+ "Please select the printer you are trying to use from the list below. If it "
+ "does not appear in the list, select 'Not listed'."
+ msgstr ""
++"Valitse alla olevasta luettelosta tulostin, jota yrität käyttää. Jos sitä ei "
++"löydy luettelosta, valitse ”Ei luettelossa”."
+ 
+ #: ../troubleshoot/DeviceListed.py:30
+-#, fuzzy
+ msgid "Choose Device"
+-msgstr "Vaihda laitteen osoitetta"
++msgstr "Valitse laite"
+ 
+ #: ../troubleshoot/DeviceListed.py:31
+ msgid ""
+ "Please select the device you want to use from the list below. If it does not "
+ "appear in the list, select 'Not listed'."
+ msgstr ""
++"Valitse alla olevasta luettelosta laite, jota yrität käyttää. Jos sitä ei "
++"löydy luettelosta, valitse ”Ei luettelossa”."
+ 
+ #: ../troubleshoot/ErrorLogCheckpoint.py:30
+ #: ../troubleshoot/ErrorLogFetch.py:30
+ msgid "Debugging"
+-msgstr ""
++msgstr "Virheidenjäljitys"
+ 
+ #: ../troubleshoot/ErrorLogCheckpoint.py:31
+ msgid ""
+ "I would like to enable debugging output from the CUPS scheduler.  This may "
+ "cause the scheduler to restart.  Click the button below to enable debugging."
+ msgstr ""
++"Haluan, että CUPSin ajastin tulostaa virheidenjäljitysviestejä. Tämä saattaa "
++"aiheuttaa ajastimen uudelleenkäynnistyksen. Ota virheidenjäljitys käyttöön "
++"napsauttamalla alla olevaa nappia."
+ 
+ #: ../troubleshoot/ErrorLogCheckpoint.py:35
+ msgid "Enable Debugging"
+-msgstr ""
++msgstr "Ota virheidenjäljitys käyttöön"
+ 
+ #: ../troubleshoot/ErrorLogCheckpoint.py:143
+ msgid "Debug logging enabled."
+-msgstr ""
++msgstr "Virheidenjäljitysviestit otettu käyttöön."
+ 
+ #: ../troubleshoot/ErrorLogCheckpoint.py:145
+ msgid "Debug logging was already enabled."
+-msgstr ""
++msgstr "Virheidenjäljitysviestit olivat jo käytössä."
+ 
+ #: ../troubleshoot/ErrorLogFetch.py:31
+ msgid ""
+ "I would like to disable debugging output from the CUPS scheduler.  This may "
+ "cause the scheduler to restart.  Click the button below to disable debugging."
+ msgstr ""
++"Haluan, että CUPSin ajastin ei tulosta virheidenjäljitysviestejä. Tämä "
++"saattaa aiheuttaa ajastimen uudelleenkäynnistyksen. Poista virheidenjäljitys "
++"käytöstä napsauttamalla alla olevaa nappia."
+ 
+ #: ../troubleshoot/ErrorLogFetch.py:35
+ msgid "Disable Debugging"
+-msgstr ""
++msgstr "Poista virheidenjäljitys käytöstä"
+ 
+ #: ../troubleshoot/ErrorLogFetch.py:123
+ msgid "Debug logging disabled."
+-msgstr ""
++msgstr "Virheidenjäljitysviestit poistettu käytöstä."
+ 
+ #: ../troubleshoot/ErrorLogFetch.py:125
+ msgid "Debug logging was already disabled."
+-msgstr ""
++msgstr "Virheidenjäljitysviestit olivat jo poissa käytöstä."
+ 
+ #: ../troubleshoot/ErrorLogParse.py:30
+ msgid "Error log messages"
+-msgstr ""
++msgstr "Virhelokin viestit"
+ 
+ #: ../troubleshoot/ErrorLogParse.py:31
+ msgid "There are messages in the error log."
+-msgstr ""
++msgstr "Virhelokissa on viestejä."
+ 
+ #: ../troubleshoot/LocalOrRemote.py:27
+-#, fuzzy
+ msgid "Printer Location"
+-msgstr "Tulostimen asetukset"
++msgstr "Tulostimen sijainti"
+ 
+ #: ../troubleshoot/LocalOrRemote.py:28
+-#, fuzzy
+ msgid "Is the printer connected to this computer or available on the network?"
+-msgstr "Rinnakkaisporttiin liitetty tulostin."
++msgstr ""
++"Onko tulostin kytketty tähän tietokoneeseen tai käytettävissä verkossa?"
+ 
+ #: ../troubleshoot/LocalOrRemote.py:30
+-#, fuzzy
+ msgid "Locally connected printer"
+-msgstr "Haluatko varmasti poistaa tulostimen %s?"
++msgstr "Paikallisesti kytketty tulostin"
+ 
+ #: ../troubleshoot/LocalOrRemote.py:31
+-#, fuzzy
+ msgid "Network printer"
+-msgstr "Uusi tulostin"
++msgstr "Verkkotulostin"
+ 
+ #: ../troubleshoot/NetworkCUPSPrinterShared.py:28
+ msgid "Queue Not Shared"
+-msgstr ""
++msgstr "Jonoa ei jaeta"
+ 
+ #: ../troubleshoot/NetworkCUPSPrinterShared.py:29
+ msgid "The CUPS printer on the server is not shared."
+-msgstr ""
++msgstr "Palvelimen CUPS-tulostinta ei ole jaettu."
+ 
+ #: ../troubleshoot/PrinterStateReasons.py:29
+-#, fuzzy
+ msgid "Status Messages"
+-msgstr "Viesti"
++msgstr "Tilaviestit"
+ 
+ #: ../troubleshoot/PrinterStateReasons.py:30
+ msgid "There are status messages associated with this queue."
+-msgstr ""
++msgstr "Tähän jonoon liittyy tilaviestejä."
+ 
+ #: ../troubleshoot/PrinterStateReasons.py:53
+-#, fuzzy, python-format
++#, python-format
+ msgid "The printer's state message is: `%s'."
+-msgstr "Tulostimen tilat:"
++msgstr "Tulostimen tilaviesti on: ”%s”."
+ 
+ #: ../troubleshoot/PrinterStateReasons.py:78
+ msgid "Errors are listed below:"
+-msgstr ""
++msgstr "Virheet on lueteltu alla:"
+ 
+ #: ../troubleshoot/PrinterStateReasons.py:83
+ msgid "Warnings are listed below:"
+-msgstr ""
++msgstr "Varoitukset on lueteltu alla:"
+ 
+ #: ../troubleshoot/PrintTestPage.py:55
+-#, fuzzy
+ msgid "Test Page"
+-msgstr "Tulosta testisivu"
++msgstr "Testisivu"
+ 
+ #: ../troubleshoot/PrintTestPage.py:56
+ msgid ""
+ "Now print a test page.  If you are having problems printing a specific "
+ "document, print that document now and mark the print job below."
+ msgstr ""
++"Tulosta nyt testisivu. Jos jonkin tietyn asiakirjan tulostuksessa on "
++"ongelmia, tulosta se nyt ja merkitse tulostustyö alla."
+ 
+ #: ../troubleshoot/PrintTestPage.py:71
+ msgid "Cancel All Jobs"
+-msgstr ""
++msgstr "Peru kaikki työt"
+ 
+ #: ../troubleshoot/PrintTestPage.py:77
+-#, fuzzy
+ msgid "Test"
+-msgstr "Oletukset"
++msgstr "Testi"
+ 
+ #: ../troubleshoot/PrintTestPage.py:107
+ msgid "Did the marked print jobs print correctly?"
+-msgstr ""
++msgstr "Tulostuivatko merkityt tulostustyöt oikein?"
+ 
+ #: ../troubleshoot/PrintTestPage.py:114
+ msgid "Yes"
+-msgstr ""
++msgstr "Kyllä"
+ 
+ #: ../troubleshoot/PrintTestPage.py:115
+-#, fuzzy
+ msgid "No"
+-msgstr "Ei yhtään"
++msgstr "Ei"
+ 
+ #: ../troubleshoot/PrintTestPage.py:322
+ msgid "Error submitting test page"
+-msgstr ""
++msgstr "Virhe lähetettäessä testisivua"
+ 
+ #: ../troubleshoot/QueueNotEnabled.py:57
+ #: ../troubleshoot/QueueRejectingJobs.py:67
+ #, python-format
+ msgid "The reason given is: `%s'."
+-msgstr ""
++msgstr "Annettu syy oli: ”%s”."
+ 
+ #: ../troubleshoot/QueueNotEnabled.py:59
+ msgid "This may be due to the printer being disconnected or switched off."
+ msgstr ""
++"Tämä saattaa johtua siitä, että tulostin ei ole kytkettynä tai se on pois "
++"päältä."
+ 
+ #: ../troubleshoot/QueueNotEnabled.py:63
+ msgid "Queue Not Enabled"
+-msgstr ""
++msgstr "Jono ei käytössä"
+ 
+ #: ../troubleshoot/QueueNotEnabled.py:64
+ #, python-format
+ msgid "The queue `%s' is not enabled."
+-msgstr ""
++msgstr "Jono ”%s” ei ole käytössä."
+ 
+ #: ../troubleshoot/QueueNotEnabled.py:72
+ msgid ""
+ "To enable it, select the `Enabled' checkbox in the `Policies' tab for the "
+ "printer in the printer administration tool."
+ msgstr ""
++"Ottaaksesi sen käyttöön valitse ”Käytössä”-valintaruutu tulostimen "
++"”Käytännöt”-välilehdeltä tulostimen ylläpitotyökalussa."
+ 
+ #: ../troubleshoot/QueueRejectingJobs.py:32
+ msgid "Queue Rejecting Jobs"
+-msgstr ""
++msgstr "Jono ei ota vastaan töitä"
+ 
+ #: ../troubleshoot/QueueRejectingJobs.py:64
+ #, python-format
+ msgid "The queue `%s' is rejecting jobs."
+-msgstr ""
++msgstr "Jono ”%s” ei ota töitä vastaan."
+ 
+ #: ../troubleshoot/QueueRejectingJobs.py:71
+ msgid ""
+ "To make the queue accept jobs, select the `Accepting Jobs' checkbox in the "
+ "`Policies' tab for the printer in the printer administration tool."
+ msgstr ""
++"Jono saadaan ottamaan vastaan töitä valitsemalla ”Hyväksyy uusia töitä”-"
++"valintaruutu tulostimen ”Käytännöt”-välilehdeltä tulostimen "
++"ylläpitotyökalussa."
+ 
+ #: ../troubleshoot/RemoteAddress.py:27
+-#, fuzzy
+ msgid "Remote Address"
+-msgstr "Etätulostimet"
++msgstr "Etäosoite"
+ 
+ #: ../troubleshoot/RemoteAddress.py:28
+ msgid ""
+ "Please enter as many details as you can about the network address of this "
+ "printer."
+ msgstr ""
++"Syötä mahdollisimman paljon tietoja tämän tulostimen verkko-osoitteesta."
+ 
+ #: ../troubleshoot/RemoteAddress.py:36
+-#, fuzzy
+ msgid "Server name:"
+-msgstr "Käyttäjätunnus:"
++msgstr "Palvelimen nimi:"
+ 
+ #: ../troubleshoot/RemoteAddress.py:43
+ msgid "Server IP address:"
+-msgstr ""
++msgstr "Palvelimen IP-osoite:"
+ 
+ #: ../troubleshoot/SchedulerNotRunning.py:28
+ msgid "CUPS Service Stopped"
+-msgstr ""
++msgstr "CUPS-palvelu pysäytettynä"
+ 
+ #: ../troubleshoot/SchedulerNotRunning.py:29
+ msgid ""
+@@ -2192,46 +2174,52 @@ msgid ""
+ "choose System->Administration->Services from the main menu and look for the "
+ "`cups' service."
+ msgstr ""
++"CUPS-tulostusjono ei näytä olevan käynnissä. Korjataksesi tämän valitse "
++"Järjestelmä→Ylläpito→Palvelut päävalikosta ja etsi ”cups”-palvelu."
+ 
+ #: ../troubleshoot/ServerFirewalled.py:27
+ msgid "Check Server Firewall"
+-msgstr ""
++msgstr "Tarkista palvelimen palomuuri"
+ 
+ #: ../troubleshoot/ServerFirewalled.py:28
+-#, fuzzy
+ msgid "It is not possible to connect to the server."
+-msgstr "CUPS-palvelimeen yhdistämisessä oli ongelma."
++msgstr "Palvelimeen ei voida ottaa yhteyttä."
+ 
+ #: ../troubleshoot/ServerFirewalled.py:43
+-#, python-format
+ msgid ""
+ "Please check to see if a firewall or router configuration is blocking TCP "
+ "port %d on server `%s'."
+ msgstr ""
++"Tarkista estääkö palomuuri tai reititin liikenteen palvelimen ”%s” TCP-"
++"porttiin %d."
+ 
+ #: ../troubleshoot/Shrug.py:27
+ msgid "Sorry!"
+-msgstr ""
++msgstr "Pahoittelut!"
+ 
+ #: ../troubleshoot/Shrug.py:28
+ msgid ""
+ "I have not been able to work out what the problem is, but I have collected "
+ "some useful information to put in a bug report."
+ msgstr ""
++"Ongelmaa ei ole saatu ratkaistua, mutta virheraporttia varten on kerätty "
++"joitain hyödyllisiä tietoja."
+ 
+ #: ../troubleshoot/Welcome.py:36
+ msgid "Trouble-shooting Printing"
+-msgstr ""
++msgstr "Tulostuksen vianetsintä"
+ 
+ #: ../troubleshoot/Welcome.py:38
+ msgid ""
+ "In the next few screens I will ask you some questions about your problem "
+ "with printing. Based on your answers I will try to suggest a solution."
+ msgstr ""
++"Muutamalla seuraavalla ruudulla kysytään tulostusongelmaasi liittyviä "
++"kysymyksiä. Ongelmaan yritetään löytää ratkaisu vastaustesi avulla. "
+ 
+ #: ../troubleshoot/Welcome.py:42
+ msgid "Click 'Forward' to begin."
+-msgstr ""
++msgstr "Napsauta ”Eteenpäin” aloittaaksesi."
+ 
+ #: ../applet.py:135
+ msgid "Printer added"
+@@ -2248,7 +2236,7 @@ msgstr "Asenna tulostinajuri"
+ #: ../applet.py:142
+ #, python-format
+ msgid "`%s' requires driver installation: %s."
+-msgstr "”%s” vaatii ajurin asentamista: %s.."
++msgstr "”%s” vaatii ajurin asentamista: %s."
+ 
+ #: ../applet.py:150
+ #, python-format
+@@ -2257,13 +2245,13 @@ msgstr "”%s” on valmiina tulostamaan
+ 
+ #: ../applet.py:153
+ msgid "Configure"
+-msgstr "Aseta"
++msgstr "Muokkaa asetuksia"
+ 
+ #. Model mismatch
+ #: ../applet.py:156
+ #, python-format
+ msgid "`%s' has been added, using the `%s' driver."
+-msgstr "”%s” on lisätty, käyttäen ajuria ”%s”."
++msgstr "”%s” on lisätty käyttäen ajuria ”%s”."
+ 
+ #: ../applet.py:160
+ msgid "Find driver"
+@@ -2297,17 +2285,14 @@ msgstr "Näytä _tulostimen tila"
+ msgid "_Hide"
+ msgstr "_Piilota"
+ 
+-# tarkista
+ #: ../applet.glade.h:11
+ msgid "_Hold"
+ msgstr "_Pysäytä"
+ 
+-# tarkista
+ #: ../applet.glade.h:12
+ msgid "_Refresh"
+ msgstr "_Päivitä"
+ 
+-# tarkista
+ #: ../applet.glade.h:13
+ msgid "_Release"
+ msgstr "_Vapauta"
+@@ -2318,7 +2303,7 @@ msgstr "_Näytä"
+ 
+ #: ../print-applet.desktop.in.h:1
+ msgid "Print Queue Applet"
+-msgstr "Tulostusjono-sovelma"
++msgstr "Tulostusjonosovelma"
+ 
+ #: ../print-applet.desktop.in.h:2
+ msgid "System tray icon for managing print jobs"
+@@ -2326,7 +2311,7 @@ msgstr "Ilmoitusalueen kuvake tulostust�
+ 
+ #: ../manage-print-jobs.desktop.in.h:1
+ msgid "Cancel, pause, resume or reprint jobs"
+-msgstr "Peruuta, aseta tauolle, jatka tai uudelleentulosta töitä"
++msgstr "Peruuta, aseta tauolle, jatka tai tulosta uudelleen töitä"
+ 
+ #: ../manage-print-jobs.desktop.in.h:2
+ msgid "Manage Print Jobs"
+Index: system-config-printer-1.0.0/po/ro.po
+===================================================================
+--- system-config-printer-1.0.0.orig/po/ro.po	2009-04-01 13:17:25.176403781 +0200
++++ system-config-printer-1.0.0/po/ro.po	2009-04-01 13:17:45.684401585 +0200
+@@ -1,21 +1,25 @@
++# translation of ro.po to Romanian
+ # translation of ro.po to
+ # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+ # This file is distributed under the same license as the PACKAGE package.
+ #
+ # Mircea Daniel <visez.trance@gmail.com>, 2007.
+ # MIrcea Daniel <visez.trance@gmail.com>, 2007.
++# Eddy Petrișor <eddy.petrisor@gmail.com>, 2009.
+ msgid ""
+ msgstr ""
+ "Project-Id-Version: ro\n"
+ "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
+ "POT-Creation-Date: 2008-05-27 18:07+0100\n"
+-"PO-Revision-Date: 2007-04-13 22:50+0300\n"
+-"Last-Translator: MIrcea Daniel <visez.trance@gmail.com>\n"
+-"Language-Team:  <ro@li.org>\n"
++"PO-Revision-Date: 2009-03-11 02:36+0200\n"
++"Last-Translator: Eddy Petrișor <eddy.petrisor@gmail.com>\n"
++"Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+ "X-Generator: KBabel 1.11.4\n"
++"Plural-Forms:  nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
++"20)) ? 1 : 2;\n"
+ 
+ #: ../authconn.py:30 ../system-config-printer.glade.h:249
+ msgid "Username:"
+@@ -26,14 +30,12 @@ msgid "Password:"
+ msgstr "Parolă:"
+ 
+ #: ../authconn.py:32
+-#, fuzzy
+ msgid "Domain:"
+-msgstr "Margine sus:"
++msgstr "Domeniu:"
+ 
+ #: ../authconn.py:34
+-#, fuzzy
+ msgid "Authentication"
+-msgstr "<b>Autentificare</b>"
++msgstr "Autentificare"
+ 
+ #: ../cupshelpers.py:28
+ msgid "Idle"
+@@ -130,9 +132,8 @@ msgid "Job"
+ msgstr "Lucrare"
+ 
+ #: ../jobviewer.py:90
+-#, fuzzy
+ msgid "User"
+-msgstr "Utilizatori"
++msgstr "Utilizator"
+ 
+ #: ../jobviewer.py:91 ../troubleshoot/PrintTestPage.py:82
+ msgid "Document"
+@@ -170,9 +171,9 @@ msgid "all jobs"
+ msgstr ""
+ 
+ #: ../jobviewer.py:133
+-#, fuzzy, python-format
++#, python-format
+ msgid "Document Print Status (%s)"
+-msgstr "Statut imprimare document"
++msgstr "Starea de imprimare a documentului (%s)"
+ 
+ #: ../jobviewer.py:166
+ msgid "Message"
+@@ -254,9 +255,11 @@ msgid "%d documents queued"
+ msgstr "%d documente trecute în aşteptare"
+ 
+ #: ../jobviewer.py:869
+-#, fuzzy, python-format
++#, python-format
+ msgid "There was a problem sending document `%s' (job %d) to the printer."
+-msgstr "A fost eroare la conectarea către serverul CUPS."
++msgstr ""
++"A fost problemă la trimiterea documentului „%s” (lucrarea %d) către "
++"imprimantă."
+ 
+ #: ../jobviewer.py:872
+ #, python-format
+@@ -270,9 +273,8 @@ msgid "There was a problem printing docu
+ msgstr ""
+ 
+ #: ../jobviewer.py:881 ../jobviewer.py:897
+-#, fuzzy
+ msgid "Print Error"
+-msgstr "Eroare imprimantă"
++msgstr "Eroare de imprimare"
+ 
+ #: ../jobviewer.py:882
+ msgid "_Diagnose"
+@@ -284,45 +286,39 @@ msgid "The printer called `%s' has been 
+ msgstr ""
+ 
+ #: ../my-default-printer.py:141 ../my-default-printer.desktop.in.h:1
+-#, fuzzy
+ msgid "Default Printer"
+-msgstr "Setează ca imprimantă implicită"
++msgstr "Imprimantă implicită"
+ 
+ #: ../my-default-printer.py:145 ../my-default-printer.py:181
+-#, fuzzy
+ msgid "_Use System Default"
+-msgstr "Resetare la valorile implicite"
++msgstr "_Utilizează pe cea implicită a sistemului"
+ 
+ #: ../my-default-printer.py:146 ../my-default-printer.py:183
+-#, fuzzy
+ msgid "_Set Default"
+-msgstr "implicit"
++msgstr "Configurează ca implicită"
+ 
+ #: ../my-default-printer.py:162 ../system-config-printer.py:2430
+ #: ../troubleshoot/ChooseNetworkPrinter.py:37
+ #: ../troubleshoot/ChoosePrinter.py:38
+-#, fuzzy
+ msgid "Location"
+-msgstr "Locaţie"
++msgstr "Amplasare"
+ 
+ #: ../optionwidgets.py:116
+ msgid "Conflicts with:"
+ msgstr "În conflict cu:"
+ 
+ #: ../system-config-printer.py:275
+-#, fuzzy
+ msgid "Class"
+-msgstr "Grupă nouă"
++msgstr "Clasă"
+ 
+ #. Set up "Problems?" link button
+ #: ../system-config-printer.py:305
+-#, fuzzy
+ msgid "Problems?"
+-msgstr "Probează"
++msgstr "Probleme?"
+ 
+ #: ../system-config-printer.py:345 ../system-config-printer.py:347
+ msgid "Members of this class"
+-msgstr "Membri ai acestui grup"
++msgstr "Membri ai acestei clase"
+ 
+ #: ../system-config-printer.py:346 ../system-config-printer.py:348
+ msgid "Others"
+@@ -357,9 +353,9 @@ msgid "Automatic rotation"
+ msgstr ""
+ 
+ #: ../system-config-printer.py:554
+-#, fuzzy, python-format
++#, python-format
+ msgid "Printer Properties - `%s' on %s"
+-msgstr "Raport imprimantă"
++msgstr "Proprietățile imprimantei - „%s” pe %s"
+ 
+ #: ../system-config-printer.py:657
+ #, python-format
+@@ -372,24 +368,20 @@ msgid "Connected to %s"
+ msgstr "Conectat la %s"
+ 
+ #: ../system-config-printer.py:751
+-#, fuzzy
+ msgid "Remote class"
+-msgstr "Grupuri distante"
++msgstr "Clasă distantă"
+ 
+ #: ../system-config-printer.py:753
+-#, fuzzy
+ msgid "Remote printer"
+-msgstr "Imprimante distante"
++msgstr "Imprimantă distantă"
+ 
+ #: ../system-config-printer.py:757
+-#, fuzzy
+ msgid "Local class"
+-msgstr "Grupuri locale"
++msgstr "Clasă locală"
+ 
+ #: ../system-config-printer.py:759
+-#, fuzzy
+ msgid "Local printer"
+-msgstr "Imprimante locale"
++msgstr "Imprimantă locală"
+ 
+ #: ../system-config-printer.py:829
+ #, python-format
+@@ -420,7 +412,7 @@ msgstr ""
+ 
+ #: ../system-config-printer.py:1239
+ msgid "This will delete this class!"
+-msgstr "Va fi ştearsă această clasă!"
++msgstr "Această clasă va fi ștearsă!"
+ 
+ #: ../system-config-printer.py:1240
+ msgid "Proceed anyway?"
+@@ -449,9 +441,9 @@ msgstr ""
+ "imprimanta nu este partajată."
+ 
+ #: ../system-config-printer.py:1450
+-#, fuzzy, python-format
++#, python-format
+ msgid "Maintenance command submitted as job %d"
+-msgstr "Pagina de test a fost trimisă ca lucrarea %d"
++msgstr "Comanda de întreținere trimisă ca lucrarea %d"
+ 
+ #. The underlying cupsGetPPD2() function returned NULL without
+ #. setting an IPP error, so it'll be something like a failed
+@@ -470,19 +462,18 @@ msgid "Option '%s' has value '%s' and ca
+ msgstr ""
+ 
+ #: ../system-config-printer.py:2045
+-#, fuzzy, python-format
++#, python-format
+ msgid "Really delete class `%s'?"
+-msgstr "Sigur şterg grupul %s?"
++msgstr "Sigur se șterge clasa „%s”?"
+ 
+ #: ../system-config-printer.py:2047
+-#, fuzzy, python-format
++#, python-format
+ msgid "Really delete printer `%s'?"
+-msgstr "Sigur şterg imprimanta %s?"
++msgstr "Sigur se șterge imprimanta „%s”?"
+ 
+ #: ../system-config-printer.py:2049
+-#, fuzzy
+ msgid "Really delete selected destinations?"
+-msgstr "Sigur şterg imprimanta %s?"
++msgstr "Sigur se șterg destinațiile selectate?"
+ 
+ #: ../system-config-printer.py:2389 ../system-config-printer.py:2399
+ msgid "Share"
+@@ -498,11 +489,12 @@ msgid "Queue"
+ msgstr ""
+ 
+ #: ../system-config-printer.py:2438
+-#, fuzzy
+ msgid ""
+ "PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
+ "PPD.GZ)"
+-msgstr "Descriere imprimantă PostScript (*.ppd[.gz])"
++msgstr ""
++"Fișiere Descriere imprimantă PostScript (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
++"PPD.GZ)"
+ 
+ #: ../system-config-printer.py:2447
+ msgid "All files (*)"
+@@ -510,9 +502,8 @@ msgstr ""
+ 
+ #: ../system-config-printer.py:2485 ../system-config-printer.py:4069
+ #: ../system-config-printer.py:4103
+-#, fuzzy
+ msgid "Search"
+-msgstr "Nume nou pentru imprimantă"
++msgstr "Caută"
+ 
+ #: ../system-config-printer.py:2488 ../system-config-printer.glade.h:144
+ msgid "New Printer"
+@@ -550,9 +541,8 @@ msgid ""
+ msgstr ""
+ 
+ #: ../system-config-printer.py:3059
+-#, fuzzy
+ msgid "Searching for printers"
+-msgstr "Nume nou pentru imprimantă"
++msgstr "Se caută imprimante"
+ 
+ #: ../system-config-printer.py:3305
+ msgid "Other"
+@@ -564,9 +554,8 @@ msgstr " (Curent)"
+ 
+ #: ../system-config-printer.py:3336 ../system-config-printer.py:3342
+ #: ../system-config-printer.py:3769
+-#, fuzzy
+ msgid "Scanning..."
+-msgstr "Redimensionează:"
++msgstr "Se scanează..."
+ 
+ #: ../system-config-printer.py:3687 ../system-config-printer.py:3750
+ msgid "Verified"
+@@ -625,9 +614,8 @@ msgid "Local printer detected by the Har
+ msgstr "Imprimantă locală detectată de Stratul de Abstracţie Hardware (HAL)"
+ 
+ #: ../system-config-printer.py:4115
+-#, fuzzy
+ msgid "-- Select printer model --"
+-msgstr "Selectează imprimantă din baza de date"
++msgstr "-- Selectați modelul de imprimantă --"
+ 
+ #: ../system-config-printer.py:4117
+ msgid "-- No matches found --"
+@@ -642,18 +630,16 @@ msgid "This PPD is generated by foomatic
+ msgstr "Acest PPD este generat de foomatic."
+ 
+ #: ../system-config-printer.py:4330
+-#, fuzzy
+ msgid "OpenPrinting"
+-msgstr "Imprimare"
++msgstr "OpenPrinting"
+ 
+ #: ../system-config-printer.py:4332
+ msgid "Distributable"
+ msgstr ""
+ 
+ #: ../system-config-printer.py:4334
+-#, fuzzy
+ msgid "None"
+-msgstr "nici unul"
++msgstr "Nici unul"
+ 
+ #: ../system-config-printer.py:4342
+ msgid "Not specified."
+@@ -696,19 +682,16 @@ msgid "Failed to download PPD."
+ msgstr ""
+ 
+ #: ../system-config-printer.py:4450 ../system-config-printer.py:4488
+-#, fuzzy
+ msgid "No Installable Options"
+-msgstr "Opţiuni instalare"
++msgstr "Nu sunt opțiuni de instalare"
+ 
+ #: ../system-config-printer.py:4534
+-#, fuzzy
+ msgid "Adding"
+-msgstr "În aşteptare"
++msgstr "Se adaugă"
+ 
+ #: ../system-config-printer.py:4535
+-#, fuzzy
+ msgid "Adding printer"
+-msgstr "Configurează imprimante"
++msgstr "Se adaugă imprimanta"
+ 
+ #: ../system-config-printer.py:4696
+ #, fuzzy
+@@ -923,12 +906,12 @@ msgstr "Adaugă sau şterge membri"
+ 
+ #: ../system-config-printer.glade.h:47
+ msgid "Allow printing for everyone except these users:"
+-msgstr "Permite imprimarea pentru toată lumea mai puţin aceşti utilizatori:"
++msgstr ""
++"Permite imprimarea pentru toată lumea, cu excepția acestor utilizatori:"
+ 
+ #: ../system-config-printer.glade.h:48
+-#, fuzzy
+ msgid "Allow printing from the Internet"
+-msgstr "Permite imprimarea pentru toată lumea mai puţin aceşti utilizatori:"
++msgstr "Permite imprimarea din Internet"
+ 
+ #: ../system-config-printer.glade.h:49
+ msgid "Allow remote administration"
+@@ -942,11 +925,11 @@ msgstr ""
+ #: ../system-config-printer.glade.h:51
+ #, fuzzy
+ msgid "Basic Server Settings"
+-msgstr "<b>Setări de bază server</b>"
++msgstr "Setări de bază pentru server"
+ 
+ #: ../system-config-printer.glade.h:52
+ msgid "Baud Rate"
+-msgstr "Rată Baud"
++msgstr "Rată baud"
+ 
+ #: ../system-config-printer.glade.h:53
+ msgid "Bottom margin:"
+@@ -958,7 +941,7 @@ msgstr "Luminozitate:"
+ 
+ #: ../system-config-printer.glade.h:55
+ msgid "Browse..."
+-msgstr ""
++msgstr "Răsfoiește..."
+ 
+ #: ../system-config-printer.glade.h:56
+ msgid "CUPS server:"
+@@ -975,16 +958,15 @@ msgstr "Caractere pe inch:"
+ #. Not more than 25 characters
+ #: ../system-config-printer.glade.h:60
+ msgid "Clean Print Heads"
+-msgstr ""
++msgstr "Curăță capetele de scriere"
+ 
+ #: ../system-config-printer.glade.h:61
+ msgid "Columns:"
+ msgstr "Coloane:"
+ 
+ #: ../system-config-printer.glade.h:62
+-#, fuzzy
+ msgid "Comments..."
+-msgstr "Comentariu"
++msgstr "Comentarii..."
+ 
+ #: ../system-config-printer.glade.h:63
+ msgid "Connect to CUPS server"
+@@ -1012,9 +994,8 @@ msgid "Copy Printer"
+ msgstr "Imprimantă de copiere"
+ 
+ #: ../system-config-printer.glade.h:71
+-#, fuzzy
+ msgid "Copyright © 2006-2008 Red Hat, Inc."
+-msgstr "Copyright 2006 Red Hat, Inc."
++msgstr "Copyright © 2006-2008 Red Hat, Inc."
+ 
+ #: ../system-config-printer.glade.h:72
+ msgid ""
+@@ -1023,7 +1004,7 @@ msgstr ""
+ 
+ #: ../system-config-printer.glade.h:73
+ msgid "Data Bits"
+-msgstr "Bits Date"
++msgstr "Biți de date"
+ 
+ #: ../system-config-printer.glade.h:74
+ msgid ""
+@@ -1085,11 +1066,12 @@ msgstr ""
+ 
+ #: ../system-config-printer.glade.h:95
+ msgid "Deny printing for everyone except these users:"
+-msgstr "Permite imprimarea pentru toată lumea mai puţin aceşti utilizatori:"
++msgstr ""
++"Interzice imprimarea pentru toată lumea, cu excepția acestor utilizatori:"
+ 
+ #: ../system-config-printer.glade.h:96
+ msgid "Description:"
+-msgstr "Descriere"
++msgstr "Descriere:"
+ 
+ #: ../system-config-printer.glade.h:97 ../troubleshoot/DeviceListed.py:40
+ msgid "Device URI"
+@@ -1108,14 +1090,12 @@ msgid "DirectJet"
+ msgstr "DirectJet"
+ 
+ #: ../system-config-printer.glade.h:102
+-#, fuzzy
+ msgid "Driver details"
+-msgstr "Drivere"
++msgstr "Detalii despre driver"
+ 
+ #: ../system-config-printer.glade.h:103
+-#, fuzzy
+ msgid "E_nable"
+-msgstr "Activ"
++msgstr "Activează"
+ 
+ #: ../system-config-printer.glade.h:104
+ msgid "Empty"
+@@ -1127,7 +1107,7 @@ msgstr "Activ"
+ 
+ #: ../system-config-printer.glade.h:106
+ msgid "Ending Banner:"
+-msgstr "Banner sfârşit:"
++msgstr "Banner de sfârşit:"
+ 
+ #: ../system-config-printer.glade.h:107
+ msgid "Error Policy: \t"
+@@ -1135,7 +1115,7 @@ msgstr "Reguli pentru erori: \t"
+ 
+ #: ../system-config-printer.glade.h:108
+ msgid "Find _Queue..."
+-msgstr ""
++msgstr "Găsește coada de lucrări..."
+ 
+ #: ../system-config-printer.glade.h:109
+ msgid "Finishings:"
+@@ -1143,12 +1123,13 @@ msgstr "Finisări:"
+ 
+ #: ../system-config-printer.glade.h:110
+ msgid "Flow Control"
+-msgstr "Control flux"
++msgstr "Control de flux"
+ 
+ #: ../system-config-printer.glade.h:111
+ msgid ""
+ "For the printer you have selected there are drivers available for download."
+ msgstr ""
++"Pentru imprimanta selectată există disponibile pentru descărcare drivere."
+ 
+ #: ../system-config-printer.glade.h:112
+ msgid "Gamma:"
+@@ -1156,12 +1137,11 @@ msgstr "Gamma:"
+ 
+ #: ../system-config-printer.glade.h:113
+ msgid "Hold until:"
+-msgstr ""
++msgstr "Ține până:"
+ 
+ #: ../system-config-printer.glade.h:114
+-#, fuzzy
+ msgid "Host:"
+-msgstr "Nume gazdă"
++msgstr "Nume gazdă:"
+ 
+ #: ../system-config-printer.glade.h:115
+ msgid "Hue adjustment:"
+@@ -1170,11 +1150,11 @@ msgstr "Ajustare nuanţă:"
+ #: ../system-config-printer.glade.h:116
+ msgid "Human-readable description such as \"HP LaserJet with Duplexer\""
+ msgstr ""
+-"Descriere ce poate fi înţeleasă de oameni ca \"HP LaserJet cu Duplexer\""
++"Descriere ce poate fi înţeleasă de oameni, precum „HP LaserJet cu Duplexer”"
+ 
+ #: ../system-config-printer.glade.h:117
+ msgid "Human-readable location such as \"Lab 1\""
+-msgstr "Locaţie ce poate fi înţeleasă de oameni ca \"Lab 1\""
++msgstr "Locaţie ce poate fi înţeleasă de oameni, precum „Lab 1”"
+ 
+ #: ../system-config-printer.glade.h:118
+ msgid "IPP"
+@@ -1182,12 +1162,11 @@ msgstr "IPP"
+ 
+ #: ../system-config-printer.glade.h:119
+ msgid "IPP Browser"
+-msgstr ""
++msgstr "Navigator IPP"
+ 
+ #: ../system-config-printer.glade.h:120
+-#, fuzzy
+ msgid "Installed Options"
+-msgstr "Opţiuni instalare"
++msgstr "Opţiuni instalate"
+ 
+ #: ../system-config-printer.glade.h:121
+ msgid "Job Options"
+@@ -1227,33 +1206,31 @@ msgstr ""
+ 
+ #: ../system-config-printer.glade.h:133
+ msgid "License:"
+-msgstr ""
++msgstr "Licență:"
+ 
+ #: ../system-config-printer.glade.h:134
+ msgid "Lines per inch:"
+ msgstr "Linii pe inch:"
+ 
+ #: ../system-config-printer.glade.h:135
+-#, fuzzy
+ msgid "Local Driver"
+-msgstr "Imprimante locale"
++msgstr "Driver local"
+ 
+ #: ../system-config-printer.glade.h:136
+ msgid "Location:"
+-msgstr "Locaţie"
++msgstr "Locaţie:"
+ 
+ #: ../system-config-printer.glade.h:137
+ msgid "Make and Model:"
+ msgstr "Producător şi model:"
+ 
+ #: ../system-config-printer.glade.h:138
+-#, fuzzy
+ msgid "Make and model:"
+ msgstr "Producător şi model:"
+ 
+ #: ../system-config-printer.glade.h:139
+ msgid "Media:"
+-msgstr "Media:"
++msgstr "Mediu:"
+ 
+ #: ../system-config-printer.glade.h:140
+ msgid "Members"
+@@ -1281,7 +1258,7 @@ msgstr "Nume nou pentru imprimantă"
+ 
+ #: ../system-config-printer.glade.h:147
+ msgid "No, I do not accept this license"
+-msgstr ""
++msgstr "Nu, nu accept această licență"
+ 
+ #: ../system-config-printer.glade.h:148
+ msgid ""
+@@ -1375,16 +1352,15 @@ msgstr "Paritate"
+ 
+ #: ../system-config-printer.glade.h:185
+ msgid "Please Wait"
+-msgstr ""
++msgstr "Așteptați"
+ 
+ #: ../system-config-printer.glade.h:186
+ msgid "Policies"
+ msgstr "Reguli"
+ 
+ #: ../system-config-printer.glade.h:187
+-#, fuzzy
+ msgid "Port number:"
+-msgstr "Număr port"
++msgstr "Numărul portului:"
+ 
+ #: ../system-config-printer.glade.h:188
+ msgid ""
+@@ -1399,15 +1375,14 @@ msgstr ""
+ "Portret inversat (180°)"
+ 
+ #: ../system-config-printer.glade.h:192
+-#, fuzzy
+ msgid ""
+ "PostScript Printer Description (PPD) files can often be found on the driver "
+ "disk that comes with the printer. For PostScript printers they are often "
+ "part of the Windows<sup>®</sup> driver."
+ msgstr ""
+-"Fişierele Descriere Imprimantă PostScript (PPD) adesea pot fi găsite pe "
+-"discul cu drivere ce vine odată cu imprimanta. Pentru imprimantele "
+-"PostScript adesea fac parte din driver-ul Windows<sup>®</sup>."
++"Fişierele Descriere Imprimantă PostScript (PPD) pot fi găsite adesea pe "
++"discul cu drivere ce vine cu imprimanta. Pentru imprimantele PostScript "
++"adesea fac parte din driver-ul Windows<sup>®</sup>."
+ 
+ #: ../system-config-printer.glade.h:193
+ msgid "Pretty print"
+@@ -1415,46 +1390,41 @@ msgstr "Listare înfrumuseţată"
+ 
+ #. Not more than 25 characters
+ #: ../system-config-printer.glade.h:195
+-#, fuzzy
+ msgid "Print Self-Test Page"
+-msgstr "Imprimă pagină de test"
++msgstr "Pagină de autotest"
+ 
+ #. Not more than 25 characters
+ #: ../system-config-printer.glade.h:197 ../troubleshoot/PrintTestPage.py:68
+ msgid "Print Test Page"
+-msgstr "Imprimă pagină de test"
++msgstr "Pagină de test"
+ 
+ #: ../system-config-printer.glade.h:199
+-#, fuzzy
+ msgid "Printer Properties"
+-msgstr "Raport imprimantă"
++msgstr "Proprietățile imprimantei"
+ 
+ #: ../system-config-printer.glade.h:200
+ msgid "Printer State:"
+ msgstr "Stare imprimantă:"
+ 
+ #: ../system-config-printer.glade.h:201
+-#, fuzzy
+ msgid "Printer model:"
+-msgstr "Nume imprimantă"
++msgstr "Model de imprimantă:"
+ 
+ #: ../system-config-printer.glade.h:202
+ msgid "Probe"
+ msgstr "Probează"
+ 
+ #: ../system-config-printer.glade.h:203
+-#, fuzzy
+ msgid "Prompt user if authentication is required"
+-msgstr "<b>Autentificare</b>"
++msgstr "Interacțiune cu utilizatorul, dacă autentificarea e necesară"
+ 
+ #: ../system-config-printer.glade.h:204
+-#, fuzzy
+ msgid "Provide PPD file"
+-msgstr "Furnizează fişier PPD"
++msgstr "Furnizează fişierul PPD"
+ 
+ #: ../system-config-printer.glade.h:205
+ msgid "Queue:"
+-msgstr ""
++msgstr "Coada:"
+ 
+ #: ../system-config-printer.glade.h:206
+ msgid "Require encryption"
+@@ -1462,11 +1432,11 @@ msgstr "Necesită encriptare"
+ 
+ #: ../system-config-printer.glade.h:207
+ msgid "Reset"
+-msgstr "Reset"
++msgstr "Reinițializare"
+ 
+ #: ../system-config-printer.glade.h:208
+ msgid "Reset to system default"
+-msgstr "Resetare la valorile implicite"
++msgstr "Reinițializare la valorile implicite"
+ 
+ #: ../system-config-printer.glade.h:209
+ msgid "Right margin:"
+@@ -1482,15 +1452,15 @@ msgstr "SMB"
+ 
+ #: ../system-config-printer.glade.h:212
+ msgid "SMB Browser"
+-msgstr ""
++msgstr "Navigator SMB"
+ 
+ #: ../system-config-printer.glade.h:213
+ msgid "Saturation:"
+-msgstr "Saturare:"
++msgstr "Saturație:"
+ 
+ #: ../system-config-printer.glade.h:214
+ msgid "Save debugging information for troubleshooting"
+-msgstr "Salvaţi informaţiile de debugging pentru depanare"
++msgstr "Salvaţi informaţiile de depanare pentru corectarea problemelor"
+ 
+ #: ../system-config-printer.glade.h:215
+ msgid "Scale to fit"
+@@ -1502,35 +1472,31 @@ msgstr "Redimensionează:"
+ 
+ #: ../system-config-printer.glade.h:217
+ msgid "Search for a printer driver to download"
+-msgstr ""
++msgstr "Caută să descarci un driver de imprimantă"
+ 
+ #: ../system-config-printer.glade.h:218
+ msgid "Select A File"
+ msgstr "Selectează un fişier"
+ 
+ #: ../system-config-printer.glade.h:219
+-#, fuzzy
+ msgid "Select printer from database"
+-msgstr "Selectează imprimantă din baza de date"
++msgstr "Selectează imprimanta din baza de date"
+ 
+ #: ../system-config-printer.glade.h:220
+ msgid "Serial"
+-msgstr "Serie"
++msgstr "Serială"
+ 
+ #: ../system-config-printer.glade.h:221
+-#, fuzzy
+ msgid "Set As De_fault"
+-msgstr "implicit"
++msgstr "Declară ca implicită"
+ 
+ #: ../system-config-printer.glade.h:222
+-#, fuzzy
+ msgid "Set As Default"
+-msgstr "implicit"
++msgstr "Declară ca implicită"
+ 
+ #: ../system-config-printer.glade.h:223
+-#, fuzzy
+ msgid "Set authentication details now"
+-msgstr "<b>Autentificare</b>"
++msgstr "Configurează acum detaliile de autentificare"
+ 
+ #: ../system-config-printer.glade.h:224
+ msgid "Settings"
+@@ -1538,15 +1504,15 @@ msgstr "Setări"
+ 
+ #: ../system-config-printer.glade.h:225
+ msgid "Share published printers connected to this system"
+-msgstr "Partajează imprimante publice conectate la acest sistem"
++msgstr "Partajează imprimantele publicate și conectate la acest sistem"
+ 
+ #: ../system-config-printer.glade.h:226
+ msgid "Shared"
+-msgstr "Partajat"
++msgstr "Partajată"
+ 
+ #: ../system-config-printer.glade.h:227
+ msgid "Short name for this printer such as \"laserjet\""
+-msgstr ""
++msgstr "Numele scurt pentru această imprimantă, precum „laserjet”"
+ 
+ #: ../system-config-printer.glade.h:228
+ msgid "Show printers shared by other systems"
+@@ -1562,9 +1528,9 @@ msgid ""
+ "print server will have these options added if they are not already set by "
+ "the application."
+ msgstr ""
+-"Specificaţi setările iniţiale pentru lucrările pe această imprimantă. "
++"Precizați opțiunile iniţiale pentru lucrările de pe această imprimantă. "
+ "Lucrările care ajung la acest server de imprimare vor avea adăugate aceste "
+-"opţiuni dacă nu sunt deja setate de către aplicaţie."
++"opţiuni dacă nu sunt deja configurate de către aplicaţie."
+ 
+ #: ../system-config-printer.glade.h:231
+ msgid "Starting Banner:"
+@@ -1572,7 +1538,7 @@ msgstr "Banner de început:"
+ 
+ #: ../system-config-printer.glade.h:232
+ msgid "Supplier:"
+-msgstr ""
++msgstr "Furnizor:"
+ 
+ #: ../system-config-printer.glade.h:233
+ msgid "System-Config-Printer"
+@@ -1598,6 +1564,9 @@ msgid ""
+ "be covered by their commercial support.  See the support and license terms "
+ "of the driver's supplier."
+ msgstr ""
++"Aceste drivere nu provin de la furnizorul pentru sistemul dumneavoastră de "
++"operare și nu vor avea suportul lor comercial. A se vedea termenii de "
++"licențiere și de suport ai furnizorului driverului."
+ 
+ #: ../system-config-printer.glade.h:236
  msgid ""
