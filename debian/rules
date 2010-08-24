@@ -11,6 +11,12 @@ include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 
 DEB_CONFIGURE_EXTRA_FLAGS := --sbindir=/usr/bin
 
+configure/python-cupshelpers::
+	cp debug.py smburi.py cupshelpers/
+
+cleanbuilddir/python-cupshelpers::
+	rm -rf cupshelpers/options.py cupshelpers/smburi.py
+
 binary-install/system-config-printer::
 	for i in debian/tmp/usr/share/system-config-printer/*.py; do \
 		if ! grep -q ^$$i debian/*install; then \
