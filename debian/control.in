@@ -58,16 +58,6 @@ Description: Python utility modules around the CUPS printing system
  distribution, help building applications and utilities around the CUPS 
  Python bindings.
 
-Package: python-cupsutils
-Architecture: all
-Section: python
-Depends: ${misc:Depends}, python-cupshelpers
-Description: Transitional package to switch to python-cupshelpers
- This is a dummy package to ease transition from python-cupsutils to
- python-cupshelpers.
- .
- It can be safely removed from your system.
-
 Package: system-config-printer-udev
 Architecture: linux-any
 Depends: ${misc:Depends},
@@ -80,12 +70,3 @@ Description: Utilities to detect and configure printers automatically
  These utilities allow to detect automatically printers using UDEV when they
  are plugged on the system. They are then configured automatically in the CUPS
  printing daemon and made available to users.
-
-Package: hal-cups-utils
-Architecture: linux-any
-Depends: ${misc:Depends}, system-config-printer-udev
-Description: Transitional package to switch to system-config-printer-udev
- This is a dummy package to ease transition from HAL based printer detection to
- udev.
- .
- It can be safely removed from your system.
