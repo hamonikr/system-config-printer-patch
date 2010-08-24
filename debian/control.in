@@ -2,7 +2,8 @@ Source: system-config-printer
 Section: gnome
 Priority: optional
 Maintainer: Otavio Salvador <otavio@debian.org>
-Uploaders: @GNOME_TEAM@
+Uploaders: @GNOME_TEAM@,
+ Guido Günther <agx@sigxcpu.org>
 Build-Depends: cdbs (>= 0.4.43),
                debhelper (>= 5.0.37.2),
                python-support (>= 0.7.1),
@@ -17,6 +18,9 @@ Build-Depends: cdbs (>= 0.4.43),
                libudev-dev [linux-any],
                libusb-dev
 Standards-Version: 3.9.1
+Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/packages/unstable/system-config-printer
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnome/packages/unstable/system-config-printer
+Homepage: http://cyberelk.net/tim/software/system-config-printer/
 
 Package: system-config-printer
 Architecture: all
