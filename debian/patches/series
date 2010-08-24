@@ -1,3 +1,4 @@
 0001-Adjust-python-paths.patch
 0002-Disable-firewall-checks.patch
 0003-Adjust-package-names.patch
+0004-Fix-blacklist-name.patch
