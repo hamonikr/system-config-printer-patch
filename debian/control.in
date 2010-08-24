@@ -14,7 +14,7 @@ Build-Depends: cdbs (>= 0.4.43),
                intltool,
                libcups2-dev,
                libglib2.0-dev,
-               libudev-dev,
+               libudev-dev [linux-any],
                libusb-dev
 Standards-Version: 3.9.1
 
@@ -57,7 +57,7 @@ Description: Python utility modules around the CUPS printing system
  Python bindings.
 
 Package: system-config-printer-udev
-Architecture: any
+Architecture: linux-any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
          ${python:Depends},
@@ -70,7 +70,7 @@ Description: Utilities to detect and configure printers automatically
  printing daemon and made available to users.
 
 Package: hal-cups-utils
-Architecture: all
+Architecture: linux-any
 Depends: ${misc:Depends}, system-config-printer-udev
 Description: Transitional package to switch to system-config-printer-udev
  This is a dummy package to ease transition from HAL based printer detection to
