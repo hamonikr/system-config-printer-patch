@@ -1,5 +1,5 @@
 Source: system-config-printer
-Section: python
+Section: gnome
 Priority: optional
 Maintainer: Otavio Salvador <otavio@debian.org>
 Uploaders: @GNOME_TEAM@
@@ -46,6 +46,7 @@ Description: graphical interface to configure the printing system
 
 Package: python-cupsutils
 Architecture: all
+Section: python
 Depends: ${misc:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
@@ -71,8 +72,8 @@ Description: Utilities to detect and configure printers automatically
 Package: hal-cups-utils
 Architecture: all
 Depends: ${misc:Depends}, system-config-printer-udev
-Description: Transitional package to swith to system-config-printer-udev
+Description: Transitional package to switch to system-config-printer-udev
  This is a dummy package to ease transition from HAL based printer detection to
  udev.
-  .
+ .
  It can be safely removed from your system.
