@@ -2,7 +2,6 @@
 04_jobsheets_traceback.patch
 08_stock_icons.patch
 10_show_manage_jobs.patch
-12_remove_redhat.patch
 15_close_shortcut.patch
 16_dont_monitor_session.patch
 17_new_printer_notification.patch
