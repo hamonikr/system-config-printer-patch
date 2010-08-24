@@ -4,3 +4,4 @@
 0004-Fix-blacklist-name.patch
 0005-Revert-to-the-correct-menu-category.patch
 0006-Don-t-blindly-listen-to-any-signal.patch
+0007-Use-our-custom-cpk-install-package-name.patch
