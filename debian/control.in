@@ -23,7 +23,7 @@ Architecture: all
 Depends: ${misc:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
-         python-cupsutils (= ${binary:Version}),
+         python-cupshelpers (= ${binary:Version}),
          python-dbus,
          python-gtk2,
          python-glade2,
@@ -44,17 +44,29 @@ Description: graphical interface to configure the printing system
  In terms of features, it aims to be as complete as the CUPS web 
  administration tool, while being integrated to the desktop.
 
-Package: python-cupsutils
+Package: python-cupshelpers
 Architecture: all
 Section: python
 Depends: ${misc:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
          python-elementtree | python (>= 2.5)
+Replaces: python-cupsutils (<< 1.2.3)
+Breaks : python-cupsutils (<< 1.2.3)
 Description: Python utility modules around the CUPS printing system
  These Python modules, that come from the system-config-printer 
  distribution, help building applications and utilities around the CUPS 
  Python bindings.
+
+Package: python-cupsutils
+Architecture: all
+Section: python
+Depends: ${misc:Depends}, python-cupshelpers
+Description: Transitional package to switch to python-cupshelpers
+ This is a dummy package to ease transition from python-cupsutils to
+ python-cupshelpers.
+ .
+ It can be safely removed from your system.
 
 Package: system-config-printer-udev
 Architecture: linux-any
@@ -62,7 +74,7 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
-         python-cupsutils
+         python-cupshelpers (= ${source:Version})
 Conflicts: hal-cups-utils (<< 0.6.17)
 Description: Utilities to detect and configure printers automatically
  These utilities allow to detect automatically printers using UDEV when they
