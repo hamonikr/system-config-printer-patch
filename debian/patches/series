@@ -1,12 +1,8 @@
-01_no_rhpl.patch
 02_translations.patch
-03_elementtree.patch
 04_jobsheets_traceback.patch
 08_stock_icons.patch
 10_show_manage_jobs.patch
-11_use_gksu.patch
 12_remove_redhat.patch
-13_python_paths.patch
 15_close_shortcut.patch
 16_dont_monitor_session.patch
 17_new_printer_notification.patch
@@ -16,3 +12,4 @@
 31_browse_hang.patch
 32_pycups_traceback.patch
 33_dont_strip_Printer.patch
+0001-Adjust-python-paths.patch
