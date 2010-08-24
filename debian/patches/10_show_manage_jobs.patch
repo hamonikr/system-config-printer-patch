@@ -1,9 +1,0 @@
-diff -Nur system-config-printer-0.7.75+svn1653/manage-print-jobs.desktop.in system-config-printer-0.7.75+svn1653.new/manage-print-jobs.desktop.in
---- system-config-printer-0.7.75+svn1653/manage-print-jobs.desktop.in	2007-10-03 13:25:20.000000000 +0100
-+++ system-config-printer-0.7.75+svn1653.new/manage-print-jobs.desktop.in	2007-10-05 22:05:21.000000000 +0100
-@@ -6,4 +6,4 @@
- Terminal=false
- Type=Application
- Icon=printer
--NoDisplay=true
-+NoDisplay=false

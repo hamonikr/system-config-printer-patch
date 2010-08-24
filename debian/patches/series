@@ -1,15 +1,3 @@
-02_translations.patch
-04_jobsheets_traceback.patch
-08_stock_icons.patch
-10_show_manage_jobs.patch
-15_close_shortcut.patch
-16_dont_monitor_session.patch
-17_new_printer_notification.patch
-19_dbus_interfaces.patch
-30_install_traceback.patch
-31_browse_hang.patch
-32_pycups_traceback.patch
-33_dont_strip_Printer.patch
 0001-Adjust-python-paths.patch
 0002-Disable-firewall-checks.patch
 0003-Adjust-package-names.patch
