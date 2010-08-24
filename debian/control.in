@@ -60,6 +60,7 @@ Depends: ${misc:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
          python-cupsutils
+Conflicts: hal-cups-utils
 Description: Utilities to detect and configure printers automatically
  These utilities allow to detect automatically printers using UDEV when they
  are plugged on the system. They are then configured automatically in the CUPS
