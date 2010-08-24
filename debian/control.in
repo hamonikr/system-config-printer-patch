@@ -16,7 +16,7 @@ Build-Depends: cdbs (>= 0.4.43),
                libglib2.0-dev,
                libudev-dev,
                libusb-dev
-Standards-Version: 3.8.1
+Standards-Version: 3.9.1
 
 Package: system-config-printer
 Architecture: all
