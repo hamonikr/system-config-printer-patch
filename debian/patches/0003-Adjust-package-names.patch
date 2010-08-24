@@ -1,0 +1,48 @@
+From: =?UTF-8?q?Guido=20G=C3=BCnther?= <agx@sigxcpu.org>
+Date: Mon, 26 Jul 2010 17:10:26 +0200
+Subject: [PATCH] Adjust package names
+
+packages are named differently on RH systems
+---
+ cupshelpers/cupshelpers.py |   20 ++++++++++----------
+ 1 files changed, 10 insertions(+), 10 deletions(-)
+
+diff --git a/cupshelpers/cupshelpers.py b/cupshelpers/cupshelpers.py
+index 65db4bb..96a4772 100755
+--- a/cupshelpers/cupshelpers.py
++++ b/cupshelpers/cupshelpers.py
+@@ -786,23 +786,23 @@ def missingPackagesAndExecutables(ppd):
+             'foo2oak-wrapper': None,
+             'pnm2ppa': 'pnm2ppa',
+             'c2050': 'c2050',
+-            'c2070': 'c2070',
++            'c2070': None,
+             'cjet': 'cjet',
+             'lm1100': 'lx',
+             'esc-m': 'min12xxw',
+             'min12xxw': 'min12xxw',
+-            'pbm2l2030': 'pbm2l2030',
+-            'pbm2l7k': 'pbm2l7k',
+-            'pbm2lex': 'pbm2l7k',
++            'pbm2l2030': None,
++            'pbm2l7k': None,
++            'pbm2lex': None,
+             # IJS servers (used by foomatic)
+             'hpijs': 'hpijs',
+-            'ijsgutenprint.5.0': 'gutenprint',
+-            'ijsgutenprint.5.2': 'gutenprint',
++            'ijsgutenprint.5.0': 'ijsgutenprint',
++            'ijsgutenprint.5.2': 'ijsgutenprint',
+             # CUPS filters
+-            'rastertogutenprint.5.0': 'gutenprint-cups',
+-            'rastertogutenprint.5.2': 'gutenprint-cups',
+-            'commandtoepson': 'gutenprint-cups',
+-            'commandtocanon': 'gutenprint-cups',
++            'rastertogutenprint.5.0': 'cups-driver-gutenprint',
++            'rastertogutenprint.5.2': 'cups-driver-gutenprint',
++            'commandtoepson': 'cups-driver-gutenprint',
++            'commandtocanon': 'cups-driver-gutenprint',
+             }
+         try:
+             pkg = pkgs[exe]
+--
