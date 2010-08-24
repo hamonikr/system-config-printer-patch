@@ -30,7 +30,7 @@ Depends: ${misc:Depends},
          python-gnome2,
          python-notify,
          gnome-icon-theme,
-         gksu
+         cups-pk-helper
 Recommends: system-config-printer-udev,
             synaptic
 Description: graphical interface to configure the printing system
