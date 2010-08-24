@@ -1,5 +1,1 @@
-debian/tmp/usr/share/system-config-printer/cupshelpers.py /usr/share/python-support/python-cupsutils/cupsutils
-debian/tmp/usr/share/system-config-printer/debug.py /usr/share/python-support/python-cupsutils/cupsutils
-debian/tmp/usr/share/system-config-printer/openprinting.py /usr/share/python-support/python-cupsutils/cupsutils
-debian/tmp/usr/share/system-config-printer/ppds.py /usr/share/python-support/python-cupsutils/cupsutils
-debian/tmp/usr/share/system-config-printer/smburi.py /usr/share/python-support/python-cupsutils/cupsutils
+debian/tmp/usr/lib/python*/site-packages/cupshelpers

@@ -1,10 +1,7 @@
-debian/tmp/etc
+debian/tmp/etc/xdg/
+debian/tmp/etc/dbus-1/
 debian/tmp/usr/share/applications
 debian/tmp/usr/share/locale
 debian/tmp/usr/share/man
-debian/tmp/usr/share/system-config-printer/applet.py /usr/bin
 debian/tmp/usr/share/system-config-printer/system-config-printer.py /usr/bin
-debian/tmp/usr/share/system-config-printer/my-default-printer.py /usr/bin
-debian/tmp/usr/share/system-config-printer/*.glade
 debian/tmp/usr/share/system-config-printer/*/
-debutils.py /usr/share/system-config-printer

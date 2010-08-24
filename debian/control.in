@@ -10,13 +10,19 @@ Build-Depends: cdbs (>= 0.4.43),
                libxml-parser-perl,
                desktop-file-utils (>= 0.13),
                xmlto,
-               gnome-pkg-tools
+               gnome-pkg-tools,
+               intltool,
+               libcups2-dev,
+               libglib2.0-dev,
+               libudev-dev,
+               libusb-dev
 Standards-Version: 3.8.1
 
 Package: system-config-printer
 Architecture: all
-Depends: ${python:Depends},
-         python-cups (>= 1.9.27),
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-cups (>= 1.9.42),
          python-cupsutils (= ${binary:Version}),
          python-dbus,
          python-gtk2,
@@ -25,7 +31,7 @@ Depends: ${python:Depends},
          python-notify,
          gnome-icon-theme,
          gksu
-Recommends: hal-cups-utils,
+Recommends: system-config-printer-udev,
             synaptic
 Description: graphical interface to configure the printing system
  System-config-printer is a GUI written in Python using GTK+ to 
@@ -38,10 +44,23 @@ Description: graphical interface to configure the printing system
 
 Package: python-cupsutils
 Architecture: all
-Depends: ${python:Depends},
-         python-cups (>= 1.9.27),
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-cups (>= 1.9.42),
          python-elementtree | python (>= 2.5)
 Description: Python utility modules around the CUPS printing system
  These Python modules, that come from the system-config-printer 
  distribution, help building applications and utilities around the CUPS 
  Python bindings.
+
+Package: system-config-printer-udev
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         ${python:Depends},
+         python-cups (>= 1.9.42),
+         python-cupsutils
+Description: Utilities to detect and configure printers automatically
+ These utilities allow to detect automatically printers using UDEV when they
+ are plugged on the system. They are then configured automatically in the CUPS
+ printing daemon and made available to users.

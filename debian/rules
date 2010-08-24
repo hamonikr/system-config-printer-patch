@@ -18,7 +18,8 @@ binary-install/system-config-printer::
 		fi ; done
 	sed -i 's,^#!/usr/bin/env python,#!/usr/bin/python,' debian/system-config-printer/usr/bin/*.py
 	rename 's/\.py$$//' debian/system-config-printer/usr/bin/*.py
-	mv debian/system-config-printer/usr/bin/applet debian/system-config-printer/usr/bin/system-config-printer-applet
+	mv debian/system-config-printer/usr/share/system-config-printer/applet.py \
+		debian/system-config-printer/usr/bin/system-config-printer-applet
 
 $(patsubst %,binary-install/%,$(DEB_PACKAGES)) :: binary-install/%:
 	dh_pysupport -p$(cdbs_curpkg)
