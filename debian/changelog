@@ -1,3 +1,48 @@
+system-config-printer (1.2.3-0.1) experimental; urgency=low
+
+  * Non-maintainer upload.
+  * New Upstream version 1.2.3 (Closes: #49333)
+        - No deprecation warnings (Closes: #574636)
+        - Uses udev instead of hal (Closes: #568477, #581511)
+        - uses PolicyKit (Closes: #499284)
+  * Conflict on hal-cups-utils since system-config-printer-udev provides this
+    functionality now.
+  * Use cups-pk-helper instead of gksu (Closes: #469587, #479829)
+  * Move package to section gnome. (Closes: #590571)
+  * Rename python-cupsutils to python-cupshelpers
+  * Switch to 3.0 (quilt) format
+  * Bump standard version to 3.9.1
+  * New patches:
+       - 0002-Disable-firewall-checks.patch. Disable RH specific firewall
+         checks
+       - 0003-Adjust-package-names.patch. Adjust package names to match the
+         Debian ones
+       - 0004-Fix-blacklist-name.patch. Fix blacklist name
+       - 0007-Use-our-custom-cpk-install-package-name.patch use packagekit
+         when available
+  * Updated patches:
+       - 0001-Adjust-python-paths.patch
+         0005-Revert-to-the-correct-menu-category.patch
+         0006-Don-t-blindly-listen-to-any-signal.patch
+  * Dropped pachtes:
+      - 01_no_rhpl: fixed upstream.
+      - 02_translations: upstream translation updates seem to include these
+      - 03_elementtree: not needed anymore.
+      - 04_jobsheets_traceback.patch: fixed upstream
+      - 08_stock_icons.patch: fixed upstream
+      - 11_use_gksu.patch: gksu replaced by PolicyKit
+      - 12_remove_redhat: fixed upstream.
+      - 15_close_shortcut.patch: close is more consistent with other applets
+      - 17_new_printer_notification.patch: fixed upstream, applet gets the new
+        printer notifications
+      - 19_dbus_interfaces.patch: fixed upstream
+      - 31_browse_hang: code changed
+      - 32_pycups_traceback.patch: fixed upstream
+      - 30_install_traceback.patch: fixed upstream
+      - 33_dont_strip_Printer.patch: code changed
+
+ -- Guido Günther <agx@sigxcpu.org>  Wed, 28 Jul 2010 12:22:57 +0200
+
 system-config-printer (1.0.0-6) unstable; urgency=low
 
   * The “We’ll deal with the rest later” release.
