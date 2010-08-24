@@ -2,3 +2,5 @@
 0002-Disable-firewall-checks.patch
 0003-Adjust-package-names.patch
 0004-Fix-blacklist-name.patch
+0005-Revert-to-the-correct-menu-category.patch
+0006-Don-t-blindly-listen-to-any-signal.patch
