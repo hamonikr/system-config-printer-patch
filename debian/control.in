@@ -5,7 +5,6 @@ Maintainer: Otavio Salvador <otavio@debian.org>
 Uploaders: @GNOME_TEAM@
 Build-Depends: cdbs (>= 0.4.43),
                debhelper (>= 5.0.37.2),
-               quilt,
                python-support (>= 0.7.1),
                python-all-dev (>= 2.3.5-11),
                libxml-parser-perl,
