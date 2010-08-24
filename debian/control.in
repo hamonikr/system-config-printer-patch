@@ -62,8 +62,17 @@ Depends: ${misc:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
          python-cupsutils
-Conflicts: hal-cups-utils
+Conflicts: hal-cups-utils (<< 0.6.17)
 Description: Utilities to detect and configure printers automatically
  These utilities allow to detect automatically printers using UDEV when they
  are plugged on the system. They are then configured automatically in the CUPS
  printing daemon and made available to users.
+
+Package: hal-cups-utils
+Architecture: all
+Depends: ${misc:Depends}, system-config-printer-udev
+Description: Transitional package to swith to system-config-printer-udev
+ This is a dummy package to ease transition from HAL based printer detection to
+ udev.
+  .
+ It can be safely removed from your system.
