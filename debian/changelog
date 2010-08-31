@@ -1,13 +1,14 @@
-system-config-printer (1.2.3-1) UNRELEASED; urgency=low
+system-config-printer (1.2.3-1) unstable; urgency=medium
 
   [ Guido Günther ]
   * Add Vcs-{Svn,Browser} and Homepage URLs
   * Add myself to uploaders
+  * pyversions, control.in: require python 2.6 (Closes: #594901)
 
   [ Josselin Mouette ]
   * pyversions, control.in: require python 2.5. Closes: #594402.
 
- -- Guido Günther <agx@sigxcpu.org>  Tue, 24 Aug 2010 19:00:31 +0200
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 31 Aug 2010 13:25:48 +0200
 
 system-config-printer (1.2.3-0.3) unstable; urgency=low
 
