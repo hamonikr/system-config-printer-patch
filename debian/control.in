@@ -55,8 +55,6 @@ Depends: ${misc:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
          python-elementtree | python (>= 2.5)
-Replaces: python-cupsutils (<< 1.2.3)
-Breaks : python-cupsutils (<< 1.2.3)
 Description: Python utility modules around the CUPS printing system
  These Python modules, that come from the system-config-printer 
  distribution, help building applications and utilities around the CUPS 
