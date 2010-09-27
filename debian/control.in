@@ -33,6 +33,7 @@ Depends: ${misc:Depends},
          python-glade2,
          python-gnome2,
          python-notify,
+         python-libxml2,
          gnome-icon-theme,
 Recommends: system-config-printer-udev,
             cups-pk-helper
