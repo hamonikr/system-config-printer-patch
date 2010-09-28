@@ -1,3 +1,13 @@
+system-config-printer (1.2.3-3) unstable; urgency=high
+
+  * Depend on libxml2 (Closes: #597723)
+  * Make system-config-printer conflict on hal-cups-utils to help
+    lenny->>squeeze updates. Otherwise hal-cups-utils won't get removed. See
+    http://lists.debian.org/debian-release/2010/09/msg00923.html for a
+    discussion.
+
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 28 Sep 2010 10:48:07 +0200
+
 system-config-printer (1.2.3-2) unstable; urgency=low
 
   * python-cupshelpers: Don't Break and Replace python-cupsutils since we
