@@ -45,6 +45,7 @@ Recommends: system-config-printer-udev,
 Suggests: python-smbc,
           python-gnomekeyring,
           sessioninstaller
+Conflicts: hal-cups-utils
 Description: graphical interface to configure the printing system
  System-config-printer is a GUI written in Python using GTK+ to 
  configure a CUPS server. Its primary use is to configure the printing 
