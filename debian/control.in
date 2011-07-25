@@ -1,7 +1,7 @@
 Source: system-config-printer
 Section: gnome
 Priority: optional
-Maintainer: Otavio Salvador <otavio@debian.org>
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: @GNOME_TEAM@,
  Guido Günther <agx@sigxcpu.org>
 Build-Depends: cdbs (>= 0.4.43),

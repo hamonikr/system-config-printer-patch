@@ -1,9 +1,14 @@
-system-config-printer (1.3.2-1~1.gbp235d18) unstable; urgency=low
+system-config-printer (1.3.2-1~1.gbp235d18) UNRELEASED; urgency=low
 
+  [ Guido Günther ]
   ** SNAPSHOT build @235d180bd2914d463978deec05f8705837aee8ad **
 
   * Update watch file.
     Upstream uses xz now
+
+  [ Emilio Pozuelo Monfort ]
+  * Change the maintainer to the GNOME team. Thanks Otavio for all
+    your work!
 
  -- Guido Günther <agx@sigxcpu.org>  Sat, 16 Apr 2011 17:06:31 +0200
 
