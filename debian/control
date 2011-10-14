@@ -73,6 +73,7 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
+         python-dbus,
          python-cupshelpers (= ${source:Version})
 Conflicts: hal-cups-utils (<< 0.6.17)
 Description: Utilities to detect and configure printers automatically
