@@ -25,7 +25,7 @@ index 8828a4f..0226378 100755
 +++ b/system-config-printer.py
 @@ -21,6 +21,8 @@
  ## along with this program; if not, write to the Free Software
- ## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+ ## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  
 +import sys
 +sys.path.append("/usr/share/system-config-printer")

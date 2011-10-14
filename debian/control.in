@@ -5,7 +5,7 @@ Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.
 Uploaders: @GNOME_TEAM@,
  Guido Günther <agx@sigxcpu.org>
 Build-Depends: cdbs (>= 0.4.43),
-               debhelper (>= 5.0.37.2),
+               debhelper (>= 8),
                python-support (>= 0.7.1),
                python-all-dev (>= 2.6),
                libxml-parser-perl,
@@ -17,9 +17,9 @@ Build-Depends: cdbs (>= 0.4.43),
                libglib2.0-dev,
                libudev-dev [linux-any],
                libusb-dev
-Standards-Version: 3.9.1
-Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/packages/unstable/system-config-printer
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnome/packages/unstable/system-config-printer
+Standards-Version: 3.9.2
+Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/packages/unstable/system-config-printer
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/packages/unstable/system-config-printer
 Homepage: http://cyberelk.net/tim/software/system-config-printer/
 
 Package: system-config-printer

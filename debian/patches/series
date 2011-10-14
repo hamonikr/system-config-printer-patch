@@ -1,4 +1,4 @@
 Adjust-python-paths.patch
-Adjust-package-names.patch
+#Adjust-package-names.patch # Moved to PackageKit
 Use-our-custom-cpk-install-package-name.patch
 Don-t-blindly-listen-to-any-signal.patch

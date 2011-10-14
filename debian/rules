@@ -1,8 +1,8 @@
 #!/usr/bin/make -f
 
 DEB_PYTHON_SYSTEM = pysupport
-GNOME_DOWNLOAD_URL = http://cyberelk.net/tim/data/system-config-printer/1.0.x/$(GNOME_TARBALL)
-TARBALL_EXT := tar.bz2
+GNOME_DOWNLOAD_URL = http://cyberelk.net/tim/data/system-config-printer/$(DEB_UPSTREAM_VERSION_MAJOR_MINOR)/$(GNOME_TARBALL)
+TARBALL_EXT := tar.xz
 
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
