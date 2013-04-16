@@ -18,8 +18,8 @@ Build-Depends: cdbs (>= 0.4.43),
                libudev-dev [linux-any],
                libusb-dev
 Standards-Version: 3.9.2
-Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/packages/unstable/system-config-printer
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnome/packages/unstable/system-config-printer
+Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/attic/system-config-printer
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
 Homepage: http://cyberelk.net/tim/software/system-config-printer/
 
 Package: system-config-printer
