@@ -29,6 +29,8 @@ system-config-printer (1.4.0-1) UNRELEASED; urgency=low
         script to run system-config-printer{,-applet}.
     + debian/rules:
       - Remove debug.py instead of options.py as that's what we're copying.
+    + debian/system-config-printer.install:
+      - Install the dbus service files.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 16 Apr 2013 17:36:18 +0200
 
