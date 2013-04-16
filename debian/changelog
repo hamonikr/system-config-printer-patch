@@ -1,3 +1,13 @@
+system-config-printer (1.3.7-3) unstable; urgency=low
+
+  * Upload to unstable
+  * Bump standards version to 3.9.2. No source changes.
+  * Remove now superfulous '/usr/bin/env' removal.  Upstream removed this
+    already.
+  * Adjust download URL
+
+ -- Guido Günther <agx@sigxcpu.org>  Thu, 22 Dec 2011 19:46:52 +0100
+
 system-config-printer (1.3.7-2) experimental; urgency=low
 
   * Add pycurl dependency to control.in too.
