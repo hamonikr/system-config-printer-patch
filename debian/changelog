@@ -33,12 +33,14 @@ system-config-printer (1.4.0-1) UNRELEASED; urgency=low
       - Update build dependencies.
     + debian/install:
       - Renamed to debian/system-config-printer.install.
-  * debian/rules,
-    debian/system-config-printer.install:
-    + Remove various hacks in debian/rules and just install the upstream
-      script to run system-config-printer{,-applet}.
+    + debian/rules,
+      debian/system-config-printer.install:
+      - Remove various hacks in debian/rules and just install the upstream
+        script to run system-config-printer{,-applet}.
     + debian/rules:
-      + Remove debug.py instead of options.py as that's what we're copying.
+      - Remove debug.py instead of options.py as that's what we're copying.
+    + debian/system-config-printer.install:
+      - Install the dbus service files.
 
  -- Jordi Mallach <jordi@debian.org>  Fri, 14 Oct 2011 19:45:42 +0200
 
