@@ -10,7 +10,7 @@ Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.
 Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Laurent Bigonville <bigon@debian.org>,
  Guido Günther <agx@sigxcpu.org>
 Build-Depends: cdbs (>= 0.4.43),
-               debhelper (>= 5.0.37.2),
+               debhelper (>= 8),
                python-support (>= 0.7.1),
                python-all-dev (>= 2.6),
                libxml-parser-perl,
@@ -20,8 +20,8 @@ Build-Depends: cdbs (>= 0.4.43),
                intltool,
                libcups2-dev,
                libglib2.0-dev,
-               libudev-dev [linux-any],
-               libusb-dev
+               libudev-dev (>= 172) [linux-any],
+               libusb-1.0-0-dev
 Standards-Version: 3.9.2
 Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/attic/system-config-printer
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
