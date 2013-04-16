@@ -27,6 +27,8 @@ system-config-printer (1.4.0-1) UNRELEASED; urgency=low
       debian/system-config-printer.install:
       - Remove various hacks in debian/rules and just install the upstream
         script to run system-config-printer{,-applet}.
+    + debian/rules:
+      - Remove debug.py instead of options.py as that's what we're copying.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 16 Apr 2013 17:36:18 +0200
 

@@ -17,7 +17,7 @@ configure/python-cupshelpers::
 	cp debug.py smburi.py cupshelpers/
 
 cleanbuilddir/python-cupshelpers::
-	rm -rf cupshelpers/options.py cupshelpers/smburi.py
+	rm -rf cupshelpers/debug.py cupshelpers/smburi.py
 
 $(patsubst %,binary-install/%,$(DEB_PACKAGES)) :: binary-install/%:
 	dh_pysupport -p$(cdbs_curpkg)
