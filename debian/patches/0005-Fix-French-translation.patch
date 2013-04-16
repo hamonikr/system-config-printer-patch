@@ -4,12 +4,12 @@ Bug-Debian: http://bugs.debian.org/615113
 
 --- a/po/fr.po
 +++ b/po/fr.po
-@@ -2585,7 +2585,7 @@ msgstr "Impression intelligente"
+@@ -2375,7 +2375,7 @@
  #. Not more than 25 characters
- #: ../ui/PrinterPropertiesDialog.ui.h:59
+ #: ../ui/PrinterPropertiesDialog.ui.h:14
  msgid "Print Self-Test Page"
 -msgstr "Imprimer la page de test"
 +msgstr "Imprimer la page de diagnostic"
  
- #: ../ui/PrinterPropertiesDialog.ui.h:62
- #, fuzzy
+ #. Not more than 25 characters
+ #: ../ui/PrinterPropertiesDialog.ui.h:16
