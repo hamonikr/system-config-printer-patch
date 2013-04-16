@@ -2,3 +2,4 @@
 0002-Disable-firewall-checks.patch
 0003-Use-our-custom-cpk-install-package-name.patch
 0004-Fix-MITM-via-unencrypted-metadata-download.patch
+0005-Fix-French-translation.patch

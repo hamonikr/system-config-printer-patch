@@ -1,1 +1,2 @@
 debian/tmp/usr/lib/python*/site-packages/cupshelpers
+debian/tmp/etc/cupshelpers/

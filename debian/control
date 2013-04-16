@@ -7,7 +7,7 @@ Source: system-config-printer
 Section: gnome
 Priority: optional
 Maintainer: Otavio Salvador <otavio@debian.org>
-Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Josselin Mouette <joss@debian.org>,
+Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Laurent Bigonville <bigon@debian.org>,
  Guido Günther <agx@sigxcpu.org>
 Build-Depends: cdbs (>= 0.4.43),
                debhelper (>= 5.0.37.2),
@@ -61,6 +61,7 @@ Section: python
 Depends: ${misc:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
+         python-dbus,
          python-elementtree | python (>= 2.5),
          python-pycurl
 Description: Python utility modules around the CUPS printing system
@@ -74,7 +75,8 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          ${python:Depends},
          python-cups (>= 1.9.42),
-         python-cupshelpers (= ${source:Version})
+         python-cupshelpers (= ${source:Version}),
+         python-dbus
 Conflicts: hal-cups-utils (<< 0.6.17)
 Description: Utilities to detect and configure printers automatically
  These utilities allow to detect automatically printers using UDEV when they
