@@ -30,7 +30,8 @@ system-config-printer (1.4.0-1) UNRELEASED; urgency=low
     + debian/rules:
       - Remove debug.py instead of options.py as that's what we're copying.
     + debian/system-config-printer.install:
-      - Install the dbus service files.
+      - Install the dbus service files and the necessary binaries.
+        Closes: #705414.
     + debian/patches/0004-Fix-MITM-via-unencrypted-metadata-download.patch:
       - Removed, included upstream.
     + debian/patches/*:
