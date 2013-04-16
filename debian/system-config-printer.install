@@ -1,8 +1,8 @@
 etc/xdg/
 etc/dbus-1/
+usr/bin
 usr/share/applications
 usr/share/locale
 usr/share/man
-usr/share/system-config-printer/system-config-printer.py /usr/bin
-usr/share/system-config-printer/*/
+usr/share/system-config-printer
 debian/gpk-install-package-name /usr/share/system-config-printer/
