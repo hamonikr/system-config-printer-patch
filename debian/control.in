@@ -5,7 +5,7 @@ Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.
 Uploaders: @GNOME_TEAM@,
  Guido Günther <agx@sigxcpu.org>
 Build-Depends: cdbs (>= 0.4.43),
-               debhelper (>= 5.0.37.2),
+               debhelper (>= 8),
                python-support (>= 0.7.1),
                python-all-dev (>= 2.6),
                libxml-parser-perl,

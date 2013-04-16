@@ -1,11 +1,20 @@
 system-config-printer (1.3.7-5) UNRELEASED; urgency=low
 
-  [ Josselin Mouette ]
-  * Update repository URL.
-
   [ Emilio Pozuelo Monfort ]
   * Change the maintainer to the GNOME team. Thanks Otavio for all
     your work!
+
+  [ Jordi Mallach ]
+  * Don't search for .bz2 tarballs, only .xz is supported.
+  * Fix get-orig-source by using more gnome-get-source.mk variables to
+    build the download URL.
+  * Remove obsolete postinst script.
+  * Bump debhelper compatibility to 8.
+  * Remove debian/tmp prefix from .install files.
+  * Update Vcs-* fields to non-redirected URLs.
+
+  [ Josselin Mouette ]
+  * Update repository URL.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 16 Apr 2013 17:36:18 +0200
 
