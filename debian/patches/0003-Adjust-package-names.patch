@@ -1,6 +1,6 @@
 From: =?UTF-8?q?Guido=20G=C3=BCnther?= <agx@sigxcpu.org>
 Date: Mon, 26 Jul 2010 17:10:26 +0200
-Subject: Adjust package names
+Subject: [PATCH] Adjust package names
 
 packages are named differently on RH systems
 ---
@@ -8,10 +8,10 @@ packages are named differently on RH systems
  1 files changed, 10 insertions(+), 10 deletions(-)
 
 diff --git a/cupshelpers/cupshelpers.py b/cupshelpers/cupshelpers.py
-index 9224f3e..2f9cd4a 100755
+index 65db4bb..96a4772 100755
 --- a/cupshelpers/cupshelpers.py
 +++ b/cupshelpers/cupshelpers.py
-@@ -821,23 +821,23 @@ def missingPackagesAndExecutables(ppd):
+@@ -786,23 +786,23 @@ def missingPackagesAndExecutables(ppd):
              'foo2oak-wrapper': None,
              'pnm2ppa': 'pnm2ppa',
              'c2050': 'c2050',
@@ -45,4 +45,4 @@ index 9224f3e..2f9cd4a 100755
              }
          try:
              pkg = pkgs[exe]
--- 
+--

@@ -1,0 +1,19 @@
+From: Josselin Mouette <joss@debian.org>
+Date: Wed, 28 Jul 2010 11:57:25 +0200
+Subject: [PATCH] Revert to the correct menu category.
+
+---
+ manage-print-jobs.desktop.in |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/manage-print-jobs.desktop.in b/manage-print-jobs.desktop.in
+index 5c8ccc5..6c72d77 100644
+--- a/manage-print-jobs.desktop.in
++++ b/manage-print-jobs.desktop.in
+@@ -7,4 +7,4 @@ Terminal=false
+ Type=Application
+ Icon=printer
+ NoDisplay=true
+-StartupNotify=true
++StartupNotify=false
+--

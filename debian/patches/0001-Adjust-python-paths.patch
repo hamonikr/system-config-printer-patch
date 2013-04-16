@@ -1,6 +1,6 @@
 From: =?UTF-8?q?Guido=20G=C3=BCnther?= <agx@sigxcpu.org>
 Date: Mon, 26 Jul 2010 16:20:26 +0200
-Subject: Adjust python paths
+Subject: [PATCH] Adjust python paths
 
 ---
  applet.py                |    1 +
@@ -8,7 +8,7 @@ Subject: Adjust python paths
  2 files changed, 3 insertions(+), 0 deletions(-)
 
 diff --git a/applet.py b/applet.py
-index 9aec1da..048197c 100644
+index 09732d7..491ddb1 100644
 --- a/applet.py
 +++ b/applet.py
 @@ -20,6 +20,7 @@
@@ -17,19 +17,19 @@ index 9aec1da..048197c 100644
  import sys
 +sys.path.append("/usr/share/system-config-printer")
  from debug import *
- 
+
  import dbus
 diff --git a/system-config-printer.py b/system-config-printer.py
-index 8828a4f..0226378 100755
+index 96f1dad..6d6b08c 100755
 --- a/system-config-printer.py
 +++ b/system-config-printer.py
 @@ -21,6 +21,8 @@
  ## along with this program; if not, write to the Free Software
- ## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
- 
+ ## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
 +import sys
 +sys.path.append("/usr/share/system-config-printer")
  # config is generated from config.py.in by configure
  import config
- 
--- 
+
+--
