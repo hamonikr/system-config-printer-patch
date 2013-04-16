@@ -23,6 +23,10 @@ system-config-printer (1.4.0-1) UNRELEASED; urgency=low
       - Update build dependencies.
     + debian/install:
       - Renamed to debian/system-config-printer.install.
+    + debian/rules,
+      debian/system-config-printer.install:
+      - Remove various hacks in debian/rules and just install the upstream
+        script to run system-config-printer{,-applet}.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 16 Apr 2013 17:36:18 +0200
 

@@ -19,14 +19,5 @@ configure/python-cupshelpers::
 cleanbuilddir/python-cupshelpers::
 	rm -rf cupshelpers/options.py cupshelpers/smburi.py
 
-binary-install/system-config-printer::
-	for i in debian/tmp/usr/share/system-config-printer/*.py; do \
-		if ! grep -q ^$$i debian/*install; then \
-			cp $$i debian/system-config-printer/usr/share/system-config-printer/ ; \
-		fi ; done
-	rename 's/\.py$$//' debian/system-config-printer/usr/bin/*.py
-	mv debian/system-config-printer/usr/share/system-config-printer/applet.py \
-		debian/system-config-printer/usr/bin/system-config-printer-applet
-
 $(patsubst %,binary-install/%,$(DEB_PACKAGES)) :: binary-install/%:
 	dh_pysupport -p$(cdbs_curpkg)
