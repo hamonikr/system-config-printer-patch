@@ -15,8 +15,8 @@ Build-Depends: cdbs (>= 0.4.43),
                intltool,
                libcups2-dev,
                libglib2.0-dev,
-               libudev-dev [linux-any],
-               libusb-dev
+               libudev-dev (>= 172) [linux-any],
+               libusb-1.0-0-dev
 Standards-Version: 3.9.2
 Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/attic/system-config-printer
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
