@@ -1,4 +1,4 @@
-system-config-printer (1.4.1-1) UNRELEASED; urgency=low
+system-config-printer (1.4.1-1) experimental; urgency=low
 
   [ Emilio Pozuelo Monfort ]
   * Change the maintainer to the GNOME team. Thanks Otavio for all
@@ -38,8 +38,10 @@ system-config-printer (1.4.1-1) UNRELEASED; urgency=low
       - Removed, included upstream.
     + debian/patches/*:
       - Refreshed.
+  * Upload to experimental until the python-cups dependency can be satisfied
+    in unstable.
 
- -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 16 Apr 2013 17:36:18 +0200
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 25 May 2013 14:00:55 +0200
 
 system-config-printer (1.3.7-4) unstable; urgency=low
 
