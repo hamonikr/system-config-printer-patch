@@ -40,8 +40,8 @@ Depends: ${misc:Depends},
 Recommends: system-config-printer-udev,
             cups-pk-helper,
             gir1.2-gnomekeyring-1.0,
-Suggests: python-smbc,
-          python-gnomekeyring,
+            python-smbc
+Suggests: python-gnomekeyring,
           sessioninstaller
 Conflicts: hal-cups-utils
 Description: graphical interface to configure the printing system
