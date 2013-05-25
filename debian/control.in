@@ -26,7 +26,7 @@ Package: system-config-printer
 Architecture: all
 Depends: ${misc:Depends},
          ${python:Depends},
-         python-cups (>= 1.9.42),
+         python-cups (>= 1.9.60),
          python-cupshelpers (= ${binary:Version}),
          python-dbus,
          python-libxml2,

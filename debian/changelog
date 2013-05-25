@@ -22,6 +22,7 @@ system-config-printer (1.4.1-1) UNRELEASED; urgency=low
     + debian/control.in:
       - Update build dependencies.
       - Update dependencies for the GI migration.
+      - Bump python-cups dependency to 1.9.60.
     + debian/install:
       - Renamed to debian/system-config-printer.install.
     + debian/rules,
