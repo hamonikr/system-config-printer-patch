@@ -1,4 +1,4 @@
-system-config-printer (1.4.0-1) UNRELEASED; urgency=low
+system-config-printer (1.4.1-1) UNRELEASED; urgency=low
 
   [ Emilio Pozuelo Monfort ]
   * Change the maintainer to the GNOME team. Thanks Otavio for all
