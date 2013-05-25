@@ -21,6 +21,7 @@ system-config-printer (1.4.1-1) UNRELEASED; urgency=low
     + Doesn't use deprecated udev functions. Closes: #705521.
     + debian/control.in:
       - Update build dependencies.
+      - Update dependencies for the GI migration.
     + debian/install:
       - Renamed to debian/system-config-printer.install.
     + debian/rules,
