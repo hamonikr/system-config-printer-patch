@@ -1,3 +1,9 @@
+system-config-printer (1.4.1-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 25 May 2013 15:58:31 +0200
+
 system-config-printer (1.4.1-1) experimental; urgency=low
 
   [ Emilio Pozuelo Monfort ]
