@@ -11,6 +11,7 @@ Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Laurent Bigonville <bigon@
  Guido Günther <agx@sigxcpu.org>
 Build-Depends: cdbs (>= 0.4.43),
                debhelper (>= 8),
+               autotools-dev,
                python-support (>= 0.7.1),
                python-all-dev (>= 2.6),
                libxml-parser-perl,
