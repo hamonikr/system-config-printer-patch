@@ -9,10 +9,9 @@ Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Laurent Bigonville <bigon@debian.org>,
  Guido Günther <agx@sigxcpu.org>
-Build-Depends: cdbs (>= 0.4.43),
+Build-Depends: cdbs (>= 0.4.90~),
                debhelper (>= 8),
                autotools-dev,
-               python-support (>= 0.7.1),
                python-all-dev (>= 2.6),
                libxml-parser-perl,
                desktop-file-utils (>= 0.13),
@@ -24,9 +23,10 @@ Build-Depends: cdbs (>= 0.4.43),
                libudev-dev (>= 172) [linux-any],
                libusb-1.0-0-dev
 Standards-Version: 3.9.4
-Vcs-Svn: svn://anonscm.debian.org/svn/pkg-gnome/attic/system-config-printer
+Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/attic/system-config-printer
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
 Homepage: http://cyberelk.net/tim/software/system-config-printer/
+X-Python-Version: >= 2.6
 
 Package: system-config-printer
 Architecture: all
