@@ -1,3 +1,15 @@
+system-config-printer (1.4.3-1) unstable; urgency=low
+
+  * New upstream release (Closes: #727556)
+    - Fix some Unicode-related issues (Closes: #718263, #725882)
+  * d/p/0006-use-paper-size-default-in-etc-papersize.patch: Detect paper size
+    using /etc/papersize if it's available, thanks to the Ubuntu guys
+    (Closes: #593219)
+  * d/p/0007-scp-dbus-service-fix-dbus-signature-typo.patch: Fix typo in a
+    D-Bus method signature (Taken from Ubuntu, thanks)
+
+ -- Laurent Bigonville <bigon@debian.org>  Sat, 26 Oct 2013 14:58:35 +0200
+
 system-config-printer (1.4.1-4) unstable; urgency=low
 
   * Switch from pysupport to dh_python2
