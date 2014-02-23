@@ -22,7 +22,7 @@ Build-Depends: cdbs (>= 0.4.90~),
                libglib2.0-dev,
                libudev-dev (>= 172) [linux-any],
                libusb-1.0-0-dev
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/attic/system-config-printer
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
 Homepage: http://cyberelk.net/tim/software/system-config-printer/
@@ -34,6 +34,8 @@ Depends: ${misc:Depends},
          ${python:Depends},
          python-cups (>= 1.9.60),
          python-cupshelpers (= ${binary:Version}),
+         python-gobject-2,
+         python-cairo,
          python-dbus,
          python-libxml2,
          python-gi,
