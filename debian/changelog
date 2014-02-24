@@ -1,3 +1,11 @@
+system-config-printer (1.4.3-3) UNRELEASED; urgency=medium
+
+  * debian/rules: Pass --list-missing to dh_install
+  * debian/rules, debian/system-config-printer-udev.install: Install systemd
+    configure-printer@.service file (Closes: #739964)
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 24 Feb 2014 14:22:07 +0100
+
 system-config-printer (1.4.3-2) unstable; urgency=medium
 
   * debian/control.in:

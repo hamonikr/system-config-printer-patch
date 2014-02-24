@@ -1,1 +1,2 @@
-debian/tmp/etc/udev /lib/
+etc/udev /lib/
+lib/systemd/system/configure-printer@.service
