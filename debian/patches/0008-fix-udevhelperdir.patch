@@ -1,4 +1,4 @@
-Description: Debianize the udevhelperdir path
+Description: Use the debian location for udev-configure-printer
 Author: Laurent Bigonville <bigon@debian.org>
 Forwarded: not-needed
 

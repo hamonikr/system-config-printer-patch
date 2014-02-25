@@ -7,7 +7,8 @@ system-config-printer (1.4.3-5) UNRELEASED; urgency=medium
 
 system-config-printer (1.4.3-4) unstable; urgency=medium
 
-  * d/p/0008-fix-udevhelperdir.patch: Debianize the udevhelperdir path
+  * d/p/0008-fix-udevhelperdir.patch: Use the debian location for
+    udev-configure-printer
 
  -- Laurent Bigonville <bigon@debian.org>  Tue, 25 Feb 2014 01:52:27 +0100
 
