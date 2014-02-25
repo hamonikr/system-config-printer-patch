@@ -4,3 +4,4 @@
 0005-Fix-French-translation.patch
 0006-use-paper-size-default-in-etc-papersize.patch
 0007-scp-dbus-service-fix-dbus-signature-typo.patch
+0008-fix-udevhelperdir.patch
