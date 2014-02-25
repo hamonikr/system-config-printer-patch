@@ -1,0 +1,12 @@
+Description: Debianize the udevhelperdir path
+Author: Laurent Bigonville <bigon@debian.org>
+Forwarded: not-needed
+
+--- a/udev/configure-printer@.service.in
++++ b/udev/configure-printer@.service.in
+@@ -4,4 +4,4 @@ Requires=cups.socket
+ After=cups.socket
+ 
+ [Service]
+-ExecStart=@udevhelperdir@/udev-configure-printer add "%i"
++ExecStart=/lib/udev/udev-configure-printer add "%i"

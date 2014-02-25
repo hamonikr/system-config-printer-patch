@@ -1,10 +1,16 @@
-system-config-printer (1.4.3-3) UNRELEASED; urgency=medium
+system-config-printer (1.4.3-4) unstable; urgency=medium
+
+  * d/p/0008-fix-udevhelperdir.patch: Debianize the udevhelperdir path
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 25 Feb 2014 01:52:27 +0100
+
+system-config-printer (1.4.3-3) unstable; urgency=medium
 
   * debian/rules: Pass --list-missing to dh_install
   * debian/rules, debian/system-config-printer-udev.install: Install systemd
     configure-printer@.service file (Closes: #739964)
 
- -- Laurent Bigonville <bigon@debian.org>  Mon, 24 Feb 2014 14:22:07 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 25 Feb 2014 00:03:14 +0100
 
 system-config-printer (1.4.3-2) unstable; urgency=medium
 
