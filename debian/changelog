@@ -1,9 +1,23 @@
-system-config-printer (1.4.3-5) UNRELEASED; urgency=medium
+system-config-printer (1.4.5-1) UNRELEASED; urgency=medium
 
+  [ Dmitry Shachnev ]
   * Drop obsolete python-gnomekeyring Suggests, the package has been
     ported to use GnomeKeyring via introspection.
 
- -- Dmitry Shachnev <mitya57@gmail.com>  Tue, 25 Feb 2014 13:06:49 +0400
+  [ Laurent Bigonville ]
+  * New upstream release (Closes: #744869)
+  * debian/control.in: Add udev to the build-dependencies, this is needed for
+    the udev.pc pkgconfig file
+  * debian/system-config-printer-udev.install: The udev helpers and the
+    config files are now installed in the proper directory
+  * d/p/0003-Use-our-custom-cpk-install-package-name.patch,
+    d/p/0006-use-paper-size-default-in-etc-papersize.patch: Refreshed
+  * Drop d/p/0005-Fix-French-translation.patch,
+    d/p/0007-scp-dbus-service-fix-dbus-signature-typo.patch: Merged upstream
+  * Drop debian/patches/0008-fix-udevhelperdir.patch: The path is expanded
+    properly
+
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 12 Oct 2014 11:44:59 +0200
 
 system-config-printer (1.4.3-4) unstable; urgency=medium
 
