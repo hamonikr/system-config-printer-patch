@@ -6,8 +6,9 @@ system-config-printer (1.4.5-1) UNRELEASED; urgency=medium
 
   [ Laurent Bigonville ]
   * New upstream release (Closes: #744869)
-  * debian/control.in: Add udev to the build-dependencies, this is needed for
-    the udev.pc pkgconfig file
+  * debian/control.in: Bump Standards-Version to 3.9.6 (no further changes)
+  * debian/rules: Pass --with-udevdir to the configure, to install the udev
+    helpers and config files to the proper directory
   * debian/system-config-printer-udev.install: The udev helpers and the
     config files are now installed in the proper directory
   * d/p/0003-Use-our-custom-cpk-install-package-name.patch,
@@ -17,7 +18,7 @@ system-config-printer (1.4.5-1) UNRELEASED; urgency=medium
   * Drop debian/patches/0008-fix-udevhelperdir.patch: The path is expanded
     properly
 
- -- Laurent Bigonville <bigon@debian.org>  Sun, 12 Oct 2014 11:44:59 +0200
+ -- Laurent Bigonville <bigon@debian.org>  Sun, 12 Oct 2014 12:04:08 +0200
 
 system-config-printer (1.4.3-4) unstable; urgency=medium
 

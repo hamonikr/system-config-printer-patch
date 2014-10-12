@@ -16,9 +16,8 @@ Build-Depends: cdbs (>= 0.4.90~),
                libcups2-dev,
                libglib2.0-dev,
                libudev-dev (>= 172) [linux-any],
-               udev (>= 172) [linux-any],
                libusb-1.0-0-dev
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/attic/system-config-printer
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
 Homepage: http://cyberelk.net/tim/software/system-config-printer/

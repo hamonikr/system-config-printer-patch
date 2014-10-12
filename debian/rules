@@ -21,6 +21,7 @@ DEB_PYTHON_PRIVATE_MODULES_DIRS_system-config-printer-udev := /lib/udev/
 DEB_CONFIGURE_EXTRA_FLAGS := \
 		--sbindir=/usr/bin \
 		--with-udev-rules \
+		--with-udevdir=/lib/udev \
 		--with-systemdsystemunitdir=/lib/systemd/system
 
 configure/python-cupshelpers::
