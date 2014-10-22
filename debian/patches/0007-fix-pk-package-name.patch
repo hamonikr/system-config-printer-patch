@@ -1,0 +1,15 @@
+Description: Fix the package names that PackageKit should try to install
+Author: Laurent Bigonville <bigon@debian.org>
+Forwarded: not-needed
+
+--- a/newprinter.py
++++ b/newprinter.py
+@@ -1064,7 +1064,7 @@ class NewPrinterGUI(GtkGUI):
+                             not os.access ("/usr/lib/cups/backend/smb", os.F_OK)):
+                             try:
+                                 pk = installpackage.PackageKit ()
+-                                pk.InstallPackageName (0, 0, "samba-client")
++                                pk.InstallPackageName (0, 0, "smbclient")
+                             except:
+                                 pass
+ 

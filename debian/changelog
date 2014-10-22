@@ -1,4 +1,4 @@
-system-config-printer (1.4.5-1) UNRELEASED; urgency=medium
+system-config-printer (1.4.6-1) UNRELEASED; urgency=medium
 
   [ Dmitry Shachnev ]
   * Drop obsolete python-gnomekeyring Suggests, the package has been
@@ -17,8 +17,10 @@ system-config-printer (1.4.5-1) UNRELEASED; urgency=medium
     d/p/0007-scp-dbus-service-fix-dbus-signature-typo.patch: Merged upstream
   * Drop debian/patches/0008-fix-udevhelperdir.patch: The path is expanded
     properly
+  * Add debian/patches/0007-fix-pk-package-name.patch: Fix the package names
+    that PackageKit should try to install
 
- -- Laurent Bigonville <bigon@debian.org>  Sun, 12 Oct 2014 12:04:08 +0200
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 22 Oct 2014 12:20:53 +0200
 
 system-config-printer (1.4.3-4) unstable; urgency=medium
 
