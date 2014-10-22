@@ -49,7 +49,7 @@ Recommends: system-config-printer-udev,
             cups-pk-helper,
             gir1.2-gnomekeyring-1.0,
             python-smbc
-Suggests: sessioninstaller
+Suggests: gnome-packagekit-session
 Conflicts: hal-cups-utils
 Description: graphical interface to configure the printing system
  System-config-printer is a GUI written in Python using GTK+ to 
