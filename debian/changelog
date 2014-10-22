@@ -20,8 +20,12 @@ system-config-printer (1.4.6-1) UNRELEASED; urgency=medium
   * Add debian/patches/0007-fix-pk-package-name.patch: Fix the package names
     that PackageKit should try to install
   * debian/system-config-printer.install: Install appdata file
+  * d/p/0008-return-exception-rather-than-looping.patch: This patch should fix
+    the infinite loop creating million of symlinks in /tmp (Closes: #764253)
+  * debian/control.in: Suggest gnome-packagekit-session instead of
+    sessioninstaller (Closes: #623013)
 
- -- Laurent Bigonville <bigon@debian.org>  Wed, 22 Oct 2014 21:14:30 +0200
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Oct 2014 01:27:20 +0200
 
 system-config-printer (1.4.3-4) unstable; urgency=medium
 
