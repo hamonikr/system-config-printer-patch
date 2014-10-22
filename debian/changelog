@@ -1,4 +1,4 @@
-system-config-printer (1.4.6-1) UNRELEASED; urgency=medium
+system-config-printer (1.4.6-1) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
   * Drop obsolete python-gnomekeyring Suggests, the package has been
@@ -25,7 +25,7 @@ system-config-printer (1.4.6-1) UNRELEASED; urgency=medium
   * debian/control.in: Suggest gnome-packagekit-session instead of
     sessioninstaller (Closes: #623013)
 
- -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Oct 2014 01:27:20 +0200
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Oct 2014 01:29:14 +0200
 
 system-config-printer (1.4.3-4) unstable; urgency=medium
 
