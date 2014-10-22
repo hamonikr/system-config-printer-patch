@@ -19,8 +19,9 @@ system-config-printer (1.4.6-1) UNRELEASED; urgency=medium
     properly
   * Add debian/patches/0007-fix-pk-package-name.patch: Fix the package names
     that PackageKit should try to install
+  * debian/system-config-printer.install: Install appdata file
 
- -- Laurent Bigonville <bigon@debian.org>  Wed, 22 Oct 2014 12:20:53 +0200
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 22 Oct 2014 21:14:30 +0200
 
 system-config-printer (1.4.3-4) unstable; urgency=medium
 
