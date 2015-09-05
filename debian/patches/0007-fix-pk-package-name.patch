@@ -4,12 +4,12 @@ Forwarded: not-needed
 
 --- a/newprinter.py
 +++ b/newprinter.py
-@@ -1064,7 +1064,7 @@ class NewPrinterGUI(GtkGUI):
-                             not os.access ("/usr/lib/cups/backend/smb", os.F_OK)):
+@@ -1070,7 +1070,7 @@
+                             debugprint ("No smb backend so attempting install")
                              try:
                                  pk = installpackage.PackageKit ()
 -                                pk.InstallPackageName (0, 0, "samba-client")
 +                                pk.InstallPackageName (0, 0, "smbclient")
                              except:
-                                 pass
+                                 nonfatalException ()
  

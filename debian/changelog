@@ -1,3 +1,15 @@
+system-config-printer (1.4.8-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+  * Drop patches obsoleted by upstream changes:
+    - 0003-Use-our-custom-cpk-install-package-name.patch
+    - 0008-return-exception-rather-than-looping.patch
+  * Refresh patches via quilt
+  * Fix package description spelling error caught by lintian
+    - Insert 'one' in ... allow one to...
+
+ -- Andreas Henriksson <andreas@fatal.se>  Sun, 06 Sep 2015 00:38:26 +0200
+
 system-config-printer (1.4.6-1) unstable; urgency=medium
 
   [ Dmitry Shachnev ]

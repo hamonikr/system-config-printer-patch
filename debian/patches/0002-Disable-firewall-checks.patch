@@ -8,7 +8,7 @@ Subject: Disable firewall checks
 
 --- a/firewallsettings.py
 +++ b/firewallsettings.py
-@@ -222,21 +222,10 @@
+@@ -225,21 +225,10 @@
              pass
  
      def _check_any_allowed (self, search):
