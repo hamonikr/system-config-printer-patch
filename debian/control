@@ -11,7 +11,7 @@ Uploaders: Emilio Pozuelo Monfort <pochu@debian.org>, Laurent Bigonville <bigon@
 Build-Depends: cdbs (>= 0.4.90~),
                debhelper (>= 8),
                autotools-dev,
-               python-all-dev (>= 2.6),
+               python (>= 2.6),
                libxml-parser-perl,
                desktop-file-utils (>= 0.13),
                xmlto,
@@ -33,7 +33,6 @@ Depends: ${misc:Depends},
          ${python:Depends},
          python-cups (>= 1.9.60),
          python-cupshelpers (= ${binary:Version}),
-         python-gobject-2,
          python-cairo,
          python-dbus,
          python-libxml2,
@@ -84,6 +83,6 @@ Depends: ${misc:Depends},
          python-dbus
 Conflicts: hal-cups-utils (<< 0.6.17)
 Description: Utilities to detect and configure printers automatically
- These utilities allow to detect automatically printers using UDEV when they
- are plugged on the system. They are then configured automatically in the CUPS
- printing daemon and made available to users.
+ These utilities allow one to detect automatically printers using UDEV when
+ they are plugged on the system. They are then configured automatically in
+ the CUPS printing daemon and made available to users.
