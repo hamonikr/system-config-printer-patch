@@ -1,7 +1,9 @@
-system-config-printer (1.4.8-1) UNRELEASED; urgency=medium
+system-config-printer (1.4.8-1) unstable; urgency=medium
 
   [ Andreas Henriksson ]
   * New upstream release.
+    - Fixes TypeError when trying to change printer properties
+      (closes: #791705)
   * Drop patches obsoleted by upstream changes:
     - 0003-Use-our-custom-cpk-install-package-name.patch
     - 0008-return-exception-rather-than-looping.patch
@@ -13,7 +15,7 @@ system-config-printer (1.4.8-1) UNRELEASED; urgency=medium
   * Drop python-gobject-2 dependency, no longer needed.
   * Build-depend on python, instead of unneeded python-all-dev.
 
- -- Andreas Henriksson <andreas@fatal.se>  Sun, 06 Sep 2015 00:38:26 +0200
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 15 Sep 2015 15:11:44 +0300
 
 system-config-printer (1.4.6-1) unstable; urgency=medium
 
