@@ -4,7 +4,7 @@ Forwarded: not-needed
 
 --- a/newprinter.py
 +++ b/newprinter.py
-@@ -1070,7 +1070,7 @@
+@@ -1068,7 +1068,7 @@
                              debugprint ("No smb backend so attempting install")
                              try:
                                  pk = installpackage.PackageKit ()

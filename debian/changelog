@@ -3,6 +3,9 @@ system-config-printer (1.5.7-1) UNRELEASED; urgency=medium
   * New upstream release.
   * Add Tim Waugh's public key to debian/upstream/signing-key.asc and
     tell uscan to check the tarball signatures.
+  * Drop 0001-Adjust-python-paths.patch, not needed as all Python source
+    files are installed into the same directory.
+  * Refresh other patches via quilt.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Wed, 16 Sep 2015 14:00:17 +0300
 

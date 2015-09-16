@@ -4,7 +4,7 @@ Origin: vendor
 
 --- a/cupshelpers/cupshelpers.py
 +++ b/cupshelpers/cupshelpers.py
-@@ -722,6 +722,23 @@ def setPPDPageSize(ppd, language):
+@@ -717,6 +717,23 @@
      for each in letter:
          if language == each:
              size = 'Letter'
