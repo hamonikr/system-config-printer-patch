@@ -6,6 +6,12 @@ system-config-printer (1.5.7-1) UNRELEASED; urgency=medium
   * Drop 0001-Adjust-python-paths.patch, not needed as all Python source
     files are installed into the same directory.
   * Refresh other patches via quilt.
+  * Rename python-cupshelpers to python3-cupshelpers, following upstream
+    switch to Python 3.
+  * debian/control:
+    - Replace python-* with python3-*.
+    - Replace python-pycurl with python3-requests.
+    - Replace gnome-icon-theme with adwaita-icon-theme.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Wed, 16 Sep 2015 14:00:17 +0300
 

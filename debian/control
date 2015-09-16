@@ -11,7 +11,7 @@ Uploaders: Dmitry Shachnev <mitya57@debian.org>, Emilio Pozuelo Monfort <pochu@d
 Build-Depends: cdbs (>= 0.4.90~),
                debhelper (>= 8),
                autotools-dev,
-               python (>= 2.6),
+               python3,
                libxml-parser-perl,
                desktop-file-utils (>= 0.13),
                xmlto,
@@ -25,29 +25,29 @@ Standards-Version: 3.9.6
 Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/attic/system-config-printer
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
 Homepage: http://cyberelk.net/tim/software/system-config-printer/
-X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.0
 
 Package: system-config-printer
 Architecture: all
 Depends: ${misc:Depends},
-         ${python:Depends},
-         python-cups (>= 1.9.60),
-         python-cupshelpers (= ${binary:Version}),
-         python-cairo,
-         python-dbus,
-         python-libxml2,
-         python-gi,
+         ${python3:Depends},
+         python3-cups (>= 1.9.60),
+         python3-cupshelpers (= ${binary:Version}),
+         python3-cairo,
+         python3-dbus,
+         python3-libxml2,
+         python3-gi,
          gir1.2-glib-2.0,
          gir1.2-pango-1.0,
          gir1.2-gdkpixbuf-2.0,
          gir1.2-gtk-3.0,
          gir1.2-notify-0.7,
          gir1.2-packagekitglib-1.0,
-         gnome-icon-theme,
+         adwaita-icon-theme
 Recommends: system-config-printer-udev,
             cups-pk-helper,
             gir1.2-gnomekeyring-1.0,
-            python-smbc
+            python3-smbc
 Suggests: gnome-packagekit-session
 Conflicts: hal-cups-utils
 Description: graphical interface to configure the printing system
@@ -59,15 +59,14 @@ Description: graphical interface to configure the printing system
  In terms of features, it aims to be as complete as the CUPS web 
  administration tool, while being integrated to the desktop.
 
-Package: python-cupshelpers
+Package: python3-cupshelpers
 Architecture: all
 Section: python
 Depends: ${misc:Depends},
-         ${python:Depends},
-         python-cups (>= 1.9.42),
-         python-dbus,
-         python-elementtree | python (>= 2.5),
-         python-pycurl
+         ${python3:Depends},
+         python3-cups (>= 1.9.42),
+         python3-dbus,
+         python3-requests
 Description: Python utility modules around the CUPS printing system
  These Python modules, that come from the system-config-printer 
  distribution, help building applications and utilities around the CUPS 
@@ -77,10 +76,10 @@ Package: system-config-printer-udev
 Architecture: linux-any
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-         ${python:Depends},
-         python-cups (>= 1.9.42),
-         python-cupshelpers (= ${source:Version}),
-         python-dbus
+         ${python3:Depends},
+         python3-cups (>= 1.9.42),
+         python3-cupshelpers (= ${source:Version}),
+         python3-dbus
 Conflicts: hal-cups-utils (<< 0.6.17)
 Description: Utilities to detect and configure printers automatically
  These utilities allow one to detect automatically printers using UDEV when
