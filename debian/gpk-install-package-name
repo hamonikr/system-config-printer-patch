@@ -1,4 +1,4 @@
-#!/usr/bin/python -u
+#!/usr/bin/python3 -u
 # vim: set fileencoding=utf-8 :
 #
 # (C) 2010 Guido Guenther <agx@sigxcpu.org>
@@ -24,26 +24,25 @@ import dbus
 def main(argv):
     pkgs = argv[1:]
     if not pkgs:
-        print >>sys.stderr, "no packages given"
-        return 1
+        sys.exit("No packages given")
 
     bus = dbus.SessionBus()
-    pk = bus.get_object('org.freedesktop.PackageKit',
-                        '/org/freedesktop/PackageKit');
+    try:
+        pk = bus.get_object('org.freedesktop.PackageKit',
+                            '/org/freedesktop/PackageKit')
+    except dbus.exceptions.DBusException as cause:
+        sys.exit(cause)
 
     pk_iface = dbus.Interface(pk, dbus_interface='org.freedesktop.PackageKit.Modify')
 
     try:
         ret = pk_iface.InstallPackageNames(0, pkgs, "hide-finished,hide-warnings", timeout=300000)
         if ret:
-            print >>sys.stderr, "Error installing packages"
-            return 1
-    except dbus.exceptions.DBusException, cause:
-        print sys.stderr, cause
-        return 1
-    return 0
+            sys.exit("Error installing packages")
+    except dbus.exceptions.DBusException as cause:
+        sys.exit(cause)
 
 if __name__ == '__main__':
-    sys.exit(main(sys.argv))
+    main(sys.argv)
 
 # vim:et:ts=4:sw=4:et:sts=4:ai:set list listchars=tab\:»·,trail\:·:

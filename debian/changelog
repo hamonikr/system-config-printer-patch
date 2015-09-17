@@ -15,6 +15,9 @@ system-config-printer (1.5.7-1) UNRELEASED; urgency=medium
     - Remove trailing whitespace from package descriptions.
   * Add 03_install_layout.patch to install cupshelpers Python module to
     correct location (copied from Ubuntu).
+  * debian/gpk-install-package-name:
+    - Update to make it work with Python 3.
+    - Minor refactorings.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Wed, 16 Sep 2015 14:00:17 +0300
 
