@@ -40,7 +40,6 @@ Depends: adwaita-icon-theme,
          python3-cupshelpers (= ${binary:Version}),
          python3-dbus,
          python3-gi,
-         python3-libxml2,
          ${misc:Depends},
          ${python3:Depends}
 Recommends: cups-pk-helper,
@@ -48,7 +47,6 @@ Recommends: cups-pk-helper,
             python3-smbc,
             system-config-printer-udev
 Suggests: gnome-packagekit-session
-Conflicts: hal-cups-utils
 Description: graphical interface to configure the printing system
  System-config-printer is a GUI written in Python using GTK+ to
  configure a CUPS server. Its primary use is to configure the printing
@@ -79,7 +77,6 @@ Depends: python3:any (>= 3.3.2-2~),
          python3-dbus,
          ${misc:Depends},
          ${shlibs:Depends}
-Conflicts: hal-cups-utils (<< 0.6.17)
 Description: Utilities to detect and configure printers automatically
  These utilities allow one to detect automatically printers using UDEV when
  they are plugged on the system. They are then configured automatically in
