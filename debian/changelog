@@ -19,6 +19,7 @@ system-config-printer (1.5.7-1) UNRELEASED; urgency=medium
     - Update to make it work with Python 3.
     - Minor refactorings.
   * Rewrite debian/copyright using 1.0 format.
+  * Bump debhelper compatibility level to 9.
   * No-op wrap and sort.
 
  -- Dmitry Shachnev <mitya57@debian.org>  Wed, 16 Sep 2015 14:00:17 +0300

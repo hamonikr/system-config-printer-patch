@@ -9,7 +9,7 @@ Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.
 Uploaders: Dmitry Shachnev <mitya57@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Laurent Bigonville <bigon@debian.org>, Guido Günther <agx@sigxcpu.org>
 Build-Depends: autotools-dev,
                cdbs (>= 0.4.90~),
-               debhelper (>= 8),
+               debhelper (>= 9),
                desktop-file-utils (>= 0.13),
                gnome-pkg-tools,
                intltool,
