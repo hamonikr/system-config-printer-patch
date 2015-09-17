@@ -51,12 +51,12 @@ Recommends: system-config-printer-udev,
 Suggests: gnome-packagekit-session
 Conflicts: hal-cups-utils
 Description: graphical interface to configure the printing system
- System-config-printer is a GUI written in Python using GTK+ to 
- configure a CUPS server. Its primary use is to configure the printing 
- system on the local host, but can also be used to setup a remote 
+ System-config-printer is a GUI written in Python using GTK+ to
+ configure a CUPS server. Its primary use is to configure the printing
+ system on the local host, but can also be used to setup a remote
  printer.
  .
- In terms of features, it aims to be as complete as the CUPS web 
+ In terms of features, it aims to be as complete as the CUPS web
  administration tool, while being integrated to the desktop.
 
 Package: python3-cupshelpers
@@ -68,8 +68,8 @@ Depends: ${misc:Depends},
          python3-dbus,
          python3-requests
 Description: Python utility modules around the CUPS printing system
- These Python modules, that come from the system-config-printer 
- distribution, help building applications and utilities around the CUPS 
+ These Python modules, that come from the system-config-printer
+ distribution, help building applications and utilities around the CUPS
  Python bindings.
 
 Package: system-config-printer-udev

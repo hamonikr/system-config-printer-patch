@@ -12,6 +12,7 @@ system-config-printer (1.5.7-1) UNRELEASED; urgency=medium
     - Replace python-* with python3-*.
     - Replace python-pycurl with python3-requests.
     - Replace gnome-icon-theme with adwaita-icon-theme.
+    - Remove trailing whitespace from package descriptions.
   * Add 03_install_layout.patch to install cupshelpers Python module to
     correct location (copied from Ubuntu).
 
