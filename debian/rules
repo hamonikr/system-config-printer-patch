@@ -16,7 +16,6 @@ DEB_DH_INSTALL_ARGS := --list-missing
 DEB_PYTHON3_MODULE_PACKAGES := python3-cupshelpers \
                                system-config-printer \
                                system-config-printer-udev
-DEB_PYTHON_PRIVATE_MODULES_DIRS_system-config-printer-udev := /lib/udev/
 
 DEB_CONFIGURE_EXTRA_FLAGS := \
 		--sbindir=/usr/bin \
