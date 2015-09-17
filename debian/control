@@ -73,7 +73,7 @@ Description: Python utility modules around the CUPS printing system
 
 Package: system-config-printer-udev
 Architecture: linux-any
-Depends: python3,
+Depends: python3:any (>= 3.3.2-2~),
          python3-cups (>= 1.9.42),
          python3-cupshelpers (= ${source:Version}),
          python3-dbus,
