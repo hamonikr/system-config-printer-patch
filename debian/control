@@ -64,6 +64,8 @@ Depends: python3-cups (>= 1.9.42),
          python3-requests,
          ${misc:Depends},
          ${python3:Depends}
+Breaks: python-cupshelpers (<= 1.5)
+Replaces: python-cupshelpers (<= 1.5)
 Description: Python utility modules around the CUPS printing system
  These Python modules, that come from the system-config-printer
  distribution, help building applications and utilities around the CUPS
