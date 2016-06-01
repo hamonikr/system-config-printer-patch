@@ -16,33 +16,61 @@ Build-Depends: autotools-dev,
                libxml-parser-perl,
                python3,
                xmlto
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/attic/system-config-printer
-Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
+Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
 Homepage: http://cyberelk.net/tim/software/system-config-printer/
 X-Python3-Version: >= 3.0
 
 Package: system-config-printer
 Architecture: all
-Depends: adwaita-icon-theme,
-         gir1.2-gdkpixbuf-2.0,
+Depends: gir1.2-gdkpixbuf-2.0,
          gir1.2-glib-2.0,
          gir1.2-gtk-3.0,
          gir1.2-notify-0.7,
          gir1.2-packagekitglib-1.0,
          gir1.2-pango-1.0,
-         python3-cairo,
          python3-cups (>= 1.9.60),
-         python3-cupshelpers (= ${binary:Version}),
+         python3-cupshelpers (= ${source:Version}),
          python3-dbus,
          python3-gi,
+         system-config-printer-common (= ${source:Version}),
          ${misc:Depends},
          ${python3:Depends}
 Recommends: cups-pk-helper,
-            gir1.2-gnomekeyring-1.0,
             python3-smbc,
             system-config-printer-udev
 Suggests: gnome-software (>= 3.16.5-2)
+Description: graphical interface to configure the printing system
+ System-config-printer is a GUI written in Python using GTK+ to
+ configure a CUPS server. Its primary use is to configure the printing
+ system on the local host, but can also be used to setup a remote
+ printer.
+ .
+ In terms of features, it aims to be as complete as the CUPS web
+ administration tool, while being integrated to the desktop.
+
+Package: system-config-printer-common
+Architecture: all
+Depends: gir1.2-gdkpixbuf-2.0,
+         gir1.2-glib-2.0,
+         gir1.2-gtk-3.0,
+         gir1.2-notify-0.7,
+         gir1.2-pango-1.0,
+         python3-cairo,
+         python3-cups (>= 1.9.60),
+         python3-cupshelpers (= ${source:Version}),
+         python3-dbus,
+         python3-gi,
+         python3-requests,
+         ${misc:Depends},
+         ${python3:Depends}
+Recommends: gir1.2-gnomekeyring-1.0,
+            python3-smbc,
+            system-config-printer-udev
+Suggests: gnome-software (>= 3.16.5-2)
+Breaks: system-config-printer (<< 1.5.7-2~)
+Replaces: system-config-printer (<< 1.5.7-2~)
 Description: graphical interface to configure the printing system
  System-config-printer is a GUI written in Python using GTK+ to
  configure a CUPS server. Its primary use is to configure the printing
