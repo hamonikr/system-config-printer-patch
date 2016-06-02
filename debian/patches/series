@@ -1,4 +1,5 @@
 03_install_layout.patch
-0002-Disable-firewall-checks.patch
 0006-use-paper-size-default-in-etc-papersize.patch
 0007-fix-pk-package-name.patch
+0008-fix-device-sorting.patch
+0009-fix-udev-add-printer-shbang.patch

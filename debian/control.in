@@ -71,7 +71,7 @@ Recommends: gir1.2-gnomekeyring-1.0,
 Suggests: gnome-software (>= 3.16.5-2)
 Breaks: system-config-printer (<< 1.5.7-2~)
 Replaces: system-config-printer (<< 1.5.7-2~)
-Description: graphical interface to configure the printing system
+Description: backend and the translation files for system-config-printer
  System-config-printer is a GUI written in Python using GTK+ to
  configure a CUPS server. Its primary use is to configure the printing
  system on the local host, but can also be used to setup a remote
@@ -79,6 +79,9 @@ Description: graphical interface to configure the printing system
  .
  In terms of features, it aims to be as complete as the CUPS web
  administration tool, while being integrated to the desktop.
+ .
+ This package contains the backend and the translation files for
+ system-config-printer
 
 Package: python3-cupshelpers
 Architecture: all
