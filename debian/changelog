@@ -13,7 +13,7 @@ system-config-printer (1.5.7-2) unstable; urgency=medium
   * Drop debian/patches/0002-Disable-firewall-checks.patch: firewalld is
     available in Debian as well, let's integrate with it.
   * Add debian/patches/0009-fix-udev-add-printer-shbang.patch: Fix incorrect
-    python3 invocation, taken from upstream
+    python3 invocation, taken from upstream (Closes: #823472)
 
  -- Laurent Bigonville <bigon@debian.org>  Thu, 02 Jun 2016 11:16:46 +0200
 
