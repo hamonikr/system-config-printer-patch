@@ -8,8 +8,14 @@ system-config-printer (1.5.7-2) unstable; urgency=medium
   * Drop debian/gpk-install-package-name, this doesn't seem needed anymore
   * Drop adwaita-icon-theme dependency, try to avoid individual packages to
     depends against themes.
+  * Add debian/patches/0008-fix-device-sorting.patch: Fix sorting of devices,
+    taken from upstream
+  * Drop debian/patches/0002-Disable-firewall-checks.patch: firewalld is
+    available in Debian as well, let's integrate with it.
+  * Add debian/patches/0009-fix-udev-add-printer-shbang.patch: Fix incorrect
+    python3 invocation, taken from upstream
 
- -- Laurent Bigonville <bigon@debian.org>  Thu, 02 Jun 2016 10:31:17 +0200
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 02 Jun 2016 11:16:46 +0200
 
 system-config-printer (1.5.7-1) unstable; urgency=medium
 
