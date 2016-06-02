@@ -1,4 +1,4 @@
-system-config-printer (1.5.7-2) UNRELEASED; urgency=medium
+system-config-printer (1.5.7-2) unstable; urgency=medium
 
   * Move part of system-config-printer to system-config-printer-common
     package, gnome-control-center only needs a subset of system-config-printer
@@ -6,8 +6,10 @@ system-config-printer (1.5.7-2) UNRELEASED; urgency=medium
     is a transitional package
   * debian/control.in: Bump Standards-Version to 3.9.8 (no further changes)
   * Drop debian/gpk-install-package-name, this doesn't seem needed anymore
+  * Drop adwaita-icon-theme dependency, try to avoid individual packages to
+    depends against themes.
 
- -- Laurent Bigonville <bigon@debian.org>  Wed, 01 Jun 2016 17:25:17 +0200
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 02 Jun 2016 10:31:17 +0200
 
 system-config-printer (1.5.7-1) unstable; urgency=medium
 
