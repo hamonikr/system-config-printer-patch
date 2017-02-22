@@ -3,3 +3,4 @@
 0007-fix-pk-package-name.patch
 0008-fix-device-sorting.patch
 0009-fix-udev-add-printer-shbang.patch
+0010-no-start-printer-applet-gnome.patch
