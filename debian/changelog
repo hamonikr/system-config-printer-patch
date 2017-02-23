@@ -1,3 +1,350 @@
+system-config-printer (1.5.7-3) unstable; urgency=medium
+
+  * debian/patches/0010-no-start-printer-applet-gnome.patch: Do not start the
+    printer-applet in GNOME or Cinnamon {gnome,cinnamon}-settings-daemon is
+    already taking care of this.
+  * debian/rules: Move the definition of DEB_PYTHON3_MODULE_PACKAGES before
+    including python-module.mk otherwise cdbs is not calling dh_python3 as
+    expected
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Feb 2017 17:55:32 +0100
+
+system-config-printer (1.5.7-2) unstable; urgency=medium
+
+  * Move part of system-config-printer to system-config-printer-common
+    package, gnome-control-center only needs a subset of system-config-printer
+  * debian/control.in: s/gnome-packagekit-session/gnome-software, the former
+    is a transitional package
+  * debian/control.in: Bump Standards-Version to 3.9.8 (no further changes)
+  * Drop debian/gpk-install-package-name, this doesn't seem needed anymore
+  * Drop adwaita-icon-theme dependency, try to avoid individual packages to
+    depend against themes.
+  * Add debian/patches/0008-fix-device-sorting.patch: Fix sorting of devices,
+    taken from upstream
+  * Drop debian/patches/0002-Disable-firewall-checks.patch: firewalld is
+    available in Debian as well, let's integrate with it.
+  * Add debian/patches/0009-fix-udev-add-printer-shbang.patch: Fix incorrect
+    python3 invocation, taken from upstream (Closes: #823472)
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 02 Jun 2016 11:16:46 +0200
+
+system-config-printer (1.5.7-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add Tim Waugh's public key to debian/upstream/signing-key.asc and
+    tell uscan to check the tarball signatures.
+  * Drop 0001-Adjust-python-paths.patch, not needed as all Python source
+    files are installed into the same directory.
+  * Refresh other patches via quilt.
+  * Rename python-cupshelpers to python3-cupshelpers, following upstream
+    switch to Python 3.
+  * debian/control:
+    - Replace python-* with python3-*.
+    - Replace python-pycurl with python3-requests.
+    - Replace gnome-icon-theme with adwaita-icon-theme.
+    - Drop ancient hal-cups-utils conflicts, that package is not even in
+      oldoldstable (aka squeeze).
+    - Remove trailing whitespace from package descriptions.
+  * Add 03_install_layout.patch to install cupshelpers Python module to
+    correct location (copied from Ubuntu).
+  * debian/gpk-install-package-name:
+    - Update to make it work with Python 3.
+    - Minor refactorings.
+  * Rewrite debian/copyright using 1.0 format.
+  * Bump debhelper compatibility level to 9.
+  * No-op wrap and sort.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Fri, 18 Sep 2015 12:12:29 +0300
+
+system-config-printer (1.4.8-1) unstable; urgency=medium
+
+  [ Andreas Henriksson ]
+  * New upstream release.
+    - Fixes TypeError when trying to change printer properties
+      (closes: #791705)
+  * Drop patches obsoleted by upstream changes:
+    - 0003-Use-our-custom-cpk-install-package-name.patch
+    - 0008-return-exception-rather-than-looping.patch
+  * Refresh patches via quilt
+  * Fix package description spelling error caught by lintian
+    - Insert 'one' in ... allow one to...
+
+  [ Dmitry Shachnev ]
+  * Drop python-gobject-2 dependency, no longer needed.
+  * Build-depend on python, instead of unneeded python-all-dev.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Tue, 15 Sep 2015 15:11:44 +0300
+
+system-config-printer (1.4.6-1) unstable; urgency=medium
+
+  [ Dmitry Shachnev ]
+  * Drop obsolete python-gnomekeyring Suggests, the package has been
+    ported to use GnomeKeyring via introspection.
+
+  [ Laurent Bigonville ]
+  * New upstream release (Closes: #744869)
+  * debian/control.in: Bump Standards-Version to 3.9.6 (no further changes)
+  * debian/rules: Pass --with-udevdir to the configure, to install the udev
+    helpers and config files to the proper directory
+  * debian/system-config-printer-udev.install: The udev helpers and the
+    config files are now installed in the proper directory
+  * d/p/0003-Use-our-custom-cpk-install-package-name.patch,
+    d/p/0006-use-paper-size-default-in-etc-papersize.patch: Refreshed
+  * Drop d/p/0005-Fix-French-translation.patch,
+    d/p/0007-scp-dbus-service-fix-dbus-signature-typo.patch: Merged upstream
+  * Drop debian/patches/0008-fix-udevhelperdir.patch: The path is expanded
+    properly
+  * Add debian/patches/0007-fix-pk-package-name.patch: Fix the package names
+    that PackageKit should try to install
+  * debian/system-config-printer.install: Install appdata file
+  * d/p/0008-return-exception-rather-than-looping.patch: This patch should fix
+    the infinite loop creating million of symlinks in /tmp (Closes: #764253)
+  * debian/control.in: Suggest gnome-packagekit-session instead of
+    sessioninstaller (Closes: #623013)
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Oct 2014 01:29:14 +0200
+
+system-config-printer (1.4.3-4) unstable; urgency=medium
+
+  * d/p/0008-fix-udevhelperdir.patch: Use the debian location for
+    udev-configure-printer
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 25 Feb 2014 01:52:27 +0100
+
+system-config-printer (1.4.3-3) unstable; urgency=medium
+
+  * debian/rules: Pass --list-missing to dh_install
+  * debian/rules, debian/system-config-printer-udev.install: Install systemd
+    configure-printer@.service file (Closes: #739964)
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 25 Feb 2014 00:03:14 +0100
+
+system-config-printer (1.4.3-2) unstable; urgency=medium
+
+  * debian/control.in:
+    - Add dependency against python-gobject-2 and python-cairo
+      (Closes: #730516)
+    - Bump Standards-Version to 3.9.5 (no further changes)
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 24 Feb 2014 00:34:18 +0100
+
+system-config-printer (1.4.3-1) unstable; urgency=low
+
+  * New upstream release (Closes: #727556)
+    - Fix some Unicode-related issues (Closes: #718263, #725882)
+  * d/p/0006-use-paper-size-default-in-etc-papersize.patch: Detect paper size
+    using /etc/papersize if it's available, thanks to the Ubuntu guys
+    (Closes: #593219)
+  * d/p/0007-scp-dbus-service-fix-dbus-signature-typo.patch: Fix typo in a
+    D-Bus method signature (Taken from Ubuntu, thanks)
+
+ -- Laurent Bigonville <bigon@debian.org>  Sat, 26 Oct 2013 14:58:35 +0200
+
+system-config-printer (1.4.1-4) unstable; urgency=low
+
+  * Switch from pysupport to dh_python2
+  * debian/control.in: Add python-gi to the dependencies (Closes: #717153)
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 16 Sep 2013 08:38:32 +0200
+
+system-config-printer (1.4.1-3) unstable; urgency=low
+
+  [ Laurent Bigonville ]
+  * debian/control.in: Bump python-smbc to Recommends (Closes: #611303)
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/system-config-printer.maintscript:
+    + Tell dpkg about the new conffile names. Closes: #711633.
+  * debian/control.in:
+    + Bump Standards-Version to 3.9.4, no changes needed.
+    + Build depend on autotools-dev to get updated config.{sub,guess}.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 10 Jun 2013 16:02:14 +0200
+
+system-config-printer (1.4.1-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 25 May 2013 15:58:31 +0200
+
+system-config-printer (1.4.1-1) experimental; urgency=low
+
+  [ Emilio Pozuelo Monfort ]
+  * Change the maintainer to the GNOME team. Thanks Otavio for all
+    your work!
+
+  [ Jordi Mallach ]
+  * Don't search for .bz2 tarballs, only .xz is supported.
+  * Fix get-orig-source by using more gnome-get-source.mk variables to
+    build the download URL.
+  * Remove obsolete postinst script.
+  * Bump debhelper compatibility to 8.
+  * Remove debian/tmp prefix from .install files.
+  * Update Vcs-* fields to non-redirected URLs.
+
+  [ Josselin Mouette ]
+  * Update repository URL.
+
+  [ Emilio Pozuelo Monfort ]
+  * New upstream release.
+    + Doesn't use deprecated udev functions. Closes: #705521.
+    + debian/control.in:
+      - Update build dependencies.
+      - Update dependencies for the GI migration.
+      - Bump python-cups dependency to 1.9.60.
+    + debian/install:
+      - Renamed to debian/system-config-printer.install.
+    + debian/rules,
+      debian/system-config-printer.install:
+      - Remove various hacks in debian/rules and just install the upstream
+        script to run system-config-printer{,-applet}.
+    + debian/rules:
+      - Remove debug.py instead of options.py as that's what we're copying.
+    + debian/system-config-printer.install:
+      - Install the dbus service files and the necessary binaries.
+        Closes: #705414.
+    + debian/patches/0004-Fix-MITM-via-unencrypted-metadata-download.patch:
+      - Removed, included upstream.
+    + debian/patches/*:
+      - Refreshed.
+  * Upload to experimental until the python-cups dependency can be satisfied
+    in unstable.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 25 May 2013 14:00:55 +0200
+
+system-config-printer (1.3.7-4) unstable; urgency=low
+
+  * debian/control.in: Add missing Depends against python-dbus
+    (Closes: #627810)
+  * debian/python-cupshelpers.install: Install missing
+    /etc/cupshelpers/preferreddrivers.xml file (Closes: #695582)
+  * debian/patches/0005-Fix-French-translation.patch: Fix confusing French
+    translation (Closes: #615113)
+
+ -- Laurent Bigonville <bigon@debian.org>  Fri, 25 Jan 2013 21:53:18 +0100
+
+system-config-printer (1.3.7-3) unstable; urgency=low
+
+  * Upload to unstable
+  * Bump standards version to 3.9.2. No source changes.
+  * Remove now superfulous '/usr/bin/env' removal.  Upstream removed this
+    already.
+  * Adjust download URL
+
+ -- Guido Günther <agx@sigxcpu.org>  Thu, 22 Dec 2011 19:46:52 +0100
+
+system-config-printer (1.3.7-2) experimental; urgency=low
+
+  * Add pycurl dependency to control.in too.
+    Thanks; Michael Biebl (Closes: #652387)
+
+ -- Guido Günther <agx@sigxcpu.org>  Sat, 17 Dec 2011 12:56:42 +0100
+
+system-config-printer (1.3.7-1) experimental; urgency=low
+
+  * New upstream version 1.3.7 (Closes: #642211)
+  * Update watch file.
+    Upstream uses xz now (Closes: #646320)
+  * Drop superfluous patches.
+        0003-Adjust-package-names.patch
+        0004-Fix-blacklist-name.patch
+        0005-Revert-to-the-correct-menu-category.patch
+        0006-Don-t-blindly-listen-to-any-signal.patch
+  * configure: Enable installation of udev rule
+  * Fix MITM via unencrypted metadata download (CVE-2011-4405).
+    Patch taken from Ubuntu. Thanks to Till Kamppeter
+
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 13 Dec 2011 20:57:36 +0100
+
+system-config-printer (1.2.3-3) unstable; urgency=high
+
+  * Depend on libxml2 (Closes: #597723)
+  * Make system-config-printer conflict on hal-cups-utils to help
+    lenny->>squeeze updates. Otherwise hal-cups-utils won't get removed. See
+    http://lists.debian.org/debian-release/2010/09/msg00923.html for a
+    discussion.
+
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 28 Sep 2010 10:48:07 +0200
+
+system-config-printer (1.2.3-2) unstable; urgency=low
+
+  * python-cupshelpers: Don't Break and Replace python-cupsutils since we
+    don't share any files and this eases upgrades via apt-get.
+
+ -- Guido Günther <agx@sigxcpu.org>  Sun, 12 Sep 2010 17:42:18 +0200
+
+system-config-printer (1.2.3-1) unstable; urgency=medium
+
+  [ Guido Günther ]
+  * Add Vcs-{Svn,Browser} and Homepage URLs
+  * Add myself to uploaders
+  * pyversions, control.in: require python 2.6 (Closes: #594901)
+
+  [ Josselin Mouette ]
+  * pyversions, control.in: require python 2.5. Closes: #594402.
+
+ -- Guido Günther <agx@sigxcpu.org>  Tue, 31 Aug 2010 13:25:48 +0200
+
+system-config-printer (1.2.3-0.3) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Upload to unstable.
+
+ -- Guido Günther <agx@sigxcpu.org>  Fri, 20 Aug 2010 17:49:59 +0200
+
+system-config-printer (1.2.3-0.2) experimental; urgency=low
+
+  * Non-maintainer upload.
+  * Install debug.py and smburi.py in the cupshelpers package
+    (Closes: #525714)
+
+ -- Guido Günther <agx@sigxcpu.org>  Fri, 13 Aug 2010 20:29:23 +0200
+
+system-config-printer (1.2.3-0.1) experimental; urgency=low
+
+  * Non-maintainer upload.
+  * New Upstream version 1.2.3 (Closes: #49333)
+        - No deprecation warnings (Closes: #574636)
+        - Uses udev instead of hal (Closes: #568477, #581511)
+        - uses PolicyKit (Closes: #499284)
+  * Conflict on hal-cups-utils since system-config-printer-udev provides this
+    functionality now.
+  * Use cups-pk-helper instead of gksu (Closes: #469587, #479829)
+  * Move package to section gnome. (Closes: #590571)
+  * Rename python-cupsutils to python-cupshelpers
+  * Switch to 3.0 (quilt) format
+  * Bump standard version to 3.9.1
+  * New patches:
+       - 0002-Disable-firewall-checks.patch. Disable RH specific firewall
+         checks
+       - 0003-Adjust-package-names.patch. Adjust package names to match the
+         Debian ones
+       - 0004-Fix-blacklist-name.patch. Fix blacklist name
+       - 0007-Use-our-custom-cpk-install-package-name.patch use packagekit
+         when available
+  * Updated patches:
+       - 0001-Adjust-python-paths.patch
+         0005-Revert-to-the-correct-menu-category.patch
+         0006-Don-t-blindly-listen-to-any-signal.patch
+  * Dropped pachtes:
+      - 01_no_rhpl: fixed upstream.
+      - 02_translations: upstream translation updates seem to include these
+      - 03_elementtree: not needed anymore.
+      - 04_jobsheets_traceback.patch: fixed upstream
+      - 08_stock_icons.patch: fixed upstream
+      - 11_use_gksu.patch: gksu replaced by PolicyKit
+      - 12_remove_redhat: fixed upstream.
+      - 15_close_shortcut.patch: close is more consistent with other applets
+      - 17_new_printer_notification.patch: fixed upstream, applet gets the new
+        printer notifications
+      - 19_dbus_interfaces.patch: fixed upstream
+      - 31_browse_hang: code changed
+      - 32_pycups_traceback.patch: fixed upstream
+      - 30_install_traceback.patch: fixed upstream
+      - 33_dont_strip_Printer.patch: code changed
+
+ -- Guido Günther <agx@sigxcpu.org>  Wed, 28 Jul 2010 12:22:57 +0200
+
 system-config-printer (1.0.0-6) unstable; urgency=low
 
   * The “We’ll deal with the rest later” release.

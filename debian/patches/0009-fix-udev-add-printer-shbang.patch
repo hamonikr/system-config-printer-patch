@@ -1,0 +1,19 @@
+From 68f059e44942467ddeee4977d10f2b3a961c9f3a Mon Sep 17 00:00:00 2001
+From: Tim Waugh <twaugh@redhat.com>
+Date: Tue, 12 May 2015 09:56:27 +0100
+Subject: [PATCH] Fixed shbang line in udev/udev-add-printer (trac #244).
+
+---
+ udev/udev-add-printer | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/udev/udev-add-printer b/udev/udev-add-printer
+index 3622d61..fec3c42 100755
+--- a/udev/udev-add-printer
++++ b/udev/udev-add-printer
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python3 -s -B
++#!/usr/bin/python3 -sB
+ 
+ ## udev-add-printer
+ 
