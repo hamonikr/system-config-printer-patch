@@ -1,4 +1,6 @@
-Adjust-python-paths.patch
-#Adjust-package-names.patch # Moved to PackageKit
-Use-our-custom-cpk-install-package-name.patch
-Don-t-blindly-listen-to-any-signal.patch
+03_install_layout.patch
+0006-use-paper-size-default-in-etc-papersize.patch
+0007-fix-pk-package-name.patch
+0008-fix-device-sorting.patch
+0009-fix-udev-add-printer-shbang.patch
+0010-no-start-printer-applet-gnome.patch
