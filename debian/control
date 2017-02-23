@@ -22,8 +22,7 @@ Build-Depends: debhelper (>= 10),
 Standards-Version: 3.9.8
 Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/attic/system-config-printer
 Vcs-Browser: https://anonscm.debian.org/viewvc/pkg-gnome/attic/system-config-printer
-Homepage: http://cyberelk.net/tim/software/system-config-printer/
-X-Python3-Version: >= 3.0
+Homepage: https://github.com/zdohnal/system-config-printer
 
 Package: system-config-printer
 Architecture: all
