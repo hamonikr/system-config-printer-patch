@@ -1,3 +1,18 @@
+system-config-printer (1.5.9-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+    - Drop debian/patches/0008-fix-device-sorting.patch,
+      debian/patches/0009-fix-udev-add-printer-shbang.patch: Merged upstream
+    - debian/patches/0007-fix-pk-package-name.patch: Refreshed
+  * Switch to dh sequences from cdbs
+  * Do not install smburi.py and debug.py in python3-cupshelpers anymore, this
+    doesn't seem needed anymore
+  * Bump debhelper compatibility to version 10
+  * Drop debian/patches/03_install_layout.patch, this doesn't seem needed
+    anymore and adjust debian/python3-cupshelpers.install
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Feb 2017 20:58:35 +0100
+
 system-config-printer (1.5.7-3) unstable; urgency=medium
 
   * debian/patches/0010-no-start-printer-applet-gnome.patch: Do not start the
