@@ -10,8 +10,9 @@ system-config-printer (1.5.9-1) UNRELEASED; urgency=medium
   * Bump debhelper compatibility to version 10
   * Drop debian/patches/03_install_layout.patch, this doesn't seem needed
     anymore and adjust debian/python3-cupshelpers.install
+  * debian/control.in: Add gir1.2-polkit-1.0 to the dependencies
 
- -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Feb 2017 20:58:35 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Feb 2017 21:26:39 +0100
 
 system-config-printer (1.5.7-3) unstable; urgency=medium
 
