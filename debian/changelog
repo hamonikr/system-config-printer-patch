@@ -3,8 +3,11 @@ system-config-printer (1.5.7-3) unstable; urgency=medium
   * debian/patches/0010-no-start-printer-applet-gnome.patch: Do not start the
     printer-applet in GNOME or Cinnamon {gnome,cinnamon}-settings-daemon is
     already take care of this.
+  * debian/rules: Move the definition of DEB_PYTHON3_MODULE_PACKAGES before
+    including python-module.mk otherwise cdbs is not calling dh_python3 as
+    expected
 
- -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Feb 2017 17:29:02 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Feb 2017 17:55:32 +0100
 
 system-config-printer (1.5.7-2) unstable; urgency=medium
 

@@ -3,6 +3,11 @@
 GNOME_DOWNLOAD_URL = http://cyberelk.net/tim/data/system-config-printer/$(DEB_UPSTREAM_VERSION_MAJOR_MINOR)/$(GNOME_TARBALL)
 TARBALL_EXT := tar.xz
 
+DEB_PYTHON3_MODULE_PACKAGES := python3-cupshelpers \
+                               system-config-printer \
+                               system-config-printer-udev \
+                               system-config-printer-common
+
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/class/python-module.mk
@@ -12,11 +17,6 @@ include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 # List any files which are not installed
 include /usr/share/cdbs/1/rules/utils.mk
 DEB_DH_INSTALL_ARGS := --list-missing
-
-DEB_PYTHON3_MODULE_PACKAGES := python3-cupshelpers \
-                               system-config-printer \
-                               system-config-printer-udev \
-                               system-config-printer-common
 
 DEB_PYTHON_PRIVATE_MODULES_DIRS_ALL := /usr/share/system-config-printer
 
