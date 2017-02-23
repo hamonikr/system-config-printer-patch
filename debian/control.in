@@ -36,9 +36,7 @@ Depends: gir1.2-gdkpixbuf-2.0,
          system-config-printer-common (= ${source:Version}),
          ${misc:Depends},
          ${python3:Depends}
-Recommends: cups-pk-helper,
-            python3-smbc,
-            system-config-printer-udev
+Recommends: system-config-printer-udev
 Suggests: gnome-software (>= 3.16.5-2)
 Description: graphical interface to configure the printing system
  System-config-printer is a GUI written in Python using GTK+ to
@@ -64,12 +62,13 @@ Depends: gir1.2-gdkpixbuf-2.0,
          python3-requests,
          ${misc:Depends},
          ${python3:Depends}
-Recommends: gir1.2-gnomekeyring-1.0,
+Recommends: cups-pk-helper, 
+            gir1.2-gnomekeyring-1.0,
             python3-smbc,
             system-config-printer-udev
 Suggests: gnome-software (>= 3.16.5-2)
-Breaks: system-config-printer (<< 1.5.7-2~)
-Replaces: system-config-printer (<< 1.5.7-2~)
+Breaks: system-config-printer (<< 1.5.9-2~)
+Replaces: system-config-printer (<< 1.5.9-2~)
 Description: backend and the translation files for system-config-printer
  System-config-printer is a GUI written in Python using GTK+ to
  configure a CUPS server. Its primary use is to configure the printing
