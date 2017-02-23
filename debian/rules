@@ -3,31 +3,28 @@
 GNOME_DOWNLOAD_URL = http://cyberelk.net/tim/data/system-config-printer/$(DEB_UPSTREAM_VERSION_MAJOR_MINOR)/$(GNOME_TARBALL)
 TARBALL_EXT := tar.xz
 
-DEB_PYTHON3_MODULE_PACKAGES := python3-cupshelpers \
-                               system-config-printer \
-                               system-config-printer-udev \
-                               system-config-printer-common
-
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
-include /usr/share/cdbs/1/class/python-module.mk
-include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
 -include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
 
-# List any files which are not installed
-include /usr/share/cdbs/1/rules/utils.mk
-DEB_DH_INSTALL_ARGS := --list-missing
+%:
+# We need to force the build system to autoconf otherwise for some reasons it
+# tries to run the python_distutils one
+	dh $@ --buildsystem=autoconf --with gnome,python3
 
-DEB_PYTHON_PRIVATE_MODULES_DIRS_ALL := /usr/share/system-config-printer
+override_dh_auto_configure:
+	dh_auto_configure -- --with-udev-rules \
+		             --with-udevdir=/lib/udev \
+		             --with-systemdsystemunitdir=/lib/systemd/system
 
-DEB_CONFIGURE_EXTRA_FLAGS := \
-		--sbindir=/usr/bin \
-		--with-udev-rules \
-		--with-udevdir=/lib/udev \
-		--with-systemdsystemunitdir=/lib/systemd/system
+override_dh_python3:
+	dh_python3 -ppython3-cupshelpers
+	dh_python3 -psystem-config-printer /usr/share/system-config-printer/
+	dh_python3 -psystem-config-printer-common /usr/share/system-config-printer/
 
-configure/python3-cupshelpers::
-	cp debug.py smburi.py cupshelpers/
+override_dh_installdocs:
+	dh_installdocs -A AUTHORS
 
-cleanbuilddir/python3-cupshelpers::
-	rm -rf cupshelpers/debug.py cupshelpers/smburi.py
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_autoreconf:
+	dh_autoreconf ./bootstrap
