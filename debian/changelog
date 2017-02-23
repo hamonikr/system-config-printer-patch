@@ -10,8 +10,10 @@ system-config-printer (1.5.9-2) UNRELEASED; urgency=medium
     the code using these modules are in that package.
   * Move the install-printerdriver executable to the -common package, it's
     indirectly needed by scp-dbus-service
+  * debian/rules: Remove the dbus/org.fedoraproject.Config.Printing.service
+    file during the clean target so it's generated with the proper path
 
- -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Feb 2017 23:43:57 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Fri, 24 Feb 2017 00:18:00 +0100
 
 system-config-printer (1.5.9-1) experimental; urgency=medium
 

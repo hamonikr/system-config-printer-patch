@@ -28,3 +28,7 @@ override_dh_install:
 
 override_dh_autoreconf:
 	dh_autoreconf ./bootstrap
+
+override_dh_clean:
+	dh_clean -O--buildsystem=autoconf
+	rm -f dbus/org.fedoraproject.Config.Printing.service
