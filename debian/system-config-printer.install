@@ -1,4 +1,5 @@
 usr/bin/system-config-printer
+usr/bin/install-printerdriver
 usr/share/system-config-printer/check-device-ids.py
 usr/share/system-config-printer/HIG.py
 usr/share/system-config-printer/SearchCriterion.py
@@ -8,6 +9,7 @@ usr/share/system-config-printer/ToolbarSearchEntry.py
 usr/share/system-config-printer/userdefault.py
 usr/share/system-config-printer/troubleshoot
 usr/share/system-config-printer/icons
+usr/share/system-config-printer/install-printerdriver.py
 usr/share/system-config-printer/xml/*.rng
 usr/share/system-config-printer/xml/validate.py
 usr/share/system-config-printer/ui/*.ui

@@ -2,7 +2,6 @@ etc/dbus-1/system.d/com.redhat.NewPrinterNotification.conf
 etc/dbus-1/system.d/com.redhat.PrinterDriversInstaller.conf
 usr/share/dbus-1/interfaces/*.xml
 usr/share/dbus-1/services/*.service
-usr/bin/install-printerdriver
 usr/bin/scp-dbus-service
 usr/share/locale/
 usr/share/system-config-printer/asyncconn.py
@@ -18,7 +17,6 @@ usr/share/system-config-printer/firewallsettings.py
 usr/share/system-config-printer/gtkinklevel.py
 usr/share/system-config-printer/gui.py
 usr/share/system-config-printer/installpackage.py
-usr/share/system-config-printer/install-printerdriver.py
 usr/share/system-config-printer/jobviewer.py
 usr/share/system-config-printer/killtimer.py
 usr/share/system-config-printer/monitor.py
