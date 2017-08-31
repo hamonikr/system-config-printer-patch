@@ -1,3 +1,34 @@
+system-config-printer (1.5.9-2) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * Update debian/watch and Homepage to point to github repo
+  * Update Vcs links
+
+  [ Laurent Bigonville ]
+  * debian/control.in: Make the system-config-printer-common package recommend
+    cups-pk-helper and python3-smbc package instead of system-config-printer,
+    the code using these modules are in that package.
+  * debian/rules: Remove the dbus/org.fedoraproject.Config.Printing.service
+    file during the clean target so it's generated with the proper path
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 21 Jun 2017 14:50:52 +0200
+
+system-config-printer (1.5.9-1) experimental; urgency=medium
+
+  * New upstream release.
+    - Drop debian/patches/0008-fix-device-sorting.patch,
+      debian/patches/0009-fix-udev-add-printer-shbang.patch: Merged upstream
+    - debian/patches/0007-fix-pk-package-name.patch: Refreshed
+  * Switch to dh sequences from cdbs
+  * Do not install smburi.py and debug.py in python3-cupshelpers anymore, this
+    doesn't seem needed anymore
+  * Bump debhelper compatibility to version 10
+  * Drop debian/patches/03_install_layout.patch, this doesn't seem needed
+    anymore and adjust debian/python3-cupshelpers.install
+  * debian/control.in: Add gir1.2-polkit-1.0 to the dependencies
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 23 Feb 2017 22:26:58 +0100
+
 system-config-printer (1.5.7-3) unstable; urgency=medium
 
   * debian/patches/0010-no-start-printer-applet-gnome.patch: Do not start the
