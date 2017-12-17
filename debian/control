@@ -6,7 +6,7 @@ Source: system-config-printer
 Section: gnome
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Dmitry Shachnev <mitya57@debian.org>, Laurent Bigonville <bigon@debian.org>, Guido Günther <agx@sigxcpu.org>
+Uploaders: Dmitry Shachnev <mitya57@debian.org>, Jeremy Bicha <jbicha@debian.org>, Laurent Bigonville <bigon@debian.org>, Guido Günther <agx@sigxcpu.org>
 Build-Depends: debhelper (>= 10),
                dh-python,
                desktop-file-utils (>= 0.13),
@@ -19,7 +19,7 @@ Build-Depends: debhelper (>= 10),
                libxml-parser-perl,
                python3,
                xmlto
-Standards-Version: 3.9.8
+Standards-Version: 4.1.2
 Vcs-Git: https://anonscm.debian.org/git/pkg-gnome/system-config-printer.git
 Vcs-Browser: https://anonscm.debian.org/git/pkg-gnome/system-config-printer.git
 Homepage: https://github.com/zdohnal/system-config-printer
