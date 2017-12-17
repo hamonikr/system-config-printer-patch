@@ -1,0 +1,3 @@
+#!/bin/sh
+prefix=/usr/local
+exec ${prefix}/share/system-config-printer/applet.py "$@"
