@@ -7,7 +7,7 @@ Section: gnome
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: Dmitry Shachnev <mitya57@debian.org>, Jeremy Bicha <jbicha@debian.org>, Laurent Bigonville <bigon@debian.org>, Guido Günther <agx@sigxcpu.org>
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper (>= 11),
                dh-python,
                desktop-file-utils (>= 0.13),
                gnome-pkg-tools,

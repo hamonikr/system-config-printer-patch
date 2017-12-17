@@ -23,9 +23,6 @@ override_dh_python3:
 override_dh_installdocs:
 	dh_installdocs -A AUTHORS
 
-override_dh_install:
-	dh_install --list-missing
-
 override_dh_autoreconf:
 	dh_autoreconf ./bootstrap
 
