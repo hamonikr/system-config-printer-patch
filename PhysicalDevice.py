@@ -23,8 +23,9 @@ import gettext
 gettext.install(domain=config.PACKAGE, localedir=config.localedir)
 import cupshelpers
 import urllib.parse
-
 import ppdippstr
+import socket
+from debug import *
 
 class PhysicalDevice:
     def __init__(self, device):
@@ -32,6 +33,7 @@ class PhysicalDevice:
         self._network_host = None
         self.dnssd_hostname = None
         self._cupsserver = False
+        self.firsturi = None
         self.add_device (device)
         self._user_data = {}
         self._ppdippstr = ppdippstr.backends
@@ -49,6 +51,27 @@ class PhysicalDevice:
              make_and_model = device.make_and_model
 
         return cupshelpers.ppds.ppdMakeModelSplit (make_and_model)
+
+    def _add_dot_local_if_needed(self, hostname):
+        if (hostname is None):
+            return None
+        if ((not '.' in hostname) and (not ':' in hostname) and
+            (hostname != 'localhost')):
+            return hostname + '.local'
+        else:
+            return hostname
+
+    def _get_address (self, hostname):
+        try:
+            address = socket.getaddrinfo(hostname, 0,
+                                         family=socket.AF_INET)[0][4][0]
+        except:
+            try:
+                address = socket.getaddrinfo(hostname, 0,
+                                             family=socket.AF_INET6)[0][4][0]
+            except:
+                address = None
+        return address
 
     def _get_host_from_uri (self, uri):
         hostport = None
@@ -83,20 +106,39 @@ class PhysicalDevice:
         if hostport:
             (host, port) = urllib.parse.splitport (hostport)
 
-        return host, dnssdhost
+        if (host):
+            ip = None
+            try:
+                ip = self._get_address(host)
+                if ip:
+                    host = ip
+            except:
+                pass
+        elif (dnssdhost):
+            try:
+                host = self._get_address(dnssdhost)
+            except:
+                host = None
+
+        return self._add_dot_local_if_needed(host), \
+            self._add_dot_local_if_needed(dnssdhost)
 
     def add_device (self, device):
         if self._network_host or self.dnssd_hostname:
             host, dnssdhost = self._get_host_from_uri (device.uri)
             if (hasattr (device, 'address')):
-                host = device.address
+                host = self._add_dot_local_if_needed(device.address)
             if (hasattr (device, 'hostname') and dnssdhost is None):
-                dnssdhost = device.hostname
+                dnssdhost = self._add_dot_local_if_needed(device.hostname)
             if (host is None and dnssdhost is None) or \
-               (host and self._network_host and \
-                host != self._network_host) or \
-               (dnssdhost and self.dnssd_hostname and \
-                dnssdhost != self.dnssd_hostname) or \
+               not ((host and self._network_host and
+                     host == self._network_host) or
+                    (host and self.dnssd_hostname and
+                     host == self.dnssd_hostname) or
+                    (dnssdhost and self._network_host and
+                     dnssdhost == self._network_host) or
+                    (dnssdhost and self.dnssd_hostname and
+                     dnssdhost == self.dnssd_hostname)) or \
                (host is None and self.dnssd_hostname is None) or \
                (dnssdhost is None and self._network_host is None):
                 raise ValueError
@@ -146,6 +188,11 @@ class PhysicalDevice:
             if d.uri == device.uri:
                 return
 
+        # Use the URI of the very first device added as a kind of identifier
+        # for this physical device record, to make debugging easier
+        if not self.firsturi:
+            self.firsturi = device.uri;
+
         self.devices.append (device)
         self.devices.sort ()
 
@@ -160,11 +207,21 @@ class PhysicalDevice:
         if (hasattr (device, 'address') and self._network_host is None):
             address = device.address
             if address:
-                self._network_host = address
+                self._network_host = self._add_dot_local_if_needed(address)
+
         if (hasattr (device, 'hostname') and self.dnssd_hostname is None):
             hostname = device.hostname
             if hostname:
-                self.dnssd_hostname = hostname
+                self.dnssd_hostname = self._add_dot_local_if_needed(hostname)
+
+        if (self.dnssd_hostname and self._network_host is None):
+            try:
+                self._network_host = self._get_address(hostname);
+            except:
+                self._network_host = None
+
+        debugprint("Device %s added to physical device: %s" %
+                   (device.uri, repr(self)))
 
     def get_devices (self):
         return self.devices
@@ -222,15 +279,31 @@ class PhysicalDevice:
         return "(description: %s)" % self.__repr__ ()
 
     def __repr__ (self):
-        return "<PhysicalDevice.PhysicalDevice (%s,%s,%s)>" % (self.mfg,
-                                                               self.mdl,
-                                                               self.sn)
+        return ("<PhysicalDevice.PhysicalDevice (%s,%s,%s,%s,%s,%s)>" %
+                (self.mfg, self.mdl, self.sn, self._network_host,
+                 self.dnssd_hostname, self.firsturi))
 
     def __eq__(self, other):
         if type (other) != type (self):
             return False
 
-        if self._network_host != other._network_host:
+        if not (((not self._network_host or len (self._network_host) == 0) and
+                 (not other._network_host or len (other._network_host) == 0) and
+                 (not self.dnssd_hostname or len (self.dnssd_hostname) == 0) and
+                 (not other.dnssd_hostname or
+                  len (other.dnssd_hostname) == 0)) or
+                (self._network_host and len (self._network_host) > 0 and
+                 other._network_host and len (other._network_host) > 0 and
+                 self._network_host == other._network_host) or
+                (self.dnssd_hostname and len (self.dnssd_hostname) > 0 and
+                 other.dnssd_hostname and len (other.dnssd_hostname) > 0 and
+                 self.dnssd_hostname == other.dnssd_hostname) or
+                (self._network_host and len (self._network_host) > 0 and
+                 other.dnssd_hostname and len (other.dnssd_hostname) > 0 and
+                 self._network_host == other.dnssd_hostname) or
+                (self.dnssd_hostname and len (self.dnssd_hostname) > 0 and
+                 other._network_host and len (other._network_host) > 0 and
+                 self.dnssd_hostname == other._network_host)):
             return False
 
         devs = other.get_devices()
@@ -262,7 +335,13 @@ class PhysicalDevice:
         (our_mfg, our_mdl) = split_make_and_model (self)
         (other_mfg, other_mdl) = split_make_and_model (other)
 
-        if our_mfg != other_mfg or our_mdl != other_mdl:
+        if our_mfg != other_mfg:
+            return False
+
+        if our_mfg == "hp" and self.sn != '' and self.sn == other.sn:
+            return True
+
+        if our_mdl != other_mdl:
             return False
 
         if self.sn == '' or other.sn == '':
@@ -274,6 +353,9 @@ class PhysicalDevice:
         if type (other) != type (self):
             return False
 
+        if self == other:
+            return False;
+
         if self._network_host != other._network_host:
             if self._network_host is None:
                 return True
@@ -282,6 +364,15 @@ class PhysicalDevice:
                 return False
 
             return self._network_host < other._network_host
+
+        if self.dnssd_hostname != other.dnssd_hostname:
+            if self.dnssd_hostname is None:
+                return True
+
+            if other.dnssd_hostname is None:
+                return False
+
+            return self.dnssd_hostname < other.dnssd_hostname
 
         devs = other.get_devices()
         if devs:
@@ -305,7 +396,9 @@ class PhysicalDevice:
                 make_and_model = dev.mdl
             else:
                 make_and_model = "%s %s" % (dev.mfg, dev.mdl)
-            return cupshelpers.ppds.ppdMakeModelSplit (make_and_model)
+            (mfg, mdl) = cupshelpers.ppds.ppdMakeModelSplit (make_and_model)
+            return (cupshelpers.ppds.normalize (mfg),
+                    cupshelpers.ppds.normalize (mdl))
 
         (our_mfg, our_mdl) = split_make_and_model (self)
         (other_mfg, other_mdl) = split_make_and_model (other)

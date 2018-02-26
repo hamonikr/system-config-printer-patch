@@ -52,7 +52,7 @@ cupshelpers/config.py: cupshelpers/config.py.in Makefile
 	  -e "s|\@cupsserverbindir\@|$(cupsserverbindir)|" \
 	  $< > $@
 
-dbus/org.fedoraproject.Config.Printing.service: dbus/org.fedoraproject.Config.Printing.service.in
+dbus/org.fedoraproject.Config.Printing.service: dbus/org.fedoraproject.Config.Printing.service.in $(top_builddir)/config.status Makefile
 	sed \
 	-e "s|\@bindir\@|$(bindir)|" \
 	$< >$@
@@ -179,7 +179,7 @@ cupshelpersdir=$(sysconfdir)/cupshelpers
 cupshelpers_DATA=\
 	xml/preferreddrivers.xml
 
-bin_SCRIPTS=					\
+nodist_bin_SCRIPTS=					\
 	system-config-printer			\
 	install-printerdriver			\
 	system-config-printer-applet		\
@@ -222,7 +222,7 @@ dbusinterfaces_DATA =				\
 	dbus/org.fedoraproject.Config.Printing.xml
 dbusinterfacesdir = $(datadir)/dbus-1/interfaces/
 
-dbusservices_DATA =				\
+nodist_dbusservices_DATA =				\
 	dbus/org.fedoraproject.Config.Printing.service
 dbusservicesdir = $(datadir)/dbus-1/services/
 
@@ -263,7 +263,7 @@ desktop_in_files = $(desktop_DATA:.desktop=.desktop.in)
 
 @INTLTOOL_XML_RULE@
 
-appdatadir = $(datadir)/appdata
+appdatadir = $(datadir)/metainfo
 appdata_in_files = system-config-printer.appdata.xml.in
 appdata_DATA = $(appdata_in_files:.xml.in=.xml)
 
