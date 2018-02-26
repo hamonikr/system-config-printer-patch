@@ -7,9 +7,10 @@ system-config-printer (1.5.11-1) UNRELEASED; urgency=medium
   * New upstream release.
     - Drop d/p/0010-no-start-printer-applet-gnome.patch, applied upstream
     - Use libsecret instead of gnome-keyring (Closes: #867952)
+    - debian/system-config-printer.install: Fix installation of appdata file
   * debian/rules: Fix the URL to download the orig tarball using get-orig-source
 
- -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 11:03:59 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 11:08:47 +0100
 
 system-config-printer (1.5.9-3) unstable; urgency=medium
 
