@@ -12,8 +12,10 @@ system-config-printer (1.5.11-1) UNRELEASED; urgency=medium
   * d/p/0003-Use-ValueError-instead-of-ImportError-to-catch-excep.patch: Fix
     exception handling when importing libsecret, that should made it really
     optional (Closes: #868039)
+  * d/p/0004-Fix-constructing-the-auth-dialog.patch: Fix constructing the auth
+    dialog, from upstream
 
- -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 11:27:12 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 14:51:13 +0100
 
 system-config-printer (1.5.9-3) unstable; urgency=medium
 
