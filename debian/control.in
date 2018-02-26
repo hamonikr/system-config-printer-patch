@@ -63,7 +63,7 @@ Depends: gir1.2-gdkpixbuf-2.0,
          ${misc:Depends},
          ${python3:Depends}
 Recommends: cups-pk-helper, 
-            gir1.2-gnomekeyring-1.0,
+            gir1.2-secret-1,
             python3-smbc,
             system-config-printer-udev
 Suggests: gnome-software (>= 3.16.5-2)

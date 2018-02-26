@@ -6,8 +6,9 @@ system-config-printer (1.5.11-1) UNRELEASED; urgency=medium
   [ Laurent Bigonville ]
   * New upstream release.
     - Drop d/p/0010-no-start-printer-applet-gnome.patch, applied upstream
+    - Use libsecret instead of gnome-keyring (Closes: #867952)
 
- -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 10:36:11 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 10:42:23 +0100
 
 system-config-printer (1.5.9-3) unstable; urgency=medium
 
