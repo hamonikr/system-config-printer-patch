@@ -1,8 +1,13 @@
-system-config-printer (1.5.9-4) UNRELEASED; urgency=medium
+system-config-printer (1.5.11-1) UNRELEASED; urgency=medium
 
+  [ Jeremy Bicha ]
   * Update Vcs fields for migration to https://salsa.debian.org/
 
- -- Jeremy Bicha <jbicha@debian.org>  Sun, 21 Jan 2018 11:26:30 -0500
+  [ Laurent Bigonville ]
+  * New upstream release.
+    - Drop d/p/0010-no-start-printer-applet-gnome.patch, applied upstream
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 10:36:11 +0100
 
 system-config-printer (1.5.9-3) unstable; urgency=medium
 
