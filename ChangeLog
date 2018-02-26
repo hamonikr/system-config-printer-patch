@@ -1,3 +1,370 @@
+2018-01-24  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	- version 1.5.10
+
+	- don't ship pre-configured scripts
+
+2018-01-23  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	update lines in .po files
+
+	- removed macedonian localization because of low rate of translated strings
+
+2018-01-22  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	system-config-printer.py doesn't have program name (https://github.com/zdohnal/system-config-printer/issues/53)
+
+	parent attribute is depreacted in Gtk.Dialog - use transient_for
+
+	Another deprecated issue - GLib
+
+	Remove deprecated Gtk objects
+
+2018-01-19  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Correct id in PrinterPropertiesDialog.ui
+
+	Fix typo in ConnectDialog.ui
+
+	Revert requiring gtk4 and gdk4
+
+	Use Gtk and Gdk version 4.0
+
+	Fix mispelling
+
+2018-01-12  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	check if ipp service is enabled before the call
+
+2018-01-10  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	s-c-p doesn't react on ALREADY_ENABLED firewalld exception
+
+2018-01-09  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Update .po files by files from zanata
+
+	Removing some deprecated GTK structures
+
+2018-01-03  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Added GenericName and X-GNOME-FullName to system-config-printer.desktop.in
+
+2017-12-16  Dušan Kazik  <prescott66@gmail.com>
+
+	Updated slovak translation
+
+2017-12-11  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Update appdata file
+
+2017-12-08  lafricain79  <lafricain79@gmail.com>
+
+	Translation of new strings and correction, and few corrections in the ppdipstr.py
+
+2017-12-08  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	remove tabs in ppdippstr.py
+
+	update .po
+
+2017-12-07  lafricain79  <lafricain79@gmail.com>
+
+	Correction of lanscape to landscape
+
+	Correction of one lacking space
+
+	New strings added
+
+2017-12-07  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	update .po files
+
+2017-12-07  lafricain79  <lafricain79@gmail.com>
+
+	New strings added
+
+2017-12-06  lafricain79  <lafricain79@gmail.com>
+
+	Addition of new strings and translation/correction in the po file
+
+2017-12-05  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	update .po and .pot files (upstream issue #79)
+
+2017-12-05  L'Africain  <lafricain79@gmail.com>
+
+	Addition of some strings for i18n
+
+2017-11-27  zdohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+
+2017-11-27  Jeremy Bicha  <jbicha@ubuntu.com>
+
+	build: Install appstream metadata to non-deprecated location
+
+2017-11-23  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Other TypeError on <dict>.update call
+
+2017-11-10  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	authconn.py - load gtk3 (fixing https://bugzilla.redhat.com/show_bug.cgi?id=1502770)
+
+	Other fix for issue #76
+
+2017-11-08  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	marking current state as beta - not usable for stable releases
+
+2017-11-07  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	TypeError on <dict>.update call
+
+2017-09-12  zdohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+
+	Update NEWS
+
+2017-09-11  Ömer ÇAKMAK  <farukomercakmak@gmail.com>
+
+	Updated Turkish translation
+
+2017-09-11  pardus  <pardus@localhost.localdomain>
+
+	Updated Turkish translation
+
+	Updated Turkish translation
+
+2017-09-10  Ömer Çakmak  <faruk.omer.cakmak@gmail.com>
+
+	Update tr.po
+	Print Settings > Yazıcı Ayarları
+
+2017-08-24  zdohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+
+2017-08-24  Nikolay Martynov  <mar.kolya@gmail.com>
+
+	Do not notify on 'cups-waiting-for-job-completed' because it's not an error
+
+2017-07-10  zdohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+
+2017-06-28  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	- use libsecret instead of libgnome-keyring
+
+2017-06-16  Till Kamppeter  <till.kamppeter@gmail.com>
+
+	Use getaddrinfo() to determine IP addresses for physical device matching
+	getaddrinfo() is more universal than gethostbyname(), especially it
+	supports also IPv6. So now we also get IP addresses if the device is
+	only available in an IPv6 network and therefore has only an IPv6 IP
+	address.
+
+2017-06-02  Till Kamppeter  <till.kamppeter@gmail.com>
+
+	Let entries for USB printing appear before USB fax entries in the connection type list
+	On a USB multi-function device the printing functionality is much more
+	important than the fax functionality. Most users only use the printing
+	part, and the fax part is also often not supported by an appropriate
+	driver. So let the entry for printing appear first in the connection
+	type list.
+
+	When listing discovered USB devices, distinguish between printer and fax
+	Some USB printers appear as two USB devices, one for printing and one
+	for fax. This would lead to 2 connection types in the connection type
+	list which are names "USB" and undistinguishable. Now we check on USB
+	printer entries whether they are for fax and mark them as "Fax - USB".
+
+	Consider entries for HP printers as the same physical device if the serial number matches
+	If an HP multi-function device on USB has also fax functionality,
+	there are also discovery entries for the "hpfax" backend of HPLIP and
+	an additional entry for the "usb" CUPS backend. These entries have
+	model names which differ from the printer's model name, leading to
+	extra entries in the list of discovered printers. To join these
+	entries we consider two HP printers as equal if they have the same
+	serial number, regardless of the model name.
+
+	When adding a device to the list of discovered devices, use the original physical device entry
+	In the new-printer wizard the list of discovered printers in the first
+	wizard step is built up in several stages. To avoid duplicates in each
+	stage the devices are not only added to the already existing physical
+	device record but also to extra physical device record to mark them as
+	new entries which still need to get added to the list.
+
+	Before, these new physical device records were used for generating the
+	list entry. Now we look up the original physical device entries as
+	they can contain more information (especially IP address and host
+	name) for the list entry.
+
+	In addition, som extra debug information is logged.
+
+	Improved determining whether two discovered network printer entries are from the same physical printer
+	Various improvements in the PhysicalDevice class:
+
+	- In each physical device record for a network device determine the IP
+	  address of the device and drop it into the _network_host field,
+	  instead of a host name. Try to determine the IP from both host names
+	  found in the URI and DNS-SD host names. With this it is much more
+	  reliable to find out whether two entries of discovered network
+	  devices come from the same physical device.
+
+	- Add the URI of the first device added to a physical device record
+	  and do not change it when more devices get added. This way the
+	  record can be easily followed when debugging.
+
+	- When dumping the content of a physical record with the repr()
+	  function for debugging, do not only show make, model, and serial
+	  number, but also IP, DNS-SD host name, and URI of the first device
+	  added.
+
+	- Improve implementation of the "<" operator, checking for equal and,
+	  taking into account the DNS-SD host name, and making the function for
+	  separating make and model the same as in the "=" operator.
+
+	- Added debug output.
+
+	Suppress backend-only entry for the "bjnp" backend in the list of discovered printers
+	The list of discovered printers and CUPS backends in the wizard for
+	adding a new printer has an entry for the "bjnp" CUPS backend (backend
+	for proprietary network protocol of some Canon printers). This entry
+	appears when no appropriate Canon printer gets found and the entry in
+	the list is useless. Therefore we suppress it.
+
+	When adding a printer, consider also the "driverless" and "bjnp" CUPS backends as network backends
+	When starting the wizard for adding a new printer the available
+	printers and CUPS backends are enumerated by calling all CUPS backends
+	in discovery mode, but in contrary to CUPS' "lpinfo -v" the bunch is
+	devided up into two groups, first the faster local printer backends
+	are called and the appropriate printers listed and after that the
+	slower network printer backends. This way the local printers appear
+	quickly in the wizard and the user can already proceed when the
+	desired local printer shows up.
+
+	The "driverless" and "bjnp" backends were missing in the list of
+	network backends and therefore were considered local, ending up with
+	the local backend round taking too long.
+
+2017-05-26  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	- updated .travis.yml and NEWS
+
+2017-05-25  Till Kamppeter  <till.kamppeter@gmail.com>
+
+	Display correct icons in the main window.
+	Fixed display of printer icons in the main window, now the icons
+	correctly represent local printers and network prrinters taking into
+	account all recent changes in CUPS and cups-filters.
+
+	Prefer driverless PPDs if suitable
+	Prioritize auto-generated PPD files for driverless printing, as they
+	poll the properties from the printer, and so they represent the
+	printer best.
+
+	Do not use driverless PPDs on non-IPP connections
+	Make sure that auto-generated PPD files for driverless printing are
+	not used when another connection type than IPP is used for the
+	printer.  When printing driverless option settings are sent to the
+	printers as IPP attributes.
+
+	Prioritize IPP in the printer connection type list.
+	As IPP is the most modern and sophisticated network printing protocol
+	and especially supports driverless printing, let IPP options show first
+	in the list of possible connections for a discovered network printer.
+	Only HPLIP stays more highly prioritized as for HP multi-function
+	devices as HPLIP print queue is required for the scanner to work.
+
+	Mark IPP printers discovered by the "driverless" utility of cups-filters.
+	If an IPP printer is discovered by the "driverless" utility from
+	cups-filters, give it a "driverless" mark in the list of possible
+	connections for the network printers, to guide the user to an easy way
+	to set up the printer.
+
+	Improved identifying network printers as being from the same host.
+	In some cases two entries under the discovered network printers were
+	not identified as coming from the same host (= physical printer). This
+	happened especially with Zeroconf-provided host names with ".local".
+
+	Fix size of connection type list widget in new-printer window.
+	Fixed connection type list for detected/discovered printers on the
+	"Devices" tab of the new-printer window. The list was too small so
+	that the options were not visible.
+
+	Allow setup of SMB printers without Samba client software installed.
+	Install the software as soon as it is needed for browsing the network
+	and using the printer
+
+	Do not exit when installing a package via installpackage.py until the package is completely installed.
+
+	Always use the _debugprint() function in cupshelpers/ppds.py, to silence console output.
+
+	Let options.py use debugprint() to silence console output.
+
+	Suppress the display of the "media-col" attribute since this is not a user-configurable option
+	The "media-col" IPP attribute is a list of all available media
+	settings, not the media which the user actually chooses. So it should
+	not show as a user-settable option.
+
+2017-05-24  Jeremy Bicha  <jbicha@ubuntu.com>
+
+	.travis.yml: switch from precise to trusty
+
+2017-04-14  Laurent Bigonville  <bigon@bigon.be>
+
+	Replace icons deprecated by GTK 3.0 by non-deprecated ones
+	GTK 3.0 has depreated or rename a bunch of icons, follow the new naming
+	conventions
+
+	See: https://developer.gnome.org/gtk3/stable/gtk3-Stock-Items.html
+
+	Do not start the applet on GNOME and Cinnamon desktops (Closes: #40)
+	{gnome,cinnamon}-settings-daemon are also claiming the D-Bus interfaces
+	provided by the applet
+
+2017-03-31  Antonio Cebrián  <ancebfer@gmail.com>
+
+	Update PrinterPropertiesDialog.ui
+
+2017-03-25  Ville Skyttä  <ville.skytta@iki.fi>
+
+	Python 3.6 invalid escape sequence deprecation fixes
+	https://docs.python.org/3/whatsnew/3.6.html#deprecated-python-behavior
+
+	Indent consistently with spaces
+
+	Python3 print() fix
+
+	Spelling fixes
+
+2017-03-19  zdohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+	Update NEWS
+
+2017-03-18  Olivier Humbert  <trebmuh@users.noreply.github.com>
+
+	French translation update
+
+2017-03-15  zdohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+	Update NEWS
+
+2017-03-12  Martin Larralde  <martin.larralde@ens-cachan.fr>
+
+	Add a StartService for systemd based systems
+
+2017-03-08  zdohnal  <zdohnal@redhat.com>
+
+	cannot add network printer (rhbz#1419175)
+	Editing Makefile.am to not ship org.fedoraproject.Config.Printing.service file and its re-generation when config.status and Makefile changes.
+
 2017-01-09  Zdenek Dohnal  <zdohnal@redhat.com>
 
 	new 1.5.9 version - added configure in source tarball, merged some pull requests

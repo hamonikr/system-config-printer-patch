@@ -186,7 +186,7 @@ def download_gpg_fingerprint(url):
         debugprint('Cannot retrieve %s' % url)
         return None
 
-    keyid_re = re.compile(' ((?:(?:[0-9A-F]{4})(?:\s+|$)){10})$', re.M)
+    keyid_re = re.compile(r' ((?:(?:[0-9A-F]{4})(?:\s+|$)){10})$', re.M)
 
     m = keyid_re.search(content)
     if m:
@@ -484,11 +484,7 @@ class NewPrinterGUI(GtkGUI):
 
         # SMB browser
         self.smb_store = Gtk.TreeStore (GObject.TYPE_PYOBJECT)
-        self.btnSMBBrowse.set_sensitive (PYSMB_AVAILABLE)
-        if not PYSMB_AVAILABLE:
-            self.btnSMBBrowse.set_tooltip_text (_("Browsing not available "
-                                                  "(pysmbc not installed)"))
-
+        self.btnSMBBrowse.set_sensitive (True)
         self.tvSMBBrowser.set_model (self.smb_store)
 
         # SMB list columns
@@ -1380,7 +1376,7 @@ class NewPrinterGUI(GtkGUI):
     def _handlePrinterInstallationStage (self, page_nr, step):
         if self.dialog_mode != "download_driver":
             uri = self.device.uri
-            if uri and uri.startswith ("smb://"):
+            if uri and uri.startswith ("smb"):
                 # User has selected an smb device
                 uri = SMBURI (uri=uri[6:]).sanitize_uri ()
                 self._installSMBBackendIfNeeded ()
@@ -1450,7 +1446,7 @@ class NewPrinterGUI(GtkGUI):
         # not automatically set up on our local CUPS server
         # (for example DNS-SD broadcasted queue from Mac OS X)
         self.remotecupsqueue = None
-        res = re.search ("ipp://(\S+?)(:\d+|)/printers/(\S+)", uri)
+        res = re.search (r"ipp://(\S+?)(:\d+|)/printers/(\S+)", uri)
         if res:
             resg = res.groups()
             if len (resg[1]) > 0:
@@ -1990,7 +1986,7 @@ class NewPrinterGUI(GtkGUI):
 
         # Search for Bluetooth printers together with the network printers
         # as the Bluetooth search takes rather long time
-        network_schemes = ["dnssd", "snmp", "bluetooth"]
+        network_schemes = ["dnssd", "snmp", "driverless", "bjnp", "bluetooth"]
         error_handler = self.error_getting_devices
         if network == False:
             reply_handler = (lambda x, y:
@@ -2080,7 +2076,7 @@ class NewPrinterGUI(GtkGUI):
         for line in stdout.decode ().split ("\n"):
             if line.find ("fax-type") == -1:
                 continue
-            res = re.search ("(\d+)", line)
+            res = re.search (r"(\d+)", line)
             if res:
                 resg = res.groups()
                 try:
@@ -2247,6 +2243,13 @@ class NewPrinterGUI(GtkGUI):
                                      row=[network_dict['device-info'],
                                           PhysicalDevice (network), False])
         model.insert_after (network_iter, find_nw_iter, row=['', None, True])
+        smbdev_dict = { 'device-class': 'network',
+                        'device-info': _("Windows Printer via SAMBA") }
+        smbdev = cupshelpers.Device ('smb', **smbdev_dict)
+        find_smb_iter = model.append (network_iter,
+                                     row=[smbdev_dict['device-info'],
+                                          PhysicalDevice (smbdev), False])
+        model.insert_after (find_nw_iter, find_smb_iter, row=['', None, True])
         self.devices_uri_iter = uri_iter
         self.devices_find_nw_iter = find_nw_iter
         self.devices_network_iter = network_iter
@@ -2303,7 +2306,9 @@ class NewPrinterGUI(GtkGUI):
     def adjust_firewall_response (self, dialog, response):
         dialog.destroy ()
         if response == Gtk.ResponseType.YES:
-            self.firewall.add_service (firewallsettings.IPP_SERVER_SERVICE)
+            ipp_server_allowed = self.firewall.check_ipp_server_allowed ()
+            if not ipp_server_allowed:
+                self.firewall.add_service (firewallsettings.IPP_SERVER_SERVICE)
             self.firewall.write ()
 
         debugprint ("Fetching network devices after firewall dialog response")
@@ -2365,17 +2370,29 @@ class NewPrinterGUI(GtkGUI):
                     else:
                         device2.uri = "delete"
         devices = [x for x in devices if x.uri not in ("hp", "hpfax",
-                                                 "hal", "beh",
-                                                 "scsi", "http", "delete")]
+                                                       "hal", "beh", "smb", 
+                                                       "scsi", "http", "bjnp",
+                                                       "delete")]
         newdevices = []
         for device in devices:
+            debugprint("Adding device with URI %s" % device.uri)
+            if (hasattr (device, 'address')):
+                debugprint("   Device address %s" % device.address)
+            if (hasattr (device, 'hostname')):
+                debugprint("   Device host name %s" % device.hostname)
             physicaldevice = PhysicalDevice (device)
+            debugprint ("   Created physical device %s" % repr(physicaldevice))
             try:
                 i = self.devices.index (physicaldevice)
+                debugprint ("   Physical device %d is the same printer" % i)
                 self.devices[i].add_device (device)
+                debugprint ("   New physical device %s is same as physical device %d: %s" %
+                            (repr(physicaldevice), i, repr(self.devices[i])))
+                debugprint ("   Joining devices")
             except ValueError:
                 self.devices.append (physicaldevice)
                 newdevices.append (physicaldevice)
+                debugprint ("   Physical device %s is a completely new device" % repr(physicaldevice))
 
         self.devices.sort()
         if current_uri:
@@ -2394,7 +2411,15 @@ class NewPrinterGUI(GtkGUI):
 
         network_iter = self.devices_network_iter
         find_nw_iter = self.devices_find_nw_iter
-        for device in newdevices:
+        for newdevice in newdevices:
+            device = None
+            try:
+                i = self.devices.index (newdevice)
+                device = self.devices[i]
+            except ValueError:
+                debugprint("ERROR: Cannot identify new physical device with its entry in the device list (%s)" %
+                           repr(newdevice))
+                continue
             devs = device.get_devices ()
             network = devs[0].device_class == 'network'
             info = device.get_info ()
@@ -2459,6 +2484,26 @@ class NewPrinterGUI(GtkGUI):
             self.tvNPDeviceURIs.set_cursor (connection_select_path, column, False)
 
     ## SMB browsing
+
+    def install_python3_smbc_if_needed (self):
+        global PYSMB_AVAILABLE
+        global pysmb # Make the import of pysmb globally available
+        # Does the SMB client library  need to be installed?
+        if not PYSMB_AVAILABLE:
+            debugprint ("No SMB client library present so attempting install")
+            try:
+                pk = installpackage.PackageKit ()
+                # The following call means a blocking, synchronous, D-Bus call
+                pk.InstallPackageName (0, 0, "python3-smbc")
+                try:
+                    import pysmb
+                    PYSMB_AVAILABLE=True
+                    debugprint ("SMB client successfully installed and set up.")
+                except:
+                    debugprint ("SMB client setup failed.")
+            except:
+                debugprint ("Error during installation/setup of SMB client.")
+        return PYSMB_AVAILABLE
 
     def browse_smb_hosts(self):
         """Initialise the SMB tree store."""
@@ -2665,10 +2710,7 @@ class NewPrinterGUI(GtkGUI):
             ready (self.SMBBrowseDialog)
 
     def set_btnSMBVerify_sensitivity (self, on):
-        self.btnSMBVerify.set_sensitive (PYSMB_AVAILABLE and on)
-        if not PYSMB_AVAILABLE or not on:
-            self.btnSMBVerify.set_tooltip_text (_("Verification requires the "
-                                                  "%s module") % "pysmbc")
+        self.btnSMBVerify.set_sensitive (on)
 
     def on_entSMBURI_changed (self, ent):
         allowed_chars = string.ascii_letters+string.digits+'_-./:%[]@'
@@ -2704,6 +2746,10 @@ class NewPrinterGUI(GtkGUI):
         self.btnSMBBrowseOk.set_sensitive(iter is not None and is_share)
 
     def on_btnSMBBrowse_clicked(self, button):
+        """Check whether the needed SMB client library is available and"""
+        """install it if needed"""
+        if not self.install_python3_smbc_if_needed(): return
+
         self.btnSMBBrowseOk.set_sensitive(False)
 
         try:
@@ -2778,6 +2824,10 @@ class NewPrinterGUI(GtkGUI):
         self.tblSMBAuth.set_sensitive(widget.get_active())
 
     def on_btnSMBVerify_clicked(self, button):
+        """Check whether the needed SMB client library is available and"""
+        """install it if needed"""
+        if not self.install_python3_smbc_if_needed(): return
+
         uri = self.entSMBURI.get_text ()
         (group, host, share, u, p) = SMBURI (uri=uri).separate ()
         user = ''
@@ -2989,7 +3039,11 @@ class NewPrinterGUI(GtkGUI):
             elif device.type == "serial":
                 device.menuentry = _("Serial Port")
             elif device.type == "usb":
-                device.menuentry = _("USB")
+                if (hasattr(device, "uri") and
+                    device.uri.lower().find("fax") > -1):
+                    device.menuentry = _("Fax") + " - " + _("USB")
+                else:
+                    device.menuentry = _("USB")
             elif device.type == "bluetooth":
                 device.menuentry = _("Bluetooth")
             elif device.type == "hp":
@@ -3025,10 +3079,16 @@ class NewPrinterGUI(GtkGUI):
                         queue = queue[1:]
                     if queue.startswith("printers/"):
                         queue = queue[9:]
-                if queue != '':
-                    device.menuentry = (_("IPP") + " (%s)" % queue)
+                if 'driverless' in device.info:
+                    drvless = "Driverless "
+                    device.driverless = True
                 else:
-                    device.menuentry = _("IPP")
+                    drvless = ""
+                if queue != '':
+                    device.menuentry = (("%s" + _("IPP") + " (%s)") %
+                                        (drvless, queue))
+                else:
+                    device.menuentry = (("%s" + _("IPP")) % drvless)
             elif device.type == "http" or device.type == "https":
                 device.menuentry = _("HTTP")
             elif device.type == "dnssd" or device.type == "mdns":
@@ -3171,6 +3231,7 @@ class NewPrinterGUI(GtkGUI):
         page = self.new_printer_device_tabs.get (device.type, self.PAGE_SELECT_DEVICE)
         self.ntbkNPType.set_current_page(page)
 
+        debugprint("Selected connection type. URI: %s" % device.uri)
         location = ''
         type = device.type
         url = device.uri.split(":", 1)[-1]
@@ -3180,7 +3241,14 @@ class NewPrinterGUI(GtkGUI):
             if device.type == "parallel":
                 text = _("A printer connected to the parallel port.")
             elif device.type == "usb":
-                text = _("A printer connected to a USB port.")
+                if (hasattr(device, "uri") and
+                    device.uri.lower().find("fax") > -1):
+                    device.menuentry = _("Fax") + " - " + _("USB")
+                    text = _("A fax machine or the fax function "
+                             "of a multi-function device connected "
+                             "to a USB port.")
+                else:
+                    text = _("A printer connected to a USB port.")
             elif device.type == "bluetooth":
                 text = _("A printer connected via Bluetooth.")
             elif device.type == "hp":
@@ -4194,29 +4262,28 @@ class NewPrinterGUI(GtkGUI):
             if group.name != "InstallableOptions":
                 continue
             self.installable_options = True
-            table = Gtk.Table(n_rows=1, n_columns=3, homogeneous=False)
-            table.set_col_spacings(6)
-            table.set_row_spacings(6)
-            container.add(table)
+            grid = Gtk.Grid()
+            grid.set_column_spacing(6)
+            grid.set_row_spacing(6)
+            container.add(grid)
             rows = 0
 
             for nr, option in enumerate(group.options):
                 if option.keyword == "PageRegion":
                     continue
                 rows += 1
-                table.resize (rows, 3)
                 o = OptionWidget(option, self.ppd, self)
-                table.attach(o.conflictIcon, 0, 1, nr, nr+1, 0, 0, 0, 0)
+                grid.attach(o.conflictIcon, 0, nr, 1, 1)
 
-                hbox = Gtk.HBox()
+                hbox = Gtk.Box()
                 if o.label:
                     a = Gtk.Alignment.new (0.5, 0.5, 1.0, 1.0)
                     a.set_padding (0, 0, 0, 6)
                     a.add (o.label)
-                    table.attach(a, 1, 2, nr, nr+1, Gtk.AttachOptions.FILL, 0, 0, 0)
-                    table.attach(hbox, 2, 3, nr, nr+1, Gtk.AttachOptions.FILL, 0, 0, 0)
+                    grid.attach(a, 1, nr, 1, 1)
+                    grid.attach(hbox, 2, nr, 1, 1)
                 else:
-                    table.attach(hbox, 1, 3, nr, nr+1, Gtk.AttachOptions.FILL, 0, 0, 0)
+                    grid.attach(hbox, 1, nr, 2, 1)
                 hbox.pack_start(o.selector, False, False, 0)
                 self.options[option.keyword] = o
         if not self.installable_options:

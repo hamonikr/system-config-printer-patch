@@ -104,6 +104,9 @@ sys.path.append (pkgdata)
 PlugWindow = None
 PlugWindowId = None
 
+#set program name
+GLib.set_prgname("system-config-printer")
+
 def CUPS_server_hostname ():
     host = cups.getServer ()
     if host[0] == '/':
@@ -111,9 +114,7 @@ def CUPS_server_hostname ():
     return host
 
 class ServiceStart:
-    NAME="org.fedoraproject.Config.Services"
-    PATH="/org/fedoraproject/Config/Services/ServiceHerders/SysVServiceHerder/Services/cups"
-    IFACE="org.fedoraproject.Config.Services.SysVService"
+
     def _get_iface (self, iface):
         bus = dbus.SystemBus ()
         obj = bus.get_object (self.NAME, self.PATH)
@@ -123,16 +124,38 @@ class ServiceStart:
     def can_start (self):
         try:
             proxy = self._get_iface (dbus.INTROSPECTABLE_IFACE)
-            introspect = proxy.Introspect ()
+            introspect = proxy.Introspect()
         except:
             return False
-
         return True
 
-    def start (self, reply_handler, error_handler):
-        proxy = self._get_iface (self.IFACE)
-        proxy.start (reply_handler=reply_handler,
-                     error_handler=error_handler)
+    def start(self, reply_handler, error_handler):
+        proxy = self._get_iface(self.IFACE)
+        self._start(proxy, reply_handler, error_handler)
+
+
+class SysVServiceStart(ServiceStart):
+    NAME="org.fedoraproject.Config.Services"
+    PATH="/org/fedoraproject/Config/Services/ServiceHerders/SysVServiceHerder/Services/cups"
+    IFACE="org.fedoraproject.Config.Services.SysVService"
+
+    def _start(self, proxy, reply_handler, error_handler):
+        proxy.start(reply_handler=reply_handler,
+                    error_handler=error_handler)
+
+
+class SystemDServiceStart(ServiceStart):
+    NAME="org.freedesktop.systemd1"
+    PATH="/org/freedesktop/systemd1"
+    IFACE="org.freedesktop.systemd1.Manager"
+    CUPS_SERVICE="org.cups.cupsd.service"
+
+    def _start(self, proxy, reply_handler, error_handler):
+        proxy.StartUnit(self.CUPS_SERVICE, 'fail',
+                        reply_handler=reply_handler,
+                        error_handler=error_handler)
+
+
 
 class GUI(GtkGUI):
 
@@ -445,7 +468,10 @@ class GUI(GtkGUI):
         menu.show_all ()
         self.search_entry.set_drop_down_menu (menu)
 
-        self.servicestart = ServiceStart ()
+        if os.path.exists("/usr/lib/systemd"):
+            self.servicestart = SystemDServiceStart()
+        else:
+            self.servicestart = SysVServiceStart()
 
         # Setup icon view
         self.mainlist = Gtk.ListStore(GObject.TYPE_PYOBJECT,    # Object
@@ -672,7 +698,7 @@ class GUI(GtkGUI):
                     if type (cell) == Gtk.CellRendererText:
                         break
                 iconview.set_cursor (click_path, cell, False)
-            self.printer_context_menu.popup_for_device (None, None, None, None, 
+            self.printer_context_menu.popup_for_device (None, None, None, None,
                                              None, event.button, event.time)
         return False
 
@@ -925,7 +951,7 @@ class GUI(GtkGUI):
                               'i-network-printer'),
                          'smb-printer':
                              (_("Network print share"),
-                              'printer'),
+                              'i-network-printer'),
                          'network-printer':
                              (_("Network printer"),
                               'i-network-printer'),
@@ -948,14 +974,23 @@ class GUI(GtkGUI):
                     type = 'local-class'
                 else:
                     (scheme, rest) = urllib.parse.splittype (object.device_uri)
-                    if scheme == 'ipp':
-                        type = 'ipp-printer'
+                    if scheme in ['ipp', 'ipps']:
+                        if rest.startswith("//localhost"): # IPP-over-USB
+                            type = 'local-printer'
+                        else: # IPP network printer
+                            type = 'ipp-printer'
                     elif scheme == 'smb':
                         type = 'smb-printer'
                     elif scheme == 'hpfax':
                         type = 'local-fax'
-                    elif scheme in ['socket', 'lpd']:
+                    elif scheme in ['socket', 'lpd', 'dnssd']:
                         type = 'network-printer'
+                    elif object.device_uri.startswith('hp:/net/'):
+                        type = 'network-printer'
+                    elif object.device_uri.startswith('hpfax:/net/'):
+                        type = 'network-printer'
+                    elif scheme == 'implicitclass': # cups-browsed-discovered
+                        type = 'discovered-printer'
 
                 (tip, icon) = PRINTER_TYPE[type]
                 (result, w, h) = Gtk.icon_size_lookup (Gtk.IconSize.DIALOG)

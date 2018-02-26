@@ -54,11 +54,11 @@ from functools import reduce
 cups.require("1.9.47")
 
 try:
-    gi.require_version('GnomeKeyring', '1.0')
-    from gi.repository import GnomeKeyring
-    USE_KEYRING=True
+    gi.require_version('Secret', '1')
+    from gi.repository import Secret
+    USE_SECRET=True
 except ImportError:
-    USE_KEYRING=False
+    USE_SECRET=False
 
 import gettext
 gettext.install(domain=config.PACKAGE, localedir=config.localedir)
@@ -72,6 +72,69 @@ SEARCHING_ICON="document-print-preview"
 
 # We need to call Notify.init before we can check the server for caps
 Notify.init('System Config Printer Notification')
+
+NETWORK_PASSWORD = Secret.Schema.new("org.system.config.printer.store", Secret.SchemaFlags.NONE,
+                                     {
+                                         "user": Secret.SchemaAttributeType.STRING,
+                                         "domain": Secret.SchemaAttributeType.STRING,
+                                         "object": Secret.SchemaAttributeType.STRING,
+                                         "protocol": Secret.SchemaAttributeType.STRING,
+                                         "port": Secret.SchemaAttributeType.INTEGER,
+                                         "server": Secret.SchemaAttributeType.STRING,
+                                         "authtype": Secret.SchemaAttributeType.STRING,
+                                         "uri": Secret.SchemaAttributeType.STRING,
+                                     }
+                                     )
+
+
+class ServiceGet:
+    service = Secret.Service()
+
+    def on_get_service(self, source, result, unused):
+        service = Secret.Service.get_finish(result)
+
+    def __init__(self):
+        Secret.Service.get(0,
+                           None,
+                           self.on_get_service,
+                           None)
+
+    def get_service(self):
+        return ServiceGet.service
+
+
+class ItemSearch:
+    items = list()
+
+    def on_search_item(self, source, result, unused):
+        items = Secret.Service.search_finish(None, result)
+
+    def __init__(self, service, attrs):
+        Secret.Service.search(service,
+                              NETWORK_PASSWORD,
+                              attrs,
+                              Secret.SearchFlags.LOAD_SECRETS,
+                              None,
+                              self.on_search_item,
+                              None)
+
+    def get_items(self):
+        return ItemSearch.items
+
+
+class PasswordStore:
+    def __init__(self, attrs, name, secret):
+        Secret.password_store(NETWORK_PASSWORD,
+                              attrs,
+                              Secret.COLLECTION_DEFAULT,
+                              name,
+                              secret,
+                              None,
+                              self.on_password_stored)
+
+    def on_password_stored(self, source, result, unused):
+        Secret.password_store_finish(result)
+
 
 class PrinterURIIndex:
     def __init__ (self, names=None):
@@ -945,10 +1008,10 @@ class JobViewer (GtkGUI):
                 return
 
             # Find out which auth-info is required.
-            try_keyring = USE_KEYRING
+            try_secret = USE_SECRET
             informational_attrs = dict()
             auth_info = None
-            if try_keyring and 'password' in auth_info_required:
+            if try_secret and 'password' in auth_info_required:
                 (scheme, rest) = urllib.parse.splittype (device_uri)
                 if scheme == 'smb':
                     uri = smburi.SMBURI (uri=device_uri)
@@ -963,14 +1026,14 @@ class JobViewer (GtkGUI):
                         (server, port) = urllib.parse.splitnport (serverport)
 
                 if scheme is None or server is None:
-                    try_keyring = False
+                    try_secret = False
                 else:
                     informational_attrs.update ({ "server": str (server.lower ()),
                                                  "protocol": str (scheme)})
 
             if job in self.authenticated_jobs:
                 # We've already tried to authenticate this job before.
-                try_keyring = False
+                try_secret = False
 
             # To increase compatibility and resolve problems with
             # multiple printers on one host we use the printers URI
@@ -980,23 +1043,23 @@ class JobViewer (GtkGUI):
             # the secret but are otherwise only informational.
             identifying_attrs = { "uri": str (printer_uri) }
 
-            if try_keyring and 'password' in auth_info_required:
-                type = GnomeKeyring.ItemType.NETWORK_PASSWORD
-
+            if try_secret and 'password' in auth_info_required:
                 for keyring_attrs in [identifying_attrs, informational_attrs]:
-                    attrs = GnomeKeyring.Attribute.list_new ()
+                    attrs = dict()
                     for key, val in keyring_attrs.items ():
-                        GnomeKeyring.Attribute.list_append_string (attrs,
-                                                                   key,
-                                                                   val)
-                    (result, items) = GnomeKeyring.find_items_sync (type,
-                                                                    attrs)
-                    if result == GnomeKeyring.Result.OK:
+                        key_val_dict = {key : val}
+                        attrs.update (key_val_dict)
+                    service_obj = ServiceGet()
+                    service = service_obj.get_service()
+
+                    search_obj = ItemSearch(service, attrs)
+                    items = search_obj.get_items()
+
+                    if items:
                         auth_info = ['' for x in auth_info_required]
                         ind = auth_info_required.index ('username')
 
-                        for attr in GnomeKeyring.attribute_list_to_glist (
-                                items[0].attributes):
+                        for attr in items[0].attributes:
                             # It might be safe to assume here that the
                             # user element is always the second item in a
                             # NETWORK_PASSWORD element but lets make sure.
@@ -1013,16 +1076,16 @@ class JobViewer (GtkGUI):
                 else:
                     debugprint ("Failed to find secret in keyring.")
 
-            if try_keyring:
+            if try_secret:
                 try:
                     c = authconn.Connection (self.JobsWindow,
                                              host=self.host,
                                              port=self.port,
                                              encryption=self.encryption)
                 except RuntimeError:
-                    try_keyring = False
+                    try_secret = False
 
-            if try_keyring and auth_info is not None:
+            if try_secret and auth_info is not None:
                 try:
                     c._begin_operation (_("authenticating job"))
                     c.authenticateJob (job, auth_info)
@@ -1050,7 +1113,7 @@ class JobViewer (GtkGUI):
         data = self.jobs[job]
         auth_info_required = data['auth-info-required']
         dialog = authconn.AuthDialog (auth_info_required=auth_info_required,
-                                      allow_remember=USE_KEYRING)
+                                      allow_remember=USE_SECRET)
         dialog.keyring_attrs = keyring_attrs
         dialog.auth_info_required = auth_info_required
         dialog.set_position (Gtk.WindowPosition.CENTER)
@@ -1122,8 +1185,6 @@ class JobViewer (GtkGUI):
 
         if remember:
             try:
-                (result, keyring) = GnomeKeyring.get_default_keyring_sync ()
-                type = GnomeKeyring.ItemType.NETWORK_PASSWORD
                 keyring_attrs = getattr (dialog,
                                          "keyring_attrs",
                                          None)
@@ -1142,17 +1203,13 @@ class JobViewer (GtkGUI):
                                            keyring_attrs.get ("protocol"))
                     ind = auth_info_required.index ('password')
                     secret = auth_info[ind]
-                    attrs = GnomeKeyring.Attribute.list_new ()
+                    attrs = dict()
                     for key, val in keyring_attrs.items ():
-                        GnomeKeyring.Attribute.list_append_string (attrs,
-                                                                   key,
-                                                                   val)
-                    (result, id) = GnomeKeyring.item_create_sync (keyring,
-                                                                  type,
-                                                                  name,
-                                                                  attrs,
-                                                                  secret,
-                                                                  True)
+                        key_val_dict = {key : val}
+                        attrs.update (key_val_dict)
+                    password_obj = PasswordStore(attrs,
+                                                 name,
+                                                 secret)
                     debugprint ("keyring: created id %d for %s" % (id, name))
             except:
                 nonfatalException ()
@@ -1546,7 +1603,7 @@ class JobViewer (GtkGUI):
         pattrs_req = ['auth-info-required', 'device-uri']
 
         for jobid in self.jobids:
-            # Get the requried attributes for this job
+            # Get the required attributes for this job
             jattrs = c.getJobAttributes (jobid,
                                          requested_attributes=jattrs_req)
             uri = jattrs.get ('job-printer-uri')
@@ -1814,7 +1871,10 @@ class JobViewer (GtkGUI):
             "cups-remote-stopped",
             "cups-remote-canceled",
             "cups-remote-aborted",
-            "cups-remote-completed"
+            "cups-remote-completed",
+            
+            # The cups-waiting-for-job-completed job state reason is normal and should not cause a desktop notification
+            "cups-waiting-for-job-completed"
             ]
 
         if reason.get_reason () in blacklist:

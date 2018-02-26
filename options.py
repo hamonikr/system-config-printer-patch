@@ -19,6 +19,7 @@
 ## along with this program; if not, write to the Free Software
 ## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
+from debug import *
 from gi.repository import Gtk
 import cups
 import ppdippstr
@@ -38,7 +39,7 @@ class IPPResolution(tuple):
             cls.UNITS_BY_STR[s] = v
 
         if isinstance (values, str):
-            matches = re.match ("(\d+)\D+(\d+)(.*)", values).groups ()
+            matches = re.match (r"(\d+)\D+(\d+)(.*)", values).groups ()
             xres = int (matches[0])
             yres = int (matches[1])
             units = cls.UNITS_BY_STR.get (matches[2], cls.UNITS_DEFAULT)
@@ -140,7 +141,7 @@ class OptionAlwaysShown(OptionInterface):
 
         if (type(self.widget) == Gtk.ComboBox and
             self.widget.get_model () is None):
-            print("No ComboBox model for %s" % self.name)
+            debugprint("No ComboBox model for %s" % self.name)
             model = Gtk.ListStore (str)
             self.widget.set_model (model)
 
@@ -419,10 +420,10 @@ class OptionSelectOne(Option):
         if selected is not None:
             self.selector.set_active(selected)
         else:
-            print("Unknown value for %s: %s" % (name, value))
-            print("Choices:", supported)
+            debugprint("Unknown value for %s: %s" % (name, value))
+            debugprint("Choices:", supported)
             if len(supported) > 0:
-                print("Selecting from choices:", supported[0])
+                debugprint("Selecting from choices:", supported[0])
                 self.selector.set_active(0)
         self.selector.connect("changed", self.changed)
 
@@ -449,7 +450,7 @@ class OptionSelectOneResolution(OptionSelectOne):
                             self.UNITS_BY_VAL.get (value[2], ""))
 
     def value(self, string):
-        matches = re.match ("(\d+)\D+(\d+)(.*)", string).groups ()
+        matches = re.match (r"(\d+)\D+(\d+)(.*)", string).groups ()
         return (int (matches[0]), int (matches[1]),
                 self.UNITS_BY_STR.get (matches[2], self.UNITS_DEFAULT))
 
