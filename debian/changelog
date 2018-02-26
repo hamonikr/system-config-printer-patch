@@ -14,8 +14,12 @@ system-config-printer (1.5.11-1) UNRELEASED; urgency=medium
     optional (Closes: #868039)
   * d/p/0004-Fix-constructing-the-auth-dialog.patch: Fix constructing the auth
     dialog, from upstream
+  * d/p/0005-Require-proper-version-of-GDK-and-GTK-in-scp-dbus-se.patch,
+    d/p/0006-Set-programe-name-for-scp-dbus-service-as-well.patch: Require
+    version of GDK and GTK bindings before importing them and properly set the
+    program name even when scp-dbus-service is D-Bus activated.
 
- -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 14:51:13 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 15:17:02 +0100
 
 system-config-printer (1.5.9-3) unstable; urgency=medium
 
