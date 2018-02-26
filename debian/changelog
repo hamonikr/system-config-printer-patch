@@ -9,8 +9,11 @@ system-config-printer (1.5.11-1) UNRELEASED; urgency=medium
     - Use libsecret instead of gnome-keyring (Closes: #867952)
     - debian/system-config-printer.install: Fix installation of appdata file
   * debian/rules: Fix the URL to download the orig tarball using get-orig-source
+  * d/p/0003-Use-ValueError-instead-of-ImportError-to-catch-excep.patch: Fix
+    exception handling when importing libsecret, that should made it really
+    optional (Closes: #868039)
 
- -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 11:08:47 +0100
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 26 Feb 2018 11:27:12 +0100
 
 system-config-printer (1.5.9-3) unstable; urgency=medium
 
