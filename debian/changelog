@@ -1,3 +1,14 @@
+system-config-printer (1.5.11-3) unstable; urgency=medium
+
+  * Cherry-pick define-classes-for-Secret-only-when-libsecret-installed.patch:
+    - Don't crash when gir1.2-secret-1 is not installed (Closes: #892256)
+  * Bump Standards-Version to 4.2.1
+  * Don't install AUTHORS since it duplicates debian/copyright
+  * Remove upstream signing key.
+    - Releases haven't been signed since moving to Github
+
+ -- Jeremy Bicha <jbicha@debian.org>  Sat, 29 Sep 2018 15:05:33 -0400
+
 system-config-printer (1.5.11-2) unstable; urgency=medium
 
   * Build-Depend on python3-distutils
