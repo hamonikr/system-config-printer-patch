@@ -18,9 +18,6 @@ override_dh_python3:
 	dh_python3 -psystem-config-printer /usr/share/system-config-printer/
 	dh_python3 -psystem-config-printer-common /usr/share/system-config-printer/
 
-override_dh_installdocs:
-	dh_installdocs -A AUTHORS
-
 override_dh_autoreconf:
 	dh_autoreconf ./bootstrap
 
