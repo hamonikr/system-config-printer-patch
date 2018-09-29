@@ -1,10 +1,18 @@
-Description: Use setting in /etc/papersize if available
+From: Till Kamppeter <till.kamppeter@gmail.com>
+Date: Fri, 29 Oct 2010 12:53:06 +0200
+Subject: Use setting in /etc/papersize if available
+
 Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=593219
 Origin: vendor
+---
+ cupshelpers/cupshelpers.py | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
 
+diff --git a/cupshelpers/cupshelpers.py b/cupshelpers/cupshelpers.py
+index 978ab80..7214465 100755
 --- a/cupshelpers/cupshelpers.py
 +++ b/cupshelpers/cupshelpers.py
-@@ -717,6 +717,23 @@
+@@ -740,6 +740,23 @@ def setPPDPageSize(ppd, language):
      for each in letter:
          if language == each:
              size = 'Letter'
