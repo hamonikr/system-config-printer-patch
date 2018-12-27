@@ -1,3 +1,10 @@
+system-config-printer (1.5.11-4) unstable; urgency=medium
+
+  * Add -Wl,-O1 to our LDFLAGS
+  * Bump Standards-Version to 4.3.0
+
+ -- Jeremy Bicha <jbicha@debian.org>  Thu, 27 Dec 2018 13:03:27 -0500
+
 system-config-printer (1.5.11-3) unstable; urgency=medium
 
   * Cherry-pick define-classes-for-Secret-only-when-libsecret-installed.patch:
