@@ -20,7 +20,7 @@ Build-Depends: debhelper (>= 11),
                python3,
                python3-distutils,
                xmlto
-Standards-Version: 4.2.1
+Standards-Version: 4.3.0
 Vcs-Browser: https://salsa.debian.org/gnome-team/system-config-printer
 Vcs-Git: https://salsa.debian.org/gnome-team/system-config-printer.git
 Homepage: https://github.com/zdohnal/system-config-printer
