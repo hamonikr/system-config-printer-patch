@@ -57,7 +57,7 @@ try:
     gi.require_version('Secret', '1')
     from gi.repository import Secret
     USE_SECRET=True
-except ImportError:
+except ValueError:
     USE_SECRET=False
 
 import gettext
@@ -73,67 +73,68 @@ SEARCHING_ICON="document-print-preview"
 # We need to call Notify.init before we can check the server for caps
 Notify.init('System Config Printer Notification')
 
-NETWORK_PASSWORD = Secret.Schema.new("org.system.config.printer.store", Secret.SchemaFlags.NONE,
-                                     {
-                                         "user": Secret.SchemaAttributeType.STRING,
-                                         "domain": Secret.SchemaAttributeType.STRING,
-                                         "object": Secret.SchemaAttributeType.STRING,
-                                         "protocol": Secret.SchemaAttributeType.STRING,
-                                         "port": Secret.SchemaAttributeType.INTEGER,
-                                         "server": Secret.SchemaAttributeType.STRING,
-                                         "authtype": Secret.SchemaAttributeType.STRING,
-                                         "uri": Secret.SchemaAttributeType.STRING,
-                                     }
-                                     )
-
-
-class ServiceGet:
-    service = Secret.Service()
-
-    def on_get_service(self, source, result, unused):
-        service = Secret.Service.get_finish(result)
-
-    def __init__(self):
-        Secret.Service.get(0,
-                           None,
-                           self.on_get_service,
-                           None)
-
-    def get_service(self):
-        return ServiceGet.service
-
-
-class ItemSearch:
-    items = list()
-
-    def on_search_item(self, source, result, unused):
-        items = Secret.Service.search_finish(None, result)
-
-    def __init__(self, service, attrs):
-        Secret.Service.search(service,
-                              NETWORK_PASSWORD,
-                              attrs,
-                              Secret.SearchFlags.LOAD_SECRETS,
-                              None,
-                              self.on_search_item,
-                              None)
-
-    def get_items(self):
-        return ItemSearch.items
-
-
-class PasswordStore:
-    def __init__(self, attrs, name, secret):
-        Secret.password_store(NETWORK_PASSWORD,
-                              attrs,
-                              Secret.COLLECTION_DEFAULT,
-                              name,
-                              secret,
-                              None,
-                              self.on_password_stored)
-
-    def on_password_stored(self, source, result, unused):
-        Secret.password_store_finish(result)
+if USE_SECRET:
+    NETWORK_PASSWORD = Secret.Schema.new("org.system.config.printer.store", Secret.SchemaFlags.NONE,
+                                         {
+                                             "user": Secret.SchemaAttributeType.STRING,
+                                             "domain": Secret.SchemaAttributeType.STRING,
+                                             "object": Secret.SchemaAttributeType.STRING,
+                                             "protocol": Secret.SchemaAttributeType.STRING,
+                                             "port": Secret.SchemaAttributeType.INTEGER,
+                                             "server": Secret.SchemaAttributeType.STRING,
+                                             "authtype": Secret.SchemaAttributeType.STRING,
+                                             "uri": Secret.SchemaAttributeType.STRING,
+                                         }
+                                         )
+    
+    
+    class ServiceGet:
+        service = Secret.Service()
+    
+        def on_get_service(self, source, result, unused):
+            service = Secret.Service.get_finish(result)
+    
+        def __init__(self):
+            Secret.Service.get(0,
+                               None,
+                               self.on_get_service,
+                               None)
+    
+        def get_service(self):
+            return ServiceGet.service
+    
+    
+    class ItemSearch:
+        items = list()
+    
+        def on_search_item(self, source, result, unused):
+            items = Secret.Service.search_finish(None, result)
+    
+        def __init__(self, service, attrs):
+            Secret.Service.search(service,
+                                  NETWORK_PASSWORD,
+                                  attrs,
+                                  Secret.SearchFlags.LOAD_SECRETS,
+                                  None,
+                                  self.on_search_item,
+                                  None)
+    
+        def get_items(self):
+            return ItemSearch.items
+    
+    
+    class PasswordStore:
+        def __init__(self, attrs, name, secret):
+            Secret.password_store(NETWORK_PASSWORD,
+                                  attrs,
+                                  Secret.COLLECTION_DEFAULT,
+                                  name,
+                                  secret,
+                                  None,
+                                  self.on_password_stored)
+    
+        def on_password_stored(self, source, result, unused):
+            Secret.password_store_finish(result)
 
 
 class PrinterURIIndex:
@@ -1111,7 +1112,12 @@ class JobViewer (GtkGUI):
 
     def display_auth_info_dialog (self, job, keyring_attrs=None):
         data = self.jobs[job]
-        auth_info_required = data['auth-info-required']
+        try:
+            auth_info_required = data['auth-info-required']
+        except KeyError:
+            debugprint ("No auth-info-required attribute; "
+                        "guessing instead")
+            auth_info_required = ['username', 'password']
         dialog = authconn.AuthDialog (auth_info_required=auth_info_required,
                                       allow_remember=USE_SECRET)
         dialog.keyring_attrs = keyring_attrs

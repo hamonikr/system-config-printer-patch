@@ -20,10 +20,13 @@
 ## along with this program; if not, write to the Free Software
 ## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
+import gi
 import dbus.service
 from gi.repository import GObject
 from gi.repository import GLib
+gi.require_version('Gdk', '3.0')
 from gi.repository import Gdk
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 import sys
 
@@ -52,10 +55,13 @@ CONFIG_JOBVIEWER_IFACE=CONFIG_IFACE + ".JobViewer"
 g_ppds = None
 g_killtimer = None
 
+#set program name
+GLib.set_prgname("system-config-printer")
+
 class FetchedPPDs(GObject.GObject):
     __gsignals__ = {
-        'ready': (GObject.SIGNAL_RUN_LAST, None, ()),
-        'error': (GObject.SIGNAL_RUN_LAST, None,
+        'ready': (GObject.SignalFlags.RUN_LAST, None, ()),
+        'error': (GObject.SignalFlags.RUN_LAST, None,
                   (GObject.TYPE_PYOBJECT,))
         }
 
@@ -465,6 +471,8 @@ class ConfigPrinting(dbus.service.Object):
         self._jobappletpath = None
         self._ppds = None
         self._language = locale.getlocale (locale.LC_MESSAGES)[0]
+        if not self._language:
+            self._language = locale.getlocale (locale.LC_CTYPE)[0]
 
     def destroy (self):
         self._cupsconn.destroy ()
@@ -505,7 +513,7 @@ class ConfigPrinting(dbus.service.Object):
     def GetBestDrivers(self, device_id, device_make_and_model, device_uri,
                    reply_handler, error_handler):
         GetBestDriversRequest (device_id, device_make_and_model, device_uri,
-                               self._cupsconn, self._language[0],
+                               self._cupsconn, self._language,
                                reply_handler, error_handler)
 
     @dbus.service.method(dbus_interface=CONFIG_IFACE,

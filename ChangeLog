@@ -1,4 +1,276 @@
+2019-09-30  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	define specific packagekitglib version
+
+	check if we have required parameters for install-printerdriver (Fedora issue #1754204)
+
+2019-09-09  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Fallback to username/password auth in jobviewer
+
+2019-07-25  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Get rid of deprecation warnings in applet
+
+2019-06-19  Benjamin Pereto  <dev@sandchaschte.ch>
+
+	FIX: spelling error
+
+2019-06-18  Pavel Moseev  <mars@altlinux.org>
+
+	fix translation in troubleshoot menu
+
+2019-05-29  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Removing zdohnal from links
+
+2019-05-27  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+
+	Update NEWS
+
+	Update NEWS
+
+2019-05-26  GreatBahram  <aghaee.bahram@gmail.com>
+
+	Use remote server ppd file, in case a printer has been shared via cups.
+
+2019-05-08  Will Thompson  <wjt@endlessm.com>
+
+	Remove more uses of deprecated GObject.SIGNAL_RUN_LAST
+	9ae2308a8e02527b34f6216162c88ebae04d8dc4 removed many of these but these
+	two were left over.
+
+2019-02-27  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	lpd queue names printed on the console
+
+2019-02-18  GreatBahram  <aghaee.bahram@gmail.com>
+
+	add input and output type into ppds.normalize function
+
+	change normalize comments into doc-string
+
+2019-01-14  Tomas Korbar  <tkorbar@redhat.com>
+
+	Fix compatibility with python3 in putFile method
+	in python3 os.read returns byte object not a string which caused
+	writing loop to be endless
+
+	by adding b'' comparison we hold compatibility both with python2
+	and python3
+
+	Fix writing of advanced settings
+	After reading from stream we must return again to line 0 if we
+	want to read file again
+
+2019-01-03  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Temporary fix for error pop-up window for IPP2.0+ attributes
+
+2018-12-03  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+
+	udev/udev-configure-printer.c: map and usb_device_devpath strings leaks
+
+	udev/udev-configure-printer.c: device_uri strings leaks
+
+	udev/udev-configure-printer.c:848: error[memleak]: Memory leak: devicefilepath
+
+2018-11-19  Tomas Korbar  <tkorbar@redhat.com>
+
+	Fix bad call of cups connection getFile
+
+	Fix bad use of NamedTemporaryFile
+	- os.stat call expects file path not file object
+
+	Add way how to support signature to dbus call
+	- If dbus method is called with empty array as an argument then
+	dbus is not able to determine type of arguments and throws Error
+	- This commit adds way how to add it in such case
+
+	Make timestamp accessible through whole troubleshoot process
+	- until now timestamp was accessible only after some conditions
+	were met which resulted in occasional bug
+
+2018-11-09  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Update aclocal.m4 due new automake version
+
+	Update NEWS
+
+2018-11-07  Tom Gundersen  <teg@jklm.no>
+
+	dbus: remove deprecated at_console statement
+	As described in [0], this likely did not have the intended effect, so
+	simply remove it. The change in behavior is that up until this patch
+	it would be possible for root and any non-system user to potentially
+	own the system-config-printer dbus names. Now this is extended to also
+	allow any system user.
+
+	[0]: <https://www.spinics.net/lists/linux-bluetooth/msg75267.html>
+
+	CC: David Herrmann <dh.herrmann@gmail.com>
+
+2018-10-01  zdohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+
+2018-09-27  Tomas Korbar  <tkorbar@redhat.com>
+
+	Fix TypeError raised by debugprint call
+	- this error is caused by typo in options.py:424 debugprint call
+	- debugprint function takes only one parameter so i think it should
+	have been formated string
+	- fix https://bugzilla.redhat.com/show_bug.cgi?id=1619593
+
+2018-08-30  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Fix typo in debugprint call (https://github.com/zdohnal/system-config-printer/issues/105)
+
+	define classes for Secret only when libsecret is installed (https://github.com/zdohnal/system-config-printer/issues/118, https://github.com/zdohnal/system-config-printer/issues/115)
+
+2018-06-26  lafricain79  <lafricain79@gmail.com>
+
+	Correction of French word in the code
+
+2018-06-26  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+
+	Update NEWS
+
+	Update NEWS
+
+2018-06-20  xoduddk123  <xoduddk123@naver.com>
+
+	encoding: Modified to use utf-8 in fdopen()
+	The following error occurred due to encoding problem in fdopen().
+
+	root@tykwon:~# cat /var/log/syslog
+	2018-02-12T17:08:24.208317+09:00 tykwon kernel: usb 1-1.2: new high-speed USB device number 4 using dwc_otg
+	2018-02-12T17:08:24.309341+09:00 tykwon kernel: usb 1-1.2: New USB device found, idVendor=03f0, idProduct=3b2a
+	2018-02-12T17:08:24.309398+09:00 tykwon kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+	2018-02-12T17:08:24.309415+09:00 tykwon kernel: usb 1-1.2: Product: HP Color LaserJet MFP M277n
+	2018-02-12T17:08:24.309428+09:00 tykwon kernel: usb 1-1.2: Manufacturer: Hewlett-Packard
+	2018-02-12T17:08:24.318314+09:00 tykwon kernel: usb 1-1.2: SerialNumber: VNBKK97643
+	2018-02-12T17:08:24.340967+09:00 tykwon root: loading HP Device 001 004
+	2018-02-12T17:08:25.537224+09:00 tykwon python: io/hpmud/musb.c 2185: [307] hpmud_make_usb_uri() bus=001 dev=004
+	2018-02-12T17:08:25.540188+09:00 tykwon python: io/hpmud/musb.c 2282: hpmud_make_usb_uri() uri=hp:/usb/HP_Color_LaserJet_MFP_M277n?serial=VNBKK97643 bytes_read=53
+	2018-02-12T17:08:26.510021+09:00 tykwon kernel: usblp 1-1.2:1.1: usblp0: USB Bidirectional printer dev 4 if 1 alt 0 proto 2 vid 0x03F0 pid 0x3B2A
+	2018-02-12T17:08:26.518337+09:00 tykwon kernel: usbcore: registered new interface driver usblp
+	2018-02-12T17:08:26.523457+09:00 tykwon systemd[1]: Created slice system-configure\x2dprinter.slice.
+	2018-02-12T17:08:26.525835+09:00 tykwon systemd[1]: Started Configure Plugged-In Printer.
+	2018-02-12T17:08:26.527132+09:00 tykwon systemd[1]: Reached target Printer.
+	2018-02-12T17:08:26.546282+09:00 tykwon udev-configure-printer: add usb-001-004
+	2018-02-12T17:08:26.688365+09:00 tykwon udev-configure-printer: device devpath is /devices/lm1/usb1/1-1/1-1.2
+	2018-02-12T17:08:26.700706+09:00 tykwon udev-configure-printer: MFG:Hewlett-Packard MDL:HP Color LaserJet MFP M277n SERN:- serial:VNBKK97643
+	2018-02-12T17:08:31.788344+09:00 tykwon kernel: usblp0: removed
+	2018-02-12T17:08:31.798343+09:00 tykwon kernel: usblp 1-1.2:1.1: usblp0: USB Bidirectional printer dev 4 if 1 alt 0 proto 2 vid 0x03F0 pid 0x3B2A
+	2018-02-12T17:08:31.870363+09:00 tykwon udev-configure-printer: URI contains USB serial number
+	2018-02-12T17:08:31.871482+09:00 tykwon udev-configure-printer: URI match: usb://HP/Color%20LaserJet%20MFP%20M277n?serial=VNBKK97643&interface=1
+	2018-02-12T17:08:31.872536+09:00 tykwon udev-configure-printer: SERN field matches USB serial number
+	2018-02-12T17:08:31.873629+09:00 tykwon udev-configure-printer: URI match: hp:/usb/HP_Color_LaserJet_MFP_M277n?serial=VNBKK97643
+	2018-02-12T17:08:31.874594+09:00 tykwon udev-configure-printer: URI of detected printer: usb://HP/Color%20LaserJet%20MFP%20M277n?serial=VNBKK97643&interface=1, normalized: color laserjet mfp m277n serial vnbkk97643 interface 1
+	2018-02-12T17:08:31.875782+09:00 tykwon udev-configure-printer: URI of print queue: hp:/usb/HP_LaserJet_Professional_P1106?serial=000000000QN926Y1PR1a, normalized: laserjet professional p1106 serial 000000000qn926y1pr1a
+	2018-02-12T17:08:31.876985+09:00 tykwon udev-configure-printer: URI of detected printer: hp:/usb/HP_Color_LaserJet_MFP_M277n?serial=VNBKK97643, normalized: color laserjet mfp m277n serial vnbkk97643
+	2018-02-12T17:08:31.878166+09:00 tykwon udev-configure-printer: About to add queue for hp:/usb/HP_Color_LaserJet_MFP_M277n?serial=VNBKK97643
+	2018-02-12T17:08:34.760340+09:00 tykwon udev-add-printer: add_queue: URIs=['hp:/usb/HP_Color_LaserJet_MFP_M277n?serial=VNBKK97643', 'usb://HP/Color%20LaserJet%20MFP%20M277n?serial=VNBKK97643&interface=1']
+	2018-02-12T17:08:34.766174+09:00 tykwon udev-add-printer: D-Bus method call failed: org.freedesktop.DBus.Error.ServiceUnknown: The name com.redhat.NewPrinterNotification was not provided by any .service files
+	2018-02-12T17:08:41.722389+09:00 tykwon udev-add-printer: PPD: hplip:1/hp-color_laserjet_pro_mfp_m277-ps.ppd; Status: 0
+	2018-02-12T17:08:45.763635+09:00 tykwon udev-add-printer: File "/lib/udev/udev-add-printer", line 232, in <module>#012    add_queue (sys.argv[1], sys.argv[2:])
+	2018-02-12T17:08:45.764840+09:00 tykwon udev-add-printer: File "/lib/udev/udev-add-printer", line 169, in add_queue#012    installer)
+	2018-02-12T17:08:45.765979+09:00 tykwon udev-add-printer: File "/lib/udev/udev-add-printer", line 75, in create_queue#012    (pkgs, exes) = cupshelpers.missingPackagesAndExecutables (ppd)
+	2018-02-12T17:08:45.767236+09:00 tykwon udev-add-printer: File "/usr/lib/python3.5/site-packages/cupshelpers/cupshelpers.py", line 889, in missingPackagesAndExecutables#012    executables = missingExecutables(ppd)
+	2018-02-12T17:08:45.768527+09:00 tykwon udev-add-printer: File "/usr/lib/python3.5/site-packages/cupshelpers/cupshelpers.py", line 864, in missingExecutables#012    for line in f:
+	2018-02-12T17:08:45.769834+09:00 tykwon udev-add-printer: File "/usr/lib/python3.5/encodings/ascii.py", line 26, in decode#012    return codecs.ascii_decode(input, self.errors)[0]
+	2018-02-12T17:08:45.771056+09:00 tykwon udev-add-printer: UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 4175: ordinal not in range(128)
+	root@tykwon:~#
+
+2018-06-02  lafricain79  <lafricain79@gmail.com>
+
+	New strings for the ppd files
+
+2018-05-31  Antonio Larrosa  <antonio.larrosa@gmail.com>
+
+	Fallback to using LC_CTYPE if LC_MESSAGES is empty and fix _language use
+	On openSUSE, LC_MESSAGES is not set by default, so fallback to LC_CTYPE in
+	that case.
+
+	Also, self._language is not a list (unlike in other classes) but the language
+	itself, so if we get the first element, we would be getting the first letter,
+	not the language.
+
+2018-04-23  Ettore Atalan  <atalanttore@googlemail.com>
+
+	Update de.po
+	Improved german translation.
+
+2018-04-06  zdohnal  <zdohnal@redhat.com>
+
+	Update NEWS
+
+2018-04-02  Alan01  <alanmortensen.am@gmail.com>
+
+	Update da.po
+
+2018-03-23  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	require Gtk and Gdk version 3.0 in asyncpk1.py
+
+2018-03-10  AsciiWolf  <mail@asciiwolf.com>
+
+	Fix typo
+
+2018-03-01  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	- when you use different component id, add provide for old name (https://github.com/zdohnal/system-config-printer/issues/99)
+
+2018-02-27  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	fix other issues in system-config-printer.appdata.xml to be completely valid for new format
+
+	Update NEWS
+
+2018-02-26  Laurent Bigonville  <bigon@bigon.be>
+
+	Make the appstream file validate with version >= 0.6
+	Fixes: #97
+
+	Set programe name for scp-dbus-service as well
+	scp-dbus-service can be D-Bus activated, that means that the program
+	name is never set meaning that the icon and the fancy name in the window
+	list is never set.
+
+	This completes the fix for bug #53
+
+	Require proper version of GDK and GTK in scp-dbus-service as well
+	scp-dbus-service can be D-Bus activated, that means that
+	gi.require_version() is not called before.
+
+	That needs to be kept in sync with the required version in the main
+	program file.
+
+	Use ValueError instead of ImportError to catch exception when importing GIR bindings
+	When importing specific version of GIR bindings, the ValueError
+	exception is raised instead of ImportError.
+
+	This should make libsecret optional as intended
+
+	Fixes: #94
+
+2018-02-08  Jan Alexander Steffens (heftig)  <jan.steffens@gmail.com>
+
+	Fix constructing the auth dialog
+	47973c80 (Remove deprecated Gtk objects) broke the auth dialog.
+
+	Fixes https://bugs.archlinux.org/task/57364.
+
 2018-01-24  Zdenek Dohnal  <zdohnal@redhat.com>
+
+	- version 1.5.11 because of creating bad tag
 
 	- version 1.5.10
 

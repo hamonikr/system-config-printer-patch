@@ -824,6 +824,7 @@ device_id_from_devpath (struct udev *udev, const char *devpath,
        */
       syslog (LOG_DEBUG, "Device already handled");
       free (usb_device_devpath);
+      free (devicefilepath);
       return NULL;
     }
 
@@ -845,6 +846,7 @@ device_id_from_devpath (struct udev *udev, const char *devpath,
     parse_device_id (device_id, id);
 
   udev_device_unref (dev);
+  free (devicefilepath);
   return usb_device_devpath;
 }
 
@@ -1510,6 +1512,8 @@ for_each_matching_queue (struct device_uris *device_uris,
       firstqueue = 0;
 
     skip:
+      free(device_uri_n);
+      free(this_device_uri_n);
       if (!attr)
 	break;
     }
@@ -1626,6 +1630,8 @@ do_add (const char *cmd, const char *devaddr)
   if (!id.mfg || !id.mdl)
     {
       clear_device_id (&id);
+      free (map);
+      free (usb_device_devpath);
       return 1;
     }
 
@@ -1649,6 +1655,7 @@ do_add (const char *cmd, const char *devaddr)
     {
       syslog (LOG_ERR, "no corresponding CUPS device found");
       clear_device_id (&id);
+      free (map);
       return 0;
     }
 
@@ -1702,6 +1709,7 @@ do_add (const char *cmd, const char *devaddr)
 
   clear_device_id (&id);
   free_device_uris (&device_uris);
+  free (map);
   return 0;
 }
 
