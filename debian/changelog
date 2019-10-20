@@ -1,8 +1,16 @@
-system-config-printer (1.5.12-1) UNRELEASED; urgency=medium
+system-config-printer (1.5.12-1) unstable; urgency=medium
 
   * New upstream release
+  * Drop patches applied in new release:
+    - 0003-Use-ValueError-instead-of-ImportError-to-catch-excep.patch
+    - 0004-Fix-constructing-the-auth-dialog.patch
+    - 0005-Require-proper-version-of-GDK-and-GTK-in-scp-dbus-se.patch
+    - 0006-Set-programe-name-for-scp-dbus-service-as-well.patch
+    - define-classes-for-Secret-only-when-libsecret-is-installe.patch
+  * Build-Depend on debhelper-compat 12 and drop debian/compat
+  * Build-Depend on dh-sequence-gnome and dh-sequence-python3
 
- -- Jeremy Bicha <jbicha@debian.org>  Sun, 20 Oct 2019 07:20:01 -0400
+ -- Jeremy Bicha <jbicha@debian.org>  Sun, 20 Oct 2019 07:31:00 -0400
 
 system-config-printer (1.5.11-4) unstable; urgency=medium
 
