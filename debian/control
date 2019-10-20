@@ -6,8 +6,8 @@ Source: system-config-printer
 Section: gnome
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Guido Günther <agx@sigxcpu.org>, Dmitry Shachnev <mitya57@debian.org>, Jeremy Bicha <jbicha@debian.org>, Laurent Bigonville <bigon@debian.org>
-Build-Depends: debhelper (>= 11),
+Uploaders: Guido Günther <agx@sigxcpu.org>, Jeremy Bicha <jbicha@debian.org>, Laurent Bigonville <bigon@debian.org>
+Build-Depends: debhelper-compat (= 12),
                dh-python,
                desktop-file-utils (>= 0.13),
                gnome-pkg-tools,
