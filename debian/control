@@ -8,16 +8,15 @@ Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: Guido Günther <agx@sigxcpu.org>, Jeremy Bicha <jbicha@debian.org>, Laurent Bigonville <bigon@debian.org>
 Build-Depends: debhelper-compat (= 12),
-               dh-python,
+               dh-sequence-gnome,
+               dh-sequence-python3,
                desktop-file-utils (>= 0.13),
-               gnome-pkg-tools,
                intltool,
                libcups2-dev,
                libglib2.0-dev,
                libudev-dev (>= 172) [linux-any],
                libusb-1.0-0-dev,
                libxml-parser-perl,
-               python3,
                python3-distutils,
                xmlto
 Standards-Version: 4.3.0
