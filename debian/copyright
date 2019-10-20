@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: system-config-printer
-Source: http://cyberelk.net/tim/data/system-config-printer/
+Source: https://github.com/OpenPrinting/system-config-printer
 
 Files: *
 Copyright: 2002-2015 Red Hat, Inc.
